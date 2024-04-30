@@ -1,0 +1,16 @@
+<div class="video_sec">
+  {% if module.career_video.player_id %}
+  {% set max_width = module.career_video.size_type == 'auto_custom_max' ? module.career_video.max_width : module.career_video.width %}
+  {% set max_height = module.career_video.size_type == 'auto_custom_max' ? module.career_video.max_height : module.career_video.height %}
+  {% video_player "embed_player"
+    player_id={{ module.career_video.player_id }}
+    type={{ module.career_video.player_type || 'scriptV4' }}
+    full_width={{ module.career_video.size_type == 'auto_full_width' }},
+    conversion_asset={{ module.career_video.conversion_asset|tojson|safe }}
+    autoplay={{ module.career_video.autoplay }}
+    hidden_controls={{ module.career_video.hide_controls }}
+    loop={{ module.career_video.loop_video }}
+    muted={{ module.career_video.mute_by_default }}
+  %}
+{% endif %}
+</div>

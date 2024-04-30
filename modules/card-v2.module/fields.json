@@ -1,0 +1,154 @@
+[ {
+  "id" : "642a5246-f059-9e66-8c6b-191339208ee0",
+  "name" : "texte_hed",
+  "display_width" : null,
+  "label" : "Texte-hed",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nos avantages concurrentiels"
+}, {
+  "id" : "e9d9f038-e6ed-b0dd-80be-8065fe786867",
+  "name" : "groupe_de_champs_card",
+  "display_width" : null,
+  "label" : "Groupe de champs-card",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "3245a471-0c20-8173-9f92-9fa340ef98a9",
+    "name" : "image_icon",
+    "display_width" : null,
+    "label" : "Image-icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/icon-1.svg",
+      "alt" : "icon-1",
+      "loading" : "lazy",
+      "width" : 95,
+      "height" : 77,
+      "max_width" : 95,
+      "max_height" : 77
+    }
+  }, {
+    "id" : "174f4e1a-fcb2-323d-f99b-21e1aa26cf3a",
+    "name" : "texte_enrichi_description",
+    "display_width" : null,
+    "label" : "Texte enrichi-description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h2><span style=\"color: #4d463f;\"><strong>Dépassement&nbsp;</strong></span><br><span style=\"color: #4d463f;\"><strong>de soi</strong></span></h2>\n<p style=\"font-size: 16px;\"><span style=\"color: #4d463f;\">On grandit et on s’améliore continuellement.</span></p>"
+  }, {
+    "id" : "ff7e6ba0-f570-fb79-76c0-b3a51c97b6ca",
+    "name" : "border",
+    "display_width" : null,
+    "label" : "Border",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "border height 1" ], [ "2", "border height 2" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/icon-1.svg",
+      "alt" : "icon-1",
+      "loading" : "lazy",
+      "width" : 95,
+      "height" : 77,
+      "max_width" : 95,
+      "max_height" : 77
+    },
+    "texte_enrichi_description" : "<h2><span style=\"color: #4d463f;\"><strong>Dépassement&nbsp;</strong></span><br><span style=\"color: #4d463f;\"><strong>de soi</strong></span></h2>\n<p style=\"font-size: 16px;\"><span style=\"color: #4d463f;\">On grandit et on s’améliore continuellement.</span></p>",
+    "border" : "1"
+  }, {
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/icon-1.svg",
+      "alt" : "icon-1",
+      "loading" : "lazy",
+      "width" : 95,
+      "height" : 77,
+      "max_width" : 95,
+      "max_height" : 77
+    },
+    "texte_enrichi_description" : "<h2><span style=\"color: #4d463f;\"><strong>Dépassement&nbsp;</strong></span><br><span style=\"color: #4d463f;\"><strong>de soi</strong></span></h2>\n<p style=\"font-size: 16px;\"><span style=\"color: #4d463f;\">On grandit et on s’améliore continuellement.</span></p>",
+    "border" : "1"
+  }, {
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/icon-1.svg",
+      "alt" : "icon-1",
+      "loading" : "lazy",
+      "width" : 95,
+      "height" : 77,
+      "max_width" : 95,
+      "max_height" : 77
+    },
+    "texte_enrichi_description" : "<h2><span style=\"color: #4d463f;\"><strong>Dépassement&nbsp;</strong></span><br><span style=\"color: #4d463f;\"><strong>de soi</strong></span></h2>\n<p style=\"font-size: 16px;\"><span style=\"color: #4d463f;\">On grandit et on s’améliore continuellement.</span></p>",
+    "border" : "1"
+  }, {
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/icon-1.svg",
+      "alt" : "icon-1",
+      "loading" : "lazy",
+      "width" : 95,
+      "height" : 77,
+      "max_width" : 95,
+      "max_height" : 77
+    },
+    "texte_enrichi_description" : "<h2><span style=\"color: #4d463f;\"><strong>Dépassement&nbsp;</strong></span><br><span style=\"color: #4d463f;\"><strong>de soi</strong></span></h2>\n<p style=\"font-size: 16px;\"><span style=\"color: #4d463f;\">On grandit et on s’améliore continuellement.</span></p>",
+    "border" : "1"
+  } ]
+}, {
+  "id" : "956100ca-4879-cb4b-a628-e873e242241f",
+  "name" : "column_layout",
+  "display_width" : null,
+  "label" : "column layout",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "column 4" ], [ "2", "column 3" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "41ad19c9-0a45-ca1d-2b10-bd1ce7d469d1",
+  "name" : "justify_module",
+  "display_width" : null,
+  "label" : "justify-module",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "justify_center", "justify-center" ], [ "justify_start", "justify-start" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "justify_start"
+} ]

@@ -1,0 +1,295 @@
+[ {
+  "id" : "80a8ef2f-59e6-e917-1c45-67bfd1c591a4",
+  "name" : "image_left",
+  "display_width" : null,
+  "label" : "Image-left",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://mktg.dawco.ca/hubfs/adobestock.svg",
+    "alt" : "adobestock",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 356,
+    "max_width" : 532,
+    "max_height" : 356
+  }
+}, {
+  "id" : "dcd5f9f0-75b0-815a-ecf8-d802b9fcf902",
+  "name" : "texte_service",
+  "display_width" : null,
+  "label" : "Texte-service",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Services"
+}, {
+  "id" : "bb6693a9-f06c-118b-3f8e-ab7ac193a0e3",
+  "name" : "texte_nous",
+  "display_width" : null,
+  "label" : "Texte-nous",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nous offrons une grande variété de services"
+}, {
+  "id" : "ccfaea59-0d42-66a4-a3e8-051157466d21",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fd560a",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7f7f0a9c-3762-25c3-f628-5c5552d2f50e",
+  "name" : "texte_enrichi_pos",
+  "display_width" : null,
+  "label" : "Texte enrichi-pos",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Nous possédons une vaste expérience dans plusieurs secteurs industriels, y compris la production d'énergie, la biométhanisation, l'exploitation minière et la métallurgie, la pétrochimie et les produits chimiques, le pétrole et le gaz ainsi que dans les domaines commerciaux et institutionnels."
+}, {
+  "id" : "88c0d3f3-8cd5-187c-5b38-b8bfa12e79ba",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "9d0c485a-acbe-6f06-b2fa-514b7bddd83d",
+  "name" : "learn_more_cta",
+  "display_width" : null,
+  "label" : "Learn more cta",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3cce57b4-5a99-0b29-9c49-34428ada2ebf",
+    "name" : "learn_more_link",
+    "display_width" : null,
+    "label" : "Learn more link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "ade44e9c-8fe2-a623-1519-300b125372cf",
+    "name" : "learn_more_text",
+    "display_width" : null,
+    "label" : "Learn more text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "En savoir davantage"
+  }, {
+    "id" : "219b5e1f-da53-b9fd-6066-7780e6f56461",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "cta style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "style 1" ], [ "2", "style 2" ], [ "3", "style 3" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "learn_more_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "learn_more_text" : "En savoir davantage"
+  }
+}, {
+  "id" : "98d2e206-cc18-6c7f-49b1-f9f5e525ab27",
+  "name" : "post_learn_more_cta",
+  "display_width" : null,
+  "label" : "post-learn more cta",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6335bcc1-5b8a-8667-fc2d-8f092d3f3972",
+    "name" : "learn_more_link",
+    "display_width" : null,
+    "label" : "Learn more link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "bf7a953e-d43e-4f5a-966b-86539a7d9f27",
+    "name" : "learn_more_text",
+    "display_width" : null,
+    "label" : "Learn more text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "En savoir davantage"
+  }, {
+    "id" : "5a627c75-2148-3676-70be-db58da4d1b75",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "cta style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "style 1" ], [ "2", "style 2" ], [ "3", "style 3" ], [ "4", "none" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "4"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "learn_more_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "learn_more_text" : "En savoir davantage",
+    "cta_style" : "4"
+  }
+}, {
+  "id" : "b335a8c8-f831-f97d-8e04-c0c481bcba69",
+  "name" : "button_hide_and_show",
+  "display_width" : null,
+  "label" : "Button Hide And Show?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "37e1abf8-aa63-e0c9-9cb0-d843fdad0a02",
+  "name" : "text_align",
+  "display_width" : null,
+  "label" : "Text Align",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "cam_ine_align-1", "cam_ine_align-1" ], [ "cam_ine_align-2", "cam_ine_align-2" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "cam_ine_align-1"
+}, {
+  "id" : "2e0a8111-faeb-70a6-a5f8-7b5278419532",
+  "name" : "column_layout",
+  "display_width" : null,
+  "label" : "column-layout",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "right" ], [ "2", "left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "c4acdd66-fc66-6d18-1c11-aadf8b71c8c9",
+  "name" : "left_arrow",
+  "display_width" : null,
+  "label" : "left_arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/Vector%20(1).svg",
+    "alt" : "Vector (1)",
+    "loading" : "lazy",
+    "width" : 11,
+    "height" : 10,
+    "max_width" : 11,
+    "max_height" : 10
+  }
+}, {
+  "id" : "ebde740d-a6c6-37cd-5122-235add3bcc5c",
+  "name" : "right_arrow",
+  "display_width" : null,
+  "label" : "right_arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/Vector%20(2).svg",
+    "alt" : "Vector (2)",
+    "loading" : "lazy",
+    "width" : 11,
+    "height" : 10,
+    "max_width" : 11,
+    "max_height" : 10
+  }
+} ]

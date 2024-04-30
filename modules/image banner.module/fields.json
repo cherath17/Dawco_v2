@@ -1,0 +1,22 @@
+[ {
+  "id" : "2f0fef33-ad61-5afb-061f-e198a793ed45",
+  "name" : "image_banner",
+  "display_width" : null,
+  "label" : "image banner",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/img_banner.svg",
+    "alt" : "img_banner",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 604,
+    "max_width" : 1440,
+    "max_height" : 604
+  }
+} ]

@@ -1,0 +1,51 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Home
+  screenshotPath: ../images/template-previews/theme-screenshot.png
+-->
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+
+{% dnd_area "dnd_area"
+  label="Main section",
+  class="body-container body-container--home px-0"
+%}
+
+  {# HOME BANNER #}
+  {% dnd_section 
+    full_width=true,
+    margin={ 'top': 0, 'right': 0, 'bottom': 0, 'left': 0 },
+    padding={ 'top': 0, 'right': 0, 'bottom': 0, 'left': 0 },
+    vertical_alignment="TOP"
+  %}
+    {% dnd_module path="/theme-hs-parkour3/modules/home-hero", label="Home Hero Banner" %}
+    {% end_dnd_module %}
+  {% end_dnd_section %}
+
+
+  {# TEXT & IMAGE #}
+  {% dnd_section 
+    full_width=true,
+    background_color="#00b0f0",
+    margin={ 'top': 0, 'right': 0, 'bottom': 0, 'left': 0 },
+    padding={ 'top': 0, 'right': 0, 'bottom': 0, 'left': 0 },
+    vertical_alignment="TOP"
+  %}
+    {% dnd_column %}
+      {% dnd_row %}
+        {% dnd_module path="/theme-hs-parkour3/modules/card", label="Cards" %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+
+      {% dnd_row %}
+        {% dnd_module path="/theme-hs-parkour3/modules/text-image", label="Text & Image" %}
+        {% end_dnd_module %}
+      {% end_dnd_row %}
+    {% end_dnd_column %}
+  {% end_dnd_section %}
+
+{% end_dnd_area %}
+
+{% endblock body %}

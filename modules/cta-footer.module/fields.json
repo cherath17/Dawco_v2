@@ -1,0 +1,103 @@
+[ {
+  "id" : "35590e56-1245-66aa-9e53-252ec716165d",
+  "name" : "texte_hed",
+  "display_width" : null,
+  "label" : "Texte-hed",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nous joindre"
+}, {
+  "id" : "008a2c10-7c74-88f8-b7eb-cba554b59a65",
+  "name" : "texte_dao",
+  "display_width" : null,
+  "label" : "Texte-dao",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Contactez DAWCO  pour en savoir plus"
+}, {
+  "id" : "a7925d27-05f4-162d-2731-ad34d03fd93e",
+  "name" : "texte_enrichi_vour",
+  "display_width" : null,
+  "label" : "Texte enrichi-vour",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Vous êtes à un clic de services de construction intégrés. Envoyez-nous un message, et l'un de nos représentants communiquera avec vous."
+}, {
+  "id" : "6fbff065-7619-d646-d47a-f7208274a479",
+  "name" : "cta",
+  "display_width" : null,
+  "label" : "CTA",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d3051377-41eb-28c0-f9aa-96e44f3edfa5",
+    "name" : "cta_link",
+    "display_width" : null,
+    "label" : "cta link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "8db582a9-fb73-5d8f-6b3c-905a8cd4dd09",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "cta text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nous joindre"
+  }, {
+    "id" : "9f57c78c-0c4a-99ef-e029-2dfe95690d18",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "cta style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "style 1" ], [ "2", "style 2" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cta_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "cta_text" : "Nous joindre",
+    "cta_style" : "1"
+  }
+} ]

@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_POST" ],
+  "master_language" : "fr",
+  "icon" : "fontawesome-5.14.0:Alternate%20Arrows%20Horizontal:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_POST" ],
+  "module_id" : 156628538699,
+  "label" : "Mega Slider",
+  "is_available_for_new_content" : true
+}

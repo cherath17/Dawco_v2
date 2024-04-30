@@ -1,0 +1,83 @@
+<div class="p3_featured">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12">
+        <div class="p3_featured_block">
+          {% if module.p3_featured_img.src %}
+            <div class="p3_featured__image">
+              {% set sizeAttrs = 'width="{{ module.p3_featured_img.width }}" height="{{ module.p3_featured_img.height }}"' %}
+              {% if module.p3_featured_img.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.p3_featured_img.width }}" height="{{ module.p3_featured_img.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.p3_featured_img.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.p3_featured_img.max_width }}" height="{{ module.p3_featured_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.p3_featured_img.loading != 'disabled' ? 'loading="{{ module.p3_featured_img.loading }}"' : '' %}
+              <img src="{{ module.p3_featured_img.src }}" alt="{{ module.p3_featured_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+          {% endif %}
+          
+          <div class="p3_featured__content {% if module.p3_featured_img.src %}with_image{% endif %}">
+            {{ module.p3_featured_text }}
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+
+{% require_css %}
+  <style>
+    {% scope_css %}
+      .p3_featured {
+        background-color: rgba({{ module.style.module.p3_featured_bg.color|convert_rgb }}, {{ module.style.module.p3_featured_bg.opacity * 0.01 }});
+        {{ module.style.module.p3_featured_spacing_desktop.css }}  
+      }
+      
+      {% if module.p3_featured_img.src %}
+      .p3_featured__content::before {
+        content: ' ';
+        width: 360px;
+        height: 60px;
+        float: right;
+      }
+      {% endif %}
+    
+      .p3_featured .p3_featured__content {
+        background-color: rgba({{ module.style.block.p3_featured_block_bg.color|convert_rgb }}, {{ module.style.block.p3_featured_block_bg.opacity * 0.01 }});
+        border-radius: {{ module.style.block.p3_featured_radius }}px;
+        margin: 0;
+      }
+    
+      @media (max-width: 1199px) {
+        {% if module.p3_featured_img.src %}
+          .p3_featured__content::before {
+            width: 260px;
+            height: 55px;
+          }
+        {% endif %}
+      }
+    
+      @media (max-width: 991px) {
+        .p3_featured {
+          {{ module.style.module.p3_featured_spacing_tablet.css }}
+        }
+
+        {% if module.p3_featured_img.src %}
+          .p3_featured__content::before {
+            width: 160px;
+            height: 15px;
+          }
+        {% endif %}
+      }
+    
+      @media (max-width: 575px) {
+        .p3_featured {
+          {{ module.style.module.p3_featured_spacing_mobile.css }}
+        }
+      }
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}

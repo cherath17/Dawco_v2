@@ -1,0 +1,148 @@
+<div class="footer-bac">
+  <div class="footer-con">
+    <span>{{ module.texte_hed }}</span>
+    <h3>
+      {{ module.texte_dao }}
+    </h3>
+    <p>
+      {{ module.texte_enrichi_vour }}
+    </p>
+  </div>
+  <div class="cta-guid">
+    {% set href = module.cta.cta_link.url.href %}
+    {% if module.cta.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <a href="{{ href }}" class="p3-cta__btn-{{ module.cta.cta_style }}"
+       {% if module.cta.cta_link.open_in_new_tab %}target="_blank"{% endif %}
+       {% if module.cta.cta_link.rel %}rel="{{ module.cta.cta_link.rel }}"{% endif %}
+       >
+      {{ module.cta.cta_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+      <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="#4d463f"/>
+      </svg>
+    </a>
+
+  </div>
+</div>
+{%require_css%}
+<style>
+  .footer-con span {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+  .footer-con h3 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    margin: 9px 0;
+  }
+  .footer-con p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .footer-bac {
+    background-image: url("https://mktg.dawco.ca/hubfs/back-footer.svg")!important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 70px;
+    margin: auto;
+    text-align: center;
+  }
+  .footer-con{
+    width: 716px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cta-guid {
+    margin-top: 27px;
+  }
+  .p3-cta__btn-1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+    background-color: #fdb700;
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 1;
+    color: #4d463f;
+    font-family: 'work sans' !important;
+  }
+  .p3-cta__btn-2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 14px;
+    font-weight: 600 !important;
+    line-height: 1;
+    color: #4d463f;
+    font-family: 'work sans' !important;
+  }
+  .p3-cta__btn-1 svg{
+    transition: all .4s ease-in-out;
+    right: -9px;
+    position: relative;
+  }
+  .p3-cta__btn-1:hover svg{
+    position: relative;
+    right:-22px;
+  }
+  .p3-cta__btn-2 svg{
+    transition: all .4s ease-in-out;
+    right: -9px;
+    position: relative;
+  }
+  .p3-cta__btn-2:hover svg{
+    position: relative;
+    right:-22px;
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    .cta-guid {
+      margin-top: 40px;
+    }
+    .footer-con h3 {
+      font-size: 28px;
+      line-height: normal;
+      margin: 16px 0;
+    }
+    .footer-con p {
+      line-height: normal;
+    }
+    .footer-con{ 
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .cta-guid {
+      margin-top: 40px;
+    }
+    .footer-con h3 {
+      font-size: 28px;
+      line-height: normal;
+      margin: 16px 0;
+    }
+    .footer-con p {
+      line-height: normal;
+      padding:0px 20px;
+    }
+    .footer-con{
+      width: 100%;
+    }
+    .footer-bac {
+      background-image: url("https://mktg.dawco.ca/hubfs/back-footer.svg")!important;
+      background-position: 50% !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      padding: 40px;
+      margin: auto;
+      text-align: center;
+    }
+  }
+</style>
+{%end_require_css%}

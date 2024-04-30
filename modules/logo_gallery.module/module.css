@@ -1,0 +1,318 @@
+/** Base splide styles found here. https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css **/
+.p3-logo__container{
+  max-width:1090px;
+  margin:auto;
+}
+.p3-logo__caption{
+  padding:79px 12px;
+}
+.splide__slide {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.splide__slide--nav {
+  height: auto;
+}
+
+.splide__slide--nav-image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.splide__track--nav > .splide__list > .splide__slide {
+  border: none !important; /* stylelint-disable-line declaration-no-important */
+  opacity: 0.6;
+}
+
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none !important; /* stylelint-disable-line declaration-no-important */
+  opacity: 1 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.splide__slide__contents {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.splide__slide--image_caption__wrapper {
+  position: relative;
+  height: auto;
+  width: 100%;
+}
+.splide__slide--image__wrapper {
+  height: 100%;
+}
+
+.splide__slide--image {
+  display: block;
+  height: auto;
+  /*   max-height: 100%;
+  max-width: 100%; */
+/*   margin: 0 auto; */
+  width: 100%;
+}
+
+.splide__pagination__page {
+  background: #ccc !important; /* stylelint-disable-line declaration-no-important */
+  opacity: 0.5 !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.p3-logo__navigation .splide__pagination__page .is-active {
+  opacity: 1 !important; /* stylelint-disable-line declaration-no-important */
+  background:#63da7b !important;
+}
+
+.splide__slide--caption {
+  box-sizing: border-box;
+  height: auto;
+  padding: 0.5rem 1rem 0;
+  align-self: flex-end;
+}
+
+.splide__toggle {
+  display: inline-flex;
+  height: 1.8rem;
+  width: 1.8rem;
+  padding: 1px 6px;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  opacity: 0.7;
+  transition: background-color 0.2s ease;
+}
+
+.splide_toggle svg {
+  fill: initial;
+}
+
+.splide__toggle:hover {
+  opacity: 1;
+}
+
+.splide__controls {
+  display: flex;
+  margin-top: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.splide__controls .splide__pagination {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  padding: 0 0.5rem;
+  transform: none;
+}
+
+.splide__toggle__play {
+  margin-left: 2px;
+}
+.splide__nav {
+  margin-top: 0.75rem;
+}
+/** Below styles are to counter overly specific button styling in themes. These styles are modified from https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.2/dist/css/splide.min.css  **/
+button.splide__arrow {
+  position: absolute;
+  z-index: 1;
+/*   top: 50%; */
+  display: flex;
+  height:62px;
+  width: 62px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  cursor: pointer;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  opacity: 0.7;
+  transform: translateY(-50%);
+}
+
+/** These styles are unminified from the minified css mentioned above for ordering purposes. **/
+/* stylelint-disable */
+button.splide__arrow svg {
+/*   height: 1.2em;
+  width: 1.2em; */
+  fill: #000;
+}
+
+button.splide__arrow:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+button.splide__arrow:disabled {
+  opacity: 0.3;
+}
+
+button.splide__arrow:focus-visible {
+  outline: 3px solid #0bf;
+  outline-offset: 3px;
+}
+
+button.P3-logo__leftarrow {
+  left: -3em;
+  top:95px;
+  padding:15px;
+}
+
+button.splide__arrow--prev svg {
+  transform: scaleX(-1);
+}
+
+button.P3-logo__rightarrow {
+  right: -3em;
+  top:95px;
+  padding:15px;
+}
+
+.splide__arrows--rtl button.splide__arrow--prev {
+  right: 1em;
+  left: auto;
+}
+
+.splide__arrows--rtl button.splide__arrow--prev svg {
+  transform: scaleX(1);
+}
+
+.splide__arrows--rtl button.splide__arrow--next {
+  right: auto;
+  left: 1em;
+}
+
+.splide__arrows--rtl button.splide__arrow--next svg {
+  transform: scaleX(-1);
+}
+.splide__arrows--ttb button.splide__arrow {
+  left: 50%;
+  transform: translate(-50%);
+}
+.splide__arrows--ttb button.splide__arrow--prev {
+  top: 1em;
+}
+.splide__arrows--ttb button.splide__arrow--prev svg {
+  transform: rotate(-90deg);
+}
+.splide__arrows--ttb button.splide__arrow--next {
+  top: auto;
+  bottom: 1em;
+}
+
+.splide__arrows--ttb button.splide__arrow--next svg {
+  transform: rotate(90deg);
+}
+/* stylelint-enable */
+.splide__toggle {
+  display:none !important;
+}
+.p3-logo__title{
+  max-width: 521px;
+  margin: auto;
+  font-size: 26px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4D463F;
+}
+.p3-logo__img{
+  width:147px !important;
+  height:31px !important;
+}
+
+.p3-logo__navigation .splide__pagination__page{
+  background: #EFEFEF !important;
+  border: 2px solid #EFEFEF !important;
+  border-radius:100% !important;
+  height: 14px !important;
+  margin: 6px !important;
+  opacity: 1!important;
+  padding: 0!important;
+  width: 14px !important;
+}
+.p3-logo__navigation .splide__pagination__page.is-active{
+  background: #FD560A !important;
+  width: 10px !important;
+  height: 10px !important;
+  min-width: 10px;
+  min-height: 10px !important;
+}
+.splide__pagination li {
+  background: #efefef;
+  height: 14px;
+  margin-right: 6px !important;
+  width: 14px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 640px)  {
+  button.P3-logo__rightarrow {
+    right: 0;
+    top:95px;
+    padding:15px;
+  }
+  button.P3-logo__leftarrow {
+    left:0;
+    top:95px;
+    padding:15px;
+  }
+  .splide__slide{
+    width: calc(100%) !important;
+  }
+   .splide__slide--image { 
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 768px)  {
+  button.P3-logo__rightarrow {
+    right: 0;
+    top:95px;
+    padding:15px;
+  }
+  button.P3-logo__leftarrow {
+    left:0;
+    top:95px;
+    padding:15px;
+  }
+  .splide__slide{
+    width: calc(100%) !important;
+  }
+  .splide__slide--image { 
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px){ 
+  .splide__controls {
+    margin: 0.75rem 0;
+  }
+   .splide__slide--image { 
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) { 
+  .splide__controls {
+    margin: 0.75rem 0;
+  }
+  .p3-logo__title {
+    font-size: 28px;
+    padding-top: 20px;
+  }
+   .splide__slide--image { 
+    margin: auto;
+  }
+}

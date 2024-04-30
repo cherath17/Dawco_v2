@@ -1,0 +1,538 @@
+[ {
+  "id" : "9ac7af69-441f-c96e-61b1-4137548b54cb",
+  "name" : "p3_contact_supertitle",
+  "display_width" : null,
+  "label" : "Surtitre de section",
+  "help_text" : "Titre de section se trouvant au dessus du titre principal",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "CONTACT MODULE + MAP MODULE"
+}, {
+  "id" : "3e64d67f-fbf8-3e7d-6909-7d86b860d94c",
+  "name" : "p3_contact_title",
+  "display_width" : null,
+  "label" : "Titre de section",
+  "help_text" : "Titre principal au dessus des informations contact et de la map",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+}, {
+  "id" : "154dafb6-0572-43f2-1021-f4b12092c1b3",
+  "name" : "p3_contact_map",
+  "display_width" : null,
+  "label" : "Carte",
+  "required" : true,
+  "locked" : false,
+  "supported_source_types" : [ "oembed", "html" ],
+  "supported_oembed_types" : [ "photo", "video", "link", "rich" ],
+  "resizable" : true,
+  "show_preview" : true,
+  "supported_media_bridge_providers" : [ ],
+  "type" : "embed",
+  "default" : {
+    "source_type" : "html",
+    "embed_html" : "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4882051519785!2d-73.56302482330096!3d45.50025003103201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5bfdea9ad9%3A0x11fae5c4f5b2889d!2s651%20Notre-Dame%20St%20W%20%23200%2C%20Montreal%2C%20QC%20H3C%201H9!5e0!3m2!1sfr!2sca!4v1691676712676!5m2!1sfr!2sca\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>"
+  }
+}, {
+  "id" : "a38e23be-7e6f-74cf-8b75-aa3e9fc4f635",
+  "name" : "p3_contact_map_style",
+  "display_width" : null,
+  "label" : "Style de carte",
+  "help_text" : "Visuel de la carte, soit un coté du module en carré ou cercle, ou qui prend la largeur complète du module",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "square", "Carré" ], [ "round", "Rond" ], [ "full", "Pleine largeur" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "square"
+}, {
+  "id" : "4b7c4232-1086-800a-d901-0e27b63ad129",
+  "name" : "p3_contact_map_position",
+  "display_width" : null,
+  "label" : "Position de la carte",
+  "help_text" : "Positionnement de la carte dans le module",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_contact_map_style",
+    "controlling_value_regex" : "full",
+    "property" : null,
+    "operator" : "NOT_EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "left", "Gauche" ], [ "right", "Droit" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "right"
+}, {
+  "id" : "6311bc8a-6919-8638-a1d6-e9dde10d9aca",
+  "name" : "p3_contact_coord_subtitle",
+  "display_width" : null,
+  "label" : "Surtitre coordonnées",
+  "help_text" : "Surtitre au dessus du nom de la compagnie",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nous contacter"
+}, {
+  "id" : "0b8bee37-d314-835a-3732-e9306f783fb4",
+  "name" : "p3_contact_coord_title",
+  "display_width" : null,
+  "label" : "Titre coordonnées",
+  "help_text" : "Titre principal au dessus des informations de contact",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nom d’entreprise"
+}, {
+  "id" : "94e9ea72-ec59-e837-2631-15cd4469212c",
+  "name" : "p3_contact_coord_text_icon_group",
+  "display_width" : null,
+  "label" : "Icone et text coordonnées group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "4edbe76c-21e4-b8cc-9566-5d44a5ed4790",
+    "name" : "image_icon",
+    "display_width" : null,
+    "label" : "Image-icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  }, {
+    "id" : "de356fa3-48b8-e723-f6f4-12cfefb920d2",
+    "name" : "p3_contact_coord_text",
+    "display_width" : null,
+    "label" : "Coordonnées",
+    "help_text" : "Adresse, numéro de téléphone, numéro de fax et adresse courriel",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_contact_coord_text" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>",
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  } ]
+}, {
+  "id" : "0aba1505-f760-edf2-bbc8-10ca6007e62d",
+  "name" : "copie_titre_coordonn_es_right",
+  "display_width" : null,
+  "label" : "Copie Titre coordonnées-right",
+  "help_text" : "Titre principal au dessus des informations de contact",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nouveau-Brunswick"
+}, {
+  "id" : "e2442bda-c944-4669-be50-258f9c3367c4",
+  "name" : "next_icone_et_text_coordonn_es_group",
+  "display_width" : null,
+  "label" : "next-Icone et text coordonnées group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "0c5a9bfd-db19-349d-118d-de0163f16e84",
+    "name" : "image_cin",
+    "display_width" : null,
+    "label" : "Image-cin",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  }, {
+    "id" : "88f0c264-f003-2b30-59ea-7731ff9c37da",
+    "name" : "p3_contact_coord_text",
+    "display_width" : null,
+    "label" : "Coordonnées-right",
+    "help_text" : "Adresse, numéro de téléphone, numéro de fax et adresse courriel",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_contact_coord_text" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>",
+    "image_cin" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  } ]
+}, {
+  "id" : "10c8f4aa-3020-61e7-001a-e70b8fc9be23",
+  "name" : "three_coordonn_es_right",
+  "display_width" : null,
+  "label" : "three-coordonnées-right",
+  "help_text" : "Titre principal au dessus des informations de contact",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nouveau-Brunswick"
+}, {
+  "id" : "62d4e166-1748-06e7-6b36-51078473f211",
+  "name" : "three_next_icone_et_text_coordonn_es_group",
+  "display_width" : null,
+  "label" : "three-next-Icone et text coordonnées group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "eaf86808-6053-4330-1c12-c5c64db6383b",
+    "name" : "image_cin",
+    "display_width" : null,
+    "label" : "Image-last",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  }, {
+    "id" : "8ea78640-4132-acfa-3888-312d9c5ab3ad",
+    "name" : "p3_contact_coord_text",
+    "display_width" : null,
+    "label" : "Coordonnées-thre",
+    "help_text" : "Adresse, numéro de téléphone, numéro de fax et adresse courriel",
+    "required" : true,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_contact_coord_text" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>",
+    "image_cin" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/location.svg",
+      "alt" : "location",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 18,
+      "max_width" : 13,
+      "max_height" : 18
+    }
+  } ]
+}, {
+  "id" : "60501fb7-9eff-0faa-fc7c-9f227a2c77e1",
+  "name" : "p3_contact_coord_position",
+  "display_width" : null,
+  "label" : "Position des coordonnées",
+  "help_text" : "Positionnement des coordonnées dans le module lorsque la carte est pleine taille",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_contact_map_style",
+    "controlling_value_regex" : "full",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "left", "Gauche" ], [ "right", "Droit" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "left"
+}, {
+  "id" : "dd72584a-b343-65f2-c07a-4ea58c9c7c9f",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0ef117cb-85d6-455b-b499-f5c2d059e86f",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "1e2f5d4d-1072-09d3-8fb6-88b1d0c68ced",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background color",
+      "help_text" : "Couleur d’arrière-plan, laisser opacité à 0% pour ne pas en avoir",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }, {
+    "id" : "8d1b352e-8c1c-5d24-0983-0cf3ae472ef6",
+    "name" : "content_colors",
+    "display_width" : null,
+    "label" : "content colors",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "62244356-7a37-4062-6be4-f0db65cdbfd8",
+      "name" : "contact_title_color",
+      "display_width" : null,
+      "label" : "contact title color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "fd834c7c-f456-a896-56cf-df07540ce37b",
+      "name" : "contact_subtitle_color",
+      "display_width" : null,
+      "label" : "contact subtitle color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "82cb8ee1-4349-6efa-9b0b-9465743f8dd3",
+      "name" : "text_transform",
+      "display_width" : null,
+      "label" : "Text Transform",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "uppercase", "Uppercase" ], [ "lowercase", "Lowercase" ], [ "capitalize", "Capitalize" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice"
+    }, {
+      "id" : "0d30ca64-315a-d6b9-6bab-0822c86cb2c0",
+      "name" : "address_color",
+      "display_width" : null,
+      "label" : "address color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "4c62e729-5b49-effb-8da4-25957fb6832a",
+      "name" : "social_title_color",
+      "display_width" : null,
+      "label" : "social title color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "9ba7b171-4cf6-3638-e77e-9119377e8a71",
+      "name" : "social_icon_color",
+      "display_width" : null,
+      "label" : "social icon Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "contact_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "contact_subtitle_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "address_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "social_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "social_icon_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    },
+    "content_colors" : {
+      "contact_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "contact_subtitle_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "address_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "social_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "social_icon_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }
+}, {
+  "id" : "dda71d06-4738-9cd9-3e0c-14fc4dbec6a4",
+  "name" : "map_image",
+  "display_width" : null,
+  "label" : "map image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/contact_map.svg",
+    "alt" : "contact_map",
+    "loading" : "lazy",
+    "width" : 1084,
+    "height" : 353,
+    "max_width" : 1084,
+    "max_height" : 353
+  }
+} ]

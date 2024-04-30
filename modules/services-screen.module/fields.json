@@ -1,0 +1,201 @@
+[ {
+  "id" : "8cac5052-cbe3-718a-028b-31164d325450",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "27da2d2b-c643-26f0-c89e-59363c487bba",
+    "name" : "couleur_head",
+    "display_width" : null,
+    "label" : "Couleur-head",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fd560a",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "couleur_head" : {
+      "color" : "#fd560a",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "a68d934f-7a29-cb25-0912-5ecc7c1a137c",
+  "name" : "groupe_de_champs_servies",
+  "display_width" : null,
+  "label" : "Groupe de champs-servies",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "f7999a00-5c93-284f-efd4-4297a378af84",
+    "name" : "image_work",
+    "display_width" : null,
+    "label" : "Image-work",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/adobestock.svg",
+      "alt" : "adobestock",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 356,
+      "max_width" : 532,
+      "max_height" : 356
+    }
+  }, {
+    "id" : "667288be-cf42-057c-ecb1-d110462c59d4",
+    "name" : "image_icon",
+    "display_width" : null,
+    "label" : "Image-icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/Manufacturier.svg",
+      "alt" : "Manufacturier",
+      "loading" : "lazy",
+      "width" : 80,
+      "height" : 77,
+      "max_width" : 80,
+      "max_height" : 77
+    }
+  }, {
+    "id" : "1af879b6-b4c6-8814-2cf4-f3f862cfa8d5",
+    "name" : "texte_span",
+    "display_width" : null,
+    "label" : "Texte-span",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "ISO"
+  }, {
+    "id" : "dea92972-621d-0e22-d3c4-cd66b0cf544f",
+    "name" : "texte_tile",
+    "display_width" : null,
+    "label" : "Texte-tile",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Électrique"
+  }, {
+    "id" : "2631f333-991f-c036-6a48-41daba7c2ad4",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Texte enrichi",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "DAWCO offre des services spécialisés d’étalonnage et d’installation d’instrumentation. Nous pouvons aider nos clients dans divers secteurs tels que les systèmes de contrôle distribué (DCS), le câblage et la pneumatique des systèmes d’instrumentation et de contrôle, les tests (vérification de la boucle et tests de pression), et plus encore."
+  }, {
+    "id" : "73e2284b-0620-4b08-a7d6-9c4f551aa200",
+    "name" : "texte_btn",
+    "display_width" : null,
+    "label" : "Texte-btn",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "En savoir davantage"
+  }, {
+    "id" : "88283536-a90a-4e07-fc7e-89d2defc4c3d",
+    "name" : "button_enable",
+    "display_width" : null,
+    "label" : "button-enable",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "aa224530-c973-195e-a6b0-5fd144d25c42",
+    "name" : "choice_field",
+    "display_width" : null,
+    "label" : "Choix",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "align_center", "align-center" ], [ "align_start", "align-start" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "align_start"
+  }, {
+    "id" : "ca83cd79-1234-f29f-2a9a-4212e883810d",
+    "name" : "flex_direction",
+    "display_width" : null,
+    "label" : "flex-direction",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "flex_direction", "flex-direction" ], [ "flex_row", "flex-row" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "flex_row"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_work" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/adobestock.svg",
+      "alt" : "adobestock",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 356,
+      "max_width" : 532,
+      "max_height" : 356
+    },
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/Manufacturier.svg",
+      "alt" : "Manufacturier",
+      "loading" : "lazy",
+      "width" : 80,
+      "height" : 77,
+      "max_width" : 80,
+      "max_height" : 77
+    },
+    "texte_tile" : "Électrique",
+    "richtext_field" : "DAWCO offre des services spécialisés d’étalonnage et d’installation d’instrumentation. Nous pouvons aider nos clients dans divers secteurs tels que les systèmes de contrôle distribué (DCS), le câblage et la pneumatique des systèmes d’instrumentation et de contrôle, les tests (vérification de la boucle et tests de pression), et plus encore.",
+    "texte_btn" : "En savoir davantage",
+    "texte_span" : "ISO",
+    "button_enable" : true,
+    "choice_field" : "align_start",
+    "flex_direction" : "flex_row"
+  } ]
+} ]

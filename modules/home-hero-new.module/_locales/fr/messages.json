@@ -1,0 +1,1882 @@
+{
+  "Style.banner_button_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.bottom.color" : {
+    "message" : "#0600FF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.bottom.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.left.color" : {
+    "message" : "#0600FF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.left.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.right.color" : {
+    "message" : "#0600FF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.right.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.top.color" : {
+    "message" : "#0600FF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.default.top.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.banner_button_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.border_field.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.border_field.default.bottom.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.border_field.default.left.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.border_field.default.right.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.border_field.default.top.style" : {
+    "message" : "none",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.border_field.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.border_field.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.border_field.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.border_field.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.bouton_1.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.bouton_1.p3_home_hero_btn_1_text.default.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_font.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_font.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_font.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_font.label" : {
+    "message" : "Font",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_font.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_spacing.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_spacing.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_spacing.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_spacing.label" : {
+    "message" : "Spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.button1_spacing.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.hero_heading_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.hero_heading_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.hero_heading_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.hero_heading_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.hero_heading_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.label" : {
+    "message" : "Style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style.banner_button_1.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.banner_button_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.banner_button_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.banner_button_1.label" : {
+    "message" : "border",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.banner_button_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.border_radius.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.border_radius.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.border_radius.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.border_radius.label" : {
+    "message" : "border radius",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.border_radius.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button1_font.default.size" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button1_font.default.size_unit" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_background_color.label" : {
+    "message" : "button background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_font.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_font.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_font.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_font.label" : {
+    "message" : "button font",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_font.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_spacing.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_spacing.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_spacing.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_spacing.label" : {
+    "message" : "button spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.button_spacing.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.hover_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.hover_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.hover_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.hover_color.label" : {
+    "message" : "hover color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.hover_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.left_button_style.name" : {
+    "message" : "home-hero copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.bottom.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.bottom.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.left.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.left.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.right.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.right.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.top.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.default.top.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.label" : {
+    "message" : "Banner button 1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.banner_button_1.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.bottom.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.bottom.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.left.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.left.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.right.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.right.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.top.color" : {
+    "message" : "#0600FF",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.default.top.style" : {
+    "message" : "none",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.label" : {
+    "message" : "border",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border_radius.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border_radius.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border_radius.label" : {
+    "message" : "border radius",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.border_radius.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_color.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_color.label" : {
+    "message" : "button1 color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_font.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_font.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_font.label" : {
+    "message" : "button1 font",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_font.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_spacing.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_spacing.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_spacing.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_spacing.label" : {
+    "message" : "button1 spacing",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button1_spacing.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_background_color.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_background_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_background_color.label" : {
+    "message" : "button background color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_background_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_color.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_color.label" : {
+    "message" : "button color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_font.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_font.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_font.label" : {
+    "message" : "button font",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_font.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_spacing.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_spacing.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_spacing.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_spacing.label" : {
+    "message" : "button spacing",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.button_spacing.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover.label" : {
+    "message" : "hover",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover_color.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover_color.label" : {
+    "message" : "hover color",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.hover_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.label" : {
+    "message" : "left button style copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.left_button_style_copy.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.name" : {
+    "message" : "home-hero-new",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_btn_1_bg.default.color" : {
+    "message" : "#00B0F0",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.0.color.a" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.0.color.r" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.a" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.b" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.g" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.r" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.horizontalSide" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.verticalSide" : {
+    "message" : "BOTTOM",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.default.size" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.default.size_unit" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.right_button_styles.button_font.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.default.text_align" : {
+    "message" : "LEFT",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.label" : {
+    "message" : "Alignement du Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.label" : {
+    "message" : "Couleur de Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.default.alignement_du_surtitre.text_align" : {
+    "message" : "LEFT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.default.couleur_de_surtitre.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.default.police_du_surtitre.fallback" : {
+    "message" : "sans-serif",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.default.police_du_surtitre.font" : {
+    "message" : "Work Sans",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.default.police_du_surtitre.font_set" : {
+    "message" : "GOOGLE",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.default.police_du_surtitre.variant" : {
+    "message" : "300",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.default.fallback" : {
+    "message" : "sans-serif",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.default.font" : {
+    "message" : "Work Sans",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.default.font_set" : {
+    "message" : "GOOGLE",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.default.size_unit" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.default.variant" : {
+    "message" : "300",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.label" : {
+    "message" : "Bouton 1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.name" : {
+    "message" : "home-hero-new",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.help_text" : {
+    "message" : "Bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.label" : {
+    "message" : "Premier bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.p3-hero-banner__button__couleur_pleine" : {
+    "message" : "Bouton avec arrière plan couleur pleine",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.p3-hero-banner__button__transparent_et_bordure" : {
+    "message" : "Bouton avec arrière plan transparent et bordure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.default" : {
+    "message" : "Par ici",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.help_text" : {
+    "message" : "Texte du bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.label" : {
+    "message" : "Premier bouton texte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.name" : {
+    "message" : "home-hero copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.p3-hero-banner__button__couleur_pleine" : {
+    "message" : "Bouton avec arrière plan couleur pleine",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.p3-hero-banner__button__transparent_et_bordure" : {
+    "message" : "Bouton avec arrière plan transparent et bordure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.default" : {
+    "message" : "2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.label" : {
+    "message" : "Copie Bouton 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3.help_text" : {
+    "message" : "Bouton ce trouvant sous le sous-titre",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3.label" : {
+    "message" : "Deuxième bouton",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.choices.btn_primary" : {
+    "message" : "Primaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.choices.btn_secondary" : {
+    "message" : "Secondaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.choices.btn_tertiary" : {
+    "message" : "Tertiary",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.default" : {
+    "message" : "2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.default" : {
+    "message" : "Par ici",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.help_text" : {
+    "message" : "Texte du bouton ce trouvant sous le sous-titre",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.label" : {
+    "message" : "Deuxième bouton texte",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.p3_home_hero_btn_3_texte.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_3.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_show_hide.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_show_hide.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_show_hide.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_show_hide.label" : {
+    "message" : "Booléen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_show_hide.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_title" : {
+    "message" : "Électronique",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.default.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.degrade.choices.non" : {
+    "message" : "Non",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.label" : {
+    "message" : "Dégradé",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.label" : {
+    "message" : "Image de droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.help_text" : {
+    "message" : "Image dans la colonne de droite de la bannière [656 x 759]",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.label" : {
+    "message" : "Image de droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "home-hero-new",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.label" : {
+    "message" : "Arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.couleur" : {
+    "message" : "Couleur unie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.image" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.video" : {
+    "message" : "Vidéo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.help_text" : {
+    "message" : "Choisir entre une image, une vidéo ou une couleur unie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.label" : {
+    "message" : "Type d’arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.help_text" : {
+    "message" : "Couleur unie qui remplie toute la bannière",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.label" : {
+    "message" : "Couleur d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.default.alt" : {
+    "message" : "Parkour",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.help_text" : {
+    "message" : "Image d’arrière-plan de la bannière 1920 x 1080",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.label" : {
+    "message" : "Image d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.help_text" : {
+    "message" : "Courte vidéo mis en arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.label" : {
+    "message" : "Vidéo d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.label" : {
+    "message" : "Texte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.name" : {
+    "message" : "home-hero-new",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.default" : {
+    "message" : "Sous-titre interessant",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.help_text" : {
+    "message" : "Sous-titre qui ce retrouve sous le titre principale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.label" : {
+    "message" : "Soustitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.default" : {
+    "message" : "Theme Parkour Hubspot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.help_text" : {
+    "message" : "Surtitre qui ce retrouve en haut du titre principale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.label" : {
+    "message" : "Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.default" : {
+    "message" : "<h1><span style=\"color: #ffffff;\">Titre intelligent sur ce thème personnalisé génial</span></h1>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,323 @@
+.dnd-section .dnd-column{
+  padding:0px;
+}
+.p3-hero-banner__wrapper {
+  width: 100%;
+  /*   height: 100vh; */
+  /*   overflow: hidden; */
+  position: relative;
+}
+.p3-hero-banner__title{
+  min-width:616px;
+  max-width: 952px;
+  padding-bottom: 27px;
+}
+.p3-hero-banner__inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  z-index:0;
+  /*   height: 100%;
+  min-height: 600px; */
+}
+.p3-hero-banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.p3-hero-banner__bg__color{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.p3-hero-banner__bg img {
+  width: 100%;
+  /*   height: 100% !important; */
+  /*   object-fit: cover; */
+}
+.p3-hero-banner__gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  pointer-events: none;
+}
+.p3-hero-banner__content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  max-width: 1200px;
+  /*   padding: 159px 20px 39px; */
+  padding: 161px 20px 0;
+}
+.p3-hero-banner__surtitle {
+  margin: 0 0 11px 0;
+  font-size: 18px;
+  line-height: 18px;
+  width:440px;
+}
+.p3-hero-banner__title h1 {
+  font-weight:800;
+  font-size: 48px;
+  line-height:1;
+  /*   margin-bottom:44px; */
+  /*   margin: 0 0 23px 0px  */
+}
+
+.p3-hero-banner__undertitle {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height:135%;
+  width:440px;
+  font-weight:600;
+}
+
+.p3-hero-banner__buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom:23px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  /*   display: none; */
+}
+.p3-bannerbtn_1 a{
+  text-decoration:none;
+  font-weight: 600;
+}
+/* .p3-bannerbtn_1{
+width:163px;
+height:46px;
+} */
+.p3-bannerbtn_1 svg{
+  margin-left:10px;
+}
+.p3-bannerbtn_2 a{
+  text-decoration:none;
+  font-weight:600;
+}
+.p3-bannerbtn_2{
+  background-color: transparent;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+  /*   width:143px;
+  height:46px; */
+}
+@media (max-width: 1024px) {
+  .p3-hero-banner__content {
+    padding-top: 95px;
+    padding-right: var(--spacing);
+    padding-bottom: 20px;
+    padding-left: var(--spacing);
+  }
+  .p3-hero-banner__wrapper {
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p3-hero-banner__title h1 {
+    font-weight:800;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .p3-hero-banner__buttons {
+    gap: 5px;
+  }
+  .p3-hero-banner__wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+}
+/* CARDS */
+.p3-hero-banner__cards {
+  width: 100%;
+}
+.p3-hero-banner__cards_section {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.p3-hero-banner__cards_card {
+  flex: 1;
+  text-decoration: none;
+}
+.p3-hero-banner__cards_card:hover {
+  text-decoration: none;
+}
+.p3-hero-banner__cards_card_image {
+  width: 100%;
+  height: 166px !important;
+  object-fit: cover;
+}
+.p3-hero-banner__cards_card_title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 25px;
+  height: 90px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+.p3-hero-banner__cards_card:hover .p3-hero-banner__cards_card_title {
+  color: #fff;
+}
+.bannerbtn_1{
+  padding: 10px 20px;
+  /*     background-color: blue; */
+  /* color: white; */
+  /* text-decoration: none; */
+  font-size: 18px;
+  color: white !important;
+  border-radius: 5px;
+}
+/* .bannerbtn_1:hover{
+background-color:red;
+} */
+.bannerbtn_1 a{
+  color:white;     
+  text-decoration:none;    
+}
+.bannerbtn_2{
+  border: 1px solid white;
+  padding: 10px 20px;
+  background-color: transparent;
+  /* color: white; */
+  /* text-decoration: none; */
+  font-size: 18px;
+  color: white !important;
+  border-radius: 5px;
+}
+.bannerbtn_2 a{
+  color:white;
+  text-decoration:none;
+}
+.p3-banner__btn-1{
+  padding: 12px 25px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fd560a !important;
+  width:125px !important;
+  border:none !important;
+  color:#ffffff !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: 'work sans' !important;
+}
+.p3-banner__btn-2{
+  padding:12px 25px !important;
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fdb700 !important;
+  width:125px !important;
+  border:none !important;
+  color:#4d463f !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: 'work sans' !important;
+}
+@media (max-width: 1024px) {
+  .p3-hero-banner__cards_section {
+    flex-wrap: wrap;
+  }
+
+  .p3-hero-banner__cards_card {
+    text-decoration: none;
+  }
+}
+@media (max-width: 575px) {
+  .p3-hero-banner__cards_card {
+    flex: 1 0 100% !important;
+  }
+  .p3-hero-banner__title{
+    width:100%;
+  }
+  .p3-hero-banner__wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+  }
+  .search{
+    display:none;
+  }
+  .p3-hero-banner__undertitle{
+    width:100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  .p3-hero-banner__surtitle, 
+  .p3-hero-banner__title h1,
+  .p3-hero-banner__surtitle {
+    width: 100% !important;
+  }
+  .p3-hero-banner__wrapper {
+    height: auto;
+  }  
+  .p3-hero-banner__surtitle, 
+  .p3-hero-banner__title h1 {
+    line-height: normal;
+  }
+  .p3-hero-banner__bg {
+    background-image: url(https://mktg.dawco.ca/hubfs/dawco_bglayer.svg) !important;
+    background-size: cover;
+  }
+  /*   .p3-hero-banner__buttons {
+  display: none;
+} */
+  /*   .p3-hero-banner__title h1 {
+  margin-bottom: 44px;
+} */
+}
+@media only screen and (max-width: 480px) {
+  .p3-hero-banner__title {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+  }
+  .p3-hero-banner__bg {
+    background-image: url(https://mktg.dawco.ca/hubfs/dawco_bglayer.svg) !important;
+    background-size: cover;
+  }
+  .p3-hero-banner__surtitle, 
+  .p3-hero-banner__title h1,
+  .p3-hero-banner__surtitle {
+    width: 100% !important;
+  }
+  .p3-hero-banner__wrapper {
+    height: auto;
+    z-index: 1;
+  }
+  .p3_breadcrumbs {
+    top: 0 !important;
+  }
+  /*   .p3-hero-banner__title h1 {
+  margin-bottom: 60px;
+} */
+  .p3-hero-banner__surtitle, 
+  .p3-hero-banner__title h1 {
+    line-height: normal;
+  }
+  .p3-text-image .container-in .row {
+    margin: 0;
+    padding: 0px;
+  }
+  .p3-text-image_content {
+    padding: 0;
+  }
+  /*   .p3-hero-banner__title h1 {
+  margin-bottom: 44px;
+} */
+}

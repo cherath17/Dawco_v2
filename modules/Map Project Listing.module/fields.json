@@ -1,0 +1,97 @@
+[ {
+  "id" : "384046d4-d868-5b92-d76b-fac478cd8d10",
+  "name" : "show_vector_overlay",
+  "display_width" : null,
+  "label" : "ShowVectorOverlay",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "45dfabda-5a7a-2d59-a024-57e47ed147bc",
+  "name" : "projects",
+  "display_width" : null,
+  "label" : "Projects",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "760a461a-5341-a6a9-4246-fa0b8ba90f3e",
+    "name" : "project_name",
+    "display_width" : null,
+    "label" : "Project name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "0c030b89-056c-50c5-8b2b-d13dcf9a0e84",
+    "name" : "project_city",
+    "display_width" : null,
+    "label" : "Project City (Province, Country)",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "70be37fc-fdd4-e575-108e-191fa4c28641",
+    "name" : "project_url",
+    "display_width" : null,
+    "label" : "Project URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "fe974f30-818d-52cd-b284-935fbcc56fb4",
+    "name" : "project_latitude",
+    "display_width" : null,
+    "label" : "Project Latitude",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "487bc2b2-eccd-2d88-f840-725062604517",
+    "name" : "project_longitude",
+    "display_width" : null,
+    "label" : "Project Longitude",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "fff6da18-4c4f-7eaf-dbb1-719b09a76d1d",
+    "name" : "project_icon",
+    "display_width" : null,
+    "label" : "Project Icon",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "commercial-institutional", "Commercial Institutional" ], [ "infrastructure", "Infrastructure" ], [ "oil-gas", "Oil Gas" ], [ "pulp-paper", "Pulp Paper" ], [ "mining-metallurgy", "Mining Metallurgy" ], [ "petrochemicals-chemicals", "Petrochemicals Chemicals" ], [ "power-generation", "Power Generation" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ ]
+} ]

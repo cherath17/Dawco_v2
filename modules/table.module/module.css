@@ -1,0 +1,53 @@
+.p3_table__section {
+  padding: 90px 0;
+}
+.p3_table__section .p3_table__content {
+  overflow: auto;
+  width: 100%;
+}
+.p3_table__section .p3_table__content table {
+  width: 100%;
+  margin: 0;
+}
+.p3_table__section .p3_table__content table, .p3_table__section .p3_table__content table tr, .p3_table__section .p3_table__content table td, .p3_table__section .p3_table__content table th {
+  border: 0;
+}
+
+.p3_table__section .p3_table__content table tr th {
+  border-right: 10px solid #fff;
+  font-weight: 600;
+  padding: 15px 10px;
+  width: 50%;
+  line-height: 27px;
+  text-align: initial;
+}
+.p3_table__section .p3_table__content table tr td {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 10px;
+  width: 50%;
+}
+.p3_table__section .p3_table__text {
+  margin-top: 50px;
+  text-align: center;
+}
+.p3_table__section .p3_table__text p {
+  color: #000;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .p3_table__section .p3_table__content table tr th, .p3_table__section .p3_table__content table tr td {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .p3_table__section .p3_table__text p {
+    line-height: 24px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+
+}

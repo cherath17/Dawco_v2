@@ -1,0 +1,722 @@
+{
+  "alternate_image.label" : {
+    "message" : "Vaihtoehtoinen kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "blog_description.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Lue lisää",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Painiketeksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.default" : {
+    "message" : "{{ picture_of_text }} {{ content.blog_author.display_name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.label" : {
+    "message" : "Kirjoittajan alt-teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.default" : {
+    "message" : "Blogijulkaisun yhteenveto:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.label" : {
+    "message" : "Blogijulkaisun yhteenvetoteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.default" : {
+    "message" : "Esitelty kuva:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.label" : {
+    "message" : "Esitellyn kuvan teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.default" : {
+    "message" : "{{ blog_post_summary_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.label" : {
+    "message" : "Koko blogijulkaisun yhteenvetoteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.default" : {
+    "message" : "{{ featured_image_text }} {{ content.featured_image_alt_text }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.label" : {
+    "message" : "Täysin esillä oleva kuvan aria-nimike",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.label" : {
+    "message" : "Oletusteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.default" : {
+    "message" : "Kuva kohteesta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.label" : {
+    "message" : "Kuva tekstistä",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.default" : {
+    "message" : "{{ read_full_post_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.label" : {
+    "message" : "Lue koko julkaisun aria-nimike",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.default" : {
+    "message" : "Lue koko julkaisu:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.label" : {
+    "message" : "Lue koko julkaisuteksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_image" : {
+    "message" : "Kirjoittajan kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_name" : {
+    "message" : "Kirjoittajan nimi",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.button" : {
+    "message" : "Painike",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.description" : {
+    "message" : "Kuvaus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.image" : {
+    "message" : "Kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.publish_date" : {
+    "message" : "Julkaisupäivä",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.tags" : {
+    "message" : "Tunnisteet",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.title" : {
+    "message" : "Otsikko",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.help_text" : {
+    "message" : "Julkaisupäivämäärän muotoa voi muuttaa blogin asetuksissa. <a href='https://knowledge.hubspot.com/blog/manage-your-blog-template-and-settings#set-your-blog-s-date-formats' target='_blank' rel='noopener'>Lisätietoja</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.label" : {
+    "message" : "Kunkin luettelon kohteen näyttö",
+    "description" : "",
+    "placeholders" : null
+  },
+  "full_image.label" : {
+    "message" : "Koko kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.basic_grid" : {
+    "message" : "Perusruutu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.side_by_side" : {
+    "message" : "Vierekkäin",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.single_column" : {
+    "message" : "Yksittäinen sarake",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.label" : {
+    "message" : "Asettelu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog_listings",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.author.hover.label" : {
+    "message" : "Osoita",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.label" : {
+    "message" : "Kulma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.radius.label" : {
+    "message" : "Säde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.label" : {
+    "message" : "Kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.label" : {
+    "message" : "Luoja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.blog_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.button.alignment.alignment.label" : {
+    "message" : "Kohdistus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.alignment.label" : {
+    "message" : "Kohdistus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.label" : {
+    "message" : "Tausta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.label" : {
+    "message" : "Kulma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.radius.label" : {
+    "message" : "Säde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.label" : {
+    "message" : "Tausta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.label" : {
+    "message" : "Osoita",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.label" : {
+    "message" : "Painike",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.label" : {
+    "message" : "Kuvaus",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.label" : {
+    "message" : "Kulma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.radius.label" : {
+    "message" : "Säde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.label" : {
+    "message" : "Kuva",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.label" : {
+    "message" : "Päällekkäisyys",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.1/1" : {
+    "message" : "1:1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.16/9" : {
+    "message" : "16:9",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.2/3" : {
+    "message" : "2:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/2" : {
+    "message" : "3:2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/4" : {
+    "message" : "3:4",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.4/3" : {
+    "message" : "4:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.label" : {
+    "message" : "Kuvasuhde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.label" : {
+    "message" : "Koko",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.width.label" : {
+    "message" : "Leveys",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.between_image_and_content.label" : {
+    "message" : "Kuvan ja sisällön välillä",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "Tyylit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.post.background.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.background.label" : {
+    "message" : "Tausta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.label" : {
+    "message" : "Kulma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.radius.label" : {
+    "message" : "Säde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.label" : {
+    "message" : "Julkaisu",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.post_content.label" : {
+    "message" : "Sisällön jälkeen",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.space_between_posts.label" : {
+    "message" : "Julkaisujen välinen tila",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.label" : {
+    "message" : "Julkaisupäivä",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.label" : {
+    "message" : "Tausta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.label" : {
+    "message" : "Kulma",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.radius.label" : {
+    "message" : "Säde",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.color.label" : {
+    "message" : "Väri",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.label" : {
+    "message" : "Tausta",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.label" : {
+    "message" : "Raja",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.label" : {
+    "message" : "Osoita",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.label" : {
+    "message" : "Tunnisteet",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.space_between_tags.label" : {
+    "message" : "Tunnisteiden välinen tila",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.label" : {
+    "message" : "Osoita",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.label" : {
+    "message" : "Otsikko",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.spacing.label" : {
+    "message" : "Välit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.font.label" : {
+    "message" : "Fontti",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.label" : {
+    "message" : "Teksti",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,674 @@
+{####################################################}
+{############### Module variables ###################}
+{####################################################}
+
+{# Layout type #}
+
+{% if module.layout == "basic_grid" %}
+{% set layout = "grid" %}
+{% elif module.layout == "single_column" %}
+{% set layout = "single-column" %}
+{% elif module.layout == "side_by_side" %}
+{% set layout = "side-by-side" %}
+{% endif %}
+
+{# Columns #}
+
+{% if layout == "grid" %}
+{% set has_columns = true %}
+{% set columns = module.columns %}
+{% endif %}
+
+{# Content options #}
+
+{% if module.display_for_each_list_item.index("image") >= 0 %}
+{% set show_image = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("title") >= 0 %}
+{% set show_title = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("author_image") >= 0 %}
+{% set show_author_image = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("author_name") >= 0 %}
+{% set show_author_name = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("tags") >= 0 %}
+{% set show_tags = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("publish_date") >= 0 %}
+{% set show_publish_date = true %}
+{% endif %}
+
+{% if module.display_for_each_list_item.index("description") >= 0 %}
+{% set show_description = true %}
+{% endif %}
+<div>
+  {% if module.display_for_each_list_item.index("button") >= 0 %}
+  {% set show_button = true %}
+  {% endif %}
+</div>
+
+
+{# Alternate image #}
+
+{% if show_image and layout == "side-by-side" and module.alternate_image %}
+{% set has_alternate_image = true %}
+{% set alternate_image = "alternate-image" %}
+{% endif %}
+
+{# Full image #}
+
+{% if show_image and layout != "side-by-side" and module.full_image %}
+{% set has_full_image = true %}
+{% endif %}
+
+{####################################################}
+{################# Module styles ####################}
+{####################################################}
+
+{% require_css %}
+<style>
+  {% scope_css %}
+
+  {# Grid layout #}
+
+  {% if has_columns %}
+  {% if columns == 2 %}
+  .hs-blog-post-listing--grid {
+    justify-content: space-between;
+  }
+
+  @media (min-width: 767px) {
+    .hs-blog-post-listing__post--2 {
+      {% if module.styles.post.spacing.space_between_posts %}
+      width: calc(50% - {{ module.styles.post.spacing.space_between_posts / 2 ~ "px" }});
+      {% else %}
+      width: calc(50% - 0.5rem);
+      {% endif %}
+    }
+  }
+  {% elif columns == 3 %}
+  @media (min-width: 767px) and (max-width: 1000px) {
+    .hs-blog-post-listing--grid {
+      justify-content: space-between;
+    }
+
+    .hs-blog-post-listing__post--3 {
+      {% if module.styles.post.spacing.space_between_posts %}
+      width: calc(50% - {{ module.styles.post.spacing.space_between_posts / 2 ~ "px" }});
+      {% else %}
+      width: calc(50% - 0.5rem);
+      {% endif %}
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .hs-blog-post-listing__post--3 {
+      {% if module.styles.post.spacing.space_between_posts %}
+      width: calc(33.3% - {{ module.styles.post.spacing.space_between_posts * 2 / 3 ~ "px" }});
+      {% else %}
+      width: calc(33.3% - 0.66rem);
+      {% endif %}
+    }
+    .hs-blog-post-listing__post--3:nth-child(3n + 1),
+    .hs-blog-post-listing__post--3:nth-child(3n + 2) {
+      {% if module.styles.post.spacing.space_between_posts %}
+      margin-right: {{ module.styles.post.spacing.space_between_posts ~ "px" }};
+      {% else %}
+      margin-right: 1rem;
+      {% endif %}
+    }
+  }
+  {% elif columns == 4 %}
+  @media (min-width: 767px) and (max-width: 1000px) {
+    .hs-blog-post-listing--grid {
+      justify-content: space-between;
+    }
+
+    .hs-blog-post-listing__post--4 {
+      {% if module.styles.post.spacing.space_between_posts %}
+      width: calc(50% - {{ module.styles.post.spacing.space_between_posts / 2 ~ "px" }});
+      {% else %}
+      width: calc(50% - 0.5rem);
+      {% endif %}
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .hs-blog-post-listing__post--4 {
+      {% if module.styles.post.spacing.space_between_posts %}
+      width: calc(25% - {{ module.styles.post.spacing.space_between_posts * 3 / 4 ~ "px" }});
+      {% else %}
+      width: calc(25% - 0.75rem);
+      {% endif %}
+    }
+    .hs-blog-post-listing__post--4:nth-child(4n + 1),
+    .hs-blog-post-listing__post--4:nth-child(4n + 2),
+    .hs-blog-post-listing__post--4:nth-child(4n + 3) {
+      {% if module.styles.post.spacing.space_between_posts %}
+      margin-right: {{ module.styles.post.spacing.space_between_posts ~ "px" }};
+      {% else %}
+      margin-right: 1rem;
+      {% endif %}
+    }
+  }
+  {% endif %}
+  {% endif %}
+
+  {# Side by side layout #}
+
+  {% if layout == "side-by-side" %}
+  @media (min-width: 768px) {
+    .hs-blog-post-listing__post--side-by-side {
+      flex-direction: row;
+    }
+
+    .hs-blog-post-listing__post-image-wrapper--side-by-side {
+      {% if module.styles.image.size.width and module.styles.image.spacing.between_image_and_content %}
+      width: calc({{ module.styles.image.size.width ~ "%" }} - {{ module.styles.image.spacing.between_image_and_content / 2 ~ "px" }});
+        {% elif module.styles.image.size.width %}
+        width: calc({{ module.styles.image.size.width ~ "%" }} - 0.5rem);
+          {% elif module.styles.image.spacing.between_image_and_content %}
+          width: calc(40% - {{ module.styles.image.spacing.between_image_and_content / 2 ~ "px" }});
+          {% else %}
+          width: calc(40% - 0.5rem);
+          {% endif %}
+          }
+
+    .hs-blog-post-listing__post-content--side-by-side {
+      {% if module.styles.image.size.width and module.styles.image.spacing.between_image_and_content %}
+      width: calc({{ 100 - module.styles.image.size.width ~ "%" }} - {{ module.styles.image.spacing.between_image_and_content / 2 ~ "px" }});
+        {% elif module.styles.image.size.width %}
+        width: calc({{ 100 - module.styles.image.size.width ~ "%" }} - 0.5rem);
+          {% elif module.styles.image.spacing.between_image_and_content %}
+          width: calc(60% - {{ module.styles.image.spacing.between_image_and_content / 2 ~ "px" }});
+          {% else %}
+          width: calc(60% - 0.5rem);
+          {% endif %}
+          }
+
+    .hs-blog-post-listing__post-image-wrapper--left {
+      {% if module.styles.image.spacing.between_image_and_content %}
+      margin-right: {{ module.styles.image.spacing.between_image_and_content ~ "px" }};
+      {% else %}
+      margin-right: 1rem;
+      {% endif %}
+    }
+
+    {% if has_alternate_image %}
+    .hs-blog-post-listing__post-image-wrapper--right {
+      {% if module.styles.image.spacing.between_image_and_content %}
+      margin-left: {{ module.styles.image.spacing.between_image_and_content ~ "px" }};
+      {% else %}
+      margin-left: 1rem;
+      {% endif %}
+    }
+
+    .hs-blog-post-listing__post-image-wrapper--right {
+      order: 2;
+    }
+
+    .hs-blog-post-listing__post-content--side-by-side {
+      order: 1;
+    }
+    {% endif %}
+  }
+
+  @media (max-width: 767px) {
+    .hs-blog-post-listing__post-image-wrapper {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  {% endif %}
+
+  {# Post #}
+
+  .hs-blog-post-listing__post {
+    {% if module.styles.post.background.color.color and not has_full_image %}
+    background-color: rgba({{ module.styles.post.background.color.color|convert_rgb }}, {{ module.styles.post.background.color.opacity / 100 }});
+    {% endif %}
+    {% if has_full_image %}
+    background-repeat: no-repeat;
+    background-size: cover;
+    {% endif %}
+    {{ module.styles.post.border.border.css }}
+    {% if module.styles.post.corner.radius >= 0 %}
+    border-radius: {{ module.styles.post.corner.radius ~ "px" }};
+    {% endif %}
+    {{ module.styles.post.spacing.spacing.css }}
+  }
+
+  {% if has_full_image %}
+  .hs-blog-post-listing__post-inner-wrapper {
+    {% if module.styles.image.overlay.color.color %}
+    background-color: rgba({{ module.styles.image.overlay.color.color|convert_rgb }}, {{ module.styles.image.overlay.color.opacity / 100 }});
+    {% else %}
+    background-color: rgba(255, 255, 255, 0.4);
+    {% endif %}
+    display: flex;
+    height: 100%;
+  }
+  {% endif %}
+
+  .hs-blog-post-listing__post-content {
+    {{ module.styles.post.spacing.post_content.css }}
+  }
+
+  {# Post image #}
+
+  {% if show_image and not has_full_image %}
+  .hs-blog-post-listing__post-image-wrapper {
+    {{ module.styles.image.spacing.spacing.css }}
+  }
+
+  .hs-blog-post-listing__post-image {
+    {% if module.styles.image.size.aspect_ratio %}
+    aspect-ratio: {{ module.styles.image.size.aspect_ratio }};
+    {% endif %}
+    {% if module.styles.image.corner.radius >= 0 %}
+    border-radius: {{ module.styles.image.corner.radius ~ "px" }};
+    {% endif %}
+  }
+  {% endif %}
+
+  {# Title #}
+
+  {% if show_title %}
+  .hs-blog-post-listing__post-title,
+  .hs-blog-post-listing__post-title-link {
+    {% if module.styles.title.text.font.color %}
+    color: {{ module.styles.title.text.font.color }};
+    {% endif %}
+    {% if module.styles.title.text.font.size %}
+    font-size: {{ module.styles.title.text.font.size ~ module.styles.title.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.title.text.font.style %}
+    {{ module.styles.title.text.font.style }};
+    {% endif %}
+    {{ module.styles.title.spacing.spacing.css }}
+  }
+
+  .hs-blog-post-listing__post-title-link:hover,
+  .hs-blog-post-listing__post-title-link:focus {
+    {% if module.styles.title.hover.text.font.color %}
+    color: {{ module.styles.title.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.title.hover.text.font.style %}
+    {{ module.styles.title.hover.text.font.style }};
+    {% endif %}
+  }
+  {% endif %}
+
+  {# Author #}
+
+  {% if show_author_image or show_author_name %}
+  .hs-blog-post-listing__post-author {
+    {{ module.styles.author.spacing.spacing.css }}
+  }
+
+  {% if show_author_image and module.styles.author.image.corner.radius >= 0 %}
+  .hs-blog-post-listing__post-author-image {
+    border-radius: {{ module.styles.author.image.corner.radius ~ "px" }};
+  }
+  {% endif %}
+
+  {% if show_author_name %}
+  .hs-blog-post-listing__post-author-name {
+    {% if module.styles.author.text.font.color %}
+    color: {{ module.styles.author.text.font.color }};
+    {% endif %}
+    {% if module.styles.author.text.font.size %}
+    font-size: {{ module.styles.author.text.font.size ~ module.styles.author.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.author.text.font.style %}
+    {{ module.styles.author.text.font.style }};
+    {% endif %}
+  }
+
+  .hs-blog-post-listing__post-author-name:hover,
+  .hs-blog-post-listing__post-author-name:focus {
+    {% if module.styles.author.hover.text.font.color %}
+    color: {{ module.styles.author.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.author.hover.text.font.style %}
+    {{ module.styles.author.hover.text.font.style }};
+    {% endif %}
+  }
+  {% endif %}
+  {% endif %}
+
+  {# Tags #}
+
+  {% if show_tags %}
+  .hs-blog-post-listing__post-tag {
+    {% if module.styles.tags.background.color.color %}
+    background-color: rgba({{ module.styles.tags.background.color.color|convert_rgb }}, {{ module.styles.tags.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.tags.border.border.css }}
+    {% if module.styles.tags.corner.radius >= 0 %}
+    border-radius: {{ module.styles.tags.corner.radius ~ "px" }};
+    {% endif %}
+    {% if module.styles.tags.text.font.color %}
+    color: {{ module.styles.tags.text.font.color }};
+    {% endif %}
+    {% if module.styles.tags.text.font.size %}
+    font-size: {{ module.styles.tags.text.font.size ~ module.styles.tags.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.tags.text.font.style %}
+    {{ module.styles.tags.text.font.style }};
+    {% endif %}
+    {{ module.styles.tags.spacing.spacing.css }}
+  }
+
+  .hs-blog-post-listing__post-tag:hover,
+  .hs-blog-post-listing__post-tag:focus {
+    {% if module.styles.tags.hover.background.color.color %}
+    background-color: rgba({{ module.styles.tags.hover.background.color.color|convert_rgb }}, {{ module.styles.tags.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.tags.hover.border.border.css }}
+    {% if module.styles.tags.hover.text.font.color %}
+    color: {{ module.styles.tags.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.tags.hover.text.font.style %}
+    {{ module.styles.tags.hover.text.font.style }};
+    {% endif %}
+  }
+
+  {% if module.styles.tags.spacing.space_between_tags >= 0 %}
+  .hs-blog-post-listing__post-tag:not(:last-child) {
+    margin-right: {{ module.styles.tags.spacing.space_between_tags ~ "px" }};
+  }
+  {% endif %}
+  {% endif %}
+
+  {# Publish date #}
+
+  {% if show_publish_date %}
+  .hs-blog-post-listing__post-timestamp {
+    {% if module.styles.publish_date.text.font.color %}
+    color: {{ module.styles.publish_date.text.font.color }};
+    {% endif %}
+    {% if module.styles.publish_date.text.font.size %}
+    font-size: {{ module.styles.publish_date.text.font.size ~ module.styles.publish_date.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.publish_date.text.font.style %}
+    {{ module.styles.publish_date.text.font.style }};
+    {% endif %}
+    {{ module.styles.publish_date.spacing.spacing.css }}
+  }
+  {% endif %}
+
+  {# Description #}
+
+  {% if show_description %}
+  .hs-blog-post-listing__post-description {
+    {% if module.styles.description.text.font.color %}
+    color: {{ module.styles.description.text.font.color }};
+    {% endif %}
+    {% if module.styles.description.text.font.size %}
+    font-size: {{ module.styles.description.text.font.size ~ module.styles.description.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.description.text.font.style %}
+    {{ module.styles.description.text.font.style }};
+    {% endif %}
+    {{ module.styles.description.spacing.spacing.css }}
+  }
+  {% endif %}
+
+  {# Button #}
+
+  {% if show_button %}
+
+  {# Button wrapper #}
+
+  {% if module.styles.button.alignment.alignment %}
+  .hs-blog-post-listing__post-button-wrapper {
+    text-align: {{ module.styles.button.alignment.alignment.horizontal_align }};
+  }
+  {% endif %}
+
+  {# Button #}
+
+  .hs-blog-post-listing__post-button {
+    {% if module.styles.button.background.color.color %}
+    background-color: rgba({{ module.styles.button.background.color.color|convert_rgb }}, {{ module.styles.button.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.button.border.border.css }}
+    {% if module.styles.button.corner.radius >= 0 %}
+    border-radius: {{ module.styles.button.corner.radius ~ "px" }};
+    {% endif %}
+    {% if module.styles.button.text.font.color %}
+    color: {{ module.styles.button.text.font.color }};
+    {% endif %}
+    {% if module.styles.button.text.font.size %}
+    font-size: {{ module.styles.button.text.font.size ~ module.styles.button.text.font.size_unit }};
+    {% endif %}
+    {% if module.styles.button.text.font.style %}
+    {{ module.styles.button.text.font.style }};
+    {% endif %}
+    {{ module.styles.button.spacing.spacing.css }}
+  }
+
+  .hs-blog-post-listing__post-button:hover,
+  .hs-blog-post-listing__post-button:focus {
+    {% if module.styles.button.hover.background.color.color %}
+    background-color: rgba({{ module.styles.button.hover.background.color.color|convert_rgb }}, {{ module.styles.button.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.button.hover.border.border.css }}
+    {% if module.styles.button.hover.text.font.color %}
+    color: {{ module.styles.button.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.button.hover.text.font.style %}
+    {{ module.styles.button.hover.text.font.style }};
+    {% endif %}
+  }
+
+  .hs-blog-post-listing__post-button:active {
+    {% if module.styles.button.hover.background.color.color %}
+    background-color: rgba({{ color_variant(module.styles.button.hover.background.color.color, 80)|convert_rgb }}, {{ module.styles.button.hover.background.color.opacity / 100 }});
+    {% endif %}
+    {{ module.styles.button.hover.border.border.css }}
+    {% if module.styles.button.hover.border.border.top.color %}
+    border-color: {{ color_variant(module.styles.button.hover.border.border.top.color, 80) }};
+    {% endif %}
+    {% if module.styles.button.hover.text.font.color %}
+    color: {{ module.styles.button.hover.text.font.color }};
+    {% endif %}
+    {% if module.styles.button.hover.text.font.style %}
+    {{ module.styles.button.hover.text.font.style }};
+    {% endif %}
+  }
+  .p3-blog__desc{
+    color:{{ module.styles.blog_title_color.color }}
+
+  }
+  {% endif %}
+
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+{####################################################}
+{################ Blog components ###################}
+{####################################################}
+<div class="p3-blog__overall">
+
+
+  <p class="p3-blog__title">
+    {{ blog.name }}
+
+  </p>
+  <div class="p3-blog__desc">
+    {{ module.blog_description }}
+  </div>
+
+
+  {% macro post_image(side) %}
+  {% if show_image and content.featured_image and not has_full_image %}
+  <a
+     class="hs-blog-post-listing__post-image-wrapper hs-blog-post-listing__post-image-wrapper--{{ layout }} {{ "hs-blog-post-listing__post-image-wrapper--{{ side }}" if layout == "side-by-side" }} "
+     href="{{ content.absolute_url }}"
+     aria-label="{{ "{{ module.default_text.full_featured_image_aria_label }} - " if content.featured_image_alt_text }} {{ module.default_text.read_full_post_aria_label }}"
+     >
+    <img
+         class="hs-blog-post-listing__post-image hs-blog-post-listing__post-image--{{ layout }} p3-blog_image"
+         src="{{ content.featured_image }}"
+         loading="lazy"
+         alt="{{ content.featured_image_alt_text }}"
+         >
+  </a>
+  {% endif %}
+  {% endmacro %}
+
+  {% macro post_title() %}
+  {% if show_title %}
+  <h2 class="hs-blog-post-listing__post-title"><a class="hs-blog-post-listing__post-title-link" href="{{ content.absolute_url }}">{{ content.name }}</a></h2>
+  {% endif %}
+  {% endmacro %}
+
+  {% macro post_author() %}
+  {% if (show_author_image or show_author_name) and content.blog_author %}
+  <div class="hs-blog-post-listing__post-author">
+    {% if show_author_image and content.blog_author.avatar %}
+    <div class="hs-blog-post-listing__post-author-image-wrapper">
+      <img
+           class="hs-blog-post-listing__post-author-image"
+           src="{{ content.blog_author.avatar }}"
+           loading="lazy"
+           alt="{{ module.default_text.author_alt_text }}"
+           >
+    </div>
+    {% endif %}
+    {% if show_author_name %}
+    <a class="hs-blog-post-listing__post-author-name" href="{{ blog_author_url(group.id, content.blog_post_author.slug) }}"><i style="font-size:14px;font-weight:400;color:#114245">written by</i><br><span style="font-size:14px;font-weight:700;color:#000">{{ content.blog_author.display_name }}</span></a>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% endmacro %}
+
+  {% macro post_tags() %}
+  {% if show_tags and content.tag_list %}
+  <div class="hs-blog-post-listing__post-tags">
+    {% for tag in content.tag_list %}
+    <a class="hs-blog-post-listing__post-tag" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% endmacro %}
+<div>
+    {% macro post_date() %}
+  {% if show_publish_date and content.publish_date %}
+  <time class="hs-blog-post-listing__post-timestamp" datetime="{{ content.publish_date }}">
+    {{ content.publish_date_localized }}
+  </time>
+  {% endif %}
+  {% endmacro %}
+  </div>
+
+
+  {% macro post_description() %}
+  {% if show_description %}
+  <p class="hs-blog-post-listing__post-description">{{ content.post_list_content|striptags|truncatehtml(100) }}</p>
+  {% endif %}
+  {% endmacro %}
+
+  {% macro post_button() %}
+  {% if show_button %}
+  <div class="hs-blog-post-listing__post-button-wrapper">
+    <a
+       class="p3-readmore_link"
+       href="{{ content.absolute_url }}"
+       aria-label="{{ module.default_text.read_full_post_aria_label }}"
+       >
+      {{ module.button_text }}
+    </a>
+  </div>
+  {% endif %}
+  {% endmacro %}
+
+  {% macro post_content() %}
+  <div class="hs-blog-post-listing__post-content hs-blog-post-listing__post-content--{{ layout }} {{ "hs-blog-post-listing__post-content--with-image" if content.featured_image and show_image }}">
+
+    {{ post_tags() }}
+    {{ post_title() }}
+    {{ post_description() }}
+    {{ post_button() }}
+    {{ post_author() }} 
+    {{ post_date() }} 
+  </div>
+  {% endmacro %}
+
+  {####################################################}
+  {################## Blog layout #####################}
+  {####################################################}
+
+  <section class="hs-blog-post-listing hs-blog-post-listing--{{ layout }} p3-blog_layout">
+
+    {% for content in contents %}
+
+    {# Blog listing article #}
+
+    <article
+             class="hs-blog-post-listing__post hs-blog-post-listing__post--{{ layout }} {{ "hs-blog-post-listing__post--{{ columns }}" if has_columns }} p3-blog_section "
+             {% if has_full_image and content.featured_image %}
+             style="background-image: url({{ content.featured_image }});"
+             {% endif %}
+             aria-label="{{ module.default_text.full_blog_post_summary_text }}"
+             >
+
+      {# Adds a wrapper for an overlay if full image is enabled #}
+
+      {% if has_full_image and content.featured_image %}
+      <div class="hs-blog-post-listing__post-inner-wrapper">
+        {% endif %}
+
+        {# Post image #}
+
+        {% if not has_alternate_image or loop.index is not divisibleby 2 %}
+        {{ post_image("left") }}
+        {% elif has_alternate_image and loop.index is divisibleby 2 %}
+        {{ post_image("right") }}
+        {% endif %}
+
+        {# Article content #}
+
+        {{ post_content() }}
+
+        {# Adds a wrapper for an overlay if full image is enabled #}
+
+        {% if has_full_image and content.featured_image %}
+      </div>
+      {% endif %}
+
+    </article>
+    {% endfor %}
+
+  </section>
+  <button class="p3-readmore" id="loadMore" onclick="showMore()">
+    {{ module.blog_button_title }}
+  </button>
+</div>
+<script>
+  const len = document.getElementsByClassName("p3-blog_section").length;
+  for (let i = 0; i < len; i++){
+    if(i < 8) {
+      document.getElementsByClassName("p3-blog_section")[i].style.display = "flex";}
+    else {
+      document.getElementsByClassName("p3-blog_section")[i].style.display = "none"
+    }
+  }
+
+  function showMore() {
+    for (let i = 0; i < len; i++) {
+      document.getElementsByClassName("p3-blog_section")[i].style.display = "flex";
+      document.getElementById("loadMore").style.display = "none"
+    }
+  }
+</script>

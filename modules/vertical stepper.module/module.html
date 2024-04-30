@@ -1,0 +1,389 @@
+<div class="timeline-with-scrolling-animation-timeline-main {{name}}" data-sequence="500" data-id="1"{% if module.style.background.background_color.color %} style="background-color: rgba({{ module.style.background.background_color.color|convert_rgb }}, {{ module.style.background.background_color.opacity / 100 }});"{% endif %}>
+  {% if module.style.background.top_divider != 'flat' %}
+  <div class="timeline-with-scrolling-animation-top-shape">
+    {% if module.style.background.top_divider == 'angle' %}
+    <svg width="1920" height="151" viewBox="0 0 1920 151" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 150V1L1547.5 146L1919 121V150H0Z" fill="white" stroke="white"/>
+    </svg>
+    {% elif module.style.background.top_divider == 'wave' %}
+    <svg width="1696" height="112" viewBox="0 0 1696 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 24.0508V24.0508C281.83 -6.69883 566.17 -6.69883 848 24.0508V24.0508V24.0508C1129.83 54.8005 1414.17 54.8005 1696 24.0508V24.0508V111.947H0V24.0508Z" fill="url(#paint0_linear_109_26)"/>
+    </svg>
+    {% elif module.style.background.top_divider == 'curve' %}
+    <svg width="1696" style="transform:scaleY(-1);" height="127" viewBox="0 0 1696 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0H848H1696V127C1369.77 55.3881 1184.56 30.4104 848 27.0001C511.05 29.5494 328 58.5 0 127V0Z" fill="black"/>
+    </svg>
+    {% endif %}
+  </div>
+  {% endif %} 
+  <div class="timeline-with-scrolling-animation-container" data-id="2">
+    <div class="timeline-with-scrolling-animatititleon-heading-main">
+      {% if module.top_text.main_title %}<span class="title"{% if module.style.text_style.top_title_color %} style="color: {{ module.style.text_style.top_title_color.color }};"{% endif %}> {{ module.top_text.main_title }}</span>{% endif %}
+      {% if module.top_text.content %}<div class="content"{% if module.style.text_style.top_content_color %} style="color: {{ module.style.text_style.top_content_color.color }};"{% endif %}> {{ module.top_text.content }}</div>{% endif %}
+    </div>
+    <div class="timeline-with-scrolling-animation-timeline-outer">
+      {% for item in module.timeline %}
+      <div class="timeline-section">
+        <div class="timeline-inner timeline-inner-{{ item.image_alignment }}">
+          {% if item.image_field.src %}
+          <div class="right">
+            <img src="{{ item.image_field.src }}">
+          </div>
+          {% endif %}
+          <div class="left">
+            <h3{% if module.style.text_style.timeline_title_color %} style="color: {{ module.style.text_style.timeline_title_color.color }};"{% endif %}>{{ item.timeline_title }}</h3>
+            <div class="timeline-text ul-style"{% if module.style.text_style.timeline_content_color %} style="color: {{ module.style.text_style.timeline_content_color.color }};"{% endif %}>
+              {{ item.timeline_content }}
+            </div>
+            {% if item.add_button %}
+            <div>
+              {% set href = item.link_field.url.href %}
+              {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              {% set rel = [] %}
+              {% if item.link_field.no_follow %}
+              {% do rel.append("nofollow") %}
+              {% endif %}
+              {% if item.link_field.open_in_new_tab %}
+              {% do rel.append("noopener") %}
+              {% endif %}
+              <a class="button" href="{{ href }}"
+                 {% if item.link_field.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+                 >
+                {{ item.button_text }}
+              </a>
+            </div>
+            {% endif %}
+          </div>
+        </div> 
+
+      </div>
+      {% endfor %}
+    </div> 
+  </div>
+</div>
+{% require_css %}
+<style>
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-container { background:#fff; position:relative; z-index:1;}
+  .timeline-with-scrolling-animation-timeline-main { background:transparent; position:relative; background-color:#FFFFFF;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-top-shape {width: 100%;max-width: 100%;position: absolute;top: -8px;transform: scaleY(-1); z-index:3;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-top-shape svg {width:100%; max-width:100%; height:100%; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-heading-main {max-width:900px; margin:0 auto; display:block;color:#000; font-weight: 400;font-size: 22px;line-height: 26px;color: #000000; padding-bottom:62px; text-align:center;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-heading-main .content {font-style: normal;font-weight: 800;font-size: 36px;line-height: 1;text-align: center;}
+  .timeline-with-scrolling-animation-timeline-main .title { max-width: 100%; margin-left: auto; margin-right: auto;text-transform: uppercase;font-size: 18px;padding-bottom: 10px;display: block;text-align:center;} 
+  .timeline-with-scrolling-animation-timeline-main .content { text-align:center;font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 50px; } 
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer {padding:0 50px; margin:20px;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section { width: 100%; display: table; padding: 10px 0px; z-index: 3; transition: all 400ms ease;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .button {margin-top:15px;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section h3 { position: relative; z-index: 1; display: inline-block; text-transform:uppercase;font-weight: 700;font-size: 54px;line-height: 54px;padding-bottom:10px;text-transform: uppercase;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-text { font-style: normal;font-weight: 400;font-size: 16px;line-height:20px;width:350px}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner { float: right;
+    padding-left: 86px;
+    padding-right:55%;
+    transform: translate(30px,0px); opacity: 0;  transition: all 400ms ease; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner-1 { 
+    width:100%;
+    padding-left:55%;
+    position: relative;
+    z-index: 2;
+    transition: all 400ms ease; 
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+  }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner-2 { 
+    width:100%;
+    padding-left:55%;
+    position: relative;
+    z-index: 2;
+    transition: all 400ms ease; 
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    text-align: right;
+  }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .right {width:50%;float:right;opacity:0; visibility:hidden; transition:all 400ms ease;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:last-child {padding-bottom:0px;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .right {position:relative; z-index:4; opacity:1; visibility:visible;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section img {
+    max-width: 229px;
+    height: 164px;
+    padding: 0;
+    object-fit: cover; ;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner { 
+    text-align:left;
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+    transform: translate(-30px,0px);
+    opacity: 0;  
+    transition: all 400ms ease;; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner { opacity: 1; transform: translate(0);}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-last-child(2) { padding-bottom:0;}
+  .timeline-with-scrolling-animation-timeline-main .btn { float: right; width: 50%; padding-left: 88px; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer { margin-top: 0px; position: relative; overflow: hidden; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-heading-main { margin-bottom: 0px;}
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section ul li { font-weight: 500; }
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner:before { content: ''; position: absolute; top:26px; left: 600px; width:33px;  transition: all 400ms ease; height: 33px; 
+    border-radius: 100%; background: {{ module.style.timeline.timeline_dot_color.color }}; border: 10px solid {{ module.style.timeline.timeline_dot_border_color.color }}; }
+  }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section h3 span { position: relative; z-index: 1; display: inline-block; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section h3.go span:before { width: 100%; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section h3 span:before { position: absolute; content: ''; background: #A4F7FF; height: 10px; width: 0; width: 100%; bottom: 4px; z-index: -1; left: 0; right: 0; -webkit-transition: all 1.5s ease; -moz-transition: all 1.5s ease; -o-transition: all 1.5s ease; -ms-transition: all 1.5s ease; transition: all 1.5s ease; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .mid-line { position: absolute; height: 0; top: 65px; left: 51%; transform: translateX(-50%);  bottom: 15px; z-index: -1; overflow: hidden; width: 6px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .mid-line:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-left: 5px solid {{ module.style.timeline.timeline_vertical_line_color.color }}; transform: translateX(-50%); }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:first-child .timeline-inner:after { content: ''; position: absolute; bottom: 100%; background-color: #fff; width: 100vw; height: 100%; left: -16vw; z-index: 1; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-last-child(2) .timeline-inner:after { content: ''; position: absolute; top: 0; background-color: #fff; width: 100vw; height: 200%; left: -16vw; z-index: -1; }
+  @media(min-width:1410px){
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-container { width: 1350px; margin:0 auto;}
+  }
+  @media (max-width:1229px){
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner { padding-right: 50px; }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner { padding-left: 50px; }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section h3 { font-size: 28px; }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-text { font-size: 18px; }
+  }
+  @media (max-width:991px){
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer { padding:0 15px; margin:5px;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-heading-main { margin-bottom: 40px;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .right {width:100%;visibility:visible; opacity:1;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section img { padding:50px;}
+  }
+  @media (max-width:768px) {
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner { width: 100%; }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner { padding-right: 0px; text-align: left; transform: none; /*opacity: 1;*/ }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner { padding-left: 0; transform: none; /*opacity: 1;*/ }
+    /*.row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner:before { content: none; }*/
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .btn { padding-left: 0; width: 100%; text-align: center; }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .mid-line { left: 10%;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section {padding-left:0px;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner:before {left:0px; right:auto;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner:before { left:86%; right: auto;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .right {width:50%;float:right;opacity:0; visibility:hidden; transition:all 400ms ease;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner { opacity: 1; transform: translate(0); padding-left:40px;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .right {position:relative; z-index:4; opacity:1; visibility:visible;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-heading-main { padding:0 15px;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .mid-line { left:43px;display:none;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner-1 {
+      /* width: 50%; */
+      width: 100%;
+      padding-left:0px;
+      /* padding-right: 60%; */
+      position: relative;
+      z-index: 2;
+      transition: all 400ms ease;
+      display: flex;
+      flex-direction: row;
+      gap: 23px;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner:before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 0px;
+      width: 33px;
+      transition: all 400ms ease;
+      height: 33px;
+      /* box-shadow: 0px 24px 32px rgba(15, 54, 128, 0.14), 0px 16px 24px rgba(15, 54, 128, 0.1), 0px 2px 6px rgba(15, 54, 128, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04); */
+      border-radius: 100%;
+      background: #fd560a;
+      border: 10px solid {{ module.style.timeline.timeline_dot_border_color.color }};
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner {
+      float: right;
+      padding-left: 0px;
+      padding-right: 0px;
+      transform: translate(30px, 0px);
+      opacity: 1;
+      transition: all 400ms ease;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner-2 {
+      /* width: 50%; */
+      width: 100%;
+      padding-left: 55%;
+      /* padding-right: 60%; */
+      position: relative;
+      z-index: 2;
+      transition: all 400ms ease;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 40px;
+      text-align: left;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section img{
+      padding:0px;
+    }
+  }
+  @media (max-width:480px) {
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner:before { left:6px !important;transform: scale(0.7);}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner:before { left:auto !important; right: 1%;transform: scale(0.7);}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .mid-line { left:43px;display:none;}
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner {
+      padding-right: 0px;
+      text-align: right;
+      text-align: left;
+      display: flex;
+      flex-direction:column;
+      gap: 10px;
+      transform: none;
+      opacity: 1;
+      transition: all 400ms ease;
+      padding-left: 50px;
+      margin-left: auto;
+      width: 100%;
+      max-width: 100%;
+      padding-right: 24px;
+    }
+    .content {
+      font-size: 30px !important;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section {
+      width: 100%;
+      display: table;
+      padding: 10px 0px;
+      z-index: 3;
+      transition: all 400ms ease;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner:before {
+      content: '';
+      position: absolute;
+      top: 26px;
+      left: 40px !important;
+      width: 33px;
+      transition: all 400ms ease;
+      height: 33px;
+      border-radius: 100%;
+      background: #fd560a;
+      border: 10px solid {{ module.style.timeline.timeline_dot_border_color.color }};
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      width: 100%;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner {
+      float: right;
+      padding-left: 0px;
+      padding-right: 0px;
+      transform: none;
+      opacity: 1;
+      transition: all 400ms ease;
+      display: flex;
+      flex-direction: column;
+      padding-left: 24px;
+      margin-left: auto;
+      width: 100%;
+      max-width: 100%;
+      padding-right: 24px;
+      gap: 10px;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner-2 {
+      width: 50%;
+      width: 100%;
+      padding-left: 55%;
+      padding-right: 0px;
+      position: relative;
+      z-index: 2;
+      transition: all 400ms ease;
+      display: block;
+      flex-direction: row-reverse;
+      gap: 40px;
+      text-align: left;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer {
+      padding: 0;
+      margin: 0;
+    }
+    .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .right {
+      width: 100%;
+    }
+    .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section img {
+      max-width: 100%;
+    }
+  }
+</style>
+{% end_require_css %}
+
+{% if module.style.background.top_shape_color.color %}
+{% require_css %}
+<style>
+  .timeline-with-scrolling-animation-timeline-main.{{name}} .timeline-with-scrolling-animation-top-shape svg path {fill: {{ module.style.background.top_shape_color.color }}; stroke: {{ module.style.background.top_shape_color.color }}; }
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% if module.style.timeline.add_card %}
+{% require_css %}
+<style>
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-container { background:#fff; padding:100px 0 20px; box-shadow: 0 50px 100px -20px rgb(50 50 93 / 25%), 0 30px 60px -30px rgb(0 0 0 / 30%), inset 0 -2px 6px 0 rgb(10 37 64 / 35%);}
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% if module.style.timeline.card_border_radius %}
+{% require_css %}
+<style>
+  .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-container {border-radius:{{ module.style.timeline.card_border_radius}}px;}
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% if module.style.timeline.content_shadow_color.color and module.style.add_content_shadow %}
+{% require_css %}
+<style>
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner .left { padding:20px; border-radius:8px; background-color: rgba({{ module.style.timeline.content_shadow_color.color|convert_rgb }}, {{ module.style.timeline.content_shadow_color.opacity / 100 }});box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+</style>
+{% end_require_css %}
+{% endif %}
+
+
+{% if module.style.layout.timeline_layout == 'overload_right' %}
+{% require_css %}
+<style>
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner { text-align:left;padding-left:86px; padding-right:0;float:right;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner:before { left: -34px; }
+
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% if module.style.layout.timeline_layout == 'overload_left' %}
+{% require_css %}
+<style>
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner { text-align:right;padding-right:86px; padding-left:0;float:left;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner:before { right: -34px; left:auto;}
+</style>
+{% end_require_css %}
+{% endif %}
+
+{% if module.style.layout.timeline_layout == 'image' %}
+{% require_css %}
+<style>
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner {width:100%; position:relative;display:flex; align-items:center; justify-content:center; flex-wrap:wrap;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section .timeline-inner:before { display:none; content: ''; position: absolute; top: 0; width: 68px;  transition: all 400ms ease; height: 68px; border: 15px solid {{ module.style.timeline.timeline_dot_border_color.color }}; box-shadow: 0px 24px 32px rgba(15, 54, 128, 0.14), 0px 16px 24px rgba(15, 54, 128, 0.1), 0px 2px 6px rgba(15, 54, 128, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04); border-radius: 100%; background: {{ module.style.timeline.timeline_dot_color.color }}; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner .right {width:50%; position:relative; padding-left:86px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner .right img {max-width:100%; width:300px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner .left {width:50%; position:relative; padding-right:86px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner { flex-direction:row-reverse; padding-right:0px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner .right {padding-left:0px;}
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner { }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section.visible .timeline-inner .left { padding-right:0; padding-left:86px; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(odd) .timeline-inner .right:before { left: 8px; content: ''; position: absolute; top: 0; width: 68px;  transition: all 400ms ease; height: 68px; border: 8px solid {{ module.style.timeline.timeline_dot_border_color.color }}; box-shadow: 0px 24px 32px rgba(15, 54, 128, 0.14), 0px 16px 24px rgba(15, 54, 128, 0.1), 0px 2px 6px rgba(15, 54, 128, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04); border-radius: 100%; background: {{ module.style.timeline.timeline_dot_color.color }}; }
+  .row-fluid .timeline-with-scrolling-animation-timeline-main .timeline-with-scrolling-animation-timeline-outer .timeline-section:nth-child(even) .timeline-inner .right:before { right: -34px; content: ''; position: absolute; top: 0; width: 68px;  transition: all 400ms ease; height: 68px; border: 8px solid {{ module.style.timeline.timeline_dot_border_color.color }}; box-shadow: 0px 24px 32px rgba(15, 54, 128, 0.14), 0px 16px 24px rgba(15, 54, 128, 0.1), 0px 2px 6px rgba(15, 54, 128, 0.08), 0px 0px 1px rgba(0, 0, 0, 0.04); border-radius: 100%; background: {{ module.style.timeline.timeline_dot_color.color }}; }
+</style>
+{% end_require_css %}
+{% endif %}
+{% require_js %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+{% end_require_js %}
+{% if module.include_jquery %}
+{% require_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{% end_require_js %}
+{% endif %}

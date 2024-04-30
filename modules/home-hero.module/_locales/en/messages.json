@@ -1,0 +1,802 @@
+{
+  "Style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.0.color.a" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.horizontalSide" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.verticalSide" : {
+    "message" : "BOTTOM",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.label" : {
+    "message" : "Gradients",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.default.text_align" : {
+    "message" : "LEFT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.label" : {
+    "message" : "Upper title alignment",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.label" : {
+    "message" : "Uppertitle color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.label" : {
+    "message" : "Upper title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.label" : {
+    "message" : "Font of upper title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.label" : {
+    "message" : "Button 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.help_text" : {
+    "message" : "Button found under the subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.label" : {
+    "message" : "First button",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.btn_primary" : {
+    "message" : "Primaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.btn_secondary" : {
+    "message" : "Secondaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.btn_tertiary" : {
+    "message" : "Tertiaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.help_text" : {
+    "message" : "Appearance of the first button",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.label" : {
+    "message" : "First button style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.default" : {
+    "message" : "Get Started",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.help_text" : {
+    "message" : "Label of the first button found under the subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.label" : {
+    "message" : "First button text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.label" : {
+    "message" : "Button 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.help_text" : {
+    "message" : "Second button found under the subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.label" : {
+    "message" : "Second button",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.btn_primary" : {
+    "message" : "Primaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.btn_secondary" : {
+    "message" : "Secondaire",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.btn_tertiary" : {
+    "message" : "Tertiary",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.help_text" : {
+    "message" : "Appearance of the second button",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.label" : {
+    "message" : "Second button style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.default" : {
+    "message" : "Get Started",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.help_text" : {
+    "message" : "Label of the second button found under the subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.label" : {
+    "message" : "Second button text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.label" : {
+    "message" : "Booléen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.label" : {
+    "message" : "Cards",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.default.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.label" : {
+    "message" : "Card Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.label" : {
+    "message" : "Card Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.default" : {
+    "message" : "Electronics",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.label" : {
+    "message" : "Card Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.label" : {
+    "message" : "Gradient",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.help_text" : {
+    "message" : "The gradient colors can be chosen in the Styles tab",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.label" : {
+    "message" : "Use gradient on bottom of banner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.label" : {
+    "message" : "Right image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.help_text" : {
+    "message" : "Image in the right column of the banner [656 x 759]",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.label" : {
+    "message" : "Right image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_de_droite.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "home-hero",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.label" : {
+    "message" : "Show Cards",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.label" : {
+    "message" : "Background",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.couleur" : {
+    "message" : "Single color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.image" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.video" : {
+    "message" : "Video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.help_text" : {
+    "message" : "Choose between an image, a single color or a video for the background",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.label" : {
+    "message" : "Background type",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.help_text" : {
+    "message" : "Single uniform color for entire banner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.label" : {
+    "message" : "Background Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.default.alt" : {
+    "message" : "Parkour",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.help_text" : {
+    "message" : "Banner background image 1920 x 1080",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.label" : {
+    "message" : "Background image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.help_text" : {
+    "message" : "Place a short video in the background",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.label" : {
+    "message" : "Background video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.default" : {
+    "message" : "Interesting subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.help_text" : {
+    "message" : "Subtitle found under the title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.label" : {
+    "message" : "Subtitle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.default" : {
+    "message" : "Theme Parkour Hubspot",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.help_text" : {
+    "message" : "Upper title placed at the top of the banner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.label" : {
+    "message" : "Upper title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.default" : {
+    "message" : "<h1>Titre intelligent sur ce thème personnalisé génial</h1>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.inline_help_text" : {
+    "message" : "Main banner title (H1)",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.label" : {
+    "message" : "Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "texte.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

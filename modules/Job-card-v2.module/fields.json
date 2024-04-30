@@ -1,0 +1,1318 @@
+[ {
+  "id" : "b5df796c-7660-ff30-ef3c-057e9d2960ab",
+  "name" : "want_to_add_an_anchor_id",
+  "display_width" : null,
+  "label" : "Want to add an anchor id",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2122fbfd-6c53-828d-80ef-0765ad5a824f",
+  "name" : "anchor_id",
+  "display_width" : null,
+  "label" : "Anchor id",
+  "help_text" : "There should be no special characters or spaces",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_to_add_an_anchor_id",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "customid"
+}, {
+  "id" : "7f1c1496-19fe-f3db-700b-134441e674fb",
+  "name" : "want_button",
+  "display_width" : null,
+  "label" : "Want Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "ctay", "Yes" ], [ "ctan", "No" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "ctay"
+}, {
+  "id" : "465edd31-37dc-0ac4-9142-9c39dd24b913",
+  "name" : "button_style",
+  "display_width" : null,
+  "label" : "Button style",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_button",
+    "controlling_value_regex" : "ctay",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "btn_primary", "Primary" ], [ "btn_secondary", "Secondary" ], [ "btn_tertiary", "Tertiary" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "btn_secondary"
+}, {
+  "id" : "edb6e316-f4a3-0a7e-cd1c-5e11119d4b09",
+  "name" : "job_title",
+  "display_width" : null,
+  "label" : "job title",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<div style=\"text-align: center; padding-bottom: 20px;\"><strong><span style=\"font-size: 40px;\">Découvrez notre expérience connexe</span></strong></div>"
+}, {
+  "id" : "8432d8be-f966-a0f8-c1ce-5c2ae6a690ca",
+  "name" : "team",
+  "display_width" : null,
+  "label" : "Team",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3af8d305-af33-3c3f-e5c7-5ecece2ce8f0",
+    "name" : "card_alignment",
+    "display_width" : null,
+    "label" : "Card alignment",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "0a27392a-4d1d-d40b-e157-4ab4198f65ae",
+    "name" : "cards",
+    "display_width" : null,
+    "label" : "Cards",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "f0c67472-43b7-3308-5c3f-3d912f0e4f35",
+      "name" : "image_icon",
+      "display_width" : null,
+      "label" : "Image-icon",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      }
+    }, {
+      "id" : "64788a9d-b5cf-8b39-3bf6-97820b994fb5",
+      "name" : "image_team",
+      "display_width" : null,
+      "label" : "Image-team",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      }
+    }, {
+      "id" : "37090c16-f296-bf63-e538-9f61f72bd52a",
+      "name" : "description",
+      "display_width" : null,
+      "label" : "Description",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>"
+    }, {
+      "id" : "133c2f87-95c8-59d6-6ef4-60b0a557c97a",
+      "name" : "city",
+      "display_width" : null,
+      "label" : "city",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "1c37f17f-2bec-f8ac-7a97-b692498aa9af",
+        "name" : "city_icon",
+        "display_width" : null,
+        "label" : "city icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        }
+      }, {
+        "id" : "a777b81b-a484-2871-2881-90ec9ee03958",
+        "name" : "city_name",
+        "display_width" : null,
+        "label" : "city name",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Montréal (Québec, Canada)"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      }
+    }, {
+      "id" : "9971d71d-f103-be28-bcb7-90cd6babc1a2",
+      "name" : "time",
+      "display_width" : null,
+      "label" : "Time",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "af3e78a7-0221-51cc-4e20-e868a1dd220b",
+        "name" : "time_icon",
+        "display_width" : null,
+        "label" : "time icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        }
+      }, {
+        "id" : "7f537dac-62c5-b918-befc-daa3874118d9",
+        "name" : "time_type",
+        "display_width" : null,
+        "label" : "time type",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Électrique, Instrumentation et contrôle"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      }
+    }, {
+      "id" : "3d006b3b-5a0d-898c-9289-ceb872373e5b",
+      "name" : "date",
+      "display_width" : null,
+      "label" : "Date",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "bbe7b1f3-ab2e-6681-91de-5f83a687f451",
+        "name" : "date_icon",
+        "display_width" : null,
+        "label" : "date icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }, {
+        "id" : "8ae0ddbd-7106-7356-a306-95f01b926231",
+        "name" : "date",
+        "display_width" : null,
+        "label" : "date",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        }
+      }
+    }, {
+      "id" : "3a6d0635-970a-cbe4-f9a6-00f0956afe13",
+      "name" : "link_text",
+      "display_width" : null,
+      "label" : "link text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "8de9f6d7-429c-4451-3fe2-6853a07073de",
+      "name" : "job_link",
+      "display_width" : null,
+      "label" : "Job link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "314c302f-3f02-897f-38df-737dcbd2d26c",
+      "name" : "apply_button",
+      "display_width" : null,
+      "label" : "apply button",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Apply now"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "card_alignment" : "left",
+    "cards" : [ {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    }, {
+      "image_icon" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+        "alt" : "icon-card",
+        "loading" : "lazy",
+        "width" : 42,
+        "height" : 41,
+        "max_width" : 42,
+        "max_height" : 41
+      },
+      "image_team" : {
+        "size_type" : "auto",
+        "src" : "https://mktg.dawco.ca/hubfs/card-back.svg",
+        "alt" : "card-back",
+        "loading" : "lazy",
+        "width" : 255,
+        "height" : 170,
+        "max_width" : 255,
+        "max_height" : 170
+      },
+      "description" : "<p style=\"font-size: 13px;\"><span style=\"color: #4d463f;\">Bâtiment</span></p>\n<h2 style=\"font-size: 18px;\"><span style=\"color: #4d463f;\"><strong>NouvLR Station de REM</strong></span></h2>",
+      "city" : {
+        "city_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+          "alt" : "location_info",
+          "loading" : "lazy",
+          "width" : 14,
+          "height" : 18,
+          "max_width" : 14,
+          "max_height" : 18
+        },
+        "city_name" : "Montréal (Québec, Canada)"
+      },
+      "time" : {
+        "time_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+          "alt" : "tag_icon",
+          "loading" : "lazy",
+          "width" : 19,
+          "height" : 18,
+          "max_width" : 19,
+          "max_height" : 18
+        },
+        "time_type" : "Électrique, Instrumentation et contrôle"
+      },
+      "date" : {
+        "date_icon" : {
+          "size_type" : "auto",
+          "src" : "",
+          "alt" : null,
+          "loading" : "lazy"
+        },
+        "image_icon" : {
+          "size_type" : "auto",
+          "src" : "https://mktg.dawco.ca/hubfs/icon-card.svg",
+          "alt" : "icon-card",
+          "loading" : "lazy",
+          "width" : 42,
+          "height" : 41,
+          "max_width" : 42,
+          "max_height" : 41
+        }
+      },
+      "job_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "apply_button" : "Apply now"
+    } ]
+  }
+}, {
+  "id" : "7f273131-30ab-9526-9b80-24190c89b189",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d186bc6e-56c5-c3cd-8610-cfca96ad56f6",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "22c58bfa-e040-5c32-5cbf-939067f35ab6",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "23ff2906-70ab-a3c2-fab0-5b2e8c7d544c",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b01bb8c1-c9e1-f223-035b-c8c13470760d",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "ed012472-061d-a75e-d2f6-c8c28497817a",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "03cd7b8f-7dc4-867d-29ab-97b62ce0e318",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "3a2dca9a-e1ee-6857-152e-ae3484565674",
+    "name" : "tab_spacing",
+    "display_width" : null,
+    "label" : "Tab Spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "873e099a-ef52-75a4-062f-e194ea11c4b2",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : { }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    },
+    "desktop_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "tab_spacing" : {
+      "spacing" : { }
+    }
+  }
+}, {
+  "id" : "547a202c-0add-68e5-dd32-82aee60c2814",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_button",
+    "controlling_value_regex" : "ctay",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "d4239f61-dcfa-193f-7b85-7a82a1921b6e",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "View all exhibitors"
+  }, {
+    "id" : "80e5842b-d631-4a9a-31b8-b5812941cd35",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "View all exhibitors",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

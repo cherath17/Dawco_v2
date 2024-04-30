@@ -1,0 +1,60 @@
+[ {
+  "id" : "13079739-dd44-05bc-790c-5ae91689bdbf",
+  "name" : "border_top",
+  "display_width" : null,
+  "label" : "Border Top",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "min" : 1,
+  "max" : 10,
+  "step" : 1,
+  "prefix" : "",
+  "suffix" : "",
+  "type" : "number",
+  "default" : 3
+}, {
+  "id" : "f6775422-756f-0a42-0d2f-30ab3087b25e",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e51b22a3-6b2e-2085-9e24-1b0ec1042af9",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "d24c172b-61d5-b1fc-33f4-d6d9c9ef8d49",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile Spacing",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "434a260e-58be-3089-8c8c-82446b255ecb",
+  "name" : "border_type",
+  "display_width" : null,
+  "label" : "Border Type",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "Solid", "Solid" ], [ "dotted", "Dotted" ], [ "dashed", "Dashed" ], [ "double", "double" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "Solid"
+} ]

@@ -1,0 +1,268 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: documentation
+    screenshotPath: ../images/template-previews/documentation-page.png
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% if content.html_title %}<title>{{ content.html_title }}</title>{% endif %}
+  </head>
+  {% extends "./layouts/base-new.html" %}
+  {% block body %}
+  <main id="main-content" class="body-container-wrapper download-viewbook">
+    {% dnd_area "dnd_main_section" , label='Main section' %}
+
+    {# Section #}
+
+    {% end_dnd_area %}
+    <main class="body-container-wrapper documentation" id="main-content">
+      <div class="page-center">
+        <div class="custom-row doc-row clearfix">
+          {% dnd_area "dnd_area_main" class="doc-main-wrapper"%}
+
+          {% dnd_section %}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+          {% module_attribute "html" %}
+          <h2 id="introduction">Introduction</h2>
+          <p><span>Detailed documentation, responsive design, customizable modules... give yourself the tools you need to become a leader in your market and exceed your growth ambitions.</span></p>
+          <p><span>It's simple and easy! You can start by go through our documentation to understand how to customize and develop your project to include our features:</span></p>
+          {% end_module_attribute %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+
+
+          {% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  },
+%}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/separator",
+        offset=0,
+        width=12
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+
+
+          {% dnd_section %}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+          {% module_attribute "html" %}
+          <h2 id="global-header">Global Header</h2>
+          <p><span>This the main header for your main website pages. You can edit logo, menu and Contact button and their respective links</span></p>
+          {% end_module_attribute %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/linked_images.module", 
+        offset=0,
+        width=12,
+        horizontal_alignment="CENTER",
+        img={
+          "alt" : "header",
+          "height" : 115,
+          "loading" : "lazy",
+          "max_height" : 115,
+          "max_width" : 1304,
+          "size_type" : "auto",
+          "src" : get_asset_url('../images/header_screenshot.png'), 
+        }
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+
+          {% dnd_section
+ padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"         
+    }
+  },
+%}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/separator",
+        offset=0,
+        width=12
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+
+
+
+
+
+          {% dnd_section %}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+          {% module_attribute "html" %}
+          <h2 id="global-footer">Global Footer</h2>
+          <p><span>This the main footer for the website pages. You can edit logo, menu and social links</span></p>
+          {% end_module_attribute %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/linked_images.module",
+        offset=0,
+        width=12,
+        horizontal_alignment="CENTER",
+        img={
+          "alt" : "footer",
+          "height" : 336,
+          "loading" : "lazy",
+          "max_height" : 336,
+          "max_width" : 1415,
+          "size_type" : "auto",
+          "src" : get_asset_url('../images/footer_screenshot.png'),
+          "width" : 1415
+        }
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+          {% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  },
+%}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/separator",
+        offset=0,
+        width=12
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+          {% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  },
+%}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/separator",
+        offset=0,
+
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+
+
+          {% dnd_section %}
+          {% dnd_column
+    offset=0,
+    width=12
+  %}
+          {% dnd_row %}
+          {% dnd_module
+        path="@hubspot/rich_text",
+        offset=0,
+        width=12
+      %}
+          {% module_attribute "html" %}
+          <h2 id="gallery-slider">Web page Blog Section</h2>
+          <p><span>Recent Blog Posts show in website pages </span></p>
+          {% end_module_attribute %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% dnd_row %}
+          {% dnd_module
+        path="./../modules/linked_images.module",
+        offset=0,
+        width=12,
+        horizontal_alignment="CENTER",
+        img={
+          "alt" : "gallery-slider",
+          "height" : 548,
+          "loading" : "lazy",
+          "max_height" : 548,
+          "max_width" : 1127,
+          "size_type" : "auto",
+          "src" : get_asset_url('../images/Rss_blog_img.png'),
+          "width" : 1127
+        }
+      %}
+          {% end_dnd_module %}
+          {% end_dnd_row %}
+          {% end_dnd_column %}
+          {% end_dnd_section %}
+          {% end_dnd_area %}
+
+        </div>
+      </div>
+
+    </main>
+    {% endblock body %}
+
+
+

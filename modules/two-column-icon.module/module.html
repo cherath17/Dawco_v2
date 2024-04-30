@@ -1,0 +1,36 @@
+  {% set align = choice_field == 2 ? "" : "layout_dir" %}
+ {% set align2 = choice_field == 1 ? "" : "one_lay" %}
+<section class= "{{ align2 }} {{ align }}">
+  <div class="iconimg">
+  {% if module.icon_image.src %}
+	{% set sizeAttrs = 'width="{{ module.icon_image.width }}" height="{{ module.icon_image.height }}"' %}
+	{% if module.icon_image.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.icon_image.width }}" height="{{ module.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.icon_image.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.icon_image.max_width }}" height="{{ module.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.icon_image.loading != 'disabled' ? 'loading="{{ module.icon_image.loading }}"' : '' %}
+	<img src="{{ module.icon_image.src }}" alt="{{ module.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  </div>
+{% endif %}
+  <div class="seconddiv">
+
+  <p>
+    {{ module.icon_description }}
+  </p>
+  <h4>
+    {% set href = module.icon_link.url.href %}
+{% if module.icon_link.url.type is equalto "EMAIL_ADDRESS" %}
+	{% set href = "mailto:" + href %}
+{% endif %}
+<a href="{{ href }}"
+	{% if module.icon_link.open_in_new_tab %}target="_blank"{% endif %}
+	{% if module.icon_link.rel %}rel="{{ module.icon_link.rel }}"{% endif %}
+	>
+ {{ module.link_text }}
+</a>
+   
+  </h4>
+        
+  </div>
+</section>

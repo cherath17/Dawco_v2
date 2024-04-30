@@ -1,0 +1,1007 @@
+{
+  "Style.bouton_1.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.bouton_1.p3_home_hero_btn_1_text.default.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.label" : {
+    "message" : "Style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_btn_1_bg.default.color" : {
+    "message" : "#00B0F0",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.0.color.a" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.0.color.r" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.a" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.b" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.g" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.colors.1.color.r" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.horizontalSide" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.default.side_or_corner.verticalSide" : {
+    "message" : "BOTTOM",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.p3_home_hero_gradients.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "Style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.default.text_align" : {
+    "message" : "LEFT",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.label" : {
+    "message" : "Alignement du Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.alignement_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.label" : {
+    "message" : "Couleur de Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.couleur_de_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.label" : {
+    "message" : "Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.label" : {
+    "message" : "Police du Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "Style.surtitre.police_du_surtitre.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.label" : {
+    "message" : "Bouton 1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.help_text" : {
+    "message" : "Bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.label" : {
+    "message" : "Premier bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.p3-hero-banner__button__couleur_pleine" : {
+    "message" : "Bouton avec arrière plan couleur pleine",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.choices.p3-hero-banner__button__transparent_et_bordure" : {
+    "message" : "Bouton avec arrière plan transparent et bordure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.default" : {
+    "message" : "Par ici",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.help_text" : {
+    "message" : "Texte du bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.label" : {
+    "message" : "Premier bouton texte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.p3_home_hero_btn_1_texte.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_1.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.label" : {
+    "message" : "Bouton 2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.help_text" : {
+    "message" : "Bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.label" : {
+    "message" : "Deuxième bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.p3-hero-banner__button__couleur_pleine" : {
+    "message" : "Bouton avec arrière plan couleur pleine",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.choices.p3-hero-banner__button__transparent_et_bordure" : {
+    "message" : "Bouton avec arrière plan transparent et bordure",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.default" : {
+    "message" : "Par ici",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.help_text" : {
+    "message" : "Texte du bouton ce trouvant sous le sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.label" : {
+    "message" : "Deuxième bouton texte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.p3_home_hero_btn_2_texte.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "bouton_2.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_hide_and_show_.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.label" : {
+    "message" : "Booléen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_hide_and_show_.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.image.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_img.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_link.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.default.p3_home_hero_cards_title" : {
+    "message" : "Électronique",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.default.alt" : {
+    "message" : "Robot tool carrying a cardboard box",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.default.url.type" : {
+    "message" : "CONTENT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.p3_home_hero_cards_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.degrade.choices.non" : {
+    "message" : "Non",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.label" : {
+    "message" : "Dégradé",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.p3_home_hero_gradient.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "degrade.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.label" : {
+    "message" : "Image de droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.help_text" : {
+    "message" : "Image dans la colonne de droite de la bannière [656 x 759]",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.label" : {
+    "message" : "Image de droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.p3_home_hero_image.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_de_droite.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "image_field.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "image_field.default.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "home-hero",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_cards.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.label" : {
+    "message" : "Arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.couleur" : {
+    "message" : "Couleur unie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.image" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.choices.video" : {
+    "message" : "Vidéo",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.help_text" : {
+    "message" : "Choisir entre une image, une vidéo ou une couleur unie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.label" : {
+    "message" : "Type d’arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.help_text" : {
+    "message" : "Couleur unie qui remplie toute la bannière",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.label" : {
+    "message" : "Couleur d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.default.alt" : {
+    "message" : "Parkour",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.help_text" : {
+    "message" : "Image d’arrière-plan de la bannière 1920 x 1080",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.label" : {
+    "message" : "Image d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.help_text" : {
+    "message" : "Courte vidéo mis en arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.label" : {
+    "message" : "Vidéo d’arrière plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_home_hero_supertitle_arriere_plan.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.label" : {
+    "message" : "Texte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.default" : {
+    "message" : "Sous-titre interessant",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.help_text" : {
+    "message" : "Sous-titre qui ce retrouve sous le titre principale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.label" : {
+    "message" : "Soustitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.default" : {
+    "message" : "Theme Parkour Hubspot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.help_text" : {
+    "message" : "Surtitre qui ce retrouve en haut du titre principale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.label" : {
+    "message" : "Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_supertitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.default" : {
+    "message" : "<h1>Titre intelligent sur ce thème personnalisé génial</h1>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.inline_help_text" : {
+    "message" : "Titre principale de la bannière (H1)",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.p3_home_hero_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "texte.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "blog_category.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_category.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_category.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_category.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_category.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_category.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "rss_listing_p3",
+    "description" : null,
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,93 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+<section class="p3-hero__wrapper">
+
+  {% if module.p3_hero_bg == 'image' %}
+  {% if module.p3_hero_bg_image.src %}
+  <div class="p3-hero__image">
+    {% set sizeAttrs = 'width="{{ module.p3_hero_bg_image.width }}" height="{{ module.p3_hero_bg_image.height }}"' %}
+    {% if module.p3_hero_bg_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ module.p3_hero_bg_image.width }}" height="{{ module.p3_hero_bg_image.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif module.p3_hero_bg_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ module.p3_hero_bg_image.max_width }}" height="{{ module.p3_hero_bg_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = module.p3_hero_bg_image.loading != 'disabled' ? 'loading="{{ module.p3_hero_bg_image.loading }}"' : '' %}
+    <img src="{{ module.p3_hero_bg_image.src }}" alt="{{ module.p3_hero_bg_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+  </div>
+  {% endif %}
+
+  {% else %}
+  {% if module.p3_hero_bg_video.player_id %}
+  <div class="p3-hero__video">
+    {% set max_width = module.p3_hero_bg_video.size_type == 'auto_custom_max' ? module.p3_hero_bg_video.max_width : module.p3_hero_bg_video.width %}
+    {% set max_height = module.p3_hero_bg_video.size_type == 'auto_custom_max' ? module.p3_hero_bg_video.max_height : module.p3_hero_bg_video.height %}
+    {% video_player "embed_player"
+            player_id={{ module.p3_hero_bg_video.player_id }}
+            type={{ module.p3_hero_bg_video.player_type || 'scriptV4' }}
+            full_width={{ module.p3_hero_bg_video.size_type == 'auto_full_width' }},
+            conversion_asset={{ module.p3_hero_bg_video.conversion_asset|tojson|safe }}
+            autoplay={{ module.p3_hero_bg_video.autoplay }}
+            hidden_controls={{ module.p3_hero_bg_video.hide_controls }}
+            loop={{ module.p3_hero_bg_video.loop_video }}
+            muted={{ module.p3_hero_bg_video.mute_by_default }} 
+        %}
+  </div>
+  {% endif %}
+  {% endif %}
+
+  {% if module.p3_hero_subtitle || module.p3_hero_title || module.p3_hero_supertitle %}
+  <div class="p3-hero__info-box">
+    <div class="container">
+      <div class="row p3-hero__text">
+        <div class="col-12">
+          {% if module.p3_hero_supertitle %}<p class="p3-hero__supertitle">{{ module.p3_hero_supertitle }}</p>{% endif %}
+          {% if module.p3_hero_title %}<h1 class="p3-hero__title">{{ module.p3_hero_title }}</h1>{% endif %}
+          {% if module.p3_hero_subtitle %}<p class="p3-hero__subtitle">{{ module.p3_hero_subtitle }}</p>{% endif %}
+
+          <div class="p3-hero__btn_link {{ module.want_video_popup }}">
+            {% if module.p3_hero_btn.url.href %}
+            {% set href = module.p3_hero_btn.url.href %}
+            {% if module.p3_hero_btn.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="{{ module.p3_hero_btn_style }}"
+               {% if module.p3_hero_btn.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.p3_hero_btn.rel %}rel="{{ module.p3_hero_btn.rel }}"{% endif %}
+               >
+              {{ module.p3_hero_btn_label }}
+            </a>
+            {% endif %}
+            {% set href = module.video_button.button_link.url.href %}
+            {% if module.video_button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a class="popup-youtube {{ module.video_popup_button_style }}" href="{{ href }}"
+               {% if module.video_button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.video_button.button_link.rel %}rel="{{ module.video_button.button_link.rel }}"{% endif %}
+               >
+              {{ module.video_button.button_text }}
+              {% icon
+                name="{{ module.video_button.select_an_icon.name }}"
+                style="{{ module.video_button.select_an_icon.type }}"
+                unicode="{{ module.video_button.select_an_icon.unicode }}"
+                icon_set="{{ module.video_button.select_an_icon.icon_set }}"
+              %}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+</section>
+
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-hero__text * {
+    color: {{ module.style.p3_hero_text_color.color }};
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

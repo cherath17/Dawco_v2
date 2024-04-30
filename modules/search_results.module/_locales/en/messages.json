@@ -1,0 +1,102 @@
+{
+  "display_featured_images.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_featured_images.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_featured_images.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_featured_images.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "display_featured_images.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "search_results",
+    "description" : "",
+    "placeholders" : null
+  },
+  "read_more_text.default" : {
+    "message" : "View more",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.default.alt" : {
+    "message" : "site_logo",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.default.src" : {
+    "message" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/site_logo.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

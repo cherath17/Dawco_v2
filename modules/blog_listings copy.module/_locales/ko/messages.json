@@ -1,0 +1,817 @@
+{
+  "alternate_image.label" : {
+    "message" : "대체 이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "blog_button_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "자세한 내용",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "버튼 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.help_text" : {
+    "message" : "행당 게시물 수",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.label" : {
+    "message" : "열",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.default" : {
+    "message" : "{{ picture_of_text }} {{ content.blog_author.display_name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.label" : {
+    "message" : "작성자 대체 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.default" : {
+    "message" : "블로그 게시물 요약:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.label" : {
+    "message" : "블로그 게시물 요약 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.default" : {
+    "message" : "주요 이미지:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.label" : {
+    "message" : "주요 이미지 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.default" : {
+    "message" : "{{ blog_post_summary_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.label" : {
+    "message" : "전체 블로그 게시물 요약 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.default" : {
+    "message" : "{{ featured_image_text }} {{ content.featured_image_alt_text }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.label" : {
+    "message" : "전체 추천 이미지 aria 레이블",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.label" : {
+    "message" : "기본 텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.default" : {
+    "message" : "사진",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.label" : {
+    "message" : "텍스트 사진",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.default" : {
+    "message" : "{{ read_full_post_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.label" : {
+    "message" : "전체 게시물 aria 레이블 읽기",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.default" : {
+    "message" : "전체 게시물 읽기",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.label" : {
+    "message" : "전체 게시물 텍스트 읽기",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_image" : {
+    "message" : "작성자 이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_name" : {
+    "message" : "작성자 이름",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.button" : {
+    "message" : "버튼",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.description" : {
+    "message" : "설명",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.image" : {
+    "message" : "이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.publish_date" : {
+    "message" : "게시일",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.tags" : {
+    "message" : "태그",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.title" : {
+    "message" : "제목",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.help_text" : {
+    "message" : "게시일 형식을 블로그 설정에서 변경할 수 있습니다. <a href='https://knowledge.hubspot.com/blog/manage-your-blog-template-and-settings#set-your-blog-s-date-formats' target='_blank' rel='noopener'>자세히 알아보기</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.label" : {
+    "message" : "각 목록 항목의 디스플레이",
+    "description" : "",
+    "placeholders" : null
+  },
+  "full_image.label" : {
+    "message" : "전체 이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.basic_grid" : {
+    "message" : "기본 그리드",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.side_by_side" : {
+    "message" : "나란히",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.single_column" : {
+    "message" : "단일 열",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.label" : {
+    "message" : "레이아웃",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.author.hover.label" : {
+    "message" : "호버",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.label" : {
+    "message" : "코너",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.radius.label" : {
+    "message" : "반경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.label" : {
+    "message" : "이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.label" : {
+    "message" : "작성자",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.blog_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.button.alignment.alignment.label" : {
+    "message" : "정렬",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.alignment.label" : {
+    "message" : "정렬",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.label" : {
+    "message" : "배경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.label" : {
+    "message" : "코너",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.radius.label" : {
+    "message" : "반경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.label" : {
+    "message" : "배경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.label" : {
+    "message" : "호버",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.label" : {
+    "message" : "버튼",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.label" : {
+    "message" : "설명",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.label" : {
+    "message" : "코너",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.radius.label" : {
+    "message" : "반경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.label" : {
+    "message" : "이미지",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.label" : {
+    "message" : "오버레이",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.1/1" : {
+    "message" : "1:1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.16/9" : {
+    "message" : "16:9",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.2/3" : {
+    "message" : "2:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/2" : {
+    "message" : "3:2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/4" : {
+    "message" : "3:4",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.4/3" : {
+    "message" : "4:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.label" : {
+    "message" : "가로세로비",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.label" : {
+    "message" : "크기",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.width.label" : {
+    "message" : "너비",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.between_image_and_content.label" : {
+    "message" : "이미지와 콘텐츠 사이",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "스타일",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.post.background.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.background.label" : {
+    "message" : "배경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.label" : {
+    "message" : "코너",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.radius.label" : {
+    "message" : "반경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.label" : {
+    "message" : "게시",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.post_content.label" : {
+    "message" : "콘텐츠 게시",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.space_between_posts.label" : {
+    "message" : "게시물 간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.label" : {
+    "message" : "게시일",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.label" : {
+    "message" : "배경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.label" : {
+    "message" : "코너",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.radius.label" : {
+    "message" : "반경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.color.label" : {
+    "message" : "색상",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.label" : {
+    "message" : "배경",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.label" : {
+    "message" : "테두리",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.label" : {
+    "message" : "호버",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.label" : {
+    "message" : "태그",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.space_between_tags.label" : {
+    "message" : "태그 간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.label" : {
+    "message" : "호버",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.label" : {
+    "message" : "제목",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.spacing.label" : {
+    "message" : "간격",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.font.label" : {
+    "message" : "글꼴",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.label" : {
+    "message" : "텍스트",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,75 @@
+<!--
+    templateType: section
+    label: one-column-text
+    isAvailableForNewContent: true
+    description: "one column text"
+    screenshotPath: ../images/section-previews/one-column-section.png
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  background_color="rgba(99, 218, 123, 1)",
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "40px"
+    },
+    "mobile" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/One-column-text",
+        offset=0,
+        width=12,
+        style={
+          "background_color" : {
+            "color" : "#63DA7B",
+            "opacity" : 100
+          },
+          "content_styles" : {
+            "mobile_spacing" : {
+              "margin" : {
+                "bottom" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "tablet_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px"
+                },
+                "left" : {
+                  "units" : "px"
+                },
+                "right" : {
+                  "units" : "px"
+                },
+                "top" : {
+                  "units" : "px"
+                }
+              }
+            }
+          }
+        }
+      %}
+        {% module_attribute "content" %}
+          <div style="font-size: 18px; text-align: center;"><span style="color: #114245;">CALL TO CATION MODULE</span></div>
+          <div style="font-size: 48px; line-height: 1; text-align: center;"><span style="color: #114245;"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></span></div>
+          <div style="font-size: 48px; line-height: 1; text-align: center; margin-top: 30px;">{{cta('4eb8cde4-6559-42db-85a5-8e1ee4cb52ee')}}</div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}

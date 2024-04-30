@@ -1,0 +1,797 @@
+{#
+String:
+{% set tag_filter = request.query_dict.tag %}
+
+Array-format
+{% set tag_filter = request.query_dict.tag | split(',') %}
+#}
+
+{% set author_filter = request.query_dict.author %}
+{% set total_pages = contents.total_page_count %}
+{% set tag_filter = request.query_dict.tags %}
+{% set hasit =  { nopost : tag_filter | length==0 ? false : true } %}
+
+<div class="blog_page_layout">
+  <div class="blog_page_heading">
+    <h4>
+      {% inline_text field="listing_title" value="{{ module.listing_title }}" %}
+    </h4>
+    <h1>
+      {% inline_text field="heading" value="{{ module.heading }}" %}
+    </h1>
+    <div class="filters_text">
+      {% inline_text field="filter_text" value="{{ module.filter_text }}" %}
+    </div>
+  </div>
+  <div class="blog-listing">
+    <div class="filters">
+      <div class="tag-filtering">
+        {#
+          {% set my_tags = blog_topics('default', 20) %}
+          #}
+        {% set base_url = 'https://mktg.dawco.ca/hubfs/blog_post_marker/' %}
+        {% set base_urlv2 = 'https://mktg.dawco.ca/hubfs/blog_type/' %}
+        {% set my_topics = blog_topics('default', 20) %}
+        {% set tags_list = ['Électrique','Instrumentation et contrôle','Mécanique de procédé','Tuyauterie','Service électrique et maintenance 24/7'] %}
+        {% set domaine_dactivite = [
+    {'title': 'Énergie', 'image': base_urlv2 + 'energie_img.svg'},
+    {'title': 'Électrification des transports', 'image': base_urlv2 + 'electrification_img.svg'},
+    {'title': 'Infrastructure', 'image': base_urlv2 + 'infrastructure_img.svg'},
+    {'title': 'Mine et métaux', 'image': base_urlv2 + 'mine_et_metaux_img.svg'},
+    {'title': 'Bâtiment', 'image': base_urlv2 + 'batiment_img.svg'},
+    {'title': 'Naval & défense', 'image': base_urlv2 + 'naval&defense_img.svg'},
+    {'title': 'Centres de donées', 'image': base_urlv2 + 'centres_de_donees_img.svg'},
+    {'title': 'Environnement', 'image': base_urlv2 + 'environnement_img.svg'},
+    {'title': 'Chimie et pétrochimie', 'image': base_urlv2 + 'chimie_et_petrochimie_img.svg'},
+    {'title': 'Manufacturier', 'image': base_urlv2 + 'manufacturier_img.svg'}
+] %}
+        {% set city = ['mumbai','chennai','delhi','bangalore'] %}
+        {% set my_tags = blog_tags('default', 20) %}
+        {#
+        <label for="tag-filter">Catégorie </label>
+        <select id="tag-filter" {% if tag_filter %}value="{{tag_filter}}"{% endif %}>
+          <option value="none" {% if !tag_filter || tag_filter == 'none' %} selected {% endif %}>Toutes les catégories</option>
+          {% for topic in my_tags %}
+          <option value="{{topic}}" {% if tag_filter && tag_filter == topic %} selected {% endif %}>{{topic}}</option>
+          {% endfor %}
+        </select>
+        #}
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.filter_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {#
+                {% for tags in tags_list %}
+                <li>
+                  {{tags}}
+                  <span class="selected_icon">
+                    {% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+                #}
+                {% for item in module.tag_list %}
+                <li>
+                  {% inline_text field="tag_title" value="{{ item.tag_title }}" %}
+                  <span class="selected_icon">
+                    {% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.domaine_dactivite_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {#
+                {% for list_items in domaine_dactivite %}
+                <li>
+                  {{list_items.title}}
+                  <span class="selected_icon">
+                  {% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                    </span>
+                </li>
+                {% endfor %}
+                #}
+                {% for item in module.domaine_dactivite_sec %}
+                <li>
+                  {% if item.domaine_dactivite_img.src %}
+                  <span class="domaine_dactivite_sec_img">
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.width }}" height="{{ item.domaine_dactivite_img.height }}"' %}
+                    {% if item.domaine_dactivite_img.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.width }}" height="{{ item.domaine_dactivite_img.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.domaine_dactivite_img.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.max_width }}" height="{{ item.domaine_dactivite_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.domaine_dactivite_img.loading != 'disabled' ? 'loading="{{ item.domaine_dactivite_img.loading }}"' : '' %}
+                    <img src="{{ item.domaine_dactivite_img.src }}" alt="{{ item.domaine_dactivite_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  </span>
+                  {% endif %}
+                  {% inline_text field="domaine_dactivite" value="{{ item.domaine_dactivite }}" %}
+                  <span class="selected_icon">
+                    {% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.villes_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {#
+                {% for city_list in city %}
+                <li>
+                  {{city_list}}
+                  <span class="selected_icon">{% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}</span>
+                </li>
+                {% endfor %}
+                #}
+                {% for item in module.location_sec %}
+                <li>
+                  {% inline_text field="domaine_dactivite" value="{{ item.domaine_dactivite }}" %}
+                  <span class="selected_icon">{% if module.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}"' %}
+                    {% if module.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.width }}" height="{{ module.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.selected_filter.max_width }}" height="{{ module.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.selected_filter.loading != 'disabled' ? 'loading="{{ module.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.selected_filter.src }}" alt="{{ module.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}</span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Author filer -->
+      {#
+      <div class="author-filtering">
+        {% set my_authors = blog_authors("default", 20) %}
+      <div class="accordion-container">
+        <div class="content">
+          <h4 class="accordion-title js-accordion-title">Author</h4>
+          <div class="accordion-content">
+            <ul id="tag_list" class="tag_list">
+              {% for author in my_authors %}
+              <li>{{author}}</li>
+              {% endfor %}
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+      #}
+      <button onclick="result('tags')" class="filterBtn">
+        {% inline_text field="filter_text" value="{{ module.filter_text }}" %}
+      </button>
+      <div class="footer_form">
+        <h5>{% inline_text field="subscribe_newsletter.form_title" value="{{ module.subscribe_newsletter.form_title }}" %}</h5>
+        <span class="description">
+          {% inline_text field="subscribe_newsletter.form_description" value="{{ module.subscribe_newsletter.form_description }}" %}
+        </span>
+        <div class="subscribe_newsletter">
+          {% form
+	form_to_use="{{ module.subscribe_newsletter.subscribe_newsletter.form_id }}"
+	response_response_type="{{ module.subscribe_newsletter.subscribe_newsletter.response_type }}"
+	response_message="{{ module.subscribe_newsletter.subscribe_newsletter.message }}"
+	response_redirect_id="{{ module.subscribe_newsletter.subscribe_newsletter.redirect_id }}"
+	response_redirect_url="{{module.subscribe_newsletter.subscribe_newsletter.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.subscribe_newsletter.subscribe_newsletter.gotowebinar_webinar_key }}"
+%}
+        </div>
+      </div>
+    </div>
+    <!--     <div class="no_data">
+      No Post
+    </div> -->
+    <div class="internal-blog">
+      {% set posts = [] %}
+      {% set has_list = [] %}
+      {% set unique_content_ids = [] %}
+      {#
+      {% if tag_filter | length != 0 %}
+      #}
+
+      {% for content in contents %}
+      {% for topic in content.topic_list %}
+      {% if topic in tag_filter %}
+      {% if content.id not in unique_content_ids %}
+      {% do posts.append(content) %}
+      {% do unique_content_ids.append(content.id) %}
+      {% endif %}
+      {% do hasit.update({ nopost: false }) %}
+      {% endif %}
+      {% endfor %}
+      {% endfor %}
+
+      {% if tag_filter | length == 0 %}
+      {% for content in contents %}
+      {% do posts.append(content) %}
+      {% endfor %}
+      {% endif %}
+
+      {% if hasit.nopost %}
+      <div class="no_data">
+        No Post
+      </div>
+      {% endif %}
+
+      {#
+      {% endif %}
+      #}
+      <!--   Author     -->
+      {#
+      {% elif author_filter && author_filter != 'none' %}
+      {% for content in contents %}
+      {% if content.blog_post_author == author_filter %}
+      {% do posts.append(content) %}
+      {% endif %}
+      {% endfor %}
+      {% else %}
+      {% for content in contents %}
+      {% do posts.append(content) %}
+      {% endfor %}
+      #}
+
+      <!--  Card   -->
+      {% for content in posts %}
+      <div class="card">
+        <div class="featured_image {{ module.border_enable }}">
+          <a href="{{ content.absolute_url }}">
+            <div class="marked_pin">
+              {#
+              {{ icon }}
+              {% if module.marked_pin.src %}
+              {% set sizeAttrs = 'width="{{ module.marked_pin.width }}" height="{{ module.marked_pin.height }}"' %}
+              {% if module.marked_pin.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.marked_pin.width }}" height="{{ module.marked_pin.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.marked_pin.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.marked_pin.max_width }}" height="{{ module.marked_pin.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.marked_pin.loading != 'disabled' ? 'loading="{{ module.marked_pin.loading }}"' : '' %}
+              <img src="{{ module.marked_pin.src }}" alt="{{ module.marked_pin.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              #}
+              {% for list_items in domaine_dactivite %}
+              {% if content.widgets.blog_domaine_d_activite.body.value == list_items.title %}
+              <img src="{{list_items.image}}" alt="{{list_items.image}}">
+              {% endif %}
+              {% endfor %}
+            </div>
+            <img
+                 class="hs-blog-post-listing__post-image hs-blog-post-listing__post-image p3-blog_image"
+                 src="{{ content.featured_image }}"
+                 loading="lazy"
+                 alt="{{ content.featured_image_alt_text }}"
+                 >
+          </a>
+        </div>
+        <div>
+        </div>
+        <div class="content">
+          <div class="article_info">
+            {#
+            <h6>
+              {{content.publish_date_localized|capitalize}}
+            </h6>
+            #}
+            <h4 class="title">
+              {#
+              {{content.name}}
+              #}
+              <!--  Title -->
+              {% for tags in content.topic_list %}
+              <span class="tag_list_details">
+                {{tags}}
+                {% if not loop.last %}<span>,</span>{% endif %}
+              </span>
+              {% endfor %}
+              {#
+              {{ content.widgets.blog_domaine_d_activite.body.value }}              
+              #}
+            </h4>
+            <span class="summary">
+              {{content.post_summary|truncatehtml(90)}}
+            </span>
+          </div>
+          {% if module.tag_icon.src %}
+          <div class="excerpt">
+            <div class="tag_icon">
+              {% set sizeAttrs = 'width="{{ module.tag_icon.width }}" height="{{ module.tag_icon.height }}"' %}
+              {% if module.tag_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.tag_icon.width }}" height="{{ module.tag_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.tag_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.tag_icon.max_width }}" height="{{ module.tag_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.tag_icon.loading != 'disabled' ? 'loading="{{ module.tag_icon.loading }}"' : '' %}
+              <img src="{{ module.tag_icon.src }}" alt="{{ module.tag_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div>
+              <span class="tag_list_details">
+                {{ content.widgets.blog_tags.body.value }}
+              </span>
+            </div>
+          </div> 
+          {% endif %}
+          {% if module.location_icon.src %}
+          <div class="excerpt excerpt-row">
+            <div class="tag_icon">
+              {% set sizeAttrs = 'width="{{ module.location_icon.width }}" height="{{ module.location_icon.height }}"' %}
+              {% if module.location_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.location_icon.width }}" height="{{ module.location_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.location_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.location_icon.max_width }}" height="{{ module.location_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.location_icon.loading != 'disabled' ? 'loading="{{ module.location_icon.loading }}"' : '' %}
+              <img src="{{ module.location_icon.src }}" alt="{{ module.location_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div>
+              <span class="tag_list_details">{{ content.widgets.blog_city.body.value }}</span>
+            </div>
+          </div>
+          {% endif %}
+          <div class="read-more">
+            <a href="{{ content.absolute_url }}">{{ module.read_more_text }}</a>
+          </div>
+        </div>
+      </div>   
+      {% endfor %}
+    </div> 
+  </div>
+</div>
+
+{#
+{% if contents.total_page_count > 1 %}
+<div class="blog-pagination">
+  {% set page_list = [-2, -1, 0, 1, 2] %}
+  {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+  {% elif contents.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+  {% elif current_page_num == 2 %}{% set offset = 1 %}
+  {% elif current_page_num == 1 %}{% set offset = 2 %}
+  {% else %}{% set offset = 0 %}{% endif %}
+  {% if current_page_num != 1 %}
+  <a class="blog-pagination__link blog-pagination__prev-link {{ "blog-pagination__prev-link--disabled" if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+    {% icon name="chevron-left" style="SOLID", width="13", no_wrapper=True %}
+  </a>
+  {% endif %}
+  {% for page in page_list %}
+  {% set this_page = current_page_num + page + offset %}
+  {% if this_page > 0 and this_page <= contents.total_page_count %}
+  <a class="blog-pagination__link blog-pagination__number-link {{ "blog-pagination__link--active" if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+  {% endif %}
+  {% endfor %}
+  {% if current_page_num < contents.total_page_count %}
+  <a class="blog-pagination__link blog-pagination__next-link {{ "blog-pagination__next-link--disabled" if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+    {% icon name="chevron-right" style="SOLID", width="13", no_wrapper=True %}
+  </a>
+  {% endif %}
+</div>
+{% endif %}
+#}
+
+{% require_css %}
+<style>
+  .blog_page_heading {
+    /*     max-width: calc(100% - 216px); */
+    margin: auto;
+    padding-top: 20px;
+    max-width: 1220px;
+  }
+  .blog_page_heading h4{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 7px;
+    margin: 0;
+  }
+  .blog_page_heading h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 47px;
+    color: #4D463F;
+  }
+  .filters_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4D463F;
+    text-transform: uppercase;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /*     gap: 22px; */
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    width: 100%;
+    font-size: 13px;
+    box-shadow: 0px 5px 15px 0px #252C6126, 0px 2px 4px 0px #8890C233;
+  }
+  .card .featured_image {
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+  }
+  .marked_pin {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: -5.67px;
+    top: 5px;
+  }
+  .border_enable {
+    border-bottom: 5px solid #FDB700;
+  }
+  .border_disable {
+    border-bottom: 0;
+  }
+  .card .featured_image img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*     padding: 5%; */
+    height: 100%;
+  }
+  .card .content .article_info{
+    /*     padding: 10px 10px 52px; */
+    padding: 10px 10px 20px;
+    min-height: 130px;
+    background: #fff;
+  }
+  .card .content .excerpt p{
+    font-size: 13px;
+    line-height: 17.5px;
+    font-weight: 400;
+    color: #4D463F;
+    padding: 5px 0px;
+    border-bottom: 1px solid #fff;
+  }
+  .card .content .excerpt {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    gap: 11px;
+    width: calc(100% - 20px);
+    margin: auto;
+    padding: 10px 0;
+    padding-right: 16px;
+    border-bottom: 1px solid #fff;
+  }
+  .card .content .excerpt-row {
+    align-items: center;
+  }
+  .card .content .excerpt .tag_icon {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .tag_list_details {
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #4D463F;
+  }
+  .article_info span,
+  .article_info .title {
+    color: #4D463F;
+  }
+  .card .content .article_info h6{
+    display: none;
+  }
+  .card .content .article_info .topic {
+    font-size: 13px;
+    line-height: 16.25px;
+    font-weight: 400;
+  }
+  .card h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .card .title {
+    font-size: 13px;
+    line-height: 16.25px;
+    padding-bottom: 4px;
+  }
+  .card .summary {
+    font-size: 16px !important;
+    font-weight: 700;
+    line-height: 18.4px;
+    margin:0px;
+    margin-top:4px;
+  }
+  .card .summary p {
+    min-height: 60px;
+    max-height: 60px;
+  }
+  .card .summary p span{
+    font-size: 16px !important;
+    font-weight: 700;
+    line-height: 18.4px;
+    margin:0px;
+    margin-top:4px;
+  }
+  .card h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .excerpt {
+    padding: 10px;
+  }
+  .card img {
+    width: 100%;
+    height: 100% !important;
+    max-height: auto;
+  }
+  .read-more {
+    padding: 16px 10px 10px;
+  }
+  .read-more a {
+    display: block;
+    text-decoration: underline;
+    color: #fd4e00;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.5s;
+  }  
+  .read-more a:hover{
+    transform: scale(1.05);
+  }
+  /*  Accordion  */
+  .accordion-container .accordion-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 18px 63px 18px 13px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4D463F;
+    cursor: pointer;
+  }
+  .accordion-container .accordion-title:hover,
+  .accordion-container .accordion-title:active,
+  .accordion-title.open { 
+    background-color: #EFEFEF;
+    color: #4D463F;
+    font-weight: 800;
+  }
+  .accordion-container .accordion-title::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 41%;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(226deg);
+    transition: 0.5s;
+  }
+  .accordion-container .accordion-title.open::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 41%;
+    /* top: 15px; */
+    /* border: 8px solid transparent; */
+    /* border-bottom-color: #4D463F; */
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(45deg);
+
+  }
+  /*CSS for CodePen*/
+  .accordion-content p{
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #DEDDDC;
+  }
+  .accordion-container {
+    min-width: 347px;
+    max-width: 347px;
+    margin: 0 auto;
+  }
+  .tag_list {
+    padding: 0;
+    margin: 0;
+  }
+  .tag_list li{
+    display: flex;
+    align-items: center;
+    /*     justify-content: space-between; */
+    list-style-type: none;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+
+    color: #4D463F;
+    border-bottom: 1px solid #DEDDDC;
+    cursor: pointer;
+  }
+  .domaine_dactivite_sec_img {
+    margin-right: 12px;
+  }
+  .selected_icon {
+    margin-left: auto;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .selected_filter .selected_icon {
+    min-width: 16px;
+    min-height: 16px;
+    line-height: normal;
+    opacity: 1;
+  }
+  .selected_icon img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+</style>
+{% end_require_css %}
+
+<script>
+  var filterApply = [];
+  var count_value = document.getElementsByClassName("filter_count");
+
+  // Reset localStorage if URL does not contain the 'tags' parameter
+  const urlParams = new URLSearchParams(window.location.search);
+  if (!urlParams.has('tags')) {
+    localStorage.removeItem('filterApply');
+    localStorage.removeItem('count_value');
+  }
+
+  if (localStorage.getItem('filterApply')) {
+    filterApply = JSON.parse(localStorage.getItem('filterApply'));
+    console.log(filterApply,'-----');
+    applyFilters();
+    updateCount();
+  }
+
+  var tagLists = document.getElementsByClassName("tag_list");
+  for (var j = 0; j < tagLists.length; j++) {
+    (function(j) {
+      if (localStorage.getItem('count_value')) {
+        var storedCount = JSON.parse(localStorage.getItem('count_value'))[j];
+        count_value[j].innerHTML = storedCount ? storedCount : '';
+      }
+      var tagList = tagLists[j];
+      var listItems = tagList.getElementsByTagName("li");
+      for (var i = 0; i < listItems.length; i++) {
+        listItems[i].addEventListener("click", function(e) {
+          var value = this.textContent.trim(); // Get the text content of the clicked li element
+          this.classList.toggle('selected_filter');
+          if (!filterApply.includes(value)) {
+            filterApply.push(value);
+          } else {
+            filterApply.splice(filterApply.indexOf(value), 1);
+          }
+          localStorage.setItem('filterApply', JSON.stringify(filterApply));
+          console.log('ssss',filterApply)
+
+          applyFilters();
+          var count = Array.from(listItems).filter(item => item.classList.contains('selected_filter')).length;
+          count_value[j].innerHTML = count > 0 ? `[${count} item${count !== 1 ? 's' : ''}]` : '';
+          var cc = JSON.parse(localStorage.getItem('count_value') || '[0,0,0]');
+          cc[j] = count > 0 ? `[${count} item${count !== 1 ? 's' : ''}]` : '';
+          localStorage.setItem('count_value', JSON.stringify(cc));
+        });
+      }
+    })(j);
+  }
+
+  // Function to apply filters
+  function applyFilters() {
+    var allListItems = document.querySelectorAll('.tag_list li');
+    allListItems.forEach(li => {
+      var value = li.textContent.trim();
+      if (filterApply.includes(value)) {
+        li.classList.add('selected_filter');
+      } else {
+        li.classList.remove('selected_filter');
+      }
+    });
+  }
+
+  function extractTags(url) {
+    var params = new URLSearchParams(url.split('?')[1]);
+    var tags = params.get('tags');
+    if (tags) {
+      console.log(tags);
+      return tags.split(',').map(tag => decodeURIComponent(tag));
+    }
+    return [];
+  }
+
+  function setTagFilterValue() {
+    var currentUrl = window.location.href;
+    var tagsArray = extractTags(currentUrl);
+    // Convert the tagsArray to a string
+    var tagFilterValue = JSON.stringify(tagsArray);
+    {% set tag_filter = tagFilterValue %}
+    console.log(currentUrl,tagsArray,tagFilterValue);
+    // Set the tag_filter value in localStorage
+    localStorage.setItem('tag_filter', tagFilterValue);
+  }
+  setTagFilterValue();
+
+  function updateCount(i, listItems) {
+    // Reset the count, not needed to define this function as it's empty.
+  }
+
+  const result = (origin) => {
+    const searchParam = new URLSearchParams(window.location.search);
+    searchParam.set(origin, filterApply.toString());
+    window.location.search = decodeURIComponent(searchParam.toString());
+  }
+</script>

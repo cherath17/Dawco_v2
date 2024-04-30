@@ -1,0 +1,42 @@
+{# Need help setting up site search?
+   Start here: https://knowledge.hubspot.com/articles/kcs_article/cos-general/how-do-i-set-up-a-results-page-for-my-search-field-in-hubspot #}
+
+{% set search_page = module.results.use_custom_search_results_template is truthy and module.results.path_id ? content_by_id(module.results.path_id).absolute_url : site_settings.content_search_results_page_path %}
+{% unless (search_page is string_containing "//") %}
+{% set search_page = "/" ~ search_page %}
+{% endunless %}
+{% set search_page = search_page|regex_replace("http:", "") %}
+
+<div class="hs-search-field searchmod">
+  <div class="hs-search-field__bar search__input">
+    <div class="hs-search-field">
+      <div class="hs-search-field__bar">
+        <form data-hs-do-not-collect="true" action="{{ search_page }}">
+          {% if module.field_label %}
+          <label for="term">{{ module.field_label }}</label>
+          {% endif %}
+          <input type="text" class="hs-search-field__input" name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="{{ module.placeholder }}">
+
+          {% if module.content_types.website_pages %}
+          <input type="hidden" name="type" value="SITE_PAGE">
+          {% endif %}
+          {% if module.content_types.landing_pages %}
+          <input type="hidden" name="type" value="LANDING_PAGE">
+          {% endif %}
+          {% if module.content_types.blog_posts %}
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+          {% endif %}
+          {% if module.content_types.knowledge_articles %}
+          <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+          {% endif %}
+
+          {% if module.include_search_button %}
+          <button aria-label="Search" class="search__btn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 15 16" fill="none" class="search_img">
+  <path d="M8.80069 0.5C5.80027 0.5 3.35725 3.11742 3.35725 6.33204C3.35725 7.72881 3.8145 9.00894 4.58202 10.0138L0.244141 14.6602L1.02745 15.5L5.36479 10.8524C6.33348 11.7033 7.54808 12.167 8.80069 12.1641C11.8011 12.1641 14.2441 9.54666 14.2441 6.33204C14.2441 3.11742 11.8011 0.5 8.80069 0.5ZM8.80069 1.66641C11.2121 1.66641 13.1555 3.74844 13.1555 6.33204C13.1555 8.91563 11.2121 10.9977 8.80069 10.9977C6.38925 10.9977 4.44594 8.91563 4.44594 6.33204C4.44594 3.74844 6.38925 1.66641 8.80069 1.66641Z" fill="#114245"/>
+</svg></button>
+          {% endif %}
+        </form>
+      </div>
+      <ul class="hs-search-field__suggestions"></ul>
+    </div>

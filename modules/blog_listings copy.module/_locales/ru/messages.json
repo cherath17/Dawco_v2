@@ -1,0 +1,817 @@
+{
+  "alternate_image.label" : {
+    "message" : "Альтернативное изображение",
+    "description" : "",
+    "placeholders" : null
+  },
+  "blog_button_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "Читать еще",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "Текст кнопки",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.help_text" : {
+    "message" : "Количество публикаций в строке",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.label" : {
+    "message" : "Столбцы",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.default" : {
+    "message" : "{{ picture_of_text }} {{ content.blog_author.display_name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.label" : {
+    "message" : "Альтернативный текст автора",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.default" : {
+    "message" : "Краткая информация о публикации в блоге:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.label" : {
+    "message" : "Текст краткой информации о публикации в блоге",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.default" : {
+    "message" : "Избранное изображение:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.label" : {
+    "message" : "Текст избранного изображения",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.default" : {
+    "message" : "{{ blog_post_summary_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.label" : {
+    "message" : "Краткий текст полной публикации в блоге",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.default" : {
+    "message" : "{{ featured_image_text }} {{ content.featured_image_alt_text }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.label" : {
+    "message" : "Метка ARIA полноценного изображения",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.label" : {
+    "message" : "Текст по умолчанию",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.default" : {
+    "message" : "Изображение",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.label" : {
+    "message" : "Изображение текста",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.default" : {
+    "message" : "{{ read_full_post_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.label" : {
+    "message" : "Читать публикацию полностью",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.default" : {
+    "message" : "Прочитать публикацию полностью:",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.label" : {
+    "message" : "Прочитать полный текст публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_image" : {
+    "message" : "Фотография автора",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_name" : {
+    "message" : "Имя автора",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.button" : {
+    "message" : "Кнопка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.description" : {
+    "message" : "Описание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.image" : {
+    "message" : "Изображение",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.publish_date" : {
+    "message" : "Дата публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.tags" : {
+    "message" : "Теги",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.title" : {
+    "message" : "Заголовок",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.help_text" : {
+    "message" : "Формат даты публикации можно изменить в настройках блога. <a href='https://knowledge.hubspot.com/blog/manage-your-blog-template-and-settings#set-your-blog-s-date-formats' target='_blank' rel='noopener'>Подробнее</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.label" : {
+    "message" : "Отобразить для каждого элемента списка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "full_image.label" : {
+    "message" : "Изображение полностью",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.basic_grid" : {
+    "message" : "Базовая сетка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.side_by_side" : {
+    "message" : "Рядом",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.single_column" : {
+    "message" : "Один столбец",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.label" : {
+    "message" : "Макет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.author.hover.label" : {
+    "message" : "При наведении",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.label" : {
+    "message" : "Угол",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.radius.label" : {
+    "message" : "Радиус",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.label" : {
+    "message" : "Изображение",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.label" : {
+    "message" : "Автор",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.blog_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.button.alignment.alignment.label" : {
+    "message" : "Выравнивание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.alignment.label" : {
+    "message" : "Выравнивание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.label" : {
+    "message" : "Фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.label" : {
+    "message" : "Угол",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.radius.label" : {
+    "message" : "Радиус",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.label" : {
+    "message" : "Фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.label" : {
+    "message" : "При наведении",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.label" : {
+    "message" : "Кнопка",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.label" : {
+    "message" : "Описание",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.label" : {
+    "message" : "Угол",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.radius.label" : {
+    "message" : "Радиус",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.label" : {
+    "message" : "Изображение",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.label" : {
+    "message" : "Оверлей",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.1/1" : {
+    "message" : "1:1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.16/9" : {
+    "message" : "16:9",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.2/3" : {
+    "message" : "2:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/2" : {
+    "message" : "3:2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/4" : {
+    "message" : "3:4",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.4/3" : {
+    "message" : "4:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.label" : {
+    "message" : "Соотношение сторон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.label" : {
+    "message" : "Размер",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.width.label" : {
+    "message" : "Ширина",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.between_image_and_content.label" : {
+    "message" : "Между изображением и контентом",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "Стили",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.post.background.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.background.label" : {
+    "message" : "Фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.label" : {
+    "message" : "Угол",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.radius.label" : {
+    "message" : "Радиус",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.label" : {
+    "message" : "Публикация",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.post_content.label" : {
+    "message" : "Содержание публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.space_between_posts.label" : {
+    "message" : "Расстояние между публикациями",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.label" : {
+    "message" : "Дата публикации",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.label" : {
+    "message" : "Фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.label" : {
+    "message" : "Угол",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.radius.label" : {
+    "message" : "Радиус",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.color.label" : {
+    "message" : "Цвет",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.label" : {
+    "message" : "Фон",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.label" : {
+    "message" : "Граница",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.label" : {
+    "message" : "При наведении",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.label" : {
+    "message" : "Теги",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.space_between_tags.label" : {
+    "message" : "Расстояние между тегами",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.label" : {
+    "message" : "При наведении",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.label" : {
+    "message" : "Заголовок",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.spacing.label" : {
+    "message" : "Интервал",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.font.label" : {
+    "message" : "Шрифт",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.label" : {
+    "message" : "Текст",
+    "description" : "",
+    "placeholders" : null
+  }
+}

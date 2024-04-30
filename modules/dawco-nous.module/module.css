@@ -1,0 +1,160 @@
+.cam-aff {
+  max-width: 1084px;
+  margin: auto;
+}
+.cam-ine-1 {
+  display: flex;
+  gap: 110px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+  flex-direction:row;
+}
+.cam-ine-2 {
+  display: flex;
+  gap: 110px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 20px;
+  flex-direction:row-reverse;
+}
+.cam_ine_align-1 {
+  align-items:center;
+}
+.cam_ine_align-2 {
+  align-items:flex-start;
+}
+.cam-tsf span {
+  font-size: 18px;
+  color: #4d463f;
+  font-weight:475;
+}
+.cam-tsf h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  padding-top: 10px;
+}
+.cam-tsf p {
+  color: #4d463f;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight:475;
+}
+.dec-btn {
+  border-radius: 4px;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+}
+.p3-learn__cta-btn-1{
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fd560a !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  color:#fff !important;
+  border:none !important;
+  padding: 12.5px 36px !important;
+  /*   transition: all .4s ease-in-out; */
+}
+.p3-learn__cta-btn-2{
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fdb700 !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  color:#000 !important;
+  border:none !important;
+  padding: 12.5px 36px !important;
+  /*   transition: all .4s ease-in-out; */
+}
+.p3-learn__cta-btn-3{
+  border: none!important;
+  border-radius: 4px!important;
+  color: #fd560a!important;
+  font-size: 14px!important;
+  font-weight: 600!important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.p3-learn__cta-btn-3 svg{
+  fill:#fd560a !important;
+}
+.p3-learn__cta-btn-4 {
+  display: none;
+}
+.p3-learn__cta-btn-1 svg{
+  transition: all .4s ease-in-out;
+  right: -9px;
+  position: relative;
+  fill:#fff !important
+}
+.p3-learn__cta-btn-1:hover svg{
+  position: relative;
+  right:-22px;
+}
+.p3-learn__cta-btn-2 svg{
+  transition: all .4s ease-in-out;
+  right: -9px;
+  position: relative;
+  fill:#000 !important
+}
+.p3-learn__cta-btn-2:hover svg{
+  position: relative;
+  right:-22px;
+}
+.p3-learn__cta-btn-3 svg{
+  transition: all .4s ease-in-out;
+  right: -9px;
+  position: relative;
+}
+.p3-learn__cta-btn-3:hover svg{
+  position: relative;
+  right:-22px;
+}
+.p3-learn__cta {
+  margin-bottom: 10px;
+}
+/* .map_button:hover:after {
+right: 20px;
+} */
+
+@media only screen and (min-width: 480px) and (max-width: 768px){
+  .cam-ine-1,
+  .cam-ine-2,
+  .cam_ine_align-2{
+    gap: 40px;
+    flex-direction: column;
+  }
+  .cam-ine-1,
+  .cam-ine-2,
+  .cam_ine_align-1 img,
+  .cam_ine_align-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bottom-vec img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) { 
+  .cam-ine-1,
+  .cam-ine-2,
+  .cam_ine_align-2{
+    gap: 40px;
+    flex-direction: column;
+  }
+  .cam-ine-1,
+  .cam-ine-2,
+  .cam_ine_align-1 img,
+  .cam_ine_align-2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cam-tsf h2 {
+    font-size: 28px;
+    line-height: normal;
+  }
+}

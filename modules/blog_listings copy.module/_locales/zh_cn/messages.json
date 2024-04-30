@@ -1,0 +1,817 @@
+{
+  "alternate_image.label" : {
+    "message" : "替代图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "blog_button_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_button_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.label" : {
+    "message" : "Rich text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_description.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "blog_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.label" : {
+    "message" : "Link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "button_text.default" : {
+    "message" : "阅读更多",
+    "description" : "",
+    "placeholders" : null
+  },
+  "button_text.label" : {
+    "message" : "按钮文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.help_text" : {
+    "message" : "每行的文章数",
+    "description" : "",
+    "placeholders" : null
+  },
+  "columns.label" : {
+    "message" : "列",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.default" : {
+    "message" : "{{ picture_of_text }} {{ content.blog_author.display_name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.author_alt_text.label" : {
+    "message" : "作者替代文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.default" : {
+    "message" : "博文摘要：",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.blog_post_summary_text.label" : {
+    "message" : "博文摘要文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.default" : {
+    "message" : "精选图片：",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.featured_image_text.label" : {
+    "message" : "精选图片文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.default" : {
+    "message" : "{{ blog_post_summary_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_blog_post_summary_text.label" : {
+    "message" : "完整的博文摘要文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.default" : {
+    "message" : "{{ featured_image_text }} {{ content.featured_image_alt_text }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.full_featured_image_aria_label.label" : {
+    "message" : "完整的精选图像 Aria Label",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.label" : {
+    "message" : "默认文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.default" : {
+    "message" : "以下对象的图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.picture_of_text.label" : {
+    "message" : "以下对象的图片文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.default" : {
+    "message" : "{{ read_full_post_text }} {{ content.name }}",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_aria_label.label" : {
+    "message" : "阅读完整的文章 Aria Label",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.default" : {
+    "message" : "阅读完整文章：",
+    "description" : "",
+    "placeholders" : null
+  },
+  "default_text.read_full_post_text.label" : {
+    "message" : "阅读完整文章文本：",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_image" : {
+    "message" : "作者图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.author_name" : {
+    "message" : "作者姓名",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.button" : {
+    "message" : "按钮",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.description" : {
+    "message" : "描述",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.image" : {
+    "message" : "图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.publish_date" : {
+    "message" : "发布日期",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.tags" : {
+    "message" : "标签",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.choices.title" : {
+    "message" : "标题",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.help_text" : {
+    "message" : "发布日期格式可以在博客设置中进行更改。<a href='https://knowledge.hubspot.com/blog/manage-your-blog-template-and-settings#set-your-blog-s-date-formats' target='_blank' rel='noopener'>了解详情</a>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "display_for_each_list_item.label" : {
+    "message" : "针对各个列表项显示",
+    "description" : "",
+    "placeholders" : null
+  },
+  "full_image.label" : {
+    "message" : "完整图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.basic_grid" : {
+    "message" : "基本网格",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.side_by_side" : {
+    "message" : "并排",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.choices.single_column" : {
+    "message" : "单列",
+    "description" : "",
+    "placeholders" : null
+  },
+  "layout.label" : {
+    "message" : "布局",
+    "description" : "",
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.author.hover.label" : {
+    "message" : "悬停",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.hover.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.label" : {
+    "message" : "圆角",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.corner.radius.label" : {
+    "message" : "半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.image.label" : {
+    "message" : "图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.label" : {
+    "message" : "作者",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.author.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.blog_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.blog_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.button.alignment.alignment.label" : {
+    "message" : "对齐",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.alignment.label" : {
+    "message" : "对齐",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.background.label" : {
+    "message" : "背景",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.label" : {
+    "message" : "圆角",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.corner.radius.label" : {
+    "message" : "半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.background.label" : {
+    "message" : "背景",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.label" : {
+    "message" : "悬停",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.hover.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.label" : {
+    "message" : "按钮",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.button.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.label" : {
+    "message" : "描述",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.description.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.label" : {
+    "message" : "圆角",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.corner.radius.label" : {
+    "message" : "半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.label" : {
+    "message" : "图片",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.overlay.label" : {
+    "message" : "覆盖",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.1/1" : {
+    "message" : "1:1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.16/9" : {
+    "message" : "16:9",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.2/3" : {
+    "message" : "2:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/2" : {
+    "message" : "3:2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.3/4" : {
+    "message" : "3:4",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.choices.4/3" : {
+    "message" : "4:3",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.aspect_ratio.label" : {
+    "message" : "宽高比",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.label" : {
+    "message" : "大小",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.size.width.label" : {
+    "message" : "宽度",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.between_image_and_content.label" : {
+    "message" : "图片和内容之间",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.image.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "样式",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.name" : {
+    "message" : "blog_listing_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.post.background.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.background.label" : {
+    "message" : "背景",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.label" : {
+    "message" : "圆角",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.corner.radius.label" : {
+    "message" : "半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.label" : {
+    "message" : "帖子",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.post_content.label" : {
+    "message" : "文章内容",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.space_between_posts.label" : {
+    "message" : "文章间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.post.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.label" : {
+    "message" : "发布日期",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.publish_date.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.background.label" : {
+    "message" : "背景",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.label" : {
+    "message" : "圆角",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.corner.radius.label" : {
+    "message" : "半径",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.color.label" : {
+    "message" : "颜色",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.background.label" : {
+    "message" : "背景",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.border.label" : {
+    "message" : "边框",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.label" : {
+    "message" : "悬停",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.hover.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.label" : {
+    "message" : "标签",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.space_between_tags.label" : {
+    "message" : "标签间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.tags.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.label" : {
+    "message" : "悬停",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.hover.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.label" : {
+    "message" : "标题",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.spacing.spacing.label" : {
+    "message" : "间距",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.font.label" : {
+    "message" : "字体",
+    "description" : "",
+    "placeholders" : null
+  },
+  "styles.title.text.label" : {
+    "message" : "文本",
+    "description" : "",
+    "placeholders" : null
+  }
+}

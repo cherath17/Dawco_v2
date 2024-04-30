@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "master_language" : "fr",
+  "icon" : "fontawesome-5.14.0:Alternate%20Identification%20Card:SOLID",
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 156628527243,
+  "label" : "Contact",
+  "is_available_for_new_content" : true
+}

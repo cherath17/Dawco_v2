@@ -1,0 +1,26 @@
+.p3_content{
+  width:500px;
+}
+
+.p3_sub_content{
+  max-width: 800px;
+}
+@media only screen and (max-width: 640px)  {
+  .p3_content{
+    width:100%;
+  }
+
+  .p3_sub_content{
+    max-width:100%;
+  }
+}
+
+@media only screen and (max-width: 768px)  {
+  .p3_content{
+    width:100%;
+  }
+
+  .p3_sub_content{
+    max-width:100%;
+  }
+}

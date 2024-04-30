@@ -1,0 +1,21 @@
+<ul  class="listing_detail">
+  {% for item in module.field_group %}
+  <li class="useflex">
+    {% if item.icon_image.src %}
+    {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}"' %}
+    {% if item.icon_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ item.icon_image.width }}" height="{{ item.icon_image.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif item.icon_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.icon_image.max_width }}" height="{{ item.icon_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.icon_image.loading != 'disabled' ? 'loading="{{ item.icon_image.loading }}"' : '' %}
+    <img src="{{ item.icon_image.src }}" alt="{{ item.icon_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    <div class="text_content">
+      <h3>
+        {% inline_text field="listing_detail" value="{{ item.listing_detail }}" %}
+      </h3>
+    </div> 
+    {% endfor %}
+  </li>
+</ul>

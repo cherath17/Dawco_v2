@@ -1,0 +1,268 @@
+[ {
+  "id" : "8e935429-3550-c4b2-b393-39eef8320fbc",
+  "name" : "cards_group",
+  "display_width" : null,
+  "label" : "Cards group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 12
+  },
+  "children" : [ {
+    "id" : "3aa621a4-2dc5-485a-ffcf-d96f2c22e3c0",
+    "name" : "card_image",
+    "display_width" : null,
+    "label" : "Card Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    }
+  }, {
+    "id" : "eebb4121-8bf0-5ad0-fd6e-6d734dc80ef6",
+    "name" : "card_title",
+    "display_width" : null,
+    "label" : "Card Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Conception-Réalisation"
+  }, {
+    "id" : "1897b448-ed5b-0369-436f-60163601ca81",
+    "name" : "card_lists",
+    "display_width" : null,
+    "label" : "Card Lists",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  }, {
+    "card_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/21.png",
+      "alt" : "21",
+      "loading" : "lazy",
+      "width" : 229,
+      "height" : 147,
+      "max_width" : 229,
+      "max_height" : 147
+    },
+    "card_title" : "Conception-Réalisation",
+    "card_lists" : [ "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle", "ConstructibilitéConception-constructionAutomatisation et contrôle" ]
+  } ]
+}, {
+  "id" : "58180bfd-f793-ee74-7261-a2781b5d30d9",
+  "name" : "left_arrow",
+  "display_width" : null,
+  "label" : "left Arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://mktg.dawco.ca/hubfs/left-arrow.svg",
+    "alt" : "left-arrow",
+    "loading" : "lazy",
+    "width" : 24,
+    "height" : 15,
+    "max_width" : 24,
+    "max_height" : 15
+  }
+}, {
+  "id" : "c47d3e2c-047c-c2e1-c20a-97967487f196",
+  "name" : "right_arrow",
+  "display_width" : null,
+  "label" : "Right Arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://mktg.dawco.ca/hubfs/right-arrow.svg",
+    "alt" : "right-arrow",
+    "loading" : "lazy",
+    "width" : 24,
+    "height" : 15,
+    "max_width" : 24,
+    "max_height" : 15
+  }
+} ]

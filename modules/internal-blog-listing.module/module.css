@@ -1,0 +1,214 @@
+.blog-listing {
+  display: flex;
+  gap: 44px;
+  margin: 7px auto 0 auto;
+  max-width: 1220px;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 347px;
+  /*   justify-content: space-between; */
+  margin-bottom: 20px;
+}
+.filters label,
+.filters select {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+}
+.internal-blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 110%;
+  min-height: 100%;
+  padding-bottom: 5%;
+  gap: 20px;
+}
+.no_layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 32px;
+  text-align: center;
+  width: 100%;
+  /*   height: inherit; */
+  padding: 100px 0;
+}
+.no_blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
+div.blog-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+a.blog-pagination__link{
+  display: flex;
+  align-items: center;
+  color: #fd4e00;
+  padding: 10px;
+  text-decoration: none;
+}
+a.blog-pagination__link svg {
+  fill: #fd4e00;
+}
+a.blog-pagination__link.blog-pagination__link--active {
+  background-color: #fd4e00;
+  color: #ffffff;
+}
+.selected_filter {
+}
+.tag-filtering,.internal-blog {
+  color: #000;
+}
+.filterBtn {
+  font-size: 18px;
+  padding: 25.5px 25px;
+  line-height: 18px;
+  border-radius: 0;
+  background-color: #fd560a;
+}
+.filterBtn:hover{
+  border-radius: 0;
+  border: 0;
+}
+.filter_count {
+  font-size: 12px;
+  line-height: 12px;
+  margin-left: auto;
+}
+.footer_form {
+  text-align: center;
+  padding: 15px;
+  background: #EFEFEF;
+  margin-top: 35px;
+}
+.footer_form h5{
+  font-size: 26px;
+  line-height: 32px;
+  width: calc(100% - 104px);
+  margin: auto;
+  color: #FD560A;
+}
+.footer_form .description,
+.footer_form .description span {
+  font-size: 16px;
+  padding: 10px 0 0;
+  color: #4D463F;
+}
+.subscribe_newsletter {
+  margin-top: -20px;
+}
+.subscribe_newsletter form,form input[type=email], form input[type=file], form input[type=number], form input[type=password], form input[type=search], form input[type=tel], form input[type=text], form select, form textarea{
+  background: transparent;
+}
+.subscribe_newsletter form .hs-form-field:not(.hs-fieldtype-checkbox) label {
+  background: #EFEFEF !important;
+  left: 14px !important;
+  padding: 5px 10px !important;
+}
+.subscribe_newsletter form .hs-error-msgs label{
+  left: 0px !important;
+}
+.subscribe_newsletter form .hs-button, form input[type=submit] {
+  margin-top: 16px;
+  width: 100%;
+}
+.subscribe_newsletter .hs-form-field {
+  margin-bottom: 0;
+}
+.subscribe_newsletter input {
+  font-size: 18px !important;
+  line-height: 18px !important;
+  padding: 16px 11.28px !important;
+  border-radius: 6px !important;
+}
+.no_data {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* .mobile_footer_form {
+display: none;
+} */
+@media only screen and (max-width: 768px){
+  .blog-listing{
+    gap: 20px;
+    width: 100%;
+    max-width: calc(100% - 20px);
+  }
+  .blog_page_heading {
+    max-width: calc(100% - 20px) !important;
+  }
+  .filters {
+    flex-direction: column;
+  }
+  .filters .tag-filtering,
+  .filters .author-filtering {
+    margin-bottom: 10px;
+  }
+  .internal-blog {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-listing,.filters {
+    flex-direction: column;
+  }
+  .blog_page_heading {
+    max-width: calc(100% - 20px) !important;
+  }
+  .blog_page_heading h4 {
+    font-size: 14px;
+    padding-top: 0 !important;
+  }
+  .blog_page_heading h1 {
+    font-size: 36px !important;
+    padding-bottom: 0 !important;
+  }
+  .blog_page_heading h4 {
+    padding-top: 0;
+  }
+  .filters_text {
+    padding-top: 10px;
+    text-align: center;
+  }
+  .filters{
+    max-width: 100% !important;
+  }
+  .blog-listing{
+    width: calc(100% - 20px) !important;
+  }
+  .accordion-container{
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  .filters .tag-filtering {
+    margin: 0;
+  }
+  .blog-listing {
+    gap: 0;
+  }
+  .internal-blog {
+    height: 100%;
+    gap: 22px;
+    padding: 21.5px;
+  }
+  .desktop_footer_form {
+    display: none;
+  }
+  /*   .mobile_footer_form {
+  display: block;
+  max-width: calc(100% - 20px);
+  margin: auto;
+} */
+}

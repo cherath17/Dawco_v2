@@ -1,0 +1,210 @@
+{% require_css %}
+<style>
+  .{{ name }}.p3_flip_cards__section {
+    {{ module.style.desktop_spacing.spacing.css }};
+    background-color: rgba( {{ module.style.background_color.color.color|convert_rgb }}, {{ module.style.background_color.color.opacity * 0.01 }} );
+  }
+  @media only screen and (max-width: 767px) {
+    .{{ name }}.p3_flip_cards__section {
+      {{ module.style.mobile_spacing.spacing.css }};
+    }
+  }
+  @media (min-width:768px) and (max-width: 1024px) {
+    .{{ name }}.p3_flip_cards__section {
+      {{ module.style.tab_spacing.spacing.css }};
+    }
+  }
+</style>
+{% end_require_css %}
+<div class="{{ name }} p3_flip_cards__section" {% if module.want_to_add_an_anchor_id %} id="{{ module.anchor_id }}" {% endif %}>
+  <div class="container-ip">
+    <div class="p3_flip_cards__title">
+      <h3>{{ module.heading }}</h3>
+    </div>
+    <div class="p3_flip_cards__content {{ module.choice_field }}">
+      {% for item in module.flip_card.cards %}
+      <div class="p3_flip_cards__details">
+        {% if item.front_card.button.button_link.url.href %}
+        {% set href = item.front_card.button.button_link.url.href %}
+        {% if item.front_card.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if item.front_card.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item.front_card.button.button_link.rel %}rel="{{ item.front_card.button.button_link.rel }}"{% endif %}
+           >
+          {% endif %}
+          <div class="p3_flip_cards__detailed">
+            <div class="p3_flip_cards__description">
+              <div class="p3_flip_cards__front">
+                <div class="flip-card-back-image">
+                  {% if item.back_card.select_an_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}"' %}
+                  {% if item.back_card.select_an_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.back_card.select_an_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.max_width }}" height="{{ item.back_card.select_an_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.back_card.select_an_image.loading != 'disabled' ? 'loading="{{ item.back_card.select_an_image.loading }}"' : '' %}
+                  <img src="{{ item.back_card.select_an_image.src }}" alt="{{ item.back_card.select_an_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                <div class="p3_flip_cards__image">
+                  {% if item.front_card.select_an_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.width }}" height="{{ item.front_card.select_an_image.height }}"' %}
+                  {% if item.front_card.select_an_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.width }}" height="{{ item.front_card.select_an_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.front_card.select_an_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.max_width }}" height="{{ item.front_card.select_an_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.front_card.select_an_image.loading != 'disabled' ? 'loading="{{ item.front_card.select_an_image.loading }}"' : '' %}
+                  <img src="{{ item.front_card.select_an_image.src }}" alt="{{ item.front_card.select_an_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                <div class="p3_flip_cards__text">
+                  {{ item.front_card.description }}
+                  {% if item.front_card.enabel_video %}
+                  <div class="p3_flip_cards__btn_link video">
+                    {{ item.front_card.video.texte_video }}
+                    <span class="video_icon">
+                      <img src="https://mktg.dawco.ca/hubfs/video_icon.svg" alt="video">
+                    </span>
+                  </div>
+                  {% else %}
+                  <div class="p3_flip_cards__btn_link">
+                    {% set href = item.front_card.button.button_link.url.href %}
+                    {% if item.front_card.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                    {% set href = "mailto:" + href %}
+                    {% endif %}
+                    <a href="{{ href }}"
+                       {% if item.front_card.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.front_card.button.button_link.rel %}rel="{{ item.front_card.button.button_link.rel|escape_attr }}"{% endif %}
+                       >
+                      {{ item.front_card.button.button_text }}</a>
+                  </div>
+
+                  {% endif %}
+
+
+                </div>
+
+              </div>
+
+
+              <div class="flip-card-back">
+                <div class="flip-card-back-image">
+                  {% if item.back_card.select_an_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}"' %}
+                  {% if item.back_card.select_an_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.back_card.select_an_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.max_width }}" height="{{ item.back_card.select_an_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.back_card.select_an_image.loading != 'disabled' ? 'loading="{{ item.back_card.select_an_image.loading }}"' : '' %}
+                  <img src="{{ item.back_card.select_an_image.src }}" alt="{{ item.back_card.select_an_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                {{ item.back_card.description }}
+                {% if item.front_card.enabel_video %}
+                <div class="p3_flip_cards__btn_link_back video-text">
+                  {{ item.front_card.video.texte_video }}
+                  <span class="video_icon">
+                    <img src="https://mktg.dawco.ca/hubfs/video_icon.svg" alt="video">
+                  </span>
+                </div>
+                {% else %}
+                <div class="p3_flip_cards__btn_link_back">
+                  {% set href = item.back_card.copie_button_back.button_link.url.href %}
+                  {% if item.back_card.copie_button_back.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}"
+                     {% if item.back_card.copie_button_back.button_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if item.back_card.copie_button_back.button_link.rel %}rel="{{ item.back_card.copie_button_back.button_link.rel|escape_attr }}"{% endif %}
+                     >
+                    {{ item.back_card.copie_button_back.button_text }}	</a>
+                </div>
+
+                {% endif %}
+
+
+
+              </div>
+
+            </div>
+          </div>
+          {% if item.front_card.button.button_link.url.href %}
+        </a>
+        {% endif %}
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+
+          <span class="closein">&times;</span>
+
+          <div class="modal-body">
+            {% if item.front_card.video.vid_o_pop.player_id %}
+            {% set max_width = item.front_card.video.vid_o_pop.size_type == 'auto_custom_max' ? item.front_card.video.vid_o_pop.max_width : item.front_card.video.vid_o_pop.width %}
+            {% set max_height = item.front_card.video.vid_o_pop.size_type == 'auto_custom_max' ? item.front_card.video.vid_o_pop.max_height : item.front_card.video.vid_o_pop.height %}
+            {% video_player "embed_player"
+	    player_id={{ item.front_card.video.vid_o_pop.player_id }}
+	    type={{ item.front_card.video.vid_o_pop.player_type || 'scriptV4' }}
+	    full_width={{ item.front_card.video.vid_o_pop.size_type == 'auto_full_width' }},
+	    conversion_asset={{ item.front_card.video.vid_o_pop.conversion_asset|tojson|safe }}
+	    autoplay={{ item.front_card.video.vid_o_pop.autoplay }}
+	    hidden_controls={{ item.front_card.video.vid_o_pop.hide_controls }}
+	    loop={{ item.front_card.video.vid_o_pop.loop_video }}
+	    muted={{ item.front_card.video.vid_o_pop.mute_by_default }}
+	  %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>
+{% require_js %}
+<script>
+  // Get the modal
+  currentPopup = 0
+
+  var modalin = document.getElementsByClassName("modal");
+  console.log(modalin)
+  // Get the button that opens the modal
+  var btnin = document.getElementsByClassName("video-text");
+  console.log(btnin)
+  // Get the <span> element that closes the modal
+  console.log(document.getElementsByClassName('closein'))
+  var spanin = document.getElementsByClassName("closein");
+
+  // When the user clicks the button, open the modal
+  if(btnin.length) {
+    Array.prototype.forEach.call(btnin,  function(element, index) {
+      element.addEventListener("click", () => {
+        currentPopup = index
+        modalin[index].style.display = "block";
+      })
+    })
+  }
+  //     btnin.onclick = function() {
+  //       modalin.style.display = "block";
+  //     }
+
+  // When the user clicks on <span> (x), close the modal
+  Array.prototype.forEach.call(spanin, function(element, index) {
+    element.addEventListener("click", () => {
+      modalin[index].style.display = "none";
+    })
+  })
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modalin[currentPopup]) {
+      modalin[currentPopup].style.display = "none";
+    }
+  }
+
+</script>
+{% end_require_js %}

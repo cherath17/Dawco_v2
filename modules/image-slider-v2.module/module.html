@@ -1,0 +1,106 @@
+<div class="slideshow-container">
+  {% for item in module.image_field %}
+  <div class="myimages fade">
+    {% if item.src %}
+    {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}"' %}
+    {% if item.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% elif item.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.max_width|escape_attr }}" height="{{ item.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading|escape_attr }}"' : '' %}
+    <img src="{{ item.src|escape_url }}" alt="{{ item.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  {% endfor %}
+  <a class="preved" onclick="plusSlides(-1)"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+    <path d="M10.812 23.2192L12.22 21.7802L7.937 17.5002L28 17.5002L28 15.5002L7.937 15.5002L12.219 11.2192L10.812 9.78124L4.095 16.5002L10.812 23.2192Z" fill="#4D463F"/>
+    </svg></a>
+  <a class="nexted" onclick="plusSlides(1)"> <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+    <path d="M21.188 9.78076L19.78 11.2198L24.063 15.4998L4 15.4998V17.4998L24.063 17.4998L19.781 21.7808L21.188 23.2188L27.905 16.4998L21.188 9.78076Z" fill="#4D463F"/>
+    </svg></a>
+</div>
+{% require_css %}
+<style>
+  {% scope_css %}
+  .myimages {
+    display: none
+  }
+  .myimages img {
+    width: 100%;
+    height: auto;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    /*     max-width: 1000px; */
+    position: relative;
+    margin: auto;
+  }
+
+  /* Next & previous buttons */
+   .preved, .nexted {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    transition: 0.6s ease;
+    border-radius: 50px;
+    user-select: none;
+    background-color: #FDB700;
+    line-height: 0;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } 
+
+   .nexted:hover,
+   .preved:hover {
+     background-color: #ffffff;
+  }
+  /* Position the "next button" to the right */
+  .nexted {
+    right: 18px;
+    border-radius: 50px;
+  }
+  .preved {
+    left: 18px;
+  }
+  @media only screen and (max-width: 480px) {
+    .preved, .nexted {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  }
+
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+{% require_js %}
+<script>
+  let slideIndex5 = 1;
+  imaSlides(slideIndex5);
+
+  function plusSlides(n) {
+    imaSlides(slideIndex5 += n);
+  }
+
+  function currentSlide(n) {
+    imaSlides(slideIndex5 = n);
+  }
+
+  function imaSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("myimages");
+    if (n > slides.length) {slideIndex5 = 1}    
+    if (n < 1) {slideIndex5 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slides[slideIndex5-1].style.display = "block";  
+  }
+</script>
+{% end_require_js %}

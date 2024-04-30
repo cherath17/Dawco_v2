@@ -1,0 +1,69 @@
+<section class="p3-bread__section">
+  <div class="p3_breadcrumbs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 p3_breadcrumbs__wrapper d-flex justify-content-start align-items-center">
+          {% set href = module.home.p3_breadcrumbs_home_link.url.href %}
+          {% if module.home.p3_breadcrumbs_home_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="p3_breadcrumbs__icon"
+             {% if module.home.p3_breadcrumbs_home_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.home.p3_breadcrumbs_home_link.rel %}rel="{{ module.home.p3_breadcrumbs_home_link.rel }}"{% endif %}
+             >
+            {% if module.home.p3_breadcrumbs_home_icon.src %}
+            {% set sizeAttrs = 'width="{{ module.home.p3_breadcrumbs_home_icon.width }}" height="{{ module.home.p3_breadcrumbs_home_icon.height }}"' %}
+            {% if module.home.p3_breadcrumbs_home_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.home.p3_breadcrumbs_home_icon.width }}" height="{{ module.home.p3_breadcrumbs_home_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.home.p3_breadcrumbs_home_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.home.p3_breadcrumbs_home_icon.max_width }}" height="{{ module.home.p3_breadcrumbs_home_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.home.p3_breadcrumbs_home_icon.loading != 'disabled' ? 'loading="{{ module.home.p3_breadcrumbs_home_icon.loading }}"' : '' %}
+            <img src="{{ module.home.p3_breadcrumbs_home_icon.src }}" alt="{{ module.home.p3_breadcrumbs_home_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </a>
+          {% for item in module.links %}
+          <span class="p3_breadcrumbs__dots">&#8208;</span>
+          {% if item.p3_breadcrumbs_link.url.href %}
+          {% set href = item.p3_breadcrumbs_link.url.href %}
+          {% if item.p3_breadcrumbs_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if item.p3_breadcrumbs_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.p3_breadcrumbs_link.rel %}rel="{{ item.p3_breadcrumbs_link.rel }}"{% endif %}
+             >
+            {% endif %}
+            <span class="p3_breadcrumbs__links">{{ item.p3_breadcrumbs_link_label }}</span>
+            {% if item.p3_breadcrumbs_link.url.href %}
+          </a>
+          {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3_breadcrumbs {
+    background-color: rgba( {{ module.styles.p3_breadcrumbs_bg.color|convert_rgb }}, {{ module.styles.p3_breadcrumbs_bg.opacity * 0.01 }} );
+    {{ module.styles.p3_breadcrumbs_spacing_desktop.css }}
+  }
+  .p3_breadcrumbs * {
+    color: {{ module.styles.p3_breadcrumbs_text_color.color }};
+  }
+  @media (max-width: 991px) {
+    .p3_breadcrumbs {
+      {{ module.styles.p3_breadcrumbs_spacing_tablet.css }}
+    }
+  }
+  @media (max-width: 575px) {
+    .p3_breadcrumbs {
+      {{ module.styles.p3_breadcrumbs_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

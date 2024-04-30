@@ -1,0 +1,274 @@
+[ {
+  "id" : "7913c1dc-bf0f-d34d-36a5-2484fda702da",
+  "name" : "texte_title",
+  "display_width" : null,
+  "label" : "Texte-title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Choisissez DAWCO pour l'agilité et la performance à échelle humaine."
+}, {
+  "id" : "2af40904-aecc-d23e-9de0-5e7e931f2c96",
+  "name" : "texte_enrichi_sub",
+  "display_width" : null,
+  "label" : "Texte enrichi-sub",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Notre équipe pluridisciplinaire comprend les défis de l'industrie et offre des services de construction industrielle, institutionnelle et commerciale entièrement intégrés."
+}, {
+  "id" : "31f5dc4a-ecfc-cb03-8abe-2437b12d499b",
+  "name" : "lien_video",
+  "display_width" : null,
+  "label" : "Lien-video",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "d934a652-7124-1bb0-aef1-522e9690519b",
+  "name" : "texte_video",
+  "display_width" : null,
+  "label" : "Texte-video",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Voir la vidéo corporative"
+}, {
+  "id" : "35a533d5-8814-2850-4ab6-6c02e5d54543",
+  "name" : "banner_button_1",
+  "display_width" : null,
+  "label" : "Banner Button-1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3088e225-2b4a-9e32-08e3-1bd788cf6d10",
+    "name" : "banner_button_link",
+    "display_width" : null,
+    "label" : "Banner Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "e84b55b4-084e-ecbb-c901-bb61c9a9b42f",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Découvrez nore offre"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "banner_button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "Découvrez nore offre"
+  }
+}, {
+  "id" : "119c052e-29ab-65fd-a240-550e2a9b2eba",
+  "name" : "banner_button_2",
+  "display_width" : null,
+  "label" : "Banner Button-2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "11c5e41b-3838-6254-be3b-3b35f5cd7764",
+    "name" : "banner_button_link",
+    "display_width" : null,
+    "label" : "Banner Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "13e358d0-379e-d70b-41e9-189f64f96248",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Consultez nos projets"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "banner_button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "button_text" : "Consultez nos projets"
+  }
+}, {
+  "id" : "f6489353-1860-7be4-912a-9823dfdd871b",
+  "name" : "cta_popup",
+  "display_width" : null,
+  "label" : "CTA-popup",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "a6c901eb-1c0d-4757-96ea-e66c2f0d3ffd"
+}, {
+  "id" : "665aaf90-3137-1fb1-217f-989b07356e6f",
+  "name" : "vid_o_pop",
+  "display_width" : null,
+  "label" : "Vidéo-pop",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 148632916867,
+    "height" : 2160,
+    "width" : 3840,
+    "player_type" : "hsvideo2"
+  }
+}, {
+  "id" : "3d4bc240-ffe4-98c7-4b91-f86469e69ae1",
+  "name" : "hero_bg_image",
+  "display_width" : null,
+  "label" : "hero_bg_image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/hero_banner.jpg",
+    "alt" : "hero_banner",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 573,
+    "max_width" : 1280,
+    "max_height" : 573
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/hero_banner.jpg",
+    "alt" : "hero_banner",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 573,
+    "max_width" : 1280,
+    "max_height" : 573
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/hero_banner.jpg",
+    "alt" : "hero_banner",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 573,
+    "max_width" : 1280,
+    "max_height" : 573
+  } ]
+}, {
+  "id" : "c2c84345-086c-33af-ae61-15ed6d89a7e9",
+  "name" : "left_arrow",
+  "display_width" : null,
+  "label" : "left_arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://mktg.dawco.ca/hubfs/Vector%20(1).svg",
+    "alt" : "Vector (1)",
+    "loading" : "lazy",
+    "width" : 10,
+    "height" : 9,
+    "max_width" : 11,
+    "max_height" : 10
+  }
+}, {
+  "id" : "daa3f13d-30a2-5715-8aa9-cc20444c2d8e",
+  "name" : "right_arrow",
+  "display_width" : null,
+  "label" : "right_arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "exact",
+    "src" : "https://mktg.dawco.ca/hubfs/Vector%20(2).svg",
+    "alt" : "Vector (2)",
+    "loading" : "lazy",
+    "width" : 10,
+    "height" : 9,
+    "max_width" : 11,
+    "max_height" : 10
+  }
+} ]

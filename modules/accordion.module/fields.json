@@ -1,0 +1,509 @@
+[ {
+  "id" : "b4ab4b7f-147d-f5ae-faf8-41888d73d086",
+  "name" : "want_to_add_an_anchor_id",
+  "display_width" : null,
+  "label" : "Want to add an anchor id",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "d30a3f1c-e0b6-fc1b-5b0b-8998c352d63a",
+  "name" : "anchor_id",
+  "display_width" : null,
+  "label" : "Anchor id",
+  "help_text" : "There should be no special characters or spaces",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_to_add_an_anchor_id",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "customid"
+}, {
+  "id" : "4c8d389d-4829-7d23-2220-2cc46b4e6c58",
+  "name" : "want_to_add_an_anchor_id_on_sub_title",
+  "display_width" : null,
+  "label" : "Want to add an anchor id on sub title",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "914cc4ad-dcbd-d5ac-5693-d507549998fb",
+  "name" : "sub_title_anchor_id",
+  "display_width" : null,
+  "label" : "Sub title anchor id",
+  "help_text" : "There should be no special characters or spaces",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_to_add_an_anchor_id_on_sub_title",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "customtitleid"
+}, {
+  "id" : "dd03ec3e-53c1-a685-a6b5-0846246106f5",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f8121d7b-e5b6-2fd1-8d61-d93bdbd48672",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b36ac199-758d-bc64-0a97-1f09aa96dc18",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "65e02084-7b66-4e8e-5b5a-98fbab179dd2",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bc8f596b-3e96-a3b1-3309-89612208d0e7",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "c403b254-1c1c-d0e9-7cda-95bcd46335a9",
+    "name" : "tab_spacing",
+    "display_width" : null,
+    "label" : "Tab spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "474ccdab-2ee1-eb95-8a81-f74c79249dfd",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : { }
+    }
+  }, {
+    "id" : "3f9462b6-2c86-928a-55f9-437c0268c8b5",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bce4408d-fd34-6ab3-beff-b4c3c81b44bc",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "40689dee-7d87-1bca-29b7-142048ad3798",
+    "name" : "font",
+    "display_width" : null,
+    "label" : "Font",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "c6089c8b-72a0-4afd-8656-a17f0739db62",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }, {
+      "id" : "83764445-0f6b-e3f0-2b12-c7ff00a34c59",
+      "name" : "accordion_title",
+      "display_width" : null,
+      "label" : "Accordion Title",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "title" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "accordion_title" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "desktop_spacing" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "tab_spacing" : {
+      "spacing" : { }
+    },
+    "background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    },
+    "font" : {
+      "title" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "accordion_title" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }
+  }
+}, {
+  "id" : "c5204a1a-14c1-ee8d-5cf2-90258cd5cc1e",
+  "name" : "sub_title",
+  "display_width" : null,
+  "label" : "Sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Category name 1"
+}, {
+  "id" : "c8787e3b-55b0-ca71-6ebe-7b51e6a15f63",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9bbc4438-1b14-48ab-0651-e085b75244f1",
+    "name" : "accordion",
+    "display_width" : null,
+    "label" : "Accordion",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 4
+    },
+    "children" : [ {
+      "id" : "17f11844-9bd1-e06f-e91d-4d4162fffb85",
+      "name" : "accordion_heading",
+      "display_width" : null,
+      "label" : "Accordion Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "How much training is required?"
+    }, {
+      "id" : "7b661276-4aeb-ffdf-5f72-0726cbfe13bf",
+      "name" : "accordion_content",
+      "display_width" : null,
+      "label" : "Accordion Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "accordion" : [ {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    }, {
+      "accordion_heading" : "How much training is required?",
+      "accordion_content" : "<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>\n<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.</p>"
+    } ]
+  }
+} ]

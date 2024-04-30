@@ -1,0 +1,104 @@
+<section>
+  <h2 class="stepper-tit">
+    {{ module.texte_head }}
+  </h2>
+  <div class="hide-btn">
+    <button class="hidden-left" id="prevBtn1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="#000000">
+        <path d="M10.812 23.2192L12.22 21.7802L7.937 17.5002L28 17.5002L28 15.5002L7.937 15.5002L12.219 11.2192L10.812 9.78124L4.095 16.5002L10.812 23.2192Z"></path>
+      </svg>
+      {#
+      {% if module.left_arrow.src %}
+      {% set sizeAttrs = 'width="{{ module.left_arrow.width }}" height="{{ module.left_arrow.height }}"' %} 
+      {% if module.left_arrow.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.left_arrow.width }}" height="{{ module.left_arrow.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.left_arrow.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.left_arrow.max_width }}" height="{{ module.left_arrow.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.left_arrow.loading != 'disabled' ? 'loading="{{ module.left_arrow.loading }}"' : '' %}
+      <img src="{{ module.left_arrow.src }}" alt="{{ module.left_arrow.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      #}
+    </button>
+    <button class="hidden-right" id="nextBtn1">
+      {#
+      {% if module.right_arrow.src %}
+      {% set sizeAttrs = 'width="{{ module.right_arrow.width }}" height="{{ module.right_arrow.height }}"' %}
+      {% if module.right_arrow.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.right_arrow.width }}" height="{{ module.right_arrow.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.right_arrow.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.right_arrow.max_width }}" height="{{ module.right_arrow.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.right_arrow.loading != 'disabled' ? 'loading="{{ module.right_arrow.loading }}"' : '' %}
+      <img src="{{ module.right_arrow.src }}" alt="{{ module.right_arrow.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      #}
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="#000000">
+        <path d="M21.188 9.78076L19.78 11.2198L24.063 15.4998L4 15.4998V17.4998L24.063 17.4998L19.781 21.7808L21.188 23.2188L27.905 16.4998L21.188 9.78076Z"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="stepper-card">
+    <div class="stepper-main">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        {% for item in module.stepper_label %}
+        <div class="circle">
+          {% inline_text field="stepper_label" value="{{ item }}" %}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="card-slider">
+      <div class="card-left-arrow">
+
+        <div class="btn hidden" id="prevBtn" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="#000000">
+            <path d="M10.812 23.2192L12.22 21.7802L7.937 17.5002L28 17.5002L28 15.5002L7.937 15.5002L12.219 11.2192L10.812 9.78124L4.095 16.5002L10.812 23.2192Z"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div class="all-cards" id="sets">
+        {% for item in module.card_details %}
+        <div class="card1">
+          <div class="card-head">
+            {% if module.card_image.src %}
+            {% set sizeAttrs = 'width="{{ module.card_image.width }}" height="{{ module.card_image.height }}"' %}
+            {% if module.card_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.card_image.width }}" height="{{ module.card_image.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.card_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.card_image.max_width }}" height="{{ module.card_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.card_image.loading != 'disabled' ? 'loading="{{ module.card_image.loading }}"' : '' %}
+            <img src="{{ module.card_image.src }}" alt="{{ module.card_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}    
+          </div>
+          <div class="card-title">
+            <h2>{{ item.card_head_texte }}</h2>
+          </div>
+          <div class="card-para">
+            {{ item.richtext_field }}
+          </div>
+        </div>
+        {% endfor %}
+
+        <!-- ========== End card1 ========== -->
+      </div>
+
+
+      <div class="card-right-arrow">
+        <div class="btn" id="nextBtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="#000000">
+            <path d="M21.188 9.78076L19.78 11.2198L24.063 15.4998L4 15.4998V17.4998L24.063 17.4998L19.781 21.7808L21.188 23.2188L27.905 16.4998L21.188 9.78076Z"></path>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+

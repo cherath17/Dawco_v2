@@ -1,0 +1,392 @@
+[ {
+  "id" : "d304d5c5-2544-87e6-ce9a-d6f08505e098",
+  "name" : "read_more_text",
+  "display_width" : null,
+  "label" : "Read more text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Découvrir le projet"
+}, {
+  "id" : "cf3976ab-c4b3-8746-be05-0c633a56bf5b",
+  "name" : "feat_img",
+  "display_width" : null,
+  "label" : "feat img",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/Rio-Tinto%20Fer%20et%20Titane%20au%20complexe%20de%20Sorel-Tracy.jpg",
+    "alt" : "Rio-Tinto Fer et Titane au complexe de Sorel-Tracy",
+    "loading" : "lazy",
+    "width" : 924,
+    "height" : 616,
+    "max_width" : 924,
+    "max_height" : 616
+  }
+}, {
+  "id" : "bc098091-8be7-ce7d-61f3-525ead4f57f8",
+  "name" : "marked_pin",
+  "display_width" : null,
+  "label" : "marked pin",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/blog_pin.svg",
+    "alt" : "blog_pin",
+    "loading" : "lazy",
+    "width" : 41,
+    "height" : 41,
+    "max_width" : 41,
+    "max_height" : 41
+  }
+}, {
+  "id" : "d48e926f-49b8-a9e9-56b9-56f2ffe60248",
+  "name" : "border_enable",
+  "display_width" : null,
+  "label" : "border enable",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "border_enable", "border_enable" ], [ "border_disable", "border_disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "border_enable"
+}, {
+  "id" : "ed3eba28-3ff7-cfe2-0a02-d6ef0681de76",
+  "name" : "listing_title",
+  "display_width" : null,
+  "label" : "listing title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Projets"
+}, {
+  "id" : "d0a11721-9afe-eb66-b758-d84d4638f649",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Découvrez nos projets"
+}, {
+  "id" : "60a8056f-8f8a-5de1-7565-2125fd90fcdd",
+  "name" : "filter_text",
+  "display_width" : null,
+  "label" : "filter text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Filters"
+}, {
+  "id" : "ab95cdbd-ca77-b7c8-7bdd-14aa7052ad22",
+  "name" : "selected_filter",
+  "display_width" : null,
+  "label" : "selected filter",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/selected_filter.svg",
+    "alt" : "selected_filter",
+    "loading" : "lazy",
+    "width" : 17,
+    "height" : 16,
+    "max_width" : 17,
+    "max_height" : 16
+  }
+}, {
+  "id" : "b89f209a-f9e4-4a65-8389-0dc3ffc0eac9",
+  "name" : "tag_icon",
+  "display_width" : null,
+  "label" : "tag icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+    "alt" : "tag_icon",
+    "loading" : "lazy",
+    "width" : 19,
+    "height" : 18,
+    "max_width" : 19,
+    "max_height" : 18
+  }
+}, {
+  "id" : "d713eed4-5fd7-c98e-3671-68d7c80fa8a1",
+  "name" : "location_icon",
+  "display_width" : null,
+  "label" : "location icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+    "alt" : "location_info",
+    "loading" : "lazy",
+    "width" : 14,
+    "height" : 18,
+    "max_width" : 14,
+    "max_height" : 18
+  }
+}, {
+  "id" : "e35b8b02-850c-2f2e-bc40-ef0692783643",
+  "name" : "filter_title",
+  "display_width" : null,
+  "label" : "filter title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Champ d’expertise"
+}, {
+  "id" : "15aa5709-05f2-5931-93aa-e09674eb4557",
+  "name" : "villes_title",
+  "display_width" : null,
+  "label" : "Villes title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Villes"
+}, {
+  "id" : "d1c79651-8ff1-8f16-14f8-8334737a8512",
+  "name" : "domaine_dactivite_title",
+  "display_width" : null,
+  "label" : "domaine_dactivite title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Domaine d’activité"
+}, {
+  "id" : "4c6e97f3-791b-5318-4da7-6aaa260780b6",
+  "name" : "subscribe_newsletter",
+  "display_width" : null,
+  "label" : "subscribe_newsletter",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6ed22de2-72a4-a46f-5198-3d5fe1dfc489",
+    "name" : "subscribe_newsletter",
+    "display_width" : null,
+    "label" : "Subscribe newsletter",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "886e4eb4-0269-4025-b05b-9126ca7b0dd2",
+      "response_type" : "inline",
+      "message" : "Merci d'avoir envoyé le formulaire.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "id" : "af6670df-7619-91d2-6bd5-4f837db7fab3",
+    "name" : "form_title",
+    "display_width" : null,
+    "label" : "form title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Inscrivez-vous à l’infolettre"
+  }, {
+    "id" : "e8f423da-6646-2319-e6c4-daa3bd1c8227",
+    "name" : "form_description",
+    "display_width" : null,
+    "label" : "form description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Découvrez les derniers projets et nouvelles de Dawco."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subscribe_newsletter" : {
+      "form_id" : "886e4eb4-0269-4025-b05b-9126ca7b0dd2",
+      "response_type" : "inline",
+      "message" : "Merci d'avoir envoyé le formulaire.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    },
+    "form_title" : "Inscrivez-vous à l’infolettre",
+    "form_description" : "Découvrez les derniers projets et nouvelles de Dawco."
+  }
+}, {
+  "id" : "c28179b4-0b04-a66a-2645-e8c11925e9ba",
+  "name" : "domaine_dactivite_sec",
+  "display_width" : null,
+  "label" : "domaine_dactivite_sec",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "4a83c4be-1663-72e1-e6ca-c0f9ad431ad2",
+    "name" : "domaine_dactivite",
+    "display_width" : null,
+    "label" : "domaine_dactivite",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Énergie"
+  }, {
+    "id" : "1977dabb-8b19-d563-6b1d-c9bf76442487",
+    "name" : "domaine_dactivite_img",
+    "display_width" : null,
+    "label" : "domaine_dactivite_img",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  } ]
+}, {
+  "id" : "98de1530-0f24-0642-4220-c703a873f51b",
+  "name" : "location_sec",
+  "display_width" : null,
+  "label" : "location_sec",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5755005d-90ae-b2a1-ad14-e7dfa5bbb5f9",
+    "name" : "domaine_dactivite",
+    "display_width" : null,
+    "label" : "loaction_text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Montréal (Québec, Canada)"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "domaine_dactivite" : "Montréal (Québec, Canada)"
+  } ]
+}, {
+  "id" : "8b98c4f1-0866-26a7-39ec-15610fc1ae40",
+  "name" : "tag_list",
+  "display_width" : null,
+  "label" : "tag_list",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5f7b5197-07e6-afdb-9434-f90899c12e60",
+    "name" : "tag_title",
+    "display_width" : null,
+    "label" : "tag_title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Électrique"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "tag_title" : "Électrique"
+  } ]
+} ]

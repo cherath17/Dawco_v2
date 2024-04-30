@@ -1,0 +1,37 @@
+<!--
+  templateType: email_backup_unsubscribe_page
+  isAvailableForNewContent: true
+  label: parkour - email backup unsubscribe
+  screenshotPath: ../../images/template-previews/email_unsubscribe.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base-new.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Unsubscribe" %}
+{% block body %}
+<section class="content-wrapper email_backup">
+  <div class="systems-page">
+    <div class="email_prefer">
+      <p class="p3-email__head" >
+        Email 
+      </p>
+      <p class="p3-email__subhead">Unsubscribe
+      </p>
+    </div>
+    <div class="p3-email__unsubs">
+      {% module "content"
+      path="@hubspot/rich_text",
+      html="<h4>Jorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>",
+    %}
+      {% module "content"
+      path="@hubspot/rich_text",
+      html="<h5>Norem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</h5>",
+    %}
+      {% module "backup_unsubscribe"
+      extra_classes="backup-unsubscribe",
+      path="@hubspot/email_simple_subscription"
+    %}
+    </div>
+  </div>
+</section>
+{% endblock body %}

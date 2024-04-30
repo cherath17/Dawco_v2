@@ -1,0 +1,24 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Blank
+  -->
+{% extends "./layouts/base-new.html" %}
+{% block body %}
+{% dnd_area "dnd_area" label="Main section" %}
+<main id="main-content" class="body-container-wrapper p3-blank__temp">
+ {% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "30px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "200px"
+    }
+  },
+  full_width=true
+%}
+  {% end_dnd_section %}
+</main>
+{% end_dnd_area %}
+{% endblock body %}

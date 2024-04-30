@@ -1,0 +1,13 @@
+{
+  "content_tags" : [ {
+    "name" : "INTERACTION",
+    "source" : "USER"
+  } ],
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "categories" : [ "DESIGN", "FUNCTIONALITY", "TEXT" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 160054563995,
+  "label" : "Vertical Stepper",
+  "is_available_for_new_content" : true
+}

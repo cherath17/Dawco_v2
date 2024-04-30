@@ -1,0 +1,52 @@
+.p3_two_column{
+    display:flex;
+    grid-template-columns: auto auto;
+    align-items: flex-start;
+    gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+.p3-left_section{
+ 
+ 
+  line-height:150%
+}
+
+.p3-right_section{
+ 
+ 
+  line-height:150%
+}
+@media only screen and (max-width: 640px)  {
+  .p3_two_column{
+  display:inline;
+ 
+}
+  .p3-left_section{
+   width:100%;
+  line-height:150%
+}
+
+.p3-right_section{
+   width:100%;
+  line-height:150%;
+   padding-top:30px;
+}
+}
+
+@media only screen and (max-width: 768px)  {
+   .p3_two_column{
+  display:inline;
+  
+}
+  .p3-left_section{
+   width:100%;
+  line-height:150%
+}
+
+.p3-right_section{
+   width:100%;
+  line-height:150%
+}
+}

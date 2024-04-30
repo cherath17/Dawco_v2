@@ -1,0 +1,817 @@
+[ {
+  "id" : "ac0d902a-6dd4-803c-7b3a-c6a2e3843d40",
+  "name" : "p3_footer_logo_link",
+  "display_width" : null,
+  "label" : "p3_footer_logo_link",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "95db2b32-fb65-373d-3112-781a1ecec2e0",
+    "name" : "p3_footer_logo",
+    "display_width" : null,
+    "label" : "Image de gauche",
+    "help_text" : "Image 240 x 100 (logo)",
+    "inline_help_text" : "Image 240 x 100 (logo)",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/dawco_logo-1.svg",
+      "alt" : "dawco_logo-1",
+      "loading" : "lazy",
+      "width" : 164,
+      "height" : 40,
+      "max_width" : 164,
+      "max_height" : 40
+    }
+  }, {
+    "id" : "627f216c-f6ab-aa24-d350-ee30d1ec538d",
+    "name" : "p3_footer_logo_link",
+    "display_width" : null,
+    "label" : "p3_footer_logo_link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://dawco-8334004.hs-sites.com/",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_footer_logo" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/dawco_logo-1.svg",
+      "alt" : "dawco_logo-1",
+      "loading" : "lazy",
+      "width" : 164,
+      "height" : 40,
+      "max_width" : 164,
+      "max_height" : 40
+    },
+    "p3_footer_logo_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://dawco-8334004.hs-sites.com/",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "6a3e9329-795e-fa69-38ed-1fe1250372c8",
+  "name" : "p3_footer_about",
+  "display_width" : null,
+  "label" : "À propos (groupe)",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "73b194c8-b58d-3435-e77f-1b2ac0181ee7",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Titre",
+    "help_text" : "Premier titre en haut à gauche",
+    "inline_help_text" : "Premier titre en haut à gauche",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "À propos"
+  }, {
+    "id" : "3bdf7705-530d-bba7-4d2a-a451866c2e5d",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description à propos",
+    "help_text" : "La page About Us est un élément crucial de votre site Web. C'est l'endroit où vous pouvez raconter l'histoire de votre marque et présenter votre proposition de valeur unique.",
+    "inline_help_text" : "La page About Us est un élément crucial de votre site Web. C'est l'endroit où vous pouvez raconter l'histoire de votre marque et présenter votre proposition de valeur unique.",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "À propos",
+    "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  }
+}, {
+  "id" : "370645bf-5770-104b-39f3-2c763992fcb0",
+  "name" : "p3_footer_menu",
+  "display_width" : null,
+  "label" : "Menu groupe",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6c162158-0f26-d488-ff36-12721d33d120",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Titre",
+    "help_text" : "Titre du milieu",
+    "inline_help_text" : "Titre du milieu",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Liens rapides"
+  }, {
+    "id" : "8b62f77e-6640-c8a3-be38-3fdbaeee6d2c",
+    "name" : "menu",
+    "display_width" : null,
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 127121311800
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Liens rapides",
+    "menu" : 127121311800
+  }
+}, {
+  "id" : "3d45158b-b282-aaaf-4399-50ab5d92ccc7",
+  "name" : "menu_groupe_col1",
+  "display_width" : null,
+  "label" : "Menu groupe col1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ffb5f017-ac74-ec7b-5b4e-8d06a0a4c8aa",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Titre",
+    "help_text" : "Titre du milieu",
+    "inline_help_text" : "Titre du milieu",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Explorez"
+  }, {
+    "id" : "266d938b-1e08-1747-a372-f67eaff6d645",
+    "name" : "menu",
+    "display_width" : null,
+    "label" : "Menu",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 127121311800
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Explorez",
+    "menu" : 127121311800
+  }
+}, {
+  "id" : "04f35d3a-6309-23e9-308c-a198f79b753d",
+  "name" : "p3_footer_social",
+  "display_width" : null,
+  "label" : "p3_footer_social",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Suivez-nous"
+}, {
+  "id" : "ae475596-cd6e-0497-56aa-b959773ba195",
+  "name" : "social_group",
+  "display_width" : null,
+  "label" : "social group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 5,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "d021b00c-d08e-05d7-5049-3c28a7831e8a",
+    "name" : "social_links",
+    "display_width" : null,
+    "label" : "social links",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "44c9140b-4cc7-33f1-2246-d561024eb757",
+    "name" : "social_icons",
+    "display_width" : null,
+    "label" : "social icons",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/mdi_linkdein.svg",
+      "alt" : "mdi_linkdein",
+      "loading" : "lazy",
+      "width" : 18,
+      "height" : 18,
+      "max_width" : 18,
+      "max_height" : 18
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "social_links" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "social_icons" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/mdi_linkdein.svg",
+      "alt" : "mdi_linkdein",
+      "loading" : "lazy",
+      "width" : 18,
+      "height" : 18,
+      "max_width" : 18,
+      "max_height" : 18
+    }
+  } ]
+}, {
+  "id" : "85668c46-5f4a-ef83-22d4-beb206ab3d40",
+  "name" : "p3_footer_cta",
+  "display_width" : null,
+  "label" : "CTA groupe",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5ed59627-affc-25d6-3002-fc3a5bdb95dd",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Titre",
+    "help_text" : "Titre de droite",
+    "inline_help_text" : "Titre de droite",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Call to action"
+  }, {
+    "id" : "62624b4a-2f2f-c1f7-33b1-fd41f4201ebc",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "help_text" : "Texte sous le titre call to action",
+    "inline_help_text" : "Texte sous le titre call to action",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "[Chat GPT call to action]"
+  }, {
+    "id" : "50f39379-67cd-281d-1cbc-2e369f6a8ff9",
+    "name" : "cta_link",
+    "display_width" : null,
+    "label" : "Lien du CTA",
+    "inline_help_text" : "Bouton ce trouvant sous le description CTA",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "47057ae0-6761-b793-b09d-769949c98e19",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "Texte du CTA",
+    "help_text" : "",
+    "inline_help_text" : "Texte du CTA",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Par ici"
+  }, {
+    "id" : "1fa201db-1875-4c35-c215-8023d33d38cb",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "Type de bouton",
+    "inline_help_text" : "Arrière plan du premier bouton",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "Bouton avec arrière plan couleur pleine" ], [ "2", "Bouton avec arrière plan transparent et bordure" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "1"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Call to action",
+    "description" : "[Chat GPT call to action]",
+    "cta_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "cta_text" : "Par ici",
+    "cta_style" : "1"
+  }
+}, {
+  "id" : "aba42f87-ac4f-37fe-1ad3-596dcbd5aadb",
+  "name" : "p3_footer_up_btn",
+  "display_width" : null,
+  "label" : "Bouton - Retour haut de page",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2ad401f0-34c1-fd8c-e790-f0028bdc8523",
+    "name" : "is_show",
+    "display_width" : null,
+    "label" : "Retour haut de page",
+    "inline_help_text" : "Afficher le bouton Retour vers le haut de page",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "5efbb213-32a5-2f5c-ffb4-3c7438660cf3",
+    "name" : "color",
+    "display_width" : null,
+    "label" : "Couleur Retour au haut de page",
+    "inline_help_text" : "Couleur du bouton Retour au haut de page",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#1980EB",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "is_show" : true,
+    "color" : {
+      "color" : "#1980EB",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "75660565-cb9c-ec77-20c5-41db5183bf61",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "90e6a6f3-4d67-78c6-8461-dd7683a61ee4",
+    "name" : "footer_content_styles",
+    "display_width" : null,
+    "label" : "Footer content styles",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "56c01587-a25d-9147-a4a6-73616851f383",
+      "name" : "footer_title_color",
+      "display_width" : null,
+      "label" : "footer title color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "deb472f7-89e0-fe51-e2a5-8edde96c06ee",
+      "name" : "footer_description_color",
+      "display_width" : null,
+      "label" : "footer description color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "56d8f2f3-aacb-7b00-3068-5c46e94f3ec9",
+      "name" : "footer_menu_color",
+      "display_width" : null,
+      "label" : "footer menu color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "7807806c-6137-8428-d67e-fe181d0ff105",
+      "name" : "footer_title_font",
+      "display_width" : null,
+      "label" : "footer title font",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }, {
+      "id" : "6e0ee22e-5f93-b6fd-eabc-ad998a274826",
+      "name" : "footer_description_font",
+      "display_width" : null,
+      "label" : "footer description font",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }, {
+      "id" : "14057ee2-c680-88a5-e58b-f71704fa8c15",
+      "name" : "footer_menu_font",
+      "display_width" : null,
+      "label" : "footer menu font",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "size" : null,
+        "size_unit" : "px"
+      }
+    }, {
+      "id" : "03076b6f-60d3-6c74-b693-fd1bf7b8ae15",
+      "name" : "logo_background_color",
+      "display_width" : null,
+      "label" : "Logo Background color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "12185c8e-2258-6126-bc41-7364f1fb64e3",
+      "name" : "footer_background_color",
+      "display_width" : null,
+      "label" : "Footer Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "75c7bdba-8178-8d09-cf00-88e7573c05e5",
+      "name" : "cta_background_color",
+      "display_width" : null,
+      "label" : "CTA Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "footer_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_description_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_menu_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_title_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "footer_description_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "footer_menu_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "logo_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "cta_background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "footer_content_styles" : {
+      "footer_title_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_description_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_menu_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_title_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "footer_description_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "footer_menu_font" : {
+        "size" : null,
+        "size_unit" : "px"
+      },
+      "logo_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "footer_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "cta_background_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }
+}, {
+  "id" : "10246c13-1e88-8c5a-1317-dba88fa1696a",
+  "name" : "p3_footer_copyright",
+  "display_width" : null,
+  "label" : "Copyrights",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e7e0d54d-fbe7-9829-8ab2-f9969d73657d",
+    "name" : "menu",
+    "display_width" : null,
+    "label" : "Menu horizontal",
+    "required" : false,
+    "locked" : false,
+    "type" : "menu",
+    "default" : 127131558420
+  }, {
+    "id" : "648db1cf-6a3e-9f1a-7771-375307775cbb",
+    "name" : "credits_text",
+    "display_width" : null,
+    "label" : "Crédit",
+    "help_text" : "Texte de crédit",
+    "inline_help_text" : "Texte de crédit",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Site web HubSpot par <a target=\"_blank\" href=\"https://www.parkour3.com/fr/\">Parkour3</a>"
+  }, {
+    "id" : "9ec0b034-5c91-aad0-c27c-f097a90d44bc",
+    "name" : "rights_text",
+    "display_width" : null,
+    "label" : "Texte des droits",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "All rights reserved."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "menu" : 127131558420,
+    "credits_text" : "Site web HubSpot par <a target=\"_blank\" href=\"https://www.parkour3.com/fr/\">Parkour3</a>",
+    "rights_text" : "All rights reserved."
+  }
+}, {
+  "id" : "f8175082-a5b8-e35c-9f2a-69b6603809ae",
+  "name" : "certificats_title",
+  "display_width" : null,
+  "label" : " Certificats Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " Certificats"
+}, {
+  "id" : "543ca3fb-4d9a-2fb9-34e0-c1647d5fbfbd",
+  "name" : "p3_footer_logo1",
+  "display_width" : null,
+  "label" : "p3_footer_logo1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/p3_footer_logo_3.svg",
+    "alt" : "p3_footer_logo_3",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 111,
+    "max_width" : 111,
+    "max_height" : 111
+  }
+}, {
+  "id" : "00242754-2e0a-0764-4a75-7c10e2dfc470",
+  "name" : "p3_footer_logo2",
+  "display_width" : null,
+  "label" : "p3_footer_logo2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/p3_footer_logo_2.svg",
+    "alt" : "p3_footer_logo_2",
+    "loading" : "lazy",
+    "width" : 114,
+    "height" : 114,
+    "max_width" : 114,
+    "max_height" : 114
+  }
+}, {
+  "id" : "81426612-1009-f849-f75d-9cd7401492fb",
+  "name" : "p3_footer_logo3",
+  "display_width" : null,
+  "label" : "p3_footer_logo3",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/p3_footer_logo_2.svg",
+    "alt" : "p3_footer_logo_2",
+    "loading" : "lazy",
+    "width" : 114,
+    "height" : 114,
+    "max_width" : 114,
+    "max_height" : 114
+  }
+}, {
+  "id" : "83cf4b6c-4888-1745-616c-9bbeda9c6aa8",
+  "name" : "footer_cta2",
+  "display_width" : null,
+  "label" : "footer_cta2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "56459c58-33f2-3b1d-7a59-1299535a2351",
+    "name" : "footer_cta2",
+    "display_width" : null,
+    "label" : "footer_cta2",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "6024e82a-2856-da37-9992-1618fccb1af6",
+    "name" : "footer_cta2_text",
+    "display_width" : null,
+    "label" : "footer cta2 text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p style=\"color: #fdb700; text-align: left; margin-bottom: 0; font-size: 14px;\">Créez une alerte-emploi <svg width=\"11\" height=\"10\" viewBox=\"0 0 11 10\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M0.658545 5.65855H8.01449L4.80079 8.87224C4.54396 9.12908 4.54396 9.55054 4.80079 9.80738C5.05762 10.0642 5.47251 10.0642 5.72934 9.80738L10.0691 5.46757C10.326 5.21073 10.326 4.79585 10.0691 4.53902L5.73592 0.192624C5.47909 -0.0642081 5.06421 -0.0642081 4.80738 0.192624C4.55054 0.449457 4.55054 0.86434 4.80738 1.12117L8.01449 4.34146H0.658545C0.296345 4.34146 0 4.6378 0 5C0 5.3622 0.296345 5.65855 0.658545 5.65855Z\" fill=\"#FDB700\"></path> </svg></p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "footer_cta2" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "footer_cta2_text" : "<p style=\"color: #fdb700; text-align: left; margin-bottom: 0; font-size: 14px;\">Créez une alerte-emploi <svg width=\"11\" height=\"10\" viewBox=\"0 0 11 10\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path d=\"M0.658545 5.65855H8.01449L4.80079 8.87224C4.54396 9.12908 4.54396 9.55054 4.80079 9.80738C5.05762 10.0642 5.47251 10.0642 5.72934 9.80738L10.0691 5.46757C10.326 5.21073 10.326 4.79585 10.0691 4.53902L5.73592 0.192624C5.47909 -0.0642081 5.06421 -0.0642081 4.80738 0.192624C4.55054 0.449457 4.55054 0.86434 4.80738 1.12117L8.01449 4.34146H0.658545C0.296345 4.34146 0 4.6378 0 5C0 5.3622 0.296345 5.65855 0.658545 5.65855Z\" fill=\"#FDB700\"></path> </svg></p>"
+  }
+} ]

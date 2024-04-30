@@ -1,0 +1,21 @@
+<div class="section">
+  <h3 class="gallery_title">
+    {{ module.gallery_title }}
+  </h3>
+  <div class="gallery_img">
+    {% for item in module.gallery_group %}
+    {% if item.gallery_image.src %}
+    {% set sizeAttrs = 'width="{{ item.gallery_image.width }}" height="{{ item.gallery_image.height }}"' %}
+    {% if item.gallery_image.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ item.gallery_image.width }}" height="{{ item.gallery_image.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif item.gallery_image.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.gallery_image.max_width }}" height="{{ item.gallery_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.gallery_image.loading != 'disabled' ? 'loading="{{ item.gallery_image.loading }}"' : '' %}
+    <img src="{{ item.gallery_image.src }}" alt="{{ item.gallery_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+    {% endfor %}
+
+
+  </div>
+</div>

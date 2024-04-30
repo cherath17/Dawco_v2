@@ -1,0 +1,94 @@
+.p3_recent_posts {
+  padding: 90px 0;
+}
+.p3_recent_posts .p3_tabs_colrow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col {
+  padding: 0 10px;
+  width: 25%;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a {
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a img {
+  border-bottom: 4px solid rgba(0, 176, 240, 1.0);
+  object-fit: cover;
+  width: 100%;
+  max-height: 165px !important;
+  min-height: 165px;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a .p3_tab_content {
+  padding: 5px 10px 15px;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a .p3_tab_content h4 {
+  color: #0b66a3;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a .p3_tab_content span {
+  margin: 15px 0 0;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a .p3_tab_content span svg {
+  margin-left: 5px;
+  max-width: 10px;
+  width: 100%;
+}
+.p3_recent_posts .p3_tabs_btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  text-align: right;
+}
+.p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col a:hover span path {
+  fill: #0088c8;
+}
+
+
+
+.p3_recent_posts .p3_tabs_btn a {
+  display: inline-block;
+}
+
+.p3_tabs_project_sp {
+  background-color: #fff;
+}
+
+.p3_tab_content p {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.p3_tab_content .btn_tertiary {
+  padding-left: 0;
+}
+
+.p3_recent_posts .p3_bannered_titles > .container {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .p3_recent_posts .p3_tabs_colrow {
+    margin: 0 -10px 30px;
+  }
+  .p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col {
+    width: 100%;
+  }
+}
+@media (min-width:768px) and (max-width:1024px) {
+  .p3_recent_posts .p3_tabs_colrow .p3_tabs_project_col {
+    width: 50%;
+  }
+}

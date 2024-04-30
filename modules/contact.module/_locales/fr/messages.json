@@ -1,0 +1,1117 @@
+{
+  "copie_titre_coordonn_es_right.default" : {
+    "message" : "Nouveau-Brunswick",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copie_titre_coordonn_es_right.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copie_titre_coordonn_es_right.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copie_titre_coordonn_es_right.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copie_titre_coordonn_es_right.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "copie_titre_coordonn_es_right.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.default.alt" : {
+    "message" : "contact_map",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.default.src" : {
+    "message" : "https://mktg.dawco.ca/hubfs/contact_map.svg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "map_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.default.alt" : {
+    "message" : "location",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.default.src" : {
+    "message" : "https://mktg.dawco.ca/hubfs/location.svg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.image_cin.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.label" : {
+    "message" : "Copie Icone et text coordonnées group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.name" : {
+    "message" : "contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.p3_contact_coord_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.p3_contact_coord_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.p3_contact_coord_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.p3_contact_coord_text.label" : {
+    "message" : "Coordonnées-right",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.p3_contact_coord_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "next_icone_et_text_coordonn_es_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.choices.left" : {
+    "message" : "Gauche",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.choices.right" : {
+    "message" : "Droit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.help_text" : {
+    "message" : "Positionnement des coordonnées dans le module lorsque la carte est pleine taille",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.label" : {
+    "message" : "Position des coordonnées",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_position.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.default" : {
+    "message" : "Nous contacter",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.help_text" : {
+    "message" : "Surtitre au dessus du nom de la compagnie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.label" : {
+    "message" : "Surtitre coordonnées",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.default.p3_contact_coord_icons.name" : {
+    "message" : "Alternate Map Marker",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.default.p3_contact_coord_icons.type" : {
+    "message" : "SOLID",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.default.p3_contact_coord_icons.unicode" : {
+    "message" : "f30c",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.default.p3_contact_coord_text" : {
+    "message" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.default.alt" : {
+    "message" : "location",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.default.src" : {
+    "message" : "https://mktg.dawco.ca/hubfs/location.svg",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.image_icon.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.name" : {
+    "message" : "contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.p3_contact_coord_text.default" : {
+    "message" : "<span style=\"font-size: 18px;\">123, street name. office 4 City name, State-Province 1A1 A1A</span>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.p3_contact_coord_text.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.p3_contact_coord_text.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.p3_contact_coord_text.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.p3_contact_coord_text.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_text_icon_group.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.default" : {
+    "message" : "Nom d’entreprise",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.help_text" : {
+    "message" : "Titre principal au dessus des informations de contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.label" : {
+    "message" : "Titre coordonnées",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_coord_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.default.embed_html" : {
+    "message" : "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.4882051519785!2d-73.56302482330096!3d45.50025003103201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a5bfdea9ad9%3A0x11fae5c4f5b2889d!2s651%20Notre-Dame%20St%20W%20%23200%2C%20Montreal%2C%20QC%20H3C%201H9!5e0!3m2!1sfr!2sca!4v1691676712676!5m2!1sfr!2sca\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.default.source_type" : {
+    "message" : "html",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.label" : {
+    "message" : "Carte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.choices.left" : {
+    "message" : "Gauche",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.choices.right" : {
+    "message" : "Droit",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.help_text" : {
+    "message" : "Positionnement de la carte dans le module",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.label" : {
+    "message" : "Position de la carte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_position.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.choices.full" : {
+    "message" : "Pleine largeur",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.choices.round" : {
+    "message" : "Rond",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.choices.square" : {
+    "message" : "Carré",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.help_text" : {
+    "message" : "Visuel de la carte, soit un coté du module en carré ou cercle, ou qui prend la largeur complète du module",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.label" : {
+    "message" : "Style de carte",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_map_style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_social_icons.default.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_social_icons.default.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_social_icons.default.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.default" : {
+    "message" : "CONTACT MODULE + MAP MODULE",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_supertitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.default" : {
+    "message" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_contact_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.0.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.0.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.0.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.1.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.1.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.1.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.2.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.2.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.2.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.p3_contact_social_icons.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.social_link.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.social_link.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.social_link.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.social_link.url.href" : {
+    "message" : "https://www.w3schools.com/w3css/w3css_sidebar.asp",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.default.social_link.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.p3_contact_social_icons.default.name" : {
+    "message" : "Facebook Square",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.p3_contact_social_icons.default.type" : {
+    "message" : "REGULAR",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.p3_contact_social_icons.default.unicode" : {
+    "message" : "f082",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.social_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.social_link.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.social_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.social_link.default.url.href" : {
+    "message" : "https://www.w3schools.com/w3css/w3css_sidebar.asp",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_group.social_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_link.default.no_follow" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_link.default.open_in_new_tab" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_link.default.url.content_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_link.default.url.href" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "social_link.default.url.type" : {
+    "message" : "EXTERNAL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.background_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.address_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.address_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.address_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.address_color.label" : {
+    "message" : "address color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.address_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_subtitle_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_subtitle_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_subtitle_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_subtitle_color.label" : {
+    "message" : "contact subtitle color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_subtitle_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_title_color.label" : {
+    "message" : "contact title color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.contact_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.address_color.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.address_color.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.contact_subtitle_color.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.contact_subtitle_color.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.contact_title_color.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.contact_title_color.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.social_icon_color.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.social_icon_color.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.social_title_color.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.default.social_title_color.opacity" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.label" : {
+    "message" : "content colors",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.name" : {
+    "message" : "contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.content_colors.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_icon_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_icon_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_icon_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_icon_color.label" : {
+    "message" : "social icon Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_icon_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_title_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_title_color.label" : {
+    "message" : "social title color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.social_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.choices.valeur 1" : {
+    "message" : "Libellé 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.choices.valeur 2" : {
+    "message" : "Libellé 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.content_colors.text_transform.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.default" : {
+    "message" : "Nouveau-Brunswick",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.help_text" : {
+    "message" : "Titre principal au dessus des informations de contact",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.label" : {
+    "message" : "Copie Copie Titre coordonnées-right",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_coordonn_es_right.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.default.alt" : {
+    "message" : "location",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.label" : {
+    "message" : "Image-last",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.image_cin.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.label" : {
+    "message" : "Copie next-Icone et text coordonnées group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.p3_contact_coord_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.p3_contact_coord_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.p3_contact_coord_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.p3_contact_coord_text.label" : {
+    "message" : "Coordonnées-thre",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.p3_contact_coord_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "three_next_icone_et_text_coordonn_es_group.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

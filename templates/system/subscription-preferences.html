@@ -1,0 +1,28 @@
+<!--
+  templateType: email_subscription_preferences_page
+  isAvailableForNewContent: true
+  label: Parkour - email subscription preferences
+  screenshotPath: ../../images/template-previews/email_subscription.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base-new.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Subscription preferences" %}
+{% block body %}
+<section class="content-wrapper sub_preference">
+  <div class="systems-page">
+    <div class="email_prefer">
+      <p class="p3-email__head">
+        Email 
+      </p>
+      <p class="p3-email__subhead">Subscriptions Preferences
+      </p>
+    </div>
+    <div class="p3-email pref_content">
+      {% module "subscription_preferences"
+      path="../../modules/email_subscriptions.module"
+    %}
+    </div>
+  </div>
+</section>
+{% endblock body %}

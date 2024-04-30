@@ -1,0 +1,266 @@
+[ {
+  "id" : "bc006107-abfc-6e75-0af8-32c30b7842e2",
+  "name" : "slider_image",
+  "display_width" : null,
+  "label" : "Slider_Image",
+  "help_text" : "Choose Images here..",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 223,
+    "max_width" : 1280,
+    "max_height" : 536
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 223,
+    "max_width" : 1280,
+    "max_height" : 536
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 223,
+    "max_width" : 1280,
+    "max_height" : 536
+  } ]
+}, {
+  "id" : "28f84fba-9d25-a852-1ec4-ece8ae596296",
+  "name" : "texte_service",
+  "display_width" : null,
+  "label" : "Texte-service",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Services"
+}, {
+  "id" : "b77f4267-70c8-8556-b2d7-ca45a31b97da",
+  "name" : "texte_nous",
+  "display_width" : null,
+  "label" : "Texte-nous",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nous offrons une grande variété de services"
+}, {
+  "id" : "0cb554a6-43a2-07f7-3a75-cbcbcb72074d",
+  "name" : "title_color",
+  "display_width" : null,
+  "label" : "Title Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#fd560a",
+    "opacity" : 100
+  }
+}, {
+  "id" : "c7669b82-2e68-8513-1002-3766c0af5e50",
+  "name" : "texte_enrichi_pos",
+  "display_width" : null,
+  "label" : "Texte enrichi-pos",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Nous possédons une vaste expérience dans plusieurs secteurs industriels, y compris la production d'énergie, la biométhanisation, l'exploitation minière et la métallurgie, la pétrochimie et les produits chimiques, le pétrole et le gaz ainsi que dans les domaines commerciaux et institutionnels."
+}, {
+  "id" : "d86583da-a70b-39e0-25f0-60b622e56cd7",
+  "name" : "learn_more_cta",
+  "display_width" : null,
+  "label" : "Learn more cta",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d154246f-ff1c-2cbc-8fb7-5ce9a496a48b",
+    "name" : "learn_more_link",
+    "display_width" : null,
+    "label" : "Learn more link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "647a29ec-d63e-e5e4-70a3-4e7174499030",
+    "name" : "learn_more_text",
+    "display_width" : null,
+    "label" : "Learn more text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "En savoir davantage"
+  }, {
+    "id" : "872f570b-dedf-7b51-3fdf-8abbf864f880",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "cta style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "style 1" ], [ "2", "style 2" ], [ "3", "style 3" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "learn_more_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "learn_more_text" : "En savoir davantage"
+  }
+}, {
+  "id" : "69138f7c-28a5-8b33-5820-01df58bcb65b",
+  "name" : "post_learn_more_cta",
+  "display_width" : null,
+  "label" : "post-learn more cta",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "9a1fc53c-1bfd-d377-8dc1-5820e4ce548d",
+    "name" : "learn_more_link",
+    "display_width" : null,
+    "label" : "Learn more link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "54e74404-be1d-5228-81d6-1bac68552f05",
+    "name" : "learn_more_text",
+    "display_width" : null,
+    "label" : "Learn more text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "En savoir davantage"
+  }, {
+    "id" : "87514714-fbb6-14c7-ea6a-7a22de554e7c",
+    "name" : "cta_style",
+    "display_width" : null,
+    "label" : "cta style",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "style 1" ], [ "2", "style 2" ], [ "3", "style 3" ], [ "4", "none" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "4"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "learn_more_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "learn_more_text" : "En savoir davantage",
+    "cta_style" : "4"
+  }
+}, {
+  "id" : "b8d8138e-7814-02dd-67af-adc4921e8952",
+  "name" : "button_hide_and_show",
+  "display_width" : null,
+  "label" : "Button Hide And Show?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "c9834676-b83c-b071-7751-d0523264abc0",
+  "name" : "text_align",
+  "display_width" : null,
+  "label" : "Text Align",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "cam_ine_align-1", "cam_ine_align-1" ], [ "cam_ine_align-2", "cam_ine_align-2" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "cam_ine_align-1"
+}, {
+  "id" : "87b8239d-f66d-5788-eace-7e31cbf10f0f",
+  "name" : "column_layout",
+  "display_width" : null,
+  "label" : "column-layout",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "right" ], [ "2", "left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "1"
+} ]

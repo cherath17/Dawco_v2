@@ -1,0 +1,333 @@
+[ {
+  "id" : "styles",
+  "name" : "styles",
+  "display_width" : null,
+  "label" : "Styles",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ed0a36b7-563c-a96b-35d6-8c77685f18db",
+    "name" : "p3_breadcrumbs_bg",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "help_text" : "Couleur de l'arrière-plan",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#0B66A3",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "173ba663-39f9-c143-473a-71466c336635",
+    "name" : "p3_breadcrumbs_text_color",
+    "display_width" : null,
+    "label" : "Couleur de texte",
+    "help_text" : "Couleur du texte au-dessus du titre principal",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fb999fbe-8607-d75a-9936-1c2f50420ca3",
+    "name" : "p3_breadcrumbs_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }, {
+    "id" : "611c1046-d932-94e5-0fe3-8ff0a8153cd7",
+    "name" : "p3_breadcrumbs_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les tablettes. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }, {
+    "id" : "ddae17a9-6cb7-23d3-f254-3cda549da55c",
+    "name" : "p3_breadcrumbs_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_breadcrumbs_bg" : {
+      "color" : "#0B66A3",
+      "opacity" : 100
+    },
+    "p3_breadcrumbs_text_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "p3_breadcrumbs_spacing_desktop" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    },
+    "p3_breadcrumbs_spacing_tablet" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    },
+    "p3_breadcrumbs_spacing_mobile" : {
+      "padding" : {
+        "top" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 10,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }
+}, {
+  "id" : "76b84672-18f0-f290-fd9c-536fd045b879",
+  "name" : "home",
+  "display_width" : null,
+  "label" : "Accueil",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "95f78fc9-a442-08c4-9d69-161dd2d13eba",
+    "name" : "p3_breadcrumbs_home_icon",
+    "display_width" : null,
+    "label" : "Icône accueil",
+    "inline_help_text" : "Icône remplacent le libellé de l'accueil",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/brand-images/home-icon.svg",
+      "alt" : "Robotiq logotype as a home icon",
+      "loading" : "lazy",
+      "width" : 20,
+      "height" : 28,
+      "max_width" : 20,
+      "max_height" : 28
+    }
+  }, {
+    "id" : "79a9b364-585d-e184-5df2-ab0a1de26867",
+    "name" : "p3_breadcrumbs_home_link",
+    "display_width" : null,
+    "label" : "Lien accueil",
+    "help_text" : "Lien vers la page d'accueil dans cette langue",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : 159935467136,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_breadcrumbs_home_icon" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/brand-images/home-icon.svg",
+      "alt" : "Robotiq logotype as a home icon",
+      "loading" : "lazy",
+      "width" : 20,
+      "height" : 28,
+      "max_width" : 20,
+      "max_height" : 28
+    },
+    "p3_breadcrumbs_home_link" : {
+      "url" : {
+        "content_id" : 159935467136,
+        "href" : null,
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "aba42a87-966c-f0a8-0e07-f1803782dcca",
+  "name" : "links",
+  "display_width" : null,
+  "label" : "Liens",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "31dcb82c-ed65-18a8-b91d-50a610c92799",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "7ff31454-18b1-c6c4-7c2d-a59fe1217c2e",
+    "name" : "p3_breadcrumbs_link",
+    "display_width" : null,
+    "label" : "Lien de la page",
+    "help_text" : "Lien de page interne. Laissez vide pour la page actuelle",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "31dcb82c-ed65-18a8-b91d-50a610c92799",
+    "name" : "p3_breadcrumbs_link_label",
+    "display_width" : null,
+    "label" : "Libellé de lien",
+    "help_text" : "Libellé de page",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Contact"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_breadcrumbs_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "p3_breadcrumbs_link_label" : "Contact"
+  } ]
+} ]

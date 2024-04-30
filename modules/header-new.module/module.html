@@ -1,0 +1,622 @@
+{% set search_page = module.results.use_custom_search_results_template is truthy and module.results.path_id ? content_by_id(module.results.path_id).absolute_url : site_settings.content_search_results_page_path %}
+{% unless (search_page is string_containing "//") %}
+{% set search_page = "/" ~ search_page %}
+{% endunless %}
+{% set search_page = search_page|regex_replace("http:", "") %}
+{% set lateralDisplay = module.extras.p3_header_desktop_burger ? "active" : "inactive" %}
+<div >
+  <header class="header d-flex flex-column top-bar">
+    {# TOPBAR #}
+    {% if module.p3_header_topbar %}
+    <div class="p3-header__topbar align-items-center">
+      <a href="#main-content" class="header__skip">
+        {% if content.language == 'fr' or content.language == 'fr-ca' %}Passez au contenu{% else %}Skip to content{% endif %}
+      </a>
+
+      {% if module.topbar.p3_header_topbar_menu %}
+      <div><span>{% menu id="{{ module.topbar.p3_header_topbar_menu }}" %}</span></div>
+      {% endif %}
+      {% if module.extras.p3_header_cta %}
+      <div class="p3-link_btn">
+        {% set href = module.career_cta.career_cta_link.url.href %}
+        {% if module.career_cta.career_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="hs-button primary p3-career__cta-btn-{{ module.career_cta.cta_style }}"
+           {% if module.career_cta.career_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.career_cta.career_cta_link.rel %}rel="{{ module.career_cta.career_cta_link.rel }}"{% endif %}
+           >
+          {{ module.career_cta.career_cta_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="#4d463f"/>
+          </svg></a>
+      </div>
+      {% endif %}
+      <!--     <div class="p3-header__icon-search me-md-3" id="top-sear"> 
+    </div>   -->
+
+      <!--     <div class="hs-search-field" id="top-input">
+      <div class="hs-search-field__bar search__input">
+        <form action="{{ site_settings.content_search_results_page_path }}" class="search-box top-search" id="myForm">
+          {% if module.field_label %}
+          <label for="term">{{ module.field_label }}</label>
+          {% endif %}
+          <input type="text" class="hs-search-field__input" autofocus name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="Search">
+
+          {% if module.content_types_copy.website_pages %}
+          <input type="hidden" name="type" value="SITE_PAGE">
+          {% endif %}
+          {% if module.content_types_copy.landing_pages %}
+          <input type="hidden" name="type" value="LANDING_PAGE">
+          {% endif %}
+          {% if module.content_types_copy.blog_posts %}
+          <input type="hidden" name="type" value="BLOG_POST">
+          <input type="hidden" name="type" value="LISTING_PAGE">
+          {% endif %}
+          {% if module.content_types_copy.knowledge_articles %}
+          <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+          {% endif %}
+
+          {% if module.include_search_button %}
+          <button aria-label="Search">{% icon name="search" style="solid" %}</button>
+          {% endif %}
+          <button type="submit" class="go-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 42 42" fill="none">
+            <path d="M24.0024 6.53368C18.215 6.53368 13.5028 11.5823 13.5028 17.7828C13.5028 20.477 14.3847 22.9462 15.8652 24.8844L7.49805 33.8466L9.00894 35.4664L17.375 26.502C19.2435 28.1432 21.5863 29.0375 24.0024 29.0319C29.7897 29.0319 34.502 23.9833 34.502 17.7828C34.502 11.5823 29.7897 6.53368 24.0024 6.53368ZM24.0024 8.7835C28.6537 8.7835 32.402 12.7994 32.402 17.7828C32.402 22.7662 28.6537 26.7821 24.0024 26.7821C19.351 26.7821 15.6027 22.7662 15.6027 17.7828C15.6027 12.7994 19.351 8.7835 24.0024 8.7835Z" fill="#114245"/>
+            </svg></button>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 42 42" fill="none" class="p3-close__icon" id="close_top">
+            <line x1="10.6065" y1="10.6066" x2="29.6984" y2="29.6985" stroke="#114245" stroke-width="3" stroke-linecap="round"/>
+            <line x1="29.6985" y1="11.3137" x2="10.6066" y2="30.4056" stroke="#114245" stroke-width="3" stroke-linecap="round"/>
+            </svg></span>
+          <ul class="hs-search-field__suggestions suggest__content"></ul>
+        </form>   
+      </div>
+    </div> -->
+
+      <!--     {% if module.extras.p3_header_login %}
+    <div class="p3-header__menu-section-2">
+      <div class="p3-header__icon-login"></div>
+    </div>
+    {% endif%} -->
+      <!--       {% if content.translated_content.values()|selectattr('published')|length || is_listing_view && group.translations %}
+      <div class="p3-header__lang">
+        {% language_switcher "language_switcher" overrideable=false, display_mode='localized', label='Language Switcher' %}
+      </div>
+      {% endif %} -->
+    </div>
+    {% endif %}
+
+    {# MAIN #}
+    <div class="p3-header__section navin">
+      <div class="p3-header__main px-3 px-md-4">
+        {% set href = module.main.p3_header_logo_redirect.url.href %}
+        {% if module.main.p3_header_logo_redirect.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href|escape_url }}"
+           {% if module.main.p3_header_logo_redirect.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.main.p3_header_logo_redirect.rel %}rel="{{ module.main.p3_header_logo_redirect.rel|escape_attr }}"{% endif %}
+           >
+          <img class="p3-header__logo" src="{{ module.main.p3_header_logo.src }}" alt="{{ module.main.p3_header_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          <img class="p3-header__logo" src="{{ module.main.p3_header_scroll_logo.src }}" alt="{{ module.main.p3_header_scroll_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        </a>
+        <nav class="p3-header__menu" id="menu-div">
+          {% menu id="{{ module.main.p3_header_menu }}" %}
+          {% if module.p3_header_topbar == false %}
+
+          <!--         <div class="p3-header__icon-search me-md-3"></div> -->
+          <!--         <div class="p3-menu_divider"></div> -->
+          <!--         <div class="wrapper">
+          <input type="checkbox" id="show-search">
+
+          <label for="show-search" id="sear" class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+            <path d="M8.80069 0.5C5.80027 0.5 3.35725 3.11742 3.35725 6.33204C3.35725 7.72881 3.8145 9.00894 4.58202 10.0138L0.244141 14.6602L1.02745 15.5L5.36479 10.8524C6.33348 11.7033 7.54808 12.167 8.80069 12.1641C11.8011 12.1641 14.2441 9.54666 14.2441 6.33204C14.2441 3.11742 11.8011 0.5 8.80069 0.5ZM8.80069 1.66641C11.2121 1.66641 13.1555 3.74844 13.1555 6.33204C13.1555 8.91563 11.2121 10.9977 8.80069 10.9977C6.38925 10.9977 4.44594 8.91563 4.44594 6.33204C4.44594 3.74844 6.38925 1.66641 8.80069 1.66641Z" fill="white"/>
+            </svg></label>   
+
+          <div class="hs-search-field" id="input-sear">
+            <div class="hs-search-field__bar search__input">
+              <form action="{{ site_settings.content_search_results_page_path }}" class="search-box" id="myForm">
+                {% if module.field_label %}
+                <label for="term">{{ module.field_label }}</label>
+                {% endif %}
+                <input type="text" class="hs-search-field__input" autofocus name="term" autocomplete="off" aria-label="{{ module.field_label || "Search" }}" placeholder="Search">
+                {% if module.content_types_copy.website_pages %}
+                <input type="hidden" name="type" value="SITE_PAGE">
+                {% endif %}
+                {% if module.content_types_copy.landing_pages %}
+                <input type="hidden" name="type" value="LANDING_PAGE">
+                {% endif %}
+                {% if module.content_types_copy.blog_posts %}
+                <input type="hidden" name="type" value="BLOG_POST">
+                <input type="hidden" name="type" value="LISTING_PAGE">
+                {% endif %}
+                {% if module.content_types_copy.knowledge_articles %}
+                <input type="hidden" name="type" value="KNOWLEDGE_ARTICLE">
+                {% endif %}
+                {% if module.include_search_button %}
+                <button aria-label="Search">{% icon name="search" style="solid" %}</button>
+                {% endif %}
+                <button type="submit" class="go-icon"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 42 42" fill="none">
+                  <path d="M24.0024 6.53368C18.215 6.53368 13.5028 11.5823 13.5028 17.7828C13.5028 20.477 14.3847 22.9462 15.8652 24.8844L7.49805 33.8466L9.00894 35.4664L17.375 26.502C19.2435 28.1432 21.5863 29.0375 24.0024 29.0319C29.7897 29.0319 34.502 23.9833 34.502 17.7828C34.502 11.5823 29.7897 6.53368 24.0024 6.53368ZM24.0024 8.7835C28.6537 8.7835 32.402 12.7994 32.402 17.7828C32.402 22.7662 28.6537 26.7821 24.0024 26.7821C19.351 26.7821 15.6027 22.7662 15.6027 17.7828C15.6027 12.7994 19.351 8.7835 24.0024 8.7835Z" fill="#114245"/>
+                  </svg></button>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 42 42" fill="none" class="p3-close__icon close">
+                  <line x1="10.6065" y1="10.6066" x2="29.6984" y2="29.6985" stroke="#114245" stroke-width="3" stroke-linecap="round"/>
+                  <line x1="29.6985" y1="11.3137" x2="10.6066" y2="30.4056" stroke="#114245" stroke-width="3" stroke-linecap="round"/>
+                  </svg></span>
+                <ul class="hs-search-field__suggestions suggest__content"></ul>
+              </form>  
+            </div>
+          </div>
+
+        </div> -->
+
+          <!-- 
+        {% if module.extras.p3_header_login %}
+        <div class="p3-header__menu-section-2">
+          <div class="p3-header__icon-login"></div>
+        </div>
+        {% endif%} -->
+          {% endif %}
+          <!--         <div class="p3-menu_divider"></div> -->
+          {% if module.extras.p3_header_cta %}
+          <div class="p3-link_btn">
+            {% set href = module.contact_cta.contact_cta_link.url.href %}
+            {% if module.contact_cta.contact_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="hs-button primary p3-contact__cta-btn-{{ module.contact_cta.cta_style }}"
+               {% if module.contact_cta.contact_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.contact_cta.contact_cta_link.rel %}rel="{{ module.contact_cta.contact_cta_link.rel }}"{% endif %}
+               >
+              {{ module.contact_cta.contact_cta_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+              <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+          {% endif %}
+          <!--                  <div class="p3-header__lang">
+            <select class="p3-header__lang" name="lang" id="lang">
+              <option value="EN">EN</option> 
+              <option value="FR">FR</option> 
+            </select>
+          </div>  -->
+          {% if content.translated_content.values()|selectattr('published')|length || is_listing_view && group.translations %}
+          <div class="p3-header__lang">
+            {% language_switcher "language_switcher" overrideable=false, display_mode='{{ module.display_mode }}', label='Language Switcher' %}
+            <!--                   <select class="p3-header__lang" name="lang" id="lang">
+              <option value="EN">EN</option> 
+              <option value="FR">FR</option> 
+            </select>  -->
+          </div> 
+          {% endif %}
+
+          <div class="p3-header__burger_toggle toggler-navbar">
+            <button id="p3-header__burger_burger_icon" class="js_toggle_main_nav" aria-label="{% if content.language == 'fr' %}Basculer le menu mobile{% else %}Toggle Side Menu{% endif %}">    
+              {% if module.extras.p3_header_desktop_burger %}
+              <span class="stroke"></span>
+              <span class="stroke"></span>
+              <span class="stroke"></span> 
+              {% endif %}
+            </button>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    {# MOBILE #}
+    <nav class="p3-header__mobile_menu p3-header__mobile_menu2">
+      {% menu id="{{ module.main.p3_header_menu }}" %}
+      {% menu id="{{ module.main.mobile_menu }}" %} 
+      {#
+      {% cta guid="{{ module.extras.get_started }}" %}
+      #}
+      {% set href = module.contact_cta.contact_cta_link.url.href %}
+      {% if module.contact_cta.contact_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}" class="hs-button primary p3-contact__cta-btn-{{ module.contact_cta.cta_style }}"
+         {% if module.contact_cta.contact_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.contact_cta.contact_cta_link.rel %}rel="{{ module.contact_cta.contact_cta_link.rel }}"{% endif %}
+         >
+        {{ module.contact_cta.contact_cta_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+        <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="white"/>
+        </svg>
+      </a>
+      {% if module.topbar.p3_header_topbar_menu %}
+      <ul class="dropdown">
+        <li>{% menu id="{{ module.topbar.p3_header_topbar_menu }}" %}</li>
+      </ul>
+      {% endif %}
+      {% if module.extras.p3_header_search %}
+      {% endif %}
+      {% if module.extras.p3_header_login %}
+      <div class="p3-header__menu-section-2">
+        <div class="p3-header__icon-login"></div>
+      </div>
+      {% endif%}
+    </nav>
+  </header>
+</div>
+
+{% if module.p3_header_mega %}
+{% if module.mega.p3_header_mega_sidebar %}
+{% for item in module.mega.sidebar_menu %}
+<div id="p3-header_mega_{{ loop.index }}" class="p3-header_mega">
+  <div class="sidebar" id="menu-box-{{ loop.index }}">
+    <div class="side-own">
+      <ul>
+        <div class="side_length">
+          {% for item2 in item.sidebar_menu_group %}
+          <ul class="dropdown-io">
+            <div class="dropbtn-io">
+              <li>{% if module.mega.p3_header_mega_icons %}{% icon
+			name="{{ item2.sidebar_icon.name }}"
+			style="{{ item2.sidebar_icon.type }}"
+			unicode="{{ item2.sidebar_icon.unicode }}"
+			icon_set="{{ item2.sidebar_icon.icon_set }}"
+		%}{% endif %} {{ item2.sidebar_text }}</li> 
+              <div class="dropdown-content-io sidebanner">
+                <div class="side_rightmenu">
+                  <div class="p3-right__menu">
+                    {% for item3 in item2.submenu_group %}
+                    <div class="p3-side__submenu">
+                      {% set href = item3.submenu_link.url.href %}
+                      {% if item3.submenu_link.url.type is equalto "EMAIL_ADDRESS" %}
+                      {% set href = "mailto:" + href %}
+                      {% endif %}
+                      <a href="{{ href }}"
+                         {% if item3.submenu_link.open_in_new_tab %}target="_blank"{% endif %}
+                         {% if item3.submenu_link.rel %}rel="{{ item3.submenu_link.rel }}"{% endif %}
+                         >
+                        {% if item3.submenu_image.src %}
+                        {% set sizeAttrs = 'width="{{ item3.submenu_image.width }}" height="{{ item3.submenu_image.height }}"' %}
+                        {% if item3.submenu_image.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item3.submenu_image.width }}" height="{{ item3.submenu_image.height }}" style="max-width: 100%;"' %}
+                        {% elif item3.submenu_image.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item3.submenu_image.max_width }}" height="{{ item3.submenu_image.max_height }}" style="max-width: 100%;"' %}
+                        {% endif %}
+                        {% set loadingAttr = item3.submenu_image.loading != 'disabled' ? 'loading="{{ item3.submenu_image.loading }}"' : '' %}
+                        <img src="{{ item3.submenu_image.src }}" alt="{{ item3.submenu_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                        {% endif %}</a>
+                      <div class="righ-con">
+                        <a href="{{ href }}" target="_blank"><span>
+                          {{ item3.submenu_title }}
+                          </span></a>
+                        <a href="{{ href }}" target="_blank">{{ item3.submenu_content }}</a>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </ul>
+          {% endfor %}
+        </div>    
+      </ul>
+    </div>
+    {% if module.mega.banner.p3_header_mega_banner_text %}
+
+    <div class="p3-header_mega_btm_str p3-side_bottom" id="side_banner">
+      {{ module.mega.banner.p3_header_mega_banner_text }}
+      <span>{% set href = module.mega.banner.p3_header_mega_banner_link.url.href %}
+        {% if module.mega.banner.p3_header_mega_banner_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.mega.banner.p3_header_mega_banner_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.mega.banner.p3_header_mega_banner_link.rel %}rel="{{ module.mega.banner.p3_header_mega_banner_link.rel }}"{% endif %}
+           ><button class="btn_primary p3-bottom_btn">
+          {{ module.mega.banner.p3_header_mega_banner_label }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="#1980EB"/>
+          </svg>
+          </button></a></span>
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endfor %}
+{% else %}
+
+{% for menus in module.mega.menu %}
+<div id="p3-header_mega_{{ loop.index }}" class="p3-header_mega">
+  {% if module.mega.p3_header_mega_banner %}
+  <div class="p3-header_mega_btm_banner">
+    <div>
+      {% if module.mega.banner.p3_header_mega_banner_link %}
+      {% set bannerHref = module.mega.banner.p3_header_mega_banner_link.url.href %}
+      {% if module.mega.banner.p3_header_mega_banner_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set bannerHref = "mailto:" + href %}
+      {% endif %}
+      {% endif %}
+    </div>
+    {% endif %}
+    <div class="p3-header_mega_top">
+      <div>
+        <div class="p3-megabanner__space">
+          <div class="left_menu_options">
+            <h5>
+              {% inline_text field="mega.left_side_option.left_menu_title" value="{{ module.mega.left_side_option.left_menu_title }}" %}
+            </h5>
+            <div class="footer_menu_options">
+              <div class="p3-link_btn">
+                {% set href = module.mega.left_side_option.left_menu_career_cta.career_cta_link.url.href %}
+                {% if module.mega.left_side_option.left_menu_career_cta.career_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href }}" class="hs-button primary p3-career__cta-btn-{{ module.mega.left_side_option.left_menu_career_cta.cta_style }}"
+                   {% if module.mega.left_side_option.left_menu_career_cta.career_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if module.mega.left_side_option.left_menu_career_cta.career_cta_link.rel %}rel="{{ module.mega.left_side_option.left_menu_career_cta.career_cta_link.rel }}"{% endif %}
+                   >
+                  {% inline_text field="mega.left_side_option.left_menu_career_cta.career_cta_text" value="{{ module.mega.left_side_option.left_menu_career_cta.career_cta_text }}" %}
+                  <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.02769 5.65855H8.38363L5.16993 8.87224C4.9131 9.12908 4.9131 9.55054 5.16993 9.80738C5.42676 10.0642 5.84165 10.0642 6.09848 9.80738L10.4383 5.46757C10.6951 5.21073 10.6951 4.79585 10.4383 4.53902L6.10506 0.192624C5.84823 -0.0642081 5.43335 -0.0642081 5.17652 0.192624C4.91968 0.449457 4.91968 0.86434 5.17652 1.12117L8.38363 4.34146H1.02769C0.665486 4.34146 0.369141 4.6378 0.369141 5C0.369141 5.3622 0.665486 5.65855 1.02769 5.65855Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+              <div class="social_icons">
+                {% for item in module.mega.left_side_option.social_icons %}
+                {% set href = item.social_link.url.href %}
+                {% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a href="{{ href|escape_url }}"
+                   {% if item.social_link.open_in_new_tab %}target="_blank"{% endif %}
+                   {% if item.social_link.rel %}rel="{{ item.social_link.rel|escape_attr }}"{% endif %}
+                   >
+                  {% if item.social_icons.src %}
+                  {% set sizeAttrs = 'width="{{ item.social_icons.width|escape_attr }}" height="{{ item.social_icons.height|escape_attr }}"' %}
+                  {% if item.social_icons.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.social_icons.width|escape_attr }}" height="{{ item.social_icons.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.social_icons.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.social_icons.max_width|escape_attr }}" height="{{ item.social_icons.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.social_icons.loading != 'disabled' ? 'loading="{{ item.social_icons.loading|escape_attr }}"' : '' %}
+                  <img src="{{ item.social_icons.src|escape_url }}" alt="{{ item.social_icons.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <div class="right_menu_layout {{ module.mega.right_menu_layout }}">
+            <div class="right_menu_options">
+              {% for submenus in menus.submenu %}
+              {% if submenus.p3_header_mega_link %}
+              <div class="submenu_options">
+                <div>
+                  {% set href = submenus.p3_header_mega_link.url.href %}
+                  {% if submenus.p3_header_mega_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="d-flex flex-column" 
+                     {% if submenus.p3_header_mega_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if submenus.p3_header_mega_link.rel %}rel="{{ submenus.p3_header_mega_link.rel }}"{% endif %} >
+                    {% endif %}
+                    {% if submenus.p3_header_mega_link %}
+                    {% if submenus.p3_header_mega_image.src %}
+                    {% set sizeAttrs = 'width="{{ submenus.p3_header_mega_image.width }}" height="{{ submenus.p3_header_mega_image.height }}"' %}
+                    {% if submenus.p3_header_mega_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ submenus.p3_header_mega_image.width }}" height="{{ submenus.p3_header_mega_image.height }}" style="max-width:150px; height:80px;"' %}
+                    {% elif submenus.p3_header_mega_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ submenus.p3_header_mega_image.max_width }}" height="{{ submenus.p3_header_mega_image.max_height }}" style="max-width:150px; height:80px;"' %}
+                    {% endif %}
+                    {% set loadingAttr = submenus.p3_header_mega_image.loading != 'disabled' ? 'loading="{{ submenus.p3_header_mega_image.loading }}"' : '' %}
+                    <img src="{{ submenus.p3_header_mega_image.src }}" alt="{{ submenus.p3_header_mega_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %} 
+                  </a> 
+                </div>
+                <div class="mega_content">
+                  <a href="{{ href }}" target="_self"><span class="p3-header_mega_title">{{ submenus.p3_header_mega_title }}</span></a>
+                  {% if submenus.header_submenu_text %}
+                  <!-- HTML to show when checked -->
+                  <a href="{{ href }}" target="_self"><div class="p3-header_mega_text">{{ submenus.p3_header_mega_text }}</div></a>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+            <div class="right_menu_options">
+              {% for submenus_col2 in menus.sous_menu2 %}
+              {% if submenus_col2.p3_header_mega_link %}
+              <div class="submenu_options">
+                <div>
+                  {% set href = submenus_col2.p3_header_mega_link.url.href %}
+                  {% if submenus_col2.p3_header_mega_link.url.type is equalto "EMAIL_ADDRESS" %}
+                  {% set href = "mailto:" + href %}
+                  {% endif %}
+                  <a href="{{ href }}" class="d-flex flex-column" 
+                     {% if submenus_col2.p3_header_mega_link.open_in_new_tab %}target="_blank"{% endif %}
+                     {% if submenus_col2.p3_header_mega_link.rel %}rel="{{ submenus_col2.p3_header_mega_link.rel }}"{% endif %} >
+                    {% endif %}
+                    {% if submenus_col2.p3_header_mega_link %}
+                    {% if submenus_col2.p3_header_mega_image.src %}
+                    {% set sizeAttrs = 'width="{{ submenus_col2.p3_header_mega_image.width }}" height="{{ submenus_col2.p3_header_mega_image.height }}"' %}
+                    {% if submenus_col2.p3_header_mega_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ submenus_col2.p3_header_mega_image.width }}" height="{{ submenus_col2.p3_header_mega_image.height }}" style="max-width:150px; height:80px;"' %}
+                    {% elif submenus_col2.p3_header_mega_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ submenus_col2.p3_header_mega_image.max_width }}" height="{{ submenus_col2.p3_header_mega_image.max_height }}" style="max-width:150px; height:80px;"' %}
+                    {% endif %}
+                    {% set loadingAttr = submenus_col2.p3_header_mega_image.loading != 'disabled' ? 'loading="{{ submenus_col2.p3_header_mega_image.loading }}"' : '' %}
+                    <img src="{{ submenus_col2.p3_header_mega_image.src }}" alt="{{ submenus_col2.p3_header_mega_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %} 
+                  </a> 
+                </div>
+                <div class="mega_content">
+                  <a href="{{ href }}" target="_self"><span class="p3-header_mega_title">{{ submenus_col2.p3_header_mega_title }}</span></a>
+                  {% if submenus_col2.header_submenu2_text %}
+                  <a href="{{ href }}" target="_self"><div class="p3-header_mega_text">{{ submenus_col2.p3_header_mega_text }}</div></a>
+                  {% endif %}
+                </div>
+              </div>
+              {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+        <div class="footer_stripe">
+          <h6>
+            {% inline_text field="mega.left_side_option.footer_stripe" value="{{ module.mega.left_side_option.footer_stripe }}" %}
+          </h6>
+          <div class="p3-link_btn">
+            {% set href = module.mega.left_side_option.footer_menu_cta.career_cta_link.url.href %}
+            {% if module.mega.left_side_option.footer_menu_cta.career_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="hs-button primary p3-career__cta-btn-{{ module.mega.left_side_option.footer_menu_cta.cta_style }}"
+               {% if module.mega.left_side_option.footer_menu_cta.career_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.mega.left_side_option.footer_menu_cta.career_cta_link.rel %}rel="{{ module.mega.left_side_option.footer_menu_cta.career_cta_link.rel }}"{% endif %}
+               >
+              {% inline_text field="mega.left_side_option.footer_menu_cta.career_cta_text" value="{{ module.mega.left_side_option.footer_menu_cta.career_cta_text }}" %}<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.39683 5.65855H8.75277L5.53907 8.87224C5.28224 9.12908 5.28224 9.55054 5.53907 9.80738C5.7959 10.0642 6.21079 10.0642 6.46762 9.80738L10.8074 5.46757C11.0643 5.21073 11.0643 4.79585 10.8074 4.53902L6.4742 0.192624C6.21737 -0.0642081 5.80249 -0.0642081 5.54566 0.192624C5.28882 0.449457 5.28882 0.86434 5.54566 1.12117L8.75277 4.34146H1.39683C1.03463 4.34146 0.738281 4.6378 0.738281 5C0.738281 5.3622 1.03463 5.65855 1.39683 5.65855Z" fill="#FD560A"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if module.mega.banner.p3_header_mega_banner_text %}
+    <div class="p3-header_mega_btm_str">{{ module.mega.banner.p3_header_mega_banner_text }}
+      <span> {% set href = module.mega.banner.p3_header_mega_banner_link.url.href %}
+        {% if module.mega.banner.p3_header_mega_banner_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if module.mega.banner.p3_header_mega_banner_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.mega.banner.p3_header_mega_banner_link.rel %}rel="{{ module.mega.banner.p3_header_mega_banner_link.rel }}"{% endif %}
+           ><button class="btn_primary p3-bottom_btn">
+          {{ module.mega.banner.p3_header_mega_banner_label }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="#1980EB"/>
+          </svg>
+          </button></a></span>
+    </div>
+    {% endif %}
+  </div> 
+</div>
+</div> 
+{% endfor %}
+{% endif %}
+{% endif %}
+
+{% require_css %}
+<style>
+  {% scope_css %}
+
+  .header{
+    background-color:{{ module.styles.p3_header_bg.color }},
+      {{ module.styles.p3_header_bg.opacity }}
+  }
+  /*   .p3-header_mega_btm_str{
+  background-color: {{ module.styles.p3_header_mega_banner_bg.color }};{{ module.styles.p3_header_mega_banner_bg.opacity }};
+  color:{{ module.styles.p3_header_mega_banner_text.color }};{{ module.styles.p3_header_mega_banner_text.opacity }}
+  } */
+  .p3-side_bottom{
+    color:{{ module.styles.p3_header_mega_banner_text.color }};{{ module.styles.p3_header_mega_banner_text.opacity }}
+  }
+  .p3-bottom_btn{
+    {% if module.styles.p3_header_mega_banner_link_color.color %}
+    background-color:{{ module.styles.p3_header_mega_banner_link_color.color }};{{ module.styles.p3_header_mega_banner_link_color.opacity }};
+    {% endif %}
+    {% if module.styles.p3_header_mega_banner_label_color.color %}
+    color:{{ module.styles.p3_header_mega_banner_label_color.color }};{{ module.styles.p3_header_mega_banner_label_color.opacity }};
+    {% endif %}
+  }
+  .header .lang_list_class li {
+    background: {{ theme.header.background.color.color }},{{ theme.header.background.color.opacity * 0.01 }};
+  }
+  /*  .p3-header__section{
+  {% if module.styles.background_color %}
+  background-color: {{ module.styles.background_color.color }};
+  {% endif %}
+  } */
+  .p3-header__lang .globe_class:before {
+    content: "{{ content.language.languageTag|upper }}" !important;
+      {{ theme.header.menu.text.font.style }};
+    padding-right: 5px;
+  }
+
+  .p3-header__topbar .hs-menu-children-wrapper,    
+  .header .lang_list_class li {
+    background: {{ theme.header.background.color.color }};
+  }
+  .p3-header__mobile_menu2 .p3-contact__cta-btn-1 {
+    color: #fff !important;
+  }
+  .p3-header__mobile_menu a {
+    color: #fd4f00 !important;
+  }
+  {% if module.p3_header_mega %}
+  @media (min-width: 768px) {
+    .p3-header__main .hs-menu-children-wrapper {
+      display: none !important;
+    }
+  }
+  @media (min-width: 768px) {
+    {% for menu in module.mega.menu %}
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):hover #p3-header_mega_{{ loop.index }}, 
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):active #p3-header_mega_{{ loop.index }},
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):focus-within #p3-header_mega_{{ loop.index }} {
+      display: block;
+      max-height: 5000px;
+    }
+    {% endfor %}
+
+  }
+
+  .p3-header_mega a {
+    color: {{ theme.text.body_font.font.color }};
+  }
+  {% endif %}
+
+  .p3-header_mega_btm_banner {
+    background: rgba( {{ module.styles.p3_header_mega_banner_bg.color|convert_rgb }}, {{ module.styles.p3_header_mega_banner_bg.opacity*0.01 }} );
+    color: {{ module.styles.p3_header_mega_banner_text.color }};
+  }
+
+  a.p3-header_mega_btm_btn {
+    background: rgba( {{ module.styles.p3_header_mega_banner_link_color.color|convert_rgb }}, {{ module.styles.p3_header_mega_banner_link_color.opacity*0.01 }} );
+    color: {{ module.styles.p3_header_mega_banner_label_color.color }} !important;
+  }
+
+  #p3-header__burger_burger_icon .stroke {
+    background: {{ module.styles.p3_header_burger.color }};
+  }
+
+  #p3-header__burger_burger_icon.active .stroke {
+    background: {{ module.styles.p3_header_burger_open.color }};
+  }
+  .p3-bottom_btn{
+    background-color:{{ module.styles.bottom_banner_button }}
+  }
+  }
+  .p3-header__main ul li a,
+  .p3-header__topbar ul li a {
+    color:{{ module.styles.menu_color.color }}
+
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+{% if module.p3_header_mega %}
+{% require_js %}
+<script src="jquery-3.6.4.min.js"></script>
+<script>
+
+  {% for menu in module.mega.menu %}
+  $('#p3-header_mega_'+{{ loop.index }}).appendTo('.p3-header__menu li.hs-menu-depth-1:nth-child('+{{ loop.index }}+')');
+  {% endfor %}
+  {% if module.p3_header_mega_sidebar %}
+  {% for menu in module.mega.sidebar_menu %}
+  $('#p3-header_side_'+{{ loop.index }}).appendTo('.p3-header__menu li.hs-menu-depth-1:nth-child('+{{ loop.index }}+')');
+  {% endfor %}
+  {% endif %}
+  document.getElementsByClassName("toggler-navbar")[0].addEventListener("click", toogleClass);
+
+  function toogleClass() {
+    document.getElementsByClassName("hamburger-menu")[0].classList.toggle('open')
+    document.getElementsByClassName("sidebar")[0].classList.toggle('open')
+  }
+</script>
+{% end_require_js %}
+{% endif %}
+

@@ -1,0 +1,12 @@
+.layer_enable {
+  display: block;
+}
+.layer_disable {
+  display: none;
+}
+.num_bgcolor_white {
+  background: #FFF;
+}
+.num_bgcolor_grey {
+  background: #EFEFEF;
+}

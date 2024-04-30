@@ -1,0 +1,136 @@
+{% set iconPos = item.p3_icon_border and item.p3_icon_border_position == "top" and item.p3_icon_circle ? 20 : 15 %}
+
+{% set circledClass = item.p3_icon_circle ? "p3-icon__circled-container" : "" %}
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-icon__main-content { background-color: {{ module.styles.p3_icon_bg.color }};}
+  .p3-icon__link { color: {{ module.styles.p3_icon_accent_color.color }} !important; }
+  .border-bottom { border-bottom: 15px solid {{ module.styles.p3_icon_accent_color.color }};}
+  .border-top::after  {
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    top: 58px;
+    border-top: 15px solid {{ module.styles.p3_icon_accent_color.color }};
+  }
+  .p3-icon__circled { top: -{{ iconPos }}%;}
+
+  .p3-icon__title {
+    {% if module.styles.icon_title_style.icon_title.color %}
+    color:{{ module.styles.icon_title_style.icon_title.color }};
+    {% endif %}
+    {% if module.styles.icon_title_style.icon_title.size %}
+    font-size: {{ module.styles.icon_title_style.icon_title.size ~ module.styles.icon_title_style.icon_title.size_unit }};
+    {% endif %}
+    {% if module.styles.icon_title_style.icon_title.style %}
+    {{ module.styles.icon_title_style.icon_title.style }};
+    {% endif %}
+    {{ module.styles.icon_title_style.title_spacing.css }};
+    {% if module.styles.icon_title_style.text_transform %}
+    text-transform: {{ module.styles.icon_title_style.text_transform }};
+    {% endif %}
+
+  }
+  .p3-icon__text{
+    {% if module.styles.icon_content_style.icon_title.color %}
+    color:{{ module.styles.icon_content_style.icon_title.color }};
+    {% endif %}
+    {% if module.styles.icon_content_style.icon_title.size %}
+    font-size: {{ module.styles.icon_content_style.icon_title.size ~ module.styles.icon_content_style.icon_title.size_unit }};
+    {% endif %}
+    {% if module.styles.icon_content_style.icon_title.style %}
+    {{ module.styles.icon_content_style.icon_title.style }};
+    {% endif %}
+    {{ module.styles.icon_content_style.title_spacing.css }};
+    {% if module.styles.icon_content_style.text_transform %}
+    text-transform: {{ module.styles.icon_content_style.text_transform }};
+    {% endif %}
+  }
+  .p3-icon__link{
+    {% if module.styles.icon_link_style.icon_link.color %}
+    color:{{ module.styles.icon_link_style.icon_link.color }};
+    {% endif %}
+    {% if module.styles.icon_link_style.icon_link.size %}
+    font-size: {{ module.styles.icon_link_style.icon_link.size ~ module.styles.icon_link_style.icon_link.size_unit }};
+    {% endif %}
+    {% if module.styles.icon_link_style.icon_link.style %}
+    {{ module.styles.icon_link_style.icon_link.style }};
+    {% endif %}
+    {{ module.styles.icon_link_style.link_spacing.css }};
+    {% if module.styles.icon_link_style.text_transform %}
+    text-transform: {{ module.styles.icon_link_style.text_transform }};
+    {% endif %}
+
+  }
+  @media only screen and (max-width: 575px)  {
+    .p3-icon__title{
+      {{ module.styles.icon_title_style.mobile_spacing.css }}
+    }
+    .p3-icon__text{
+      {{ module.styles.icon_content_style.mobile_spacing.css }}
+    }
+    .p3-icon__link{
+      {{ module.styles.icon_link_style.mobile_spacing.css }}
+    }
+  }
+
+  @media only screen and (max-width: 768px)  {
+    .p3-icon__title{
+      {{ module.styles.icon_title_style.tablet_spacing.css }}
+    }
+    .p3-icon__text{
+      {{ module.styles.icon_content_style.tablet_spacing.css }}
+    }
+    .p3-icon__link{
+      {{ module.styles.icon_link_style.mobile_spacing.css }}
+    }
+  }
+
+
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+<div class="container p3-icon_content">
+  {% set textLeft = item.p3_icon_align == 1 ? "" : "text-left" %}
+  {% set align = module.p3_icon_align ==1  ? "p3_singlecolumn" : "p3_layout_dir" %}
+  {% for item in module.icon_one %}
+  {% set borderClassBottom = item.p3_icon_border and item.p3_icon_border_position == "bottom" ? "border-bottom" : "" %}
+  {% set borderClassTop = item.p3_icon_border and item.p3_icon_border_position == "top" ? "border-top" : "" %}
+  <div class="p3-icon__main-content {{ align }} {{ borderClassBottom }} {{ borderClassTop }} {{ circledClass }} ">
+    <div class="p3-icon_fullimage {% if item.p3_icon_circle and item.p3_icon_align == 1 %} p3-icon__circled{% endif %}">
+      <img src="{{item.p3_icon_img.src }}" alt="{{ item.p3_icon_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    </div>
+    {% if item.p3_icon_divider and item.p3_icon_align == 1 %}
+    <div class="p3-icon__divider"></div>
+    {% endif %}
+    <div class="p3-icon__text-content">
+      <h3 class="p3-icon__title">
+        {{ item.p3_icon_title }}
+      </h3>
+      <p class="p3-icon__text">
+        {{ item.p3_icon_text }}
+      </p>
+      {% set href = item.p3_icon_link.url.href %}
+      {% if item.p3_icon_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a class="p3-icon__link" href="{{ href }}" 
+         {% if item.p3_icon_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if item.p3_icon_link.rel %}rel="{{ item.p3_icon_link.rel }}"{% endif %}
+         >
+        {% inline_text field="p3_icon_label" value="{{ item.p3_icon_label }}" %}
+      </a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+
+
+
+

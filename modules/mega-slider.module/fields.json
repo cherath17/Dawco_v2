@@ -1,0 +1,379 @@
+[ {
+  "id" : "71aea4a0-ea74-1e26-a4d3-dc12cae2fef9",
+  "name" : "p3_slider_title",
+  "display_width" : null,
+  "label" : "Titre",
+  "help_text" : "Titre de section au-dessus du carrousel",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "3db10da5-2ec5-8fa6-8cae-2f5fd35e95d5",
+  "name" : "slider",
+  "display_width" : null,
+  "label" : "Carrousel",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "3a376039-ceaa-c008-0664-80e05f0b3fd3",
+    "default" : 2
+  },
+  "children" : [ {
+    "id" : "3a376039-ceaa-c008-0664-80e05f0b3fd3",
+    "name" : "p3_slider_img",
+    "display_width" : null,
+    "label" : "Image",
+    "inline_help_text" : "La taille de l'image s'adaptera en lien avec le nombre d'images visible",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+      "alt" : "Sennheiser color logo",
+      "loading" : "lazy",
+      "width" : 900,
+      "height" : 325,
+      "max_width" : 900,
+      "max_height" : 325
+    }
+  }, {
+    "id" : "5933bb80-e027-8429-d8a1-d95f5576c44d",
+    "name" : "p3_slider_img_link",
+    "display_width" : null,
+    "label" : "Lien optionnel d'image",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_slider_img" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+      "alt" : "Sennheiser color logo",
+      "loading" : "lazy",
+      "width" : 900,
+      "height" : 325,
+      "max_width" : 900,
+      "max_height" : 325
+    },
+    "p3_slider_img_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "p3_slider_img" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+      "alt" : "Sennheiser color logo",
+      "loading" : "lazy",
+      "width" : 900,
+      "height" : 325,
+      "max_width" : 900,
+      "max_height" : 325
+    },
+    "p3_slider_img_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "92c2b968-38ca-47e8-0d39-83ebd8a53190",
+  "name" : "p3_slider_width",
+  "display_width" : null,
+  "label" : " Largeur du carrousel",
+  "help_text" : "En pleine largeur les flèches seront positionné par dessus l’image, en contenu centré, l’image aura de l’espace blanc sur les coté et les flèche ne seront pas positionné sur l’image",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "full", "Pleine largeur" ], [ "content-wrapper", "Contenu centré" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "full"
+}, {
+  "id" : "800eee33-0b9f-b77a-1400-31850e45bc43",
+  "name" : "p3_slider_slides",
+  "display_width" : null,
+  "label" : "Nombre d’images par diapositive",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "1" ], [ "2", "2" ], [ "3", "3" ], [ "4", "4" ], [ "5", "5" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "1"
+}, {
+  "id" : "bdc28d49-2429-4bfe-ee73-d2eceae1092d",
+  "name" : "p3_slider_navigation_type",
+  "display_width" : null,
+  "label" : "Type de navigation du carousel",
+  "help_text" : "Choisir votre type de navigation préférer",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "choices" : [ [ "arrows", "Flèches" ], [ "dots", "Points" ], [ "thumbnails", "Image miniatures" ] ],
+  "multiple" : true,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : [ "dots", "arrows" ]
+}, {
+  "id" : "8a55f0b9-f695-9ecc-d523-4caefa97c6cf",
+  "name" : "p3_slider_dot_type",
+  "display_width" : null,
+  "label" : "Type de points",
+  "help_text" : "Choissisez le type d’affichage pour la navigation du carousel",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_slider_navigation_type",
+    "controlling_value_regex" : "dots",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "circle", "Cercle" ], [ "number", "Nombre" ], [ "rectangle", "Rectangle" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "circle"
+}, {
+  "id" : "a4a99c41-ef2c-0703-dbe1-8d22a44c2d5e",
+  "name" : "p3_slider_thumbnails",
+  "display_width" : null,
+  "label" : "Afficher des miniatures",
+  "help_text" : "Ajouter à votre carousel une navigation par image",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "2f92704a-4d23-3472-0fc5-f1cae74bf515",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d44ab3e6-1ae8-795c-e55c-c05b8c214f6d",
+    "name" : "p3_slider_bg",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "help_text" : "Couleur d'arrière-plan du module",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "648edd3d-8ea4-129c-c638-d651df1ca24f",
+    "name" : "p3_slider_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 90,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 90,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }, {
+    "id" : "40b37724-b63f-0d92-e5a2-f1a55e44175c",
+    "name" : "p3_slider_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les écrans tablette Privilégier le padding.",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }, {
+    "id" : "9c9bcef9-dd83-813c-b3f7-b5c32cb94796",
+    "name" : "p3_slider_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding.",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : {
+      "padding" : {
+        "top" : {
+          "value" : 40,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 40,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_slider_bg" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "p3_slider_spacing_desktop" : {
+      "padding" : {
+        "top" : {
+          "value" : 90,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 90,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    },
+    "p3_slider_spacing_tablet" : {
+      "padding" : {
+        "top" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 50,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    },
+    "p3_slider_spacing_mobile" : {
+      "padding" : {
+        "top" : {
+          "value" : 40,
+          "units" : "px"
+        },
+        "bottom" : {
+          "value" : 40,
+          "units" : "px"
+        },
+        "left" : {
+          "value" : null,
+          "units" : null
+        },
+        "right" : {
+          "value" : null,
+          "units" : null
+        }
+      }
+    }
+  }
+}, {
+  "id" : "b0fd148d-fef6-a39f-b433-b197f3208139",
+  "name" : "p3_slider_border",
+  "display_width" : null,
+  "label" : "Ajouter un arrondi aux images",
+  "help_text" : "Cocher cette option vous permet d’ajouter un effet d’arrondis aux images de votre carousel",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

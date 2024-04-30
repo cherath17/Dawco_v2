@@ -1,0 +1,1157 @@
+{
+  "extras.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.label" : {
+    "message" : "Extras",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta.inline_help_text" : {
+    "message" : "Display a call to action button in the main header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta.label" : {
+    "message" : "Show a Call To Action button",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.default" : {
+    "message" : "Get Started",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.inline_help_text" : {
+    "message" : "Call To Action button text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.label" : {
+    "message" : "CTA button label",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_link.inline_help_text" : {
+    "message" : "Call To Action button URL",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_link.label" : {
+    "message" : "CTA button link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_cta_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_desktop_burger.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_desktop_burger.inline_help_text" : {
+    "message" : "The burger menu will be displayed in the main menu, you must select which menu to display in the side menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_desktop_burger.label" : {
+    "message" : "Show a mobile menu on desktop",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_desktop_burger.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_login.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_login.inline_help_text" : {
+    "message" : "Choose whether or not to display the login link in the header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_login.label" : {
+    "message" : "Show login icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_login.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_search.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_search.inline_help_text" : {
+    "message" : "Choose whether or not to display the search in the main header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_search.label" : {
+    "message" : "Show site search",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.p3_header_search.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "extras.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "landing.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.label" : {
+    "message" : "Main",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.name" : {
+    "message" : "header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_menu.inline_help_text" : {
+    "message" : "Select the website's main menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_menu.label" : {
+    "message" : "Navigation Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_scroll_logo.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_scroll_logo.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_scroll_logo.inline_help_text" : {
+    "message" : "Image de largeur maximum de 160px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_scroll_logo.label" : {
+    "message" : "Logo copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.p3_header_scroll_logo.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "main.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.label" : {
+    "message" : "Bottom banner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.default" : {
+    "message" : "Get Started",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.label" : {
+    "message" : "Bottom banner label",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_link.label" : {
+    "message" : "Bottom banner link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.label" : {
+    "message" : "Bottom banner text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.p3_header_mega_banner_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.banner.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.label" : {
+    "message" : "Mega Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.inline_help_text" : {
+    "message" : "To display the correct submenu with the right top-level menu link, you need to keep exactly the same order as the main menu links.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.label" : {
+    "message" : "Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.inline_help_text" : {
+    "message" : "This optional label is used to visually help the administrator organize the menus and submenus of the Mega Menu; it will not be displayed on the site.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.label" : {
+    "message" : "Optional sorting label",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.sorting_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.label" : {
+    "message" : "Submenu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_image.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_image.label" : {
+    "message" : "Submenu item image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_link.label" : {
+    "message" : "Submenu item link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.label" : {
+    "message" : "Submenu item text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.label" : {
+    "message" : "Submenu item title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.p3_header_mega_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.menu.submenu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_banner.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_banner.inline_help_text" : {
+    "message" : "This banner will be displayed under the Mega Menu when it is opened",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_banner.label" : {
+    "message" : "Mega Menu bottom banner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_banner.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_icons.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_icons.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_icons.label" : {
+    "message" : "Show icons in Mega Menu sidebar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_icons.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_img.inline_help_text" : {
+    "message" : "Display an image for each submenu item. If checked, there is a maximum of 8 submenu items; if unchecked, the maximum is 12.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_img.label" : {
+    "message" : "Add images for items in submenu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_sidebar.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_sidebar.inline_help_text" : {
+    "message" : "Choose to show sidebar in the Mega Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_sidebar.label" : {
+    "message" : "Show the sidebar menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_sidebar.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.choices.container" : {
+    "message" : "Centered width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.choices.container-fluid" : {
+    "message" : "Full width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.inline_help_text" : {
+    "message" : "Choose the type of display of the Mega Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.label" : {
+    "message" : "Mega Menu width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.p3_header_mega_width.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.label" : {
+    "message" : "Sidebar submenu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_icon.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_icon.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_icon.label" : {
+    "message" : "Sidebar tab icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_icon.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.label" : {
+    "message" : "Sidebar tab title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.p3_header_mega_sidebar_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.label" : {
+    "message" : "Sidebar submenu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_image.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_image.label" : {
+    "message" : "Submenu item image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_link.label" : {
+    "message" : "Submenu item link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.label" : {
+    "message" : "Submenu item text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.label" : {
+    "message" : "Submenu item title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.p3_header_mega_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mega.sidebar_submenu.submenu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_menu.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_menu.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_menu.label" : {
+    "message" : "Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "mobile_menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_mega.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_mega.inline_help_text" : {
+    "message" : "Choose whether or not the Mega Menu will be used for the main menu in the header. On mobile the traditional main menu will be used.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_mega.label" : {
+    "message" : "Use the mega menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_mega.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_topbar.help_text" : {
+    "message" : "Choose whether or not to display a secondary level at the top of the header, where the language menu, search and login icons and a second menu would be located, if desired.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_topbar.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_topbar.label" : {
+    "message" : "Use a secondary header level",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_header_topbar.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.name" : {
+    "message" : "header",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger.label" : {
+    "message" : "Mobile menu icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger_open.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger_open.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger_open.label" : {
+    "message" : "Open mobile menu icon",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_burger_open.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_bg.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_bg.label" : {
+    "message" : "Bottom banner background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_label_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_label_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_label_color.label" : {
+    "message" : "Bottom banner button text color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_label_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_link_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_link_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_link_color.label" : {
+    "message" : "Bottom banner button background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_link_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_text.label" : {
+    "message" : "Bottom banner text color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_mega_banner_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_scroll_bg.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_scroll_bg.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_scroll_bg.inline_help_text" : {
+    "message" : "Couleur de fond de l’entête. Pour rendre le fond transparent veuillez diminuer le pourcentage de l’opacité",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_scroll_bg.label" : {
+    "message" : "Couleur d’arrière-plan copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.p3_header_scroll_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "styles.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.label" : {
+    "message" : "Topbar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.p3_header_topbar_menu.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.p3_header_topbar_menu.inline_help_text" : {
+    "message" : "Select the secondary header menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.p3_header_topbar_menu.label" : {
+    "message" : "Second Navigation Menu",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.p3_header_topbar_menu.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "topbar.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "website.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "website.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "website.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "website.label" : {
+    "message" : "Boolean",
+    "description" : null,
+    "placeholders" : null
+  },
+  "website.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

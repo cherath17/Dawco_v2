@@ -1,0 +1,472 @@
+{
+  "name" : {
+    "message" : "mega-slider",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_border.help_text" : {
+    "message" : "Checking this option allows you to add a rounded effect to the images in your carousel",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_border.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_border.label" : {
+    "message" : "Add rounded border to images",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_border.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.choices.circle" : {
+    "message" : "Circles",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.choices.number" : {
+    "message" : "Numbers",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.choices.rectangle" : {
+    "message" : "Rectangles",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.help_text" : {
+    "message" : "Choose the type of display for carousel navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.label" : {
+    "message" : "Dots type",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_dot_type.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.choices.arrows" : {
+    "message" : "Arrows",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.choices.dots" : {
+    "message" : "Dots",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.choices.thumbnails" : {
+    "message" : "Thumbnails",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.help_text" : {
+    "message" : "Choose your preferred type of navigation",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.label" : {
+    "message" : "Slider navigation type",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_navigation_type.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_slides.choices.single" : {
+    "message" : "1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_slides.choices.slider-item-show2" : {
+    "message" : "2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_slides.choices.slider-item-show3" : {
+    "message" : "3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_slides.choices.slider-item-show4" : {
+    "message" : "4",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_slides.choices.slider-item-show5" : {
+    "message" : "5",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_thumbnails.help_text" : {
+    "message" : "Add image navigation to your carousel",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_thumbnails.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_thumbnails.label" : {
+    "message" : "Show slide thumbnails",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_thumbnails.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.help_text" : {
+    "message" : "Section title over the slider",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.label" : {
+    "message" : "Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.placeholder" : {
+    "message" : "Theme Parkour HubSpot",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.choices.content-wrapper" : {
+    "message" : "Centered content",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.choices.full" : {
+    "message" : "Full width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.help_text" : {
+    "message" : "In full width the arrows will be positioned over the image, in centered content, the image will have white space on the sides and the arrows will not be positioned on the image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.label" : {
+    "message" : "Slider width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_slider_width.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.label" : {
+    "message" : "Slides",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.default.src" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img_link.label" : {
+    "message" : "Optional image link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.p3_slider_img_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slider.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_bg.help_text" : {
+    "message" : "Couleur d'arrière-plan du module",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_bg.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.help_text" : {
+    "message" : "Spacing for large screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.label" : {
+    "message" : "Desktop Spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.help_text" : {
+    "message" : "Spacing for mobile screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.label" : {
+    "message" : "Mobile spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.help_text" : {
+    "message" : "Spacing for tablet screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.label" : {
+    "message" : "Tablet spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_slider_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,149 @@
+[ {
+  "id" : "ef6a6952-5597-bfcb-10a6-6d9f61b6dddb",
+  "name" : "texte_head",
+  "display_width" : null,
+  "label" : "Texte-head",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nous offrons des travaux intégrés couvrant l’ensemble du cycle de vie d’un projet "
+}, {
+  "id" : "abf30e33-6190-0e94-00e1-2fe08824887f",
+  "name" : "card_details",
+  "display_width" : null,
+  "label" : "Card Details",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 16,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "33bc9aa4-5f9d-9304-8f19-17fa1f2ed46a",
+    "name" : "card_title_texte",
+    "display_width" : null,
+    "label" : "Card Title Texte",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Card Title"
+  }, {
+    "id" : "f93dbe97-05ac-bc14-70ee-774b8ffff16a",
+    "name" : "card_head_texte",
+    "display_width" : null,
+    "label" : "Card Head Texte",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1990"
+  }, {
+    "id" : "8dd2bbfa-4394-73c5-bbe2-e432c34be615",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Texte enrichi",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<ul>\n<li>Industrielle</li>\n<li>Commerciale</li>\n<li>Institutionnelle</li>\n</ul>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "card_title_texte" : "Card Title",
+    "card_head_texte" : "1990",
+    "richtext_field" : "<ul>\n<li>Industrielle</li>\n<li>Commerciale</li>\n<li>Institutionnelle</li>\n</ul>"
+  } ]
+}, {
+  "id" : "7facef75-2d6c-ebe7-16d6-320b436c3fd2",
+  "name" : "left_arrow",
+  "display_width" : null,
+  "label" : "Left Arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/dawco_logo-1.svg",
+    "alt" : "dawco_logo-1",
+    "loading" : "lazy",
+    "width" : 164,
+    "height" : 40,
+    "max_width" : 164,
+    "max_height" : 40
+  }
+}, {
+  "id" : "f9102075-33c2-1349-1610-268be81a7858",
+  "name" : "right_arrow",
+  "display_width" : null,
+  "label" : "Right Arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/tick_icon.svg",
+    "alt" : "tick_icon",
+    "loading" : "lazy",
+    "width" : 27,
+    "height" : 27,
+    "max_width" : 27,
+    "max_height" : 27
+  }
+}, {
+  "id" : "45b8d124-93c4-c5f4-117c-d2bcbcdf94c9",
+  "name" : "stepper_label",
+  "display_width" : null,
+  "label" : "Stepper Label",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 16,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : [ "1" ]
+}, {
+  "id" : "192ac10a-e48b-7a7c-a7ae-de62e42cc761",
+  "name" : "card_image",
+  "display_width" : null,
+  "label" : "Card Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/Imported_Blog_Media/photo-4-373X248-1.jpg",
+    "alt" : "photo-4-373X248-1",
+    "loading" : "lazy",
+    "width" : 373,
+    "height" : 248,
+    "max_width" : 373,
+    "max_height" : 248
+  }
+} ]

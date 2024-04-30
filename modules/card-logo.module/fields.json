@@ -1,0 +1,76 @@
+[ {
+  "id" : "f14e0f5f-e89b-36d2-0429-6a7caf12bd29",
+  "name" : "groupe_de_champs_logos",
+  "display_width" : null,
+  "label" : "Groupe de champs-logos",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "9183b488-3aba-1a6e-2608-758b32ad2f6f",
+    "name" : "image_logo",
+    "display_width" : null,
+    "label" : "Image-logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/systemx.svg",
+      "alt" : "systemx",
+      "loading" : "lazy",
+      "width" : 220,
+      "height" : 108,
+      "max_width" : 220,
+      "max_height" : 108
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_logo" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/systemx.svg",
+      "alt" : "systemx",
+      "loading" : "lazy",
+      "width" : 220,
+      "height" : 108,
+      "max_width" : 220,
+      "max_height" : 108
+    }
+  } ]
+}, {
+  "id" : "1818a124-1be7-4f9f-ddce-7394f52c754c",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Choix",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "column_three", "column-three" ], [ "column_four", "column-four" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "column_four"
+}, {
+  "id" : "782aead2-a608-7d5f-90cc-2fc3e8228a56",
+  "name" : "logo_title",
+  "display_width" : null,
+  "label" : "logo title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

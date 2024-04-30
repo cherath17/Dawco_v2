@@ -1,0 +1,422 @@
+{
+  "choice_field.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : "",
+    "placeholders" : null
+  },
+  "choice_field.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : "",
+    "placeholders" : null
+  },
+  "form_bgcolor.choices.form_bgcolor_grey" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.choices.form_bgcolor_white" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.label" : {
+    "message" : "form_bgcolor",
+    "description" : null,
+    "placeholders" : null
+  },
+  "form_bgcolor.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "label_bg.choices.valeur 1" : {
+    "message" : "Libellé 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "label_bg.choices.valeur 2" : {
+    "message" : "Libellé 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "form-title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.choices.1" : {
+    "message" : "Une colonne",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.choices.2" : {
+    "message" : "Deux colonnes",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.help_text" : {
+    "message" : "Choisissez parmi deux affichage différents soit avec le titre et sous-titre par-dessus le formulaire, soit ils se trouvent à gauche du formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.label" : {
+    "message" : "Nombre de colonne",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_column.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_form.default.followup_email_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.form_id" : {
+    "message" : "9ec17bf0-f5fb-4cc2-84d5-cb03d5a08b59",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.form_type" : {
+    "message" : "HUBSPOT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.gotowebinar_webinar_key" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.message" : {
+    "message" : "Merci d'avoir envoyé le formulaire.",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_form.default.redirect_id" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.redirect_url" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.default.response_type" : {
+    "message" : "inline",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_form_form.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_form.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_form.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_form.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.default" : {
+    "message" : "Informations personnelles",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.help_text" : {
+    "message" : "Sous-titre ce trouvant entre le titre et le formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.label" : {
+    "message" : "Sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.default" : {
+    "message" : "Formulaire de contact",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.help_text" : {
+    "message" : "Titre accompagnant le formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_form_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label_background_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label_background_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label_background_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label_background_color.label" : {
+    "message" : "Couleur",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label_background_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "form-title",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_bg.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_bg.inline_help_text" : {
+    "message" : "Couleur d’arrière-plan. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_bg.label" : {
+    "message" : "Couleur d'arrière-plan",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_bg.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.default.padding.left.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.default.padding.right.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.default.padding.top.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.inline_help_text" : {
+    "message" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.label" : {
+    "message" : "Espacement grand écran",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.default.padding.left.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.default.padding.right.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.default.padding.top.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.inline_help_text" : {
+    "message" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.label" : {
+    "message" : "Espacement mobile",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.default.padding.left.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.default.padding.right.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.default.padding.top.units" : {
+    "message" : "px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.inline_help_text" : {
+    "message" : "Espacement pour les tablettes. Privilégier le padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.label" : {
+    "message" : "Espacement tablette",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_title_color.help_text" : {
+    "message" : "Couleur du titre et sous-titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_title_color.label" : {
+    "message" : "Couleur des titres",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_form_title_color.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

@@ -1,0 +1,44 @@
+[ {
+  "id" : "cbd47343-8232-3ff0-5757-c0c104454ca2",
+  "name" : "display_featured_images",
+  "display_width" : null,
+  "label" : "Display featured images",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "74ad9feb-9b19-0f2e-8a22-e8f0880d508c",
+  "name" : "read_more_text",
+  "display_width" : null,
+  "label" : "Read more text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View more"
+}, {
+  "id" : "c91cf627-9f5e-c264-c679-992be6be42a7",
+  "name" : "search_default_image",
+  "display_width" : null,
+  "label" : "search default image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/site_logo.png",
+    "alt" : "site_logo",
+    "loading" : "lazy",
+    "width" : 164,
+    "height" : 40,
+    "max_width" : 164,
+    "max_height" : 40
+  }
+} ]

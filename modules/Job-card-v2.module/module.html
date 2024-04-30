@@ -1,0 +1,133 @@
+{% require_css %}
+<style>
+  .{{ name }}.p3_team__section {
+    background-color: rgba( {{ module.style.background_color.color.color|convert_rgb }}, {{ module.style.background_color.color.opacity * 0.01 }} );
+    {{ module.style.desktop_spacing.spacing.css }};
+  }
+
+  @media only screen and (max-width: 767px) {
+    .{{ name }}.p3_team__section {
+      {{ module.style.mobile_spacing.spacing.css }};
+    }
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    .{{ name }}.p3_team__section {
+      {{ module.style.tab_spacing.spacing.css }};
+    }
+  }
+</style>
+{% end_require_css %}
+
+<div class="{{ name }} p3_team__section" {% if module.want_to_add_an_anchor_id %} id="{{ module.anchor_id }}" {% endif %}>
+  <div class="container-uj">
+    <h4>
+      {{ module.job_title }}
+    </h4>
+    <div class="p3_team__content p3_job__layout">
+      <div class="p3_team__details {{ module.team.card_alignment }}">
+        {% for item in module.team.cards %}
+        <div class="p3_job__cards">
+          <div class="p3_team__description p3_top__border">
+            <div class="p3_team__image">
+              {% if item.image_icon.src %}
+              {% set sizeAttrs = 'width="{{ item.image_icon.width }}" height="{{ item.image_icon.height }}"' %}
+              {% if item.image_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.image_icon.width }}" height="{{ item.image_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.image_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.image_icon.max_width }}" height="{{ item.image_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.image_icon.loading != 'disabled' ? 'loading="{{ item.image_icon.loading }}"' : '' %}
+              <img class="icon-im" src="{{ item.image_icon.src }}" alt="{{ item.image_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+              {% if item.image_team.src %}
+              {% set sizeAttrs = 'width="{{ item.image_team.width }}" height="{{ item.image_team.height }}"' %}
+              {% if item.image_team.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.image_team.width }}" height="{{ item.image_team.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.image_team.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.image_team.max_width }}" height="{{ item.image_team.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.image_team.loading != 'disabled' ? 'loading="{{ item.image_team.loading }}"' : '' %}
+              <img class="card-im" src="{{ item.image_team.src }}" alt="{{ item.image_team.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </div>
+            <div class="p3_team__text p3-job__title">
+              <div class="p3-job__content">
+                {{ item.description }}
+              </div>
+              <div class="p3-job__description">
+                <div class="p3-job__details">
+                  {% if item.time.time_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item.time.time_icon.width }}" height="{{ item.time.time_icon.height }}"' %}
+                  {% if item.time.time_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.time.time_icon.width }}" height="{{ item.time.time_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.time.time_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.time.time_icon.max_width }}" height="{{ item.time.time_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.time.time_icon.loading != 'disabled' ? 'loading="{{ item.time.time_icon.loading }}"' : '' %}
+                  <img src="{{ item.time.time_icon.src }}" alt="{{ item.time.time_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="p3-timg__image">
+                  {% endif %}
+                  {% inline_text field="time.time_type" value="{{ item.time.time_type }}" %}   
+                </div>
+                <div class="p3-job__details">
+                  {% if item.city.city_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item.city.city_icon.width }}" height="{{ item.city.city_icon.height }}"' %}
+                  {% if item.city.city_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.city.city_icon.width }}" height="{{ item.city.city_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.city.city_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.city.city_icon.max_width }}" height="{{ item.city.city_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.city.city_icon.loading != 'disabled' ? 'loading="{{ item.city.city_icon.loading }}"' : '' %}
+                  <img src="{{ item.city.city_icon.src }}" alt="{{ item.city.city_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  {% inline_text field="city.city_name" value="{{ item.city.city_name }}" %}
+                </div>
+                {#                {% <div class="p3-job__details">
+                  {% if item.date.date_icon.src %}
+                  {% set sizeAttrs = 'width="{{ item.date.date_icon.width }}" height="{{ item.date.date_icon.height }}"' %}
+                  {% if item.date.date_icon.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.date.date_icon.width }}" height="{{ item.date.date_icon.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.date.date_icon.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.date.date_icon.max_width }}" height="{{ item.date.date_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.date.date_icon.loading != 'disabled' ? 'loading="{{ item.date.date_icon.loading }}"' : '' %}
+                  <img src="{{ item.date.date_icon.src }}" alt="{{ item.date.date_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  {% inline_text field="date.date" value="{{ item.date.date }}" %}
+                </div> %} #}
+
+                <div class="p3-job__bottomlink">
+                  <div class="p3-apply__btn">
+                    <a href="">{% inline_text field="apply_button" value="{{ item.apply_button }}" %}</a>
+                  </div>
+
+                  <!--                  <div class="p3-job__bio">
+                    <a href="{{ href }}"
+                       {% if item.job_link.open_in_new_tab %}target="_blank"{% endif %}
+                       {% if item.job_link.rel %}rel="{{ item.job_link.rel }}"{% endif %}
+                       >
+                      {{ item.link_text }}
+                    </a>
+                  </div>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <!--     <div class="p3_team__cta {{ module.want_button }}">
+      {% set href = module.button.button_link.url.href %}
+      {% if module.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a class="{{ module.button_style }}" href="{{ href }}"
+         {% if module.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.button.button_link.rel %}rel="{{ module.button.button_link.rel }}"{% endif %}
+         >
+        {{ module.button.button_text }}
+      </a>
+    </div> -->
+  </div>
+</div>

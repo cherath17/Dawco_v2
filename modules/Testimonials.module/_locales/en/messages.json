@@ -1,0 +1,372 @@
+{
+  "name" : {
+    "message" : "Testimonials",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.help_text" : {
+    "message" : "Show the slider navigation arrows",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.label" : {
+    "message" : "Navigation arrows",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.help_text" : {
+    "message" : "Show the slider navigation dots",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.label" : {
+    "message" : "Navigation dots",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.default" : {
+    "message" : "Testimonials",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.help_text" : {
+    "message" : "Section title at the top middle",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.label" : {
+    "message" : "Section Title",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_testimonials_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.label" : {
+    "message" : "Testimonials",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.default" : {
+    "message" : "Title of the person, company",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.help_text" : {
+    "message" : "Text under the person’s name",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.label" : {
+    "message" : "Company",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.default.alt" : {
+    "message" : "avatar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.help_text" : {
+    "message" : "Image of the testimonial’s author or company logo: 75px x 75px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.label" : {
+    "message" : "Avatar Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.default" : {
+    "message" : "First title under the quote",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.help_text" : {
+    "message" : "First title under the quote",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.label" : {
+    "message" : "Name of source",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.default" : {
+    "message" : "Testimonials are a powerful marketing tool that can help build trust with your audience. They are social proof that your products or services have delivered results for other customers. By showcasing testimonials on your website, you can demonstrate the value of your brand, build credibility, and ultimately drive more conversions.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.help_text" : {
+    "message" : "Quote in the slider",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.label" : {
+    "message" : "Quote",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "Testimonials",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.help_text" : {
+    "message" : "Color of the arrows on mouse hover. For none, leave opacity at 0%",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.label" : {
+    "message" : "Arrow color on hover",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.help_text" : {
+    "message" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.label" : {
+    "message" : "Espacement grand écran copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.label" : {
+    "message" : "Booléen",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

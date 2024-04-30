@@ -1,0 +1,287 @@
+[ {
+  "id" : "5ff00efa-baab-4a8c-8c61-03d650ddbf52",
+  "name" : "p3_testimonials_title",
+  "display_width" : null,
+  "label" : "Titre de section",
+  "help_text" : "Titre de section en haut, au milieu",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Témoignages"
+}, {
+  "id" : "ffdd0817-61e6-4e8c-9afe-58f6adfb9268",
+  "name" : "slides",
+  "display_width" : null,
+  "label" : "Témoignages",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : "694b7ef2-c131-82d6-3233-49d2e00bb9d1",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "ddeb0a64-6fab-f548-0261-622ff2dab497",
+    "name" : "p3_testimonials_quote",
+    "display_width" : null,
+    "label" : "Citation",
+    "help_text" : "Citation se trouvant dans le carrousel",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »"
+  }, {
+    "id" : "694b7ef2-c131-82d6-3233-49d2e00bb9d1",
+    "name" : "p3_testimonials_name",
+    "display_width" : null,
+    "label" : "Nom de la source",
+    "help_text" : "Nom de la personne sous la citation",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nom de la personne"
+  }, {
+    "id" : "e844ff77-b4b1-2773-fcd4-dbb410820da5",
+    "name" : "p3_testimonials_company",
+    "display_width" : null,
+    "label" : "Compagnie",
+    "help_text" : "Texte sous le nom de la personne source",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Titre de la personne, compagnie"
+  }, {
+    "id" : "bc916e6c-ea5d-28d1-6536-572f6838b5ec",
+    "name" : "p3_testimonials_image",
+    "display_width" : null,
+    "label" : "Image avatar",
+    "help_text" : "Image de la personne qui témoigne ou logo de compagnie: 75px x 75px",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+      "alt" : "avatar",
+      "loading" : "lazy",
+      "width" : 73,
+      "height" : 72,
+      "max_width" : 73,
+      "max_height" : 72
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »",
+    "p3_testimonials_name" : "Nom de la personne",
+    "p3_testimonials_company" : "Titre de la personne, compagnie",
+    "p3_testimonials_image" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+      "alt" : "avatar",
+      "loading" : "lazy",
+      "width" : 73,
+      "height" : 72,
+      "max_width" : 73,
+      "max_height" : 72
+    }
+  }, {
+    "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »",
+    "p3_testimonials_name" : "Nom de la personne",
+    "p3_testimonials_company" : "Titre de la personne, compagnie",
+    "p3_testimonials_image" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+      "alt" : "avatar",
+      "loading" : "lazy",
+      "width" : 73,
+      "height" : 72,
+      "max_width" : 73,
+      "max_height" : 72
+    }
+  }, {
+    "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »",
+    "p3_testimonials_name" : "Nom de la personne",
+    "p3_testimonials_company" : "Titre de la personne, compagnie",
+    "p3_testimonials_image" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+      "alt" : "avatar",
+      "loading" : "lazy",
+      "width" : 73,
+      "height" : 72,
+      "max_width" : 73,
+      "max_height" : 72
+    }
+  } ]
+}, {
+  "id" : "80639ce5-ddce-43c8-4580-1e0c13ec69c2",
+  "name" : "p3_testimonials_arrows",
+  "display_width" : null,
+  "label" : "Flèches de navigation",
+  "help_text" : "Afficher les flèches de navigation du carrousel",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "2dd7e717-ba6d-9b8e-909a-0e04ccda640e",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d0d07db5-c3fd-bffc-5554-920ba222a58c",
+    "name" : "p3_testimonials_bg",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "help_text" : "Couleur d’arrière-plan. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "857a8ec2-3b67-a0b5-a04c-4d1d39e67501",
+    "name" : "p3_testimonials_arrows_hover",
+    "display_width" : null,
+    "label" : "Arrow background color",
+    "help_text" : "Couleur des flèches de navigation au moment de survol. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_testimonials_arrows",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#0B66A3",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "c9859940-28e3-cb17-e0ea-a0209f0d2718",
+    "name" : "p3_testimonials_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "fbbdd099-a4a1-ea0a-ea58-10ac9cbfdbdd",
+    "name" : "p3_testimonials_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les tablettes. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "498bc61a-fd53-f730-817f-704254713dba",
+    "name" : "p3_testimonials_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "a3a0bd36-1305-933a-84fb-c1f52f0a29cc",
+    "name" : "address_content_color",
+    "display_width" : null,
+    "label" : "Address content color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "fee317e6-07a3-a27a-191a-708dc3b153a3",
+    "name" : "arrow_color",
+    "display_width" : null,
+    "label" : "Arrow color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_testimonials_bg" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "p3_testimonials_arrows_hover" : {
+      "color" : "#0B66A3",
+      "opacity" : 100
+    },
+    "p3_testimonials_spacing_desktop" : { },
+    "p3_testimonials_spacing_tablet" : { },
+    "p3_testimonials_spacing_mobile" : { },
+    "address_content_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "arrow_color" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+}, {
+  "id" : "0ea9d590-a919-1920-96f2-da9d52e83da9",
+  "name" : "p3_testimonials_dots",
+  "display_width" : null,
+  "label" : "Points de navigation",
+  "help_text" : "Afficher les points de navigation du carrousel",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "d7bdf2c2-9cc4-5478-2d74-0ff5949fba26",
+  "name" : "vector_hidden",
+  "display_width" : null,
+  "label" : "vector-hidden",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

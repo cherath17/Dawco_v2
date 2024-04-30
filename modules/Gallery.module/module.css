@@ -1,0 +1,51 @@
+
+.section{
+  padding:30px;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-image: url(https://cdn2.hubspot.net/hubfs/8334004/gallery_back.svg) !important;
+}
+.gallery_img{
+  max-width:1200px;
+  margin:0 auto;
+  display:flex;
+  gap:20px;
+  padding:0px 20px;
+}
+.gallery_title{
+  font-family: Campton;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  padding-bottom:20px;
+  max-width:1200px;
+  margin:0 auto;
+  padding:0px 20px;
+}
+.gallery_img img {
+  width:100%;
+}
+.gallery_title {
+  padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .gallery_img {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .section {
+    padding: 20px;
+  }
+  .gallery_title {
+    padding-left: 0;
+  }
+}

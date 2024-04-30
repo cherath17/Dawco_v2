@@ -1,0 +1,56 @@
+<!--
+  templateType: search_results_page
+  isAvailableForNewContent: true
+  label: Parkour - search results
+  screenshotPath: ../../images/template-previews/search_result_img.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base-new.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Search results" %}
+{% block body %}
+
+<section class="content-wrapper search_res">
+  <div class="systems-page systems-page--search-results">
+    {% module_block module "search_results_content"
+      label="Search results heading",
+      path="@hubspot/rich_text"
+    %}
+    {% module_attribute "html" %}
+    <div>
+      <h1 class="p3-search__label">Search result for: {{ request.query_dict.term|escape }}</h1>
+    </div>
+    <div>
+      {% module "search_input"
+      path="../../modules/search_inputs.module" %}
+    </div>
+    {% end_module_attribute %}
+    {% end_module_block %}
+
+    <div class="p3-search__res">
+      <h2 class="p3-search__subtitle">Search results </h2>
+      <div class="p3-search__content">
+        {% module "search_results"
+      path="../../modules/search_results.module"
+    %}
+      </div>
+    </div>
+ 
+   
+    <div class="hs-search-results__pagination p3-result__page" data-search-path="{{ site_settings.content_search_results_page_path }}">
+      <a href="#" class="hs-search-results__prev-page"><svg width="20" height="20" viewBox="0 0 20 21" fill="none">
+        <g opacity="0.2">
+          <path d="M15.8334 10.5367H4.16675M4.16675 10.5367L10.0001 16.37M4.16675 10.5367L10.0001 4.70337" stroke="#231F20" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+        </svg>Previous</a>
+      <a href="#" class="hs-search-results__next-page">Next <svg width="20" height="20" viewBox="0 0 20 21" fill="none">
+        <path d="M4.16675 10.5367H15.8334M15.8334 10.5367L10.0001 4.70337M15.8334 10.5367L10.0001 16.37" stroke="#114245" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></a>
+    </div>  
+  </div>
+</section>
+
+{% endblock body %}
+
+
+

@@ -1,0 +1,665 @@
+[ {
+  "id" : "9f3fe862-87cb-a4df-0af0-d2cbe367f8e1",
+  "name" : "texte",
+  "display_width" : null,
+  "label" : "Texte",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "91e10211-59fc-8d12-024d-ad6595b92a52",
+    "name" : "p3_home_hero_supertitle",
+    "display_width" : null,
+    "label" : "Surtitre",
+    "help_text" : "Surtitre qui ce retrouve en haut du titre principale",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Theme Parkour Hubspot"
+  }, {
+    "id" : "94678ea8-2dd9-7411-43a2-299aec84b208",
+    "name" : "p3_home_hero_title",
+    "display_width" : null,
+    "label" : "Titre",
+    "help_text" : "",
+    "inline_help_text" : "Titre principale de la bannière (H1)",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h1>Titre intelligent sur ce thème personnalisé génial</h1>"
+  }, {
+    "id" : "9d87f227-efb3-5ee5-90b6-0ccd67a0bdbf",
+    "name" : "p3_home_hero_subtitle",
+    "display_width" : null,
+    "label" : "Soustitre",
+    "help_text" : "Sous-titre qui ce retrouve sous le titre principale",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sous-titre interessant"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_supertitle" : "Theme Parkour Hubspot",
+    "p3_home_hero_title" : "<h1>Titre intelligent sur ce thème personnalisé génial</h1>",
+    "p3_home_hero_subtitle" : "Sous-titre interessant"
+  }
+}, {
+  "id" : "088ca780-b8c5-13b8-deb1-4fd162abb224",
+  "name" : "bouton_1",
+  "display_width" : null,
+  "label" : "Bouton 1",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "70cd4027-c32b-c694-b129-b30e805ab55c",
+    "name" : "p3_home_hero_btn_1",
+    "display_width" : null,
+    "label" : "Premier bouton",
+    "help_text" : "Bouton ce trouvant sous le sous-titre",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "16157d44-3298-a827-7f85-e8e87dc95859",
+    "name" : "p3_home_hero_btn_1_texte",
+    "display_width" : null,
+    "label" : "Premier bouton texte",
+    "help_text" : "Texte du bouton ce trouvant sous le sous-titre",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Par ici"
+  }, {
+    "id" : "4f306d0c-48b7-7843-d1aa-c705fe5594f6",
+    "name" : "p3_home_hero_btn_1_style",
+    "display_width" : null,
+    "label" : "Style du premier bouton",
+    "help_text" : "Style visuel du premier bouton",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn_primary", "Primaire" ], [ "btn_secondary", "Secondaire" ], [ "btn_tertiary", "Tertiaire" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "btn_primary"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_btn_1" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "p3_home_hero_btn_1_texte" : "Par ici",
+    "p3_home_hero_btn_1_style" : "btn_primary"
+  }
+}, {
+  "id" : "d99ecb9f-995d-ef61-b23c-8e50e516c2a9",
+  "name" : "bouton_2",
+  "display_width" : null,
+  "label" : "Bouton 2",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0a74d23f-019e-bb58-9702-27530fea880b",
+    "name" : "p3_home_hero_btn_2",
+    "display_width" : null,
+    "label" : "Deuxième bouton",
+    "help_text" : "Bouton ce trouvant sous le sous-titre",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "4c79a24e-2ca7-9ce9-4024-e32737f4fe34",
+    "name" : "p3_home_hero_btn_2_texte",
+    "display_width" : null,
+    "label" : "Deuxième bouton texte",
+    "help_text" : "Texte du bouton ce trouvant sous le sous-titre",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Par ici"
+  }, {
+    "id" : "c3271a71-2136-d084-5afc-e92a69f888c4",
+    "name" : "p3_home_hero_btn_2_style",
+    "display_width" : null,
+    "label" : "Arrière plan du deuxième bouton",
+    "help_text" : "Style du deuxième bouton",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn_primary", "Primaire" ], [ "btn_secondary", "Secondaire" ], [ "btn_tertiary", "Tertiary" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "btn_secondary"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_btn_2" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "p3_home_hero_btn_2_texte" : "Par ici",
+    "p3_home_hero_btn_2_style" : "btn_secondary"
+  }
+}, {
+  "id" : "6c9bac12-4d62-5f8e-605a-2bc7df40fe04",
+  "name" : "image_de_droite",
+  "display_width" : null,
+  "label" : "Image de droite",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ef3b861d-152d-c78a-6099-61f471dc2bc2",
+    "name" : "p3_home_hero_image",
+    "display_width" : null,
+    "label" : "Image de droite",
+    "help_text" : "Image dans la colonne de droite de la bannière [656 x 759]",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : ""
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_image" : {
+      "src" : ""
+    }
+  }
+}, {
+  "id" : "b11bbc3c-1ed4-3178-c6aa-ba47c419a8f1",
+  "name" : "Style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a054a496-ba2d-7cc7-bd62-c5ad8f802c5f",
+    "name" : "surtitre",
+    "display_width" : null,
+    "label" : "Surtitre",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "texte.p3_home_hero_title",
+      "controlling_value_regex" : null,
+      "property" : null,
+      "operator" : null,
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "9cc80e43-5627-832a-18b5-7d93eba80ad3",
+      "name" : "police_du_surtitre",
+      "display_width" : null,
+      "label" : "Police du Surtitre",
+      "required" : false,
+      "locked" : false,
+      "load_external_fonts" : true,
+      "type" : "font",
+      "default" : {
+        "styles" : { },
+        "variant" : "300",
+        "font" : "Work Sans",
+        "fallback" : "sans-serif",
+        "font_set" : "GOOGLE",
+        "size" : 18
+      }
+    }, {
+      "id" : "5381ba27-8275-259e-3d63-9af1612d00dc",
+      "name" : "alignement_du_surtitre",
+      "display_width" : null,
+      "label" : "Alignement du Surtitre",
+      "required" : false,
+      "locked" : false,
+      "type" : "textalignment",
+      "default" : {
+        "text_align" : "LEFT"
+      }
+    }, {
+      "id" : "471f4162-9955-3a8d-384c-6bc2c12c0d8e",
+      "name" : "couleur_de_surtitre",
+      "display_width" : null,
+      "label" : "Couleur de Surtitre",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "police_du_surtitre" : {
+        "styles" : { },
+        "variant" : "300",
+        "font" : "Work Sans",
+        "fallback" : "sans-serif",
+        "font_set" : "GOOGLE",
+        "size" : 18
+      },
+      "alignement_du_surtitre" : {
+        "text_align" : "LEFT"
+      },
+      "couleur_de_surtitre" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "6329f067-9333-555a-1d15-c938133c345e",
+    "name" : "p3_home_hero_gradients",
+    "display_width" : null,
+    "label" : "Dégradé",
+    "required" : false,
+    "locked" : false,
+    "type" : "gradient",
+    "default" : {
+      "side_or_corner" : {
+        "verticalSide" : "BOTTOM",
+        "horizontalSide" : null
+      },
+      "colors" : [ {
+        "color" : {
+          "r" : 13,
+          "g" : 57,
+          "b" : 59,
+          "a" : 0
+        }
+      }, {
+        "color" : {
+          "r" : 13,
+          "g" : 57,
+          "b" : 59,
+          "a" : 1
+        }
+      } ]
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "surtitre" : {
+      "police_du_surtitre" : {
+        "styles" : { },
+        "variant" : "300",
+        "font" : "Work Sans",
+        "fallback" : "sans-serif",
+        "font_set" : "GOOGLE",
+        "size" : 18
+      },
+      "alignement_du_surtitre" : {
+        "text_align" : "LEFT"
+      },
+      "couleur_de_surtitre" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    },
+    "p3_home_hero_gradients" : {
+      "side_or_corner" : {
+        "verticalSide" : "BOTTOM",
+        "horizontalSide" : null
+      },
+      "colors" : [ {
+        "color" : {
+          "r" : 13,
+          "g" : 57,
+          "b" : 59,
+          "a" : 0
+        }
+      }, {
+        "color" : {
+          "r" : 13,
+          "g" : 57,
+          "b" : 59,
+          "a" : 1
+        }
+      } ]
+    }
+  }
+}, {
+  "id" : "b477ab4e-25d9-bb09-5300-a608397ca5b4",
+  "name" : "p3_home_hero_supertitle_arriere_plan",
+  "display_width" : null,
+  "label" : "Arrière plan",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "bc7706aa-1e85-f361-b6d2-ec7b9cdb167d",
+    "name" : "p3_home_hero_bg",
+    "display_width" : null,
+    "label" : "Type d’arrière-plan",
+    "help_text" : "Choisir entre une image, une vidéo ou une couleur unie",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "image", "Image" ], [ "video", "Vidéo" ], [ "couleur", "Couleur unie" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "image"
+  }, {
+    "id" : "1528bba3-0d2b-532a-db82-abb42ca8cca7",
+    "name" : "p3_home_hero_bg_img",
+    "display_width" : null,
+    "label" : "Image d’arrière plan",
+    "help_text" : "Image d’arrière-plan de la bannière 1920 x 1080",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg",
+      "controlling_value_regex" : "image",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/p3_home_hero_image__default_1-1.webp",
+      "alt" : "Parkour",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 807,
+      "max_width" : 1440,
+      "max_height" : 807
+    }
+  }, {
+    "id" : "0a6ab24d-7479-2cfe-2755-b9ac17afb7df",
+    "name" : "p3_home_hero_bg_color",
+    "display_width" : null,
+    "label" : "Couleur d’arrière plan",
+    "help_text" : "Couleur unie qui remplie toute la bannière",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg",
+      "controlling_value_regex" : "couleur",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#63DA7B",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "2e50a51a-798f-5014-9ae7-93129c257847",
+    "name" : "p3_home_hero_bg_video",
+    "display_width" : null,
+    "label" : "Vidéo d’arrière plan",
+    "help_text" : "Courte vidéo mis en arrière-plan",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg",
+      "controlling_value_regex" : "video",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "resizable" : true,
+    "show_preview" : true,
+    "show_advanced_options" : false,
+    "type" : "videoplayer"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_bg" : "image",
+    "p3_home_hero_bg_img" : {
+      "size_type" : "auto",
+      "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/p3_home_hero_image__default_1-1.webp",
+      "alt" : "Parkour",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 807,
+      "max_width" : 1440,
+      "max_height" : 807
+    },
+    "p3_home_hero_bg_color" : {
+      "color" : "#63DA7B",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "b320f954-5cc4-743a-0045-c5c88b02d624",
+  "name" : "degrade",
+  "display_width" : null,
+  "label" : "Dégradé",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6d79c426-a4f6-1e07-3390-169852dfc9a6",
+    "name" : "p3_home_hero_gradient",
+    "display_width" : null,
+    "label" : "Dégradé",
+    "help_text" : "Les couleurs du dégradé se choisissent dans l'onglet Style ",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_home_hero_gradient" : false
+  }
+}, {
+  "id" : "1a066214-24e8-7ad4-6ead-a123e9ae5572",
+  "name" : "p3_home_hero_cards",
+  "display_width" : null,
+  "label" : "Afficher des cartes",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "3bcb8fcc-795f-8335-b7e2-aafc23280407",
+  "name" : "cards",
+  "display_width" : null,
+  "label" : "Cartes",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : "061c461d-5d95-6ddd-69a8-012d939d3969",
+    "default" : 2
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_home_hero_cards",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "061c461d-5d95-6ddd-69a8-012d939d3969",
+    "name" : "p3_home_hero_cards_title",
+    "display_width" : null,
+    "label" : "Titre de la carte",
+    "required" : true,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Électronique"
+  }, {
+    "id" : "271ca8e8-e07c-edfc-4faf-508910a72af8",
+    "name" : "p3_home_hero_cards_img",
+    "display_width" : null,
+    "label" : "Image de la carte",
+    "required" : true,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+      "alt" : "Robot tool carrying a cardboard box",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 680,
+      "max_width" : 1440,
+      "max_height" : 680
+    }
+  }, {
+    "id" : "c9052cd3-663c-63ab-ffce-fe7f53233720",
+    "name" : "p3_home_hero_cards_link",
+    "display_width" : null,
+    "label" : "Lien de la carte",
+    "required" : true,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "p3_home_hero_cards_title" : "Électronique",
+    "p3_home_hero_cards_img" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+      "alt" : "Robot tool carrying a cardboard box",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 680,
+      "max_width" : 1440,
+      "max_height" : 680
+    },
+    "p3_home_hero_cards_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "p3_home_hero_cards_title" : "Électronique",
+    "p3_home_hero_cards_img" : {
+      "size_type" : "auto",
+      "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+      "alt" : "Robot tool carrying a cardboard box",
+      "loading" : "lazy",
+      "width" : 1440,
+      "height" : 680,
+      "max_width" : 1440,
+      "max_height" : 680
+    },
+    "p3_home_hero_cards_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "CONTENT"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "6faf89ee-3dc8-9773-df52-d3a76fc0cae7",
+  "name" : "button_hide_and_show_",
+  "display_width" : null,
+  "label" : "Button hide and show?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

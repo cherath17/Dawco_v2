@@ -1,0 +1,102 @@
+<div class="p3-cta-banner">
+  <div class="{{ module.p3_cta_banner_width }}">
+    <div class="p3-cta-banner__wrapper {{ module.p3_cta_banner_width }}">
+      <div class="row">
+
+        <div class="col-12 p3-cta-banner__content d-flex flex-column {% if module.p3_cta_banner_layout == 'row' %}flex-md-row justify-content-between align-items-start align-items-md-end{% else %}justify-content-center align-items-center{% endif %}">
+          {% if module.p3_cta_banner_layout == 'row' %}
+          <div class="left_col">
+            {% endif %}
+
+            {% if module.p3_cta_banner_supertitle %}
+            <div class="p3-cta-banner__supertitle">{{ module.p3_cta_banner_supertitle }}</div>
+            {% endif %}
+
+            {% if module.p3_cta_banner_title %}
+            <h2 class="p3-cta-banner__title">{{ module.p3_cta_banner_title }}</h2>
+            {% endif %}
+            <div class="p3-cta-banner__desc">{{ module.p3_cta_banner_subtitle }}</div>
+           {% cta guid="{{ module.call_cta }}" %}
+            {% if module.p3_cta_banner_subtitle %}
+            
+            {% endif %}
+
+            {% if module.p3_cta_banner_layout == 'row' %}
+          </div>
+
+          <div class="right_col">
+            {% endif %}
+
+            {% if module.btn.p3_cta_banner_btn_link.url.href %}
+            <div class="p3-cta-banner__cta">
+              {% set href = module.btn.p3_cta_banner_btn_link.url.href %}
+              {% if module.btn.p3_cta_banner_btn_link.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}" class="{{ module.btn.p3_cta_banner_btn_style }}"
+                 {% if module.btn.p3_cta_banner_btn_link.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if module.btn.p3_cta_banner_btn_link.rel %}rel="{{ module.btn.p3_cta_banner_btn_link.rel }}"{% endif %}
+                 >
+                {{ module.btn.p3_cta_banner_btn_label }}
+
+                <!-- Retiré du thème Parkour pour Robotiq
+              &nbsp;
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                <path d="M.659 5.659h7.355L4.801 8.872a.664.664 0 0 0 0 .935.656.656 0 0 0 .928 0l4.34-4.34a.656.656 0 0 0 0-.928L5.736.193a.656.656 0 1 0-.929.928l3.207 3.22H.66A.66.66 0 0 0 0 5a.66.66 0 0 0 .659.659Z" fill="#63DA7B"/>
+              </svg>-->
+              </a>
+            </div>
+            {% endif %}
+
+            {% if module.p3_cta_banner_layout == 'col' %}
+          </div>
+          {% endif %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  {% if module.p3_cta_banner_bg == 'color' %}
+  .p3-cta-banner__wrapper {
+    background-color: rgba({{ module.style.p3_cta_banner_bg_color.color|convert_rgb }}, {{ module.style.p3_cta_banner_bg_color.opacity * 0.01 }}); 
+  }
+  {% else %}
+  .p3-cta-banner__wrapper {
+    background-image: url({{ module.style.p3_cta_banner_bg_img.src }});
+    background-repeat: no-repeat;
+    background-position: {{ module.style.p3_cta_banner_bg_img.size }};
+    background-size: {{ module.style.p3_cta_banner_bg_img.alignment }};
+  }
+  {% endif %}
+
+  h2.p3-cta-banner__title, .p3-cta-banner__supertitle,.p3-cta-banner__desc {
+    color: {{ module.style.p3_cta_banner_color.color }};
+  }
+
+  .p3-cta-banner {
+    {{ module.style.p3_cta_banner_spacing_desktop.css }}  
+  }
+  .p3-cta-banner__title {
+    {{ module.style.text_alignment.css }}
+  }
+
+  @media (max-width: 991px) {
+    .p3-cta-banner {
+      {{ module.style.p3_cta_banner_spacing_tablet.css }}
+    }
+  }
+
+  @media (max-width: 575px) {
+    .p3-cta-banner {
+      {{ module.style.p3_cta_banner_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

@@ -1,0 +1,64 @@
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-one_section{
+    {% if module.style.content_styles.text_font.color %}
+    color: {{ module.style.content_styles.text_font.color }};
+    {% endif %}
+    {% if module.style.content_styles.text_font.size %}
+    font-size: {{ module.style.content_styles.text_font.size ~ module.style.content_styles.text_font.size_unit }};
+    {% endif %}
+    {% if module.style.content_styles.text_font.style %}
+    {{ module.style.content_styles.text_font.style }};
+    {% endif %}
+    {{ module.style.content_styles.text_spacing.css }}
+    {% if module.style.content_styles.text_transform %}
+    text-transform: {{ module.style.content_styles.text_transform }};
+    {% endif %}
+  }
+
+  .p3_one_content{
+    {% if module.style.background_color %}
+    background-color: {{ module.style.background_color.color }};
+    {% endif %}
+  }
+  @media only screen and (max-width: 575px)  {
+    .p3-one_section{
+      {{ module.style.content_styles.mobile_spacing.css }};
+    }
+  }
+  @media only screen and (max-width: 768px)  {
+    .p3-one_section{
+      {{ module.style.content_styles.tablet_spacing.css }};
+    }
+    .p3-one_section h3{
+      font-size: 36px !important;
+      padding: 20px 0 !important;
+      margin-bottom: 0;
+    }
+    .p3-one_section h2,.p3-one_section h6 {
+      font-size: 18px !important;
+    }
+    .p3-one_section h2{
+      padding: 20px 10px;
+    }
+    .p3-one_section h6{
+      margin: 0 !important;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .p3-one_section { 
+      max-width: 1200px;
+      margin: auto;
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+<section class="p3_one_content">
+  <div class="p3-one_section">
+    {{ module.content }}
+  </div>
+</section>

@@ -1,0 +1,143 @@
+.p3-news__layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.p3-left__news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.p3-right__news{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 91px;
+
+}
+
+.p3-right__content{
+  width:545px;
+  text-align:center;
+}
+.p3-right__subtitle{
+  width:652px;
+  text-align:center;
+  line-height: 1;
+}
+.p3-right__content{
+  line-height:1.5;
+}
+.p3-social__icon{
+  display:flex;
+  align-items: center;
+  gap:25px;
+}
+.p3-news__form form{
+  display: flex;
+  /*     align-items: flex-end; */
+  gap: 20px 
+}
+.p3-news__form{
+  /*   margin-bottom: 91px  */
+}
+.p3-news__form .hs-submit{
+  background-color: #63da7b !important;
+  display: contents !important;
+}
+.p3-news__form form label{
+  margin-top:-20px;
+  position:absolute;
+}
+.p3-news__form form{
+  background-color: #63da7b;
+}
+.p3-news__form .hs-input{
+  border: solid 1px #f2f7f7;
+  background-color: #63da7b;
+  width: 286px;
+  height: 37px;
+  outline: none;
+  padding: 0px 12px;
+  border-radius: 0;
+
+}
+.large{
+  height: 38px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px !important;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+  background-color: #1980eb;
+  border:none;
+  color:white;
+  width: 120px;
+  height: 38px;
+  margin:0;
+
+}
+.large:after{
+  content: url('https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/form_icon.svg');
+  zoom: 25%;
+}
+.no-list{
+  display:none !important;
+}
+.p3-news__form input::placeholder{
+  color:#114245;
+  font-size:18px;
+  font-weight:300;
+  line-height:1.5;
+}
+.p3-news__form .submitted-message{
+  background:transparent;
+}
+@media only screen and (max-width: 640px)  {
+  .p3-right__subtitle{
+    width: auto;
+  }
+  .p3-right__content{
+    width: auto;
+  }
+  .p3-news__layout{
+    display: block
+  }
+  .p3-news__form form{
+    display: block
+  }
+  .p3-left__news{
+    padding:20px;
+  }
+  .p3-right__content{
+    padding:15px;
+  }
+}
+@media only screen and (max-width: 768px)  {
+   .p3-right__subtitle{
+    width: auto;
+  }
+  .p3-right__content{
+    width: auto;
+  }
+  .p3-news__layout{
+    display: block
+  }
+  .p3-news__form form{
+    display: block
+  }
+  .p3-left__news{
+    padding:20px;
+  }
+  .p3-right__content{
+    padding:15px;
+  }
+  
+}

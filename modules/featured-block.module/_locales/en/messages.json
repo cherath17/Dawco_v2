@@ -1,0 +1,247 @@
+{
+  "name" : {
+    "message" : "Featured block",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default.alt" : {
+    "message" : "Robotiq advanced robotic solution",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.help_text" : {
+    "message" : "Image positioned in the top right corner",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.default" : {
+    "message" : "<h2 class=\"h1\"><strong>Robotiq</strong> paves the way for harmonious collaboration between man and machine, propelling your business into an automated, high-performance future.</h2>\n<p>Discover our advanced robotic solutions, from adaptive robotic grippers to force sensors and vision systems. Simplify industrial automation, optimize productivity and transform your operations with precision and flexibility. Trust our expertise, superior quality and commitment to your success.</p>",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.help_text" : {
+    "message" : "Main content",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.label" : {
+    "message" : "Content",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.label" : {
+    "message" : "Block",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.help_text" : {
+    "message" : "Background color of featured block",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.label" : {
+    "message" : "Background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.help_text" : {
+    "message" : "Rounded corners on the featured block",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.label" : {
+    "message" : "Rounded corners",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.label" : {
+    "message" : "Module",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.help_text" : {
+    "message" : "Background color of the module",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.label" : {
+    "message" : "Background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.help_text" : {
+    "message" : "Spacing for large screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.label" : {
+    "message" : "Desktop Spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.help_text" : {
+    "message" : "Spacing for mobile phone screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.label" : {
+    "message" : "Mobile spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.help_text" : {
+    "message" : "Spacing for tablet screens. Prioritize using padding.",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.label" : {
+    "message" : "Tablet Spacing",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "featured-block",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

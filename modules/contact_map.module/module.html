@@ -1,0 +1,109 @@
+{# class à ajouter sur les éléments HTML #}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+{% set mapPosition = module.p3_contact_map_position == "right" ? "" : "map_left"%}
+{% set mapStyle1 = module.p3_contact_map_style == "round" ? "map_round" : "map_square"%}
+{% set mapStyle2 = module.p3_contact_map_style == "full" ? "map-full" : mapStyle1 %}
+{% set coordAlignment = mapStyle2 == "map_round" ? "self_align_center" : "" %}
+{% set hideHeading =  module.p3_contact_map_style == "full" ? "hide" : "" %}
+{% set coordAbs =  module.p3_contact_map_style == "full" ? "map_abs" : "" %}
+{% set coordPosMapFull =  module.p3_contact_map_style == "full" and module.p3_contact_coord_position  == "right" ? "pos_right" : "pos_left" %}
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-contact__main { 
+    background-color:{{ module.style.background_color.background_color.color }};
+  }
+  .p3-contact__supertitle{
+    color:{{ module.style.content_colors.contact_title_color.color }}
+
+  }
+  .p3-contact__title{
+    color:{{ module.style.content_colors.contact_subtitle_color.color }}
+
+  }
+  .p3-contact__ctn_coord_text_icon{
+     color:{{ module.style.content_colors.address_color.color }}
+
+  }
+  .p3-contact__ctn_coord_text_icon svg{
+     fill:{{ module.style.content_colors.address_color.color }}
+
+  }
+  .p3-contact__coord_title{
+     color:{{ module.style.content_colors.contact_title_color.color }}
+  }
+  .p3-contact__coord_subtitle{
+     color:{{ module.style.content_colors.contact_subtitle_color.color }}
+  }
+  .p3-contact__social_title{
+    color:{{ module.style.content_colors.social_title_color.color }}
+  }
+  .p3-contact__icons svg{
+    fill:{{ module.style.content_colors.social_icon_color.color }}
+
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+<div class="p3-contact__main {{coordAbs}}">
+  <div class="p3-contact__heading {{hideHeading}}">
+    <h5 class="p3-contact__supertitle">{{ module.p3_contact_supertitle }}</h5>
+    <h2 class="p3-contact__title">{{ module.p3_contact_title }}</h2>
+  </div>
+  <div class="p3-contact__content {{mapPosition}} {{coordPosMapFull}}">
+    <div class="p3-contact__coord {{coordAlignment}}">
+      <h5 class="p3-contact__coord_subtitle">{{ module.p3_contact_coord_subtitle }}</h5>
+      <h3 class="p3-contact__coord_title">{{ module.p3_contact_coord_title }}</h3>
+      {% for item in module.p3_contact_coord_text_icon_group %}
+      <div class="p3-contact__ctn_coord_text_icon">
+        {% icon 
+                        name="{{item.p3_contact_coord_icons.name}}" 
+                        style="{{item.p3_contact_coord_icons.type}}" 
+                        unicode="{{item.p3_contact_coord_icons.unicode}}" 
+                        icon_set="{{item.p3_contact_coord_icons.icon_set}}"
+                        purpose="decorative"
+                        title="{{item.p3_contact_coord_icons.name}}"
+                    %}
+        <p>{{ item.p3_contact_coord_text|striptags }}</p>
+      </div>
+      {% endfor %}
+
+      <h6 class="p3-contact__social_title">{{ module.p3_contact_social_title }}</h6>
+      <div class="p3-contact__icons">
+        {% for item in module.social_group %}
+        {% set href = item.social_link.url.href %}
+        {% if item.social_link.url.type == "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if item.social_link.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if item.social_link.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if item.social_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item.social_link.rel %}rel="{{ item.social_link.rel }}"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}>
+          {% icon
+		name="{{ item.p3_contact_social_icons.name }}"
+		style="{{ item.p3_contact_social_icons.type }}"
+		unicode="{{ item.p3_contact_social_icons.unicode }}"
+		icon_set="{{ item.p3_contact_social_icons.icon_set }}"
+	%}
+          {% set href = item.social_link.url.href %}
+          {% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="p3-contact__map {{mapStyle2}}">
+      {{ module.p3_contact_map.embed_html }}
+    </div>
+  </div>
+</div>

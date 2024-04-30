@@ -1,0 +1,475 @@
+[ {
+  "id" : "6472f3b6-c40c-4339-ad1a-03f6e1410f13",
+  "name" : "table",
+  "display_width" : null,
+  "label" : "Table",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "f99528f6-f60a-7681-ab8c-bd518ac2ba82",
+    "name" : "table",
+    "display_width" : null,
+    "label" : "Table",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 7
+    },
+    "children" : [ {
+      "id" : "785eaf71-53ed-f3db-76d7-3e456099ea97",
+      "name" : "table_head",
+      "display_width" : null,
+      "label" : "Table Head",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Stroke"
+    }, {
+      "id" : "c1133ef4-8953-4420-9ced-d0a69870744d",
+      "name" : "table_body",
+      "display_width" : null,
+      "label" : "Table Body",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "50 mm (2.0 in)"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "table" : [ {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    }, {
+      "table_head" : "Stroke",
+      "table_body" : "50 mm (2.0 in)"
+    } ]
+  }
+}, {
+  "id" : "64e8e36e-7250-bf4c-2f0e-06c808a010f2",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "598780f1-0d00-145d-016c-22b8feef306f",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "133ecf09-30eb-f974-b224-e741c4b50e42",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "7ea07802-08ff-bdf8-fbc8-93410eca84a6",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7774ed46-c281-a0e0-4776-3643e09050e3",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "a37a0d00-b9ad-f324-88f3-865d867e1efa",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "81f986db-b166-d2a6-1884-298e18203caa",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "74a47bef-4793-8bad-637d-62e6017e7769",
+    "name" : "tab_spacing",
+    "display_width" : null,
+    "label" : "Tab spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "f794aa41-52cd-e621-3257-f96b0c96d7b7",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "c1523d0e-c4f7-4cbb-5a8e-dfb1a5c01d90",
+    "name" : "odd_rows_background_color",
+    "display_width" : null,
+    "label" : "Odd rows background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "6af6fc8f-9c94-e89a-79b7-adbfdddc37d9",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#E6E7E8",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#E6E7E8",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "334a0a6c-7be8-b219-467c-ae9e17b4fa80",
+    "name" : "even_rows_background_color",
+    "display_width" : null,
+    "label" : "Even rows background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a794f2a0-94df-869f-ddb0-67b3d51d4db2",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    },
+    "desktop_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "tab_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "odd_rows_background_color" : {
+      "color" : {
+        "color" : "#E6E7E8",
+        "opacity" : 100
+      }
+    },
+    "even_rows_background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "20961166-9c8e-712f-5ec0-d742015edce7",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>*Calculated for the use of silicon covered fingertips to grip a steel object, at a low robot acceleration.</p>"
+} ]

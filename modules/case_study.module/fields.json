@@ -1,0 +1,1263 @@
+[ {
+  "id" : "b5df796c-7660-ff30-ef3c-057e9d2960ab",
+  "name" : "want_to_add_an_anchor_id",
+  "display_width" : null,
+  "label" : "Want to add an anchor id",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "2122fbfd-6c53-828d-80ef-0765ad5a824f",
+  "name" : "anchor_id",
+  "display_width" : null,
+  "label" : "Anchor id",
+  "help_text" : "There should be no special characters or spaces",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_to_add_an_anchor_id",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "customid"
+}, {
+  "id" : "7f1c1496-19fe-f3db-700b-134441e674fb",
+  "name" : "want_button",
+  "display_width" : null,
+  "label" : "Want Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "ctay", "Yes" ], [ "ctan", "No" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "ctay"
+}, {
+  "id" : "465edd31-37dc-0ac4-9142-9c39dd24b913",
+  "name" : "button_style",
+  "display_width" : null,
+  "label" : "Button style",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_button",
+    "controlling_value_regex" : "ctay",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "display" : "select",
+  "choices" : [ [ "btn_primary", "Primary" ], [ "btn_secondary", "Secondary" ], [ "btn_tertiary", "Tertiary" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "btn_secondary"
+}, {
+  "id" : "8432d8be-f966-a0f8-c1ce-5c2ae6a690ca",
+  "name" : "team",
+  "display_width" : null,
+  "label" : "Team",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "3af8d305-af33-3c3f-e5c7-5ecece2ce8f0",
+    "name" : "card_alignment",
+    "display_width" : null,
+    "label" : "Card alignment",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left"
+  }, {
+    "id" : "0a27392a-4d1d-d40b-e157-4ab4198f65ae",
+    "name" : "cards",
+    "display_width" : null,
+    "label" : "Cards",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 8
+    },
+    "children" : [ {
+      "id" : "8c32ad5a-4d41-445a-e284-5c2cdc5d810f",
+      "name" : "select_an_image",
+      "display_width" : null,
+      "label" : "Select an Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      }
+    }, {
+      "id" : "37090c16-f296-bf63-e538-9f61f72bd52a",
+      "name" : "description",
+      "display_width" : null,
+      "label" : "Description",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>"
+    }, {
+      "id" : "3a6d0635-970a-cbe4-f9a6-00f0956afe13",
+      "name" : "bio_text",
+      "display_width" : null,
+      "label" : "Download text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "8de9f6d7-429c-4451-3fe2-6853a07073de",
+      "name" : "bio_link",
+      "display_width" : null,
+      "label" : "Download link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "6788333f-764b-f0e3-1e15-4be4e670056d",
+      "name" : "download",
+      "display_width" : null,
+      "label" : "Download",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "5ab7c60e-9459-83ac-8cd4-19fff8dc19e5",
+        "name" : "select_an_image",
+        "display_width" : null,
+        "label" : "Select an image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        }
+      }, {
+        "id" : "e433f636-33b8-efcf-055b-e6f7bd33c0fd",
+        "name" : "link",
+        "display_width" : null,
+        "label" : " link",
+        "required" : false,
+        "locked" : false,
+        "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+        "show_advanced_rel_options" : false,
+        "type" : "link",
+        "default" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "card_alignment" : "left",
+    "cards" : [ {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    }, {
+      "select_an_image" : {
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/AdobeStock_517172021%201.png",
+        "alt" : "AdobeStock_517172021 1",
+        "loading" : "lazy",
+        "width" : 257,
+        "height" : 315,
+        "max_width" : 257,
+        "max_height" : 315
+      },
+      "description" : "<h4>Steve Sims</h4>\n<span>Director of Marketing</span>\n<p>Fashion axe raw denim art party quinoa banh mi single-origin coffee. Flannel unicorn palo santo, seitan pabst art party knausgaard brooklyn meh cardigan vinyl tote bag thundercats glossier.</p>",
+      "bio_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "download" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/linkedIn.svg",
+          "alt" : "linkedIn",
+          "loading" : "lazy",
+          "width" : null,
+          "height" : null,
+          "max_width" : null,
+          "max_height" : null
+        },
+        "link" : {
+          "url" : {
+            "content_id" : null,
+            "type" : "EXTERNAL",
+            "href" : ""
+          },
+          "open_in_new_tab" : false,
+          "no_follow" : false
+        }
+      }
+    } ]
+  }
+}, {
+  "id" : "7f273131-30ab-9526-9b80-24190c89b189",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d186bc6e-56c5-c3cd-8610-cfca96ad56f6",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "22c58bfa-e040-5c32-5cbf-939067f35ab6",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "23ff2906-70ab-a3c2-fab0-5b2e8c7d544c",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b01bb8c1-c9e1-f223-035b-c8c13470760d",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "ed012472-061d-a75e-d2f6-c8c28497817a",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "03cd7b8f-7dc4-867d-29ab-97b62ce0e318",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "3a2dca9a-e1ee-6857-152e-ae3484565674",
+    "name" : "tab_spacing",
+    "display_width" : null,
+    "label" : "Tab Spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "873e099a-ef52-75a4-062f-e194ea11c4b2",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : { }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : { }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    },
+    "desktop_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "spacing" : {
+        "margin" : {
+          "top" : {
+            "value" : null,
+            "units" : null
+          },
+          "bottom" : {
+            "value" : null,
+            "units" : null
+          }
+        },
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "tab_spacing" : {
+      "spacing" : { }
+    }
+  }
+}, {
+  "id" : "547a202c-0add-68e5-dd32-82aee60c2814",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_button",
+    "controlling_value_regex" : "ctay",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "d4239f61-dcfa-193f-7b85-7a82a1921b6e",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "View all exhibitors"
+  }, {
+    "id" : "80e5842b-d631-4a9a-31b8-b5812941cd35",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "View all exhibitors",
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "d30d6a9c-21d8-4682-2a69-7b078c27872c",
+  "name" : "study_title",
+  "display_width" : null,
+  "label" : "study title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Discover our clients case studies"
+} ]

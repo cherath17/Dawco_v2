@@ -1,0 +1,24 @@
+<div class="{{ name }}">
+   <div class="seperator primary-border-color">
+   </div>
+</div>
+{% require_css %}
+<style>
+
+   .{{ name }} .seperator {
+      border-top-width: {{ module.border_top }}px;
+      border-top-style: {{ module.border_type }};
+   }
+
+   .{{ name }} {     
+      {{ module.style.desktop_spacing.css }}
+   }
+
+   @media (max-width: 768px) {
+      .{{ name }} {
+         {{ module.style.mobile_spacing.css }}
+      }
+   }
+
+</style>
+{% end_require_css %}

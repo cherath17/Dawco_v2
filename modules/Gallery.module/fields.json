@@ -1,0 +1,85 @@
+[ {
+  "id" : "7f5fe1b1-0855-0ce1-1830-085cfdd73093",
+  "name" : "gallery_title",
+  "display_width" : null,
+  "label" : "Gallery Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Galerie photo"
+}, {
+  "id" : "a8dc362c-0029-0c51-2d04-77bcdc2c85be",
+  "name" : "gallery_group",
+  "display_width" : null,
+  "label" : "Gallery Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "70c9a74c-9abf-3967-3bf5-50e8c80150a5",
+    "name" : "gallery_image",
+    "display_width" : null,
+    "label" : "Gallery Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/square.png",
+      "alt" : "square",
+      "loading" : "lazy",
+      "width" : 357,
+      "height" : 232,
+      "max_width" : 357,
+      "max_height" : 232
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "gallery_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/square.png",
+      "alt" : "square",
+      "loading" : "lazy",
+      "width" : 357,
+      "height" : 232,
+      "max_width" : 357,
+      "max_height" : 232
+    }
+  }, {
+    "gallery_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/square.png",
+      "alt" : "square",
+      "loading" : "lazy",
+      "width" : 357,
+      "height" : 232,
+      "max_width" : 357,
+      "max_height" : 232
+    }
+  }, {
+    "gallery_image" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/square.png",
+      "alt" : "square",
+      "loading" : "lazy",
+      "width" : 357,
+      "height" : 232,
+      "max_width" : 357,
+      "max_height" : 232
+    }
+  } ]
+} ]

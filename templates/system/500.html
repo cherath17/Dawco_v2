@@ -1,0 +1,37 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: Parkour- 500 error
+  screenshotPath: ../../images/template-previews/500_error.png
+-->
+{% set template_css = "../../css/templates/system.css" %}
+{% extends "../layouts/base-new.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Error 500 | Server error" %}
+{% block body %}
+<section class="content-wrapper">
+  <div class="error-page" data-error="500">
+    {% module "content"
+      path="@hubspot/rich_text",
+      html="<h1>Internal Server Error</h1>",
+       %}
+    {% module "content"
+     path="@hubspot/rich_text",
+      html="<p style="width:354px">The server experienced an internal error or misconfiguration and couldn't fulfill your request.</p>",
+             %}
+    {% module "button"
+      path="../../modules/button",
+      button_text="Back to Home page"
+      link={
+        "url":
+          {
+            "type": "EXTERNAL", 
+            "href": "/"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+      }
+    %}
+  </div>
+</section>
+{% endblock body %}

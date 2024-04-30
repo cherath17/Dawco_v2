@@ -1,0 +1,296 @@
+<div class="p3-footer__wrapper">
+  <!--   <div class="col-lg-4 col-md-4 col-4"> -->
+  <div class="p3-footer__col-left">
+    <div class="p3-footer__img-container">
+      <a href="{{ href|escape_url }}"
+         {% if module.p3_footer_logo_link.p3_footer_logo.src %}
+         {% if module.p3_footer_logo_link.p3_footer_logo_link.open_in_new_tab %}target="_self"{% endif %}
+         {% if module.p3_footer_logo_link.p3_footer_logo_link.rel %}rel="{{ module.p3_footer_logo_link.p3_footer_logo_link.rel|escape_attr }}"{% endif %}
+         >
+        {% set sizeAttrs = 'width="{{ module.p3_footer_logo_link.p3_footer_logo.width|escape_attr }}" height="{{ module.p3_footer_logo_link.p3_footer_logo.height|escape_attr }}"' %}
+        {% if module.p3_footer_logo_link.p3_footer_logo.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ module.p3_footer_logo_link.p3_footer_logo.width|escape_attr }}" height="{{ module.p3_footer_logo_link.p3_footer_logo.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% elif module.p3_footer_logo_link.p3_footer_logo.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ module.p3_footer_logo_link.p3_footer_logo.max_width|escape_attr }}" height="{{ module.p3_footer_logo_link.p3_footer_logo.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = module.p3_footer_logo_link.p3_footer_logo.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo_link.p3_footer_logo.loading|escape_attr }}"' : '' %}
+        <img src="{{ module.p3_footer_logo_link.p3_footer_logo.src|escape_url }}" alt="{{ module.p3_footer_logo_link.p3_footer_logo.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        {% set href = module.p3_footer_logo_link.p3_footer_logo_link.url.href %}
+        {% if module.p3_footer_logo_link.p3_footer_logo_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+      </a>
+    </div>
+    <div class="p3_footer_img_bottom desktop_footer_sec">
+      <p class="p3_footer_logos_title">
+        {{ module.certificats_title }}
+      </p>  
+      <div class="p3_footer_logos">
+        <div class="footer_logos">
+          {% if module.p3_footer_logo1.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.width }}" height="{{ module.p3_footer_logo1.height }}"' %}
+          {% if module.p3_footer_logo1.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.width }}" height="{{ module.p3_footer_logo1.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo1.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.max_width }}" height="{{ module.p3_footer_logo1.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo1.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo1.loading }}"' : '' %}
+          <img src="{{ module.p3_footer_logo1.src }}" alt="{{ module.p3_footer_logo1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="footer_logos">
+          {% if module.p3_footer_logo2.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.width }}" height="{{ module.p3_footer_logo2.height }}"' %}
+          {% if module.p3_footer_logo2.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.width }}" height="{{ module.p3_footer_logo2.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo2.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.max_width }}" height="{{ module.p3_footer_logo2.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo2.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo2.loading }}"' : '' %}
+          <img src="{{ module.p3_footer_logo2.src }}" alt="{{ module.p3_footer_logo2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="footer_logos">
+          {% if module.p3_footer_logo3.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.width|escape_attr }}" height="{{ module.p3_footer_logo3.height|escape_attr }}"' %}
+          {% if module.p3_footer_logo3.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.width|escape_attr }}" height="{{ module.p3_footer_logo3.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo3.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.max_width|escape_attr }}" height="{{ module.p3_footer_logo3.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo3.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo3.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.p3_footer_logo3.src }}" alt="{{ module.p3_footer_logo3.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--     </div> -->
+  <!--    <div class="col-lg-8 col-md-8 col-8"> -->
+  <div class="p3-footer__col-right">
+    <div class="inner">
+      {#
+      <div class="footer-about">
+        <div>
+          <div class="p3-footer__title">
+            {{ module.p3_footer_about.title }}
+          </div>
+          <div class="p3-footer_desc">{{ module.p3_footer_about.description }}</div>
+        </div>
+        <div>
+          <div class="p3-footer__social_title">
+            {{ module.p3_footer_social.title }}
+          </div>
+          <div class="p3-footer__social-media">
+            {% for item in module.social_group %}
+            <div>
+              {% set href = item.social_links.url.href %}
+              {% if item.social_links.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if item.social_links.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if item.social_links.rel %}rel="{{ item.social_links.rel }}"{% endif %}
+                 >
+                {% if item.social_icons.src %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.width }}" height="{{ item.social_icons.height }}"' %}
+                {% if item.social_icons.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.width }}" height="{{ item.social_icons.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.social_icons.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.max_width }}" height="{{ item.social_icons.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.social_icons.loading != 'disabled' ? 'loading="{{ item.social_icons.loading }}"' : '' %}
+                <img src="{{ item.social_icons.src }}" alt="{{ item.social_icons.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+      #}
+
+      <div class="footer-about">
+        <div class="footer-menu">
+          <div class="p3-footer__title">
+            {{ module.menu_groupe_col1.title }}
+          </div>
+          <div class="p3-footer__sidemenu">
+            {% menu id="{{ module.menu_groupe_col1.menu }}" %}
+          </div>
+        </div>
+        <div>
+          <div class="p3-footer__social_title">
+            {% inline_text field="p3_footer_social" value="{{ module.p3_footer_social }}" %}
+          </div>
+          <div class="p3-footer__social-media">
+            {% for item in module.social_group %}
+            <div>
+              {% set href = item.social_links.url.href %}
+              {% if item.social_links.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+              {% endif %}
+              <a href="{{ href }}"
+                 {% if item.social_links.open_in_new_tab %}target="_blank"{% endif %}
+                 {% if item.social_links.rel %}rel="{{ item.social_links.rel }}"{% endif %}
+                 >
+                {% if item.social_icons.src %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.width }}" height="{{ item.social_icons.height }}"' %}
+                {% if item.social_icons.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.width }}" height="{{ item.social_icons.height }}" style="max-width: 100%; height: auto;"' %}
+                {% elif item.social_icons.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ item.social_icons.max_width }}" height="{{ item.social_icons.max_height }}" style="max-width: 100%; height: auto;"' %}
+                {% endif %}
+                {% set loadingAttr = item.social_icons.loading != 'disabled' ? 'loading="{{ item.social_icons.loading }}"' : '' %}
+                <img src="{{ item.social_icons.src }}" alt="{{ item.social_icons.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-menu">
+        <div class="p3-footer__title">
+          {{ module.p3_footer_menu.title }}
+        </div>
+        <div class="p3-footer__sidemenu">
+          {% menu id="{{ module.p3_footer_menu.menu }}" %}
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <div class="p3-footer__title">
+          {{ module.p3_footer_cta.title }}
+        </div>
+        <div class="p3-footer_ctadesc">{{ module.p3_footer_cta.description }}</div>
+        {% set href = module.p3_footer_cta.cta_link.url.href %}
+        {% if module.p3_footer_cta.cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="hs-button primary p3-footer__cta-btn-{{ module.p3_footer_cta.cta_style }} footerbtn"
+           {% if module.p3_footer_cta.cta_link.open_in_new_tab %}target="_self"{% endif %}
+           {% if module.p3_footer_cta.cta_link.rel %}rel="{{ module.p3_footer_cta.cta_link.rel }}"{% endif %}
+           >
+          {{ module.p3_footer_cta.cta_text }}  <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill="white"/>
+          </svg>
+        </a>
+        <div class="footer_cta2">
+          {% set href = module.footer_cta2.footer_cta2.url.href %}
+          {% if module.footer_cta2.footer_cta2.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}"
+             {% if module.footer_cta2.footer_cta2.open_in_new_tab %}target="_self"{% endif %}
+             {% if module.footer_cta2.footer_cta2.rel %}rel="{{ module.footer_cta2.footer_cta2.rel }}"{% endif %}
+             >
+            {% inline_rich_text field="footer_cta2.footer_cta2_text" value="{{ module.footer_cta2.footer_cta2_text }}" %}
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="p3_footer_img_bottom mobile_footer_sec">
+      <p class="p3_footer_logos_title">
+        {{ module.certificats_title }}
+      </p>  
+      <div class="p3_footer_logos">
+        <div class="footer_logos">
+          {% if module.p3_footer_logo1.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.width }}" height="{{ module.p3_footer_logo1.height }}"' %}
+          {% if module.p3_footer_logo1.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.width }}" height="{{ module.p3_footer_logo1.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo1.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo1.max_width }}" height="{{ module.p3_footer_logo1.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo1.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo1.loading }}"' : '' %}
+          <img src="{{ module.p3_footer_logo1.src }}" alt="{{ module.p3_footer_logo1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="footer_logos">
+          {% if module.p3_footer_logo2.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.width }}" height="{{ module.p3_footer_logo2.height }}"' %}
+          {% if module.p3_footer_logo2.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.width }}" height="{{ module.p3_footer_logo2.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo2.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo2.max_width }}" height="{{ module.p3_footer_logo2.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo2.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo2.loading }}"' : '' %}
+          <img src="{{ module.p3_footer_logo2.src }}" alt="{{ module.p3_footer_logo2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="footer_logos">
+          {% if module.p3_footer_logo3.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.width|escape_attr }}" height="{{ module.p3_footer_logo3.height|escape_attr }}"' %}
+          {% if module.p3_footer_logo3.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.width|escape_attr }}" height="{{ module.p3_footer_logo3.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_footer_logo3.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_footer_logo3.max_width|escape_attr }}" height="{{ module.p3_footer_logo3.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_footer_logo3.loading != 'disabled' ? 'loading="{{ module.p3_footer_logo3.loading|escape_attr }}"' : '' %}
+          <img src="{{ module.p3_footer_logo3.src }}" alt="{{ module.p3_footer_logo3.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="p3-footer__copyright">
+      <div class="copyright">
+        <span>©&nbsp;</span>{{ year }} {{ module.p3_footer_copyright.rights_text }}
+      </div>
+      <div class="p3-footer__divider"></div>
+      <div class="copyright-menu">
+        {% menu id="{{ module.p3_footer_copyright.menu }}" %}
+      </div>
+      <div class="p3-footer__divider"></div>
+      <div class="parkour3-site">
+        {{ module.p3_footer_copyright.credits_text }}
+      </div>
+    </div>
+  </div>
+  <!--   </div> -->
+  {% if module.p3_footer_up_btn.is_show %}
+  <div class="back-to-top" style="background-color: {{ module.p3_footer_up_btn.color.color }};">
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24" fill="none"><path d="m.281 6.812 1.44 1.408L6 3.937V24h2V3.937l4.28 4.282 1.438-1.407L7 .095.281 6.812Z" fill="#fff"/></svg>
+  </div>
+  {% endif %}
+
+</div>
+{% require_css %}
+<style>
+
+  {% scope_css %}
+  .p3-footer__title{
+    color:{{ module.style.footer_content_styles.footer_title_color.color }};
+    font-size: {{ module.style.footer_content_styles.footer_title_font.size ~ module.style.footer_content_styles.footer_title_font.size_unit }};
+
+  }
+  .p3-footer__social_title{
+    color:{{ module.style.footer_content_styles.footer_title_color.color }};
+    font-size: {{ module.style.footer_content_styles.footer_title_font.size ~ module.style.footer_content_styles.footer_title_font.size_unit }};
+  }
+  .p3-footer_desc{
+    color:{{ module.style.footer_content_styles.footer_description_color.color }};
+    font-size: {{ module.style.footer_content_styles.footer_description_font.size ~ module.style.footer_content_styles.footer_description_font.size_unit }};
+
+  }
+  .footer-menu ul li a{
+    color:{{ module.style.footer_content_styles.footer_menu_color.color }};
+    font-size: {{ module.style.footer_content_styles.footer_menu_font.size ~ module.style.footer_content_styles.footer_menu_font.size_unit  }};
+
+  }
+  .p3-footer__img-container{
+    background-color:{{ module.style.footer_content_styles.logo_background_color.color }};
+
+  }
+  .p3-footer__wrapper{
+    background-color:{{ module.style.footer_content_styles.footer_background_color.color }}
+  }
+  .footer .footer-cta .p3-footer__cta-btn-1{
+    background-color:{{ module.style.footer_content_styles.cta_background_color.color }}
+      {{ module.style.footer_content_styles.cta_background_color.opacity }}
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

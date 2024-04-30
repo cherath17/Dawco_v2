@@ -1,0 +1,91 @@
+.button_group{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 28px
+}
+.dec-btn {
+  border-radius: 4px;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+}
+.p3-learn__cta-btn-1{
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fd560a !important;
+  font-size:14px !important;
+  font-weight:700 !important;
+  color:#fff !important;
+  border:none !important;
+  /*   padding: 16px 32px !important; */
+  /*   transition: all .4s ease-in-out; */
+}
+.p3-learn__cta-btn-2{
+  border-radius: 4px !important;
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2) !important;
+  background-color: #fdb700 !important;
+  font-size:14px !important;
+  font-weight:600 !important;
+  color:#000 !important;
+  border:none !important;
+  padding: 12.5px 36px !important;
+  /*   transition: all .4s ease-in-out; */
+}
+.p3-learn__cta-btn-3{
+  border: none!important;
+  border-radius: 4px!important;
+  color: #fd560a!important;
+  font-size: 14px!important;
+  font-weight: 600!important;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+.p3-learn__cta-btn-3 svg{
+  fill:#fd560a !important;
+}
+.p3-learn__cta-btn-4 {
+  display: none;
+}
+.p3-learn__cta-btn-1 svg{
+  transition: all .4s ease-in-out;
+  right: -9px;
+  position: relative;
+  fill:#fff !important
+}
+.p3-learn__cta-btn-1:hover svg{
+  position: relative;
+  right:-22px;
+}
+.p3-learn__cta-btn-2 svg{
+  transition: all .4s ease-in-out;
+  right: -9px;
+  position: relative;
+  fill:#000 !important
+}
+.p3-learn__cta-btn-2:hover svg{
+  position: relative;
+  right:-22px;
+}
+.p3-learn__cta-btn-3 svg{
+  transition: all .4s ease-in-out;
+  right: 1px;
+  position: relative;
+}
+.p3-learn__cta-btn-3:hover svg{
+  position: relative;
+  right:-22px;
+}
+.rss_white_bg {
+  background: #fff;
+}
+.rss_grey_bg {
+  background: #EFEFEF;
+}
+@media only screen and (max-width: 480px) { 
+  .button_group {
+    flex-direction: column;
+    align-items: center;
+  }
+  .rss_spacing {
+    padding: 40px 0 !important;
+  }
+}

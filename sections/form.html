@@ -1,0 +1,107 @@
+<!--
+    templateType: section
+    isAvailableForNewContent: true
+-->
+{{ standard_header_includes }}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "80px",
+      "top" : "80px",
+      "left" : "152px",
+      "right" : "152px"
+    },
+    "mobile" : {
+      "bottom" : "40px",
+      "top" : "40px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="/Dawco-V2/modules/form-title",
+        offset=0,
+        width=12,
+        label_bg="disable",
+        p3_form_form={
+          "form_id" : "9ec17bf0-f5fb-4cc2-84d5-cb03d5a08b59",
+          "form_type" : "HUBSPOT",
+          "message" : "Merci d'avoir envoyé le formulaire.",
+          "response_type" : "inline"
+        },
+        p3_form_title="Contactez-nous",
+        style={
+          "p3_form_bg" : {
+            "opacity" : 0
+          },
+          "p3_form_spacing_desktop" : {
+            "padding" : {
+              "bottom" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "left" : {
+                "units" : "152px",
+                "value" : 0
+              },
+              "right" : {
+                "units" : "152px",
+                "value" : 0
+              },
+              "top" : {
+                "units" : "px",
+                "value" : 0
+              }
+            }
+          },
+          "p3_form_spacing_mobile" : {
+            "padding" : {
+              "bottom" : {
+                "units" : "px"
+              },
+              "left" : {
+                "units" : "px"
+              },
+              "right" : {
+                "units" : "px"
+              },
+              "top" : {
+                "units" : "px"
+              }
+            }
+          },
+          "p3_form_spacing_tablet" : {
+            "padding" : {
+              "bottom" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "left" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "right" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "top" : {
+                "units" : "px",
+                "value" : 0
+              }
+            }
+          },
+          "p3_form_title_color" : {
+            "color" : "#4d463f",
+            "opacity" : 100
+          }
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}

@@ -1,0 +1,41 @@
+
+<!--
+    templateType: section
+    label: rss_blog
+    isAvailableForNewContent: true
+    description: "group cards"
+    screenshotPath: ../images/section-previews/icon_section.png
+
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "85px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="/Dawco-V2/modules/rss_listings",
+        offset=0,
+        width=12,
+        content_group_id=160235698075,
+        show_author=false,
+        show_date=false
+      %}
+        {% module_attribute "blog_title" %}
+          <div style="text-align: center; padding-bottom: 28px;"><span style="color: #4d463f;">Publications associées</span></div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}
+

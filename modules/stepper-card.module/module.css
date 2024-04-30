@@ -1,0 +1,487 @@
+.stepper-tit {
+  color: #4D463F;
+  font-size: 36px;
+  line-height: 36px;
+  max-width: 886px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.stepper-card{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepper-main{
+  text-align: center;
+  position: absolute;
+  /*   top: 20%; */
+  left: 42%;
+  transform: translate(-50%,-50%);
+
+}
+.hide-btn btn{
+  display:none;
+}
+.progress-container{
+  display: flex;
+  margin: 0 auto 30px;
+  align-items: center;
+  /*   justify-content: space-between; */
+  position: relative;
+  max-width: 1170px;
+  gap: 280px;
+}
+.progress-container::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  z-index: -1;
+  background-color:#ffffff;
+}
+.progress{
+  width: 0px;
+  height: 5px;
+  top: 50%;
+  position: absolute;
+  border-radius:30px;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.4s ease-in-out;
+  background-color: #ffffff;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #FFFFFF;
+  border-radius: 50px;
+  background:#ffffff;
+}
+.active {
+  transition: 0.6s ease-in;
+  background-color: #FD560A;
+}
+.btn {
+  border: none;
+  padding: 12px 15px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  color:#000;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.btn:disabled{
+  cursor: not allowed;
+  color: #000;
+  background-color:gray;
+}
+.card-slider{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top:100px;
+  gap:30px;
+  justify-content:center;
+}
+
+.all-cards{
+  /*   width:63%; */
+  /*   height: 600px; */
+  display:flex;
+  align-items:center;
+  gap:43px;
+  overflow:scroll;
+  max-width: 1160px;
+  margin: auto;
+}
+.all-cards::-webkit-scrollbar{
+  display: none;
+}
+.card1{
+  min-width: 260px;
+  /*   height:400px;
+  */
+}
+.card-head img{
+  width:260px;
+  height:147px;
+}
+.card-title h2{
+  font-size: 18px;
+  font-weight:700;
+  color: #4D463F;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.card-para{
+  font-size: 16px;
+  font-weight:400;
+  color: #4D463F;
+}
+.card-para ul {
+  line-height: 20px;
+  margin-left: 26px;
+}
+/*  Responsive styles  */
+@media only screen and (max-width:437px){
+  .card1{
+    min-width: 260px;
+    max-width: 260px;
+  }
+  .card-slider {
+    margin-top: 0;
+  }
+  .stepper-card{
+    width:100%;
+    margin:auto;
+  }
+  .stepper-main{
+    width:100%;
+    margin:auto;
+    display: none;
+  }
+  .stepper-tit {
+    margin-bottom: 20px;
+  }
+  .progress-container{
+    max-width:100%;
+    width: 180px;
+    margin:auto;
+    left:8%;
+    gap: 34px
+  }
+  section{
+    position: relative;
+  }
+  .hide-btn{
+    display: flex;
+    justify-content:space-between;
+    width:120px;
+    height:50px; 
+    padding:5px 4px;
+    position:absolute;
+    top:44%;
+    width: 100%;
+    /*     left:30%; */
+  }
+  .hidden-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    border-radius:20%;
+    background: {{ module.style.button_bg_color.color }};
+    border:none;
+  }
+  .hidden-right,
+  .hidden-left {
+    padding: 0;
+    background: white;
+    border-radius: 100%;
+  }
+  .hidden-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    background: {{ module.style.button_bg_color.color }};
+    border:none;
+  }
+  .hidden-right:disabled{
+    background:{{ module.style.button_disabled_color.color }};
+    cursor: not allowed;
+    color: #000;
+  }
+  .hidden-right:hover,
+  .hidden-left:hover {
+    background: #fff;
+    border-radius: 100%;
+    border: 0;
+  }
+  .btn {
+    width:32px;
+    height:32px;
+    /*     position:absolute; */
+    /*     display:none; */
+    top:27%;
+    padding: 0;
+  }
+  .btn img{
+    width:15px;
+    height:15px;
+  }
+  .all-cards{
+    width:100%;
+    margin: 0;
+    align-items: start;
+    gap: 10px;
+    padding: 20px;
+  }
+  .card1{
+    width: 100%;
+    margin: 0;
+  }
+  .card-head{
+    color:{{ module.style.head_color.color }}
+  }
+  .card-title{
+    margin:auto;
+    color:{{ module.style.card_body_color.color }}
+  }
+  .card-para{
+    font-weight:400;
+    margin:auto;
+    color:{{ module.style.paracolor.color }}
+  }
+  .stepper-tit {
+    max-width: 100%;
+    font-size: 28px;
+    line-height: normal;
+  } 
+  .card-left-arrow,.card-right-arrow {
+    display: none;
+  }
+}
+@media only screen and (min-width:767px){
+  .stepper-card{
+    width:100%;
+    margin:auto;
+  }
+  .stepper-main{
+    width:100%;
+    margin:auto;
+  }
+  .progress-container{
+    max-width:100%;
+    margin:auto;
+  }
+  .hide-btn{
+    display:none;
+  }
+  .btn {
+    width:31px;
+    height:31px;
+    padding:5px 4px;
+  }
+  .btn img{
+    width:15px;
+    height:15px;
+  }
+  .card1{
+    margin:auto;
+  }
+  .card-head{
+    color:{{ module.style.head_color.color }}
+  }
+  .card-slider{
+    margin:auto;
+    max-width:100%;
+    gap:15px;
+  }
+  .card-title{
+    margin:auto;
+    color:{{ module.style.card_body_color.color }}
+  }
+  .card-para{
+    margin:auto;
+    color:{{ module.style.paracolor.color }}
+  }
+}
+@media only screen and (min-width:1024px){
+  .stepper-card{
+    width:100%;
+    margin:auto;
+  }
+  .stepper-main{
+    width:100%;
+    margin:auto;
+
+  }
+  .progress-container{
+    max-width:100%;
+    margin:auto;
+  }
+  .hide-btn{
+    display:none;
+  }
+  .btn {
+    width:62px;
+    height:62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn img{
+    width:23px;
+    height:23px;
+  }
+  .card-slider{
+    margin:auto;
+    max-width:87%;
+    gap:15px;
+  }
+  .card1{
+    width: 100%;
+    margin:auto;
+  }
+  .card-head{
+
+    color:{{ module.style.head_color.color }}
+  }
+  .card-title{
+
+    margin:auto;
+    color:{{ module.style.card_body_color.color }}
+  }
+  .card-para{
+
+    margin:auto;
+
+    color:{{ module.style.paracolor.color }}
+  }
+
+}
+@media only screen and (min-width:1435px){
+  .stepper-card{
+    width:100%;
+    margin:auto;
+  }
+  .stepper-main{
+    width:100%;
+    margin:auto;
+  }
+  .progress-container{
+    max-width:1170px;
+    margin:auto;
+    left:8%;
+  }
+  .hide-btn{
+    display:none;
+  }
+  .btn {
+    width:62px;
+    height:62px;
+  }
+  .btn img{
+    width:23px;
+    height:23px;
+  }
+  .card-slider{
+    margin:auto;
+    max-width:1380px;
+    gap:15px;
+    margin-top: 30px;
+  }
+  .card1{
+    width: 100%;
+    margin:auto;
+    margin-top: 0;
+
+  }
+  .card-head{
+
+    color:{{ module.style.card_slider_color.head_color.color }};
+  }
+  .card-title{
+
+    color:{{ module.style.card_slider_color.card_body_color.color }};
+  }
+  .card-para{
+
+    color:{{ module.style.card_slider_color.paracolor.color }};
+  }
+
+}
+@media only screen and (min-width:2550px){
+
+  .stepper-main{
+    width:100%;
+    margin:auto;
+  }
+  .hide-btn{
+    display:none;
+  }
+
+}
+@media (min-width:768px) and (max-width: 1024px) {
+  .stepper-tit {
+    font-size: 28px;
+    padding: 0 40px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+  .stepper-card,
+  .stepper-main {
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .stepper-main {
+    left: 50%;
+  }
+  .progress-container,
+  .p3-form_text{
+    gap: 230px;
+  }
+  .cam-ine img {
+    width:100%;
+    height: 100%;
+  }
+  .p3_form__wrapper,
+  .p3-form_text {
+    padding: 0 !important;
+  }
+}
+{#
+@media only screen and (max-width:480px){
+  .stepper-tit {
+    font-size: 28px;
+    line-height: normal;
+    margin-bottom: 0px;
+  }
+
+  .stepper-card,
+  .stepper-main {
+    overflow: hidden;
+  }
+  .card-slider {
+    position: relative;
+    margin-top: 40px;
+  }
+  .hide-btn {
+    display: none;
+  }
+  .progress-container {
+    display: none;
+    gap: 34px;
+    /*     width: calc(100% - 32px); */
+    margin: auto;
+  }
+  .all-cards {
+    margin: auto;
+    width: 95%;
+    gap: 20px;
+  }
+  .card1 {
+    margin: 0;
+  }
+  .btn {
+    padding: 0;
+  }
+  .card-left-arrow .btn {
+    left: 16px;
+  }
+  .card-right-arrow .btn {
+    right: 16px;
+  }
+}
+#}

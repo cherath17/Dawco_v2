@@ -1,0 +1,89 @@
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3_two_column{
+    {% if module.style.background_color %}
+    background-color: {{ module.style.background_color.color }};
+    {% endif %}
+  }
+  .p3-left_section{
+    {% if module.style.left_section.text_font.color %}
+    color: {{ module.style.left_section.text_font.color }};
+    {% endif %}
+    {% if module.style.left_section.text_font.size %}
+    font-size: {{ module.style.left_section.text_font.size ~ module.style.left_section.text_font.size_unit }};
+    {% endif %}
+    {% if module.style.left_section.text_font.style %}
+    {{ module.style.left_section.text_font.style }};
+    {% endif %}
+    {{ module.style.left_section.text_spacing.css }}
+    {% if module.style.left_section.text_transform %}
+    text-transform: {{ module.style.left_section.text_transform }};
+    {% endif %}
+  }
+  .p3-right_section{
+    {% if module.style.right_section.text_font.color %}
+    color: {{ module.style.right_section.text_font.color }};
+    {% endif %}
+    {% if module.style.right_section.text_font.size %}
+    font-size: {{ module.style.right_section.text_font.size ~ module.style.right_section.text_font.size_unit }};
+    {% endif %}
+    {% if module.style.right_section.text_font.style %}
+    {{ module.style.right_section.text_font.style }};
+    {% endif %}
+    {{ module.style.right_section.text_spacing.css }}
+    {% if module.style.right_section.text_transform %}
+    text-transform: {{ module.style.right_section.text_transform }};
+    {% endif %}
+  }
+  .p3-title{
+    {% if module.style.left_title.text_font.color %}
+    color: {{ module.style.left_title.text_font.color }};
+    {% endif %}
+    {% if module.style.left_title.text_font.size %}
+    font-size: {{ module.style.left_title.text_font.size ~ module.style.left_title.text_font.size_unit }};
+    {% endif %}
+    {% if module.style.left_title.text_font.style %}
+    {{ module.style.left_title.text_font.style }};
+    {% endif %}
+    {{ module.style.left_title.text_spacing.css }}
+    {% if module.style.left_title.text_transform %}
+    text-transform: {{ module.style.left_title.text_transform }};
+    {% endif %}
+  }
+  @media only screen and (max-width: 640px)  {
+    .p3-left_section{
+      {{ module.style.left_section.mobile_spacing.css }};
+    }
+    .p3-right_section{
+      {{ module.style.right_section.mobile_spacing.css }};
+    }
+  }
+
+  @media only screen and (max-width: 768px)  {
+    .p3-left_section{
+      {{ module.style.left_section.tablet_spacing.css }};
+    }
+    .p3-right_section{
+      {{ module.style.right_section.tablet_spacing.css }};
+    }
+  }
+
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+<div class="container">
+    <div class="p3-title">
+        {{ module.left_title }}
+    </div>
+  <section class="p3_two_column">
+  
+    <div class="p3-left_section">
+    
+      {{ module.left_side_text }}
+    </div>
+    <div class="p3-right_section">
+      {{ module.right_side_text }}
+    </div>
+  </section>
+</div>

@@ -1,0 +1,48 @@
+.social-links {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+/*   justify-content: center; */
+}
+
+.social-links__icon {
+  border-radius: 50%;
+  display: inline-flex;
+  height: 1.75rem;
+  margin: 0 0.35rem;
+  position: relative;
+  width: 1.75rem;
+  background-color: #114245 !important;
+}
+
+.social-links__icon svg {
+  fill: #FFF;
+  height: 0.625rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+}
+
+.social-links__icon:hover svg,
+.social-links__icon:focus svg,
+.social-links__icon:active svg {
+  fill: #FFF;
+}
+@media only screen and (max-width: 640px)  {
+  .social-links{
+  position: absolute !important;
+    top: 583rem !important;
+    left: 15px !important;
+    padding-top:30px !important;
+  }
+}
+@media only screen and (max-width: 768px)  {
+  .social-links{
+  position: absolute;
+    top: 429rem;
+    left: 15px;
+    padding-top:5px;
+  }
+}

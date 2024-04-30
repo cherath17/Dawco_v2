@@ -1,0 +1,27 @@
+<div class="hs-search-results">
+  <template class="hs-search-results__template">
+    <li>
+      {% if module.display_featured_images %}
+      <div class="hs-search-results__featured-image">
+        {% if content.featured_image %}
+        <img src="{{ content.featured_image }}" alt="feature_img" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% else %}
+        <img src="{{ brand_settings.primaryLogo.src }}" alt="{{ module.search_default_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }} class="p3-site__logo"> 
+        {% endif %}
+        {% endif %}
+        <div class="p3-search__content">
+          <span><a href="#" class="hs-search-results__title"></a></span>
+          <span><p class="hs-search-results__description">
+            </p></span>
+          <a href="#" class="hs-search-results__listing p3-search__readmore">{{ module.read_more_text }}</a>
+        </div>
+      </div>
+    </li>
+  </template>
+  <ul id="hsresults" class="hs-search-results__listing">
+  </ul>
+  <div class="hs-search-results__pagination" data-search-path="{{ site_settings.content_search_results_page_path }}">
+    <a href="" class="hs-search-results__prev-page"></a>
+    <a href="" class="hs-search-results__next-page"></a>
+  </div>
+</div> 

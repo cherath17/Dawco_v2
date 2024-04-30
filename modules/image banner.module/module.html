@@ -1,0 +1,12 @@
+<div class="image_banner">
+{% if module.image_banner.src %}
+	{% set sizeAttrs = 'width="{{ module.image_banner.width }}" height="{{ module.image_banner.height }}"' %}
+	{% if module.image_banner.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.image_banner.width }}" height="{{ module.image_banner.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.image_banner.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.image_banner.max_width }}" height="{{ module.image_banner.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.image_banner.loading != 'disabled' ? 'loading="{{ module.image_banner.loading }}"' : '' %}
+	<img src="{{ module.image_banner.src }}" alt="{{ module.image_banner.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+</div>

@@ -1,0 +1,97 @@
+{% if module.p3_slider_navigation_type %}
+{% set navType = module.p3_slider_navigation_type|join(" ") %}
+{% endif %}
+
+  {% if module.p3_slider_title %}
+  <div class="p3-slider__wrapper {{ module.p3_slider_width }}">
+    <h4 class="text-center">{{ module.p3_slider_title }}</h4>
+  </div>
+  {% endif %}
+<div id="p3-slider__wrapper" class="p3-slider__main  swiffy-slider slider-item-helper slider-item-show{{ module.p3_slider_slides }} slider-nav-visible" data-slider-nav-autoplay-interval="3000">
+  {% if module.slider|length > module.p3_slider_slides %}
+  <div class="p3-slider__btn_prev slider-nav slider-nav-prev">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+      <path d="M10.812 23.2192L12.22 21.7802L7.937 17.5002L28 17.5002L28 15.5002L7.937 15.5002L12.219 11.2192L10.812 9.78124L4.095 16.5002L10.812 23.2192Z" fill="#114245"/>
+    </svg>
+  </div>
+  {% endif %}
+  <div class="swiffy-slider slider-item-show1 slider-nav-outside  slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause  slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4 " data-slider-nav-autoplay-interval="5000">
+    <div class="p3-slider__wrapper {{ module.p3_slider_width }}">
+      <!--     <div class="p3-slider__ctn_image"> -->
+      <div class="p3-slider__images {% if not slide.p3_slider_img_link.url.href %}slider-container{% endif %}">
+        {% for slide in module.slider %}
+        {% if slide.p3_slider_img_link.url.href %}
+        {% set href = slide.p3_slider_img_link.url.href %}
+        {% if slide.p3_slider_img_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="slider-container"
+           {% if slide.p3_slider_img_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if slide.p3_slider_img_link.rel %}rel="{{ slide.p3_slider_img_link.rel }}"{% endif %}
+           >
+          {% endif %}
+<!--           <div class="myslides"> -->
+            <img src="{{ slide.p3_slider_img.src }}" alt="{{ item.p3_slider_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }} loading="lazy">
+<!--           </div> -->
+
+          {% if slide.p3_slider_img_link.url.href %}
+        </a>   
+        {% endif %}
+
+        {% endfor %}
+
+  
+
+  
+      </div>
+  
+      <div class="slider-indicators"> </div>
+<!--       <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>  -->
+      <!--     </div> -->
+    </div>
+  </div>
+  {% if module.slider|length > module.p3_slider_slides %}
+  <div class="p3-slider__btn_next slider-nav slider-nav-next">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+      <path d="M21.188 9.78076L19.78 11.2198L24.063 15.4998L4 15.4998V17.4998L24.063 17.4998L19.781 21.7808L21.188 23.2188L27.905 16.4998L21.188 9.78076Z" fill="#114245"/>
+    </svg>
+  </div>
+  {% endif %}
+</div>
+
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-slider__main {
+    background-color: rgba({{ module.style.p3_slider_bg.color|convert_rgb }}, {{ module.style.p3_slider_bg.opacity * 0.01 }});
+    {{ module.style.p3_slider_spacing_desktop.css }}  
+  }
+
+  .p3-slider__title {
+    color: {{ module.style.p3_text_image_title_color.color }};
+  }
+
+  @media (max-width: 991px) {
+    .p3-slider__main {
+      {{ module.style.p3_slider_spacing_tablet.css }}
+    }
+  }
+
+  @media (max-width: 575px) {
+    .p3-slider__main {
+      {{ module.style.p3_slider_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+{% require_css %}
+{% end_require_css %}
+<script>
+ 
+</script>

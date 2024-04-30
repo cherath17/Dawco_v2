@@ -1,0 +1,58 @@
+<!--
+   templateType: section
+  label: two-column-image
+  isAvailableForNewContent: true
+  description: "two column image"
+  screenshotPath: ../images/section-previews/two-column-image.png  
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "left" : "50px",
+      "right" : "50px",
+      "top" : "0px"
+    },
+    "mobile" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  },
+  full_width=false
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/image-right-left-text",
+        offset=0,
+        width=12,
+        p3_text_image_subtitle="SURTITRE IPSUM",
+        p3_text_image_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        style={
+          "button_link_color" : {
+            "color" : "#63da7b",
+            "opacity" : 100
+          },
+          "p3_text_image_supertitle_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          },
+          "p3_text_image_title_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          }
+        }
+      %}
+        {% module_attribute "p3_text_image_description" %}
+          <p style="font-size: 18px;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. </span></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}

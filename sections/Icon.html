@@ -1,0 +1,138 @@
+<!--
+  templateType: section
+  label: Icon
+  isAvailableForNewContent: true
+  description: "three column image"
+  screenshotPath: ../images/section-previews/icon_section.png
+
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  background_color="rgba(17, 66, 69, 1)",
+  padding={
+    "default" : {
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path='../modules/Icon-Text-column',
+        offset=0,
+        width=12,
+        icon_one=[ {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : false,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : false,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "exact",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur "
+        }, {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : false,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : false,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur"
+        }, {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : false,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : false,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur"
+        } ],
+        styles={
+          "icon_content_style" : {
+            "icon_title" : {
+              "color" : "#FFFFFF",
+              "size_unit" : "px"
+            }
+          },
+          "icon_title_style" : {
+            "icon_title" : {
+              "color" : "#FFFFFF",
+              "size_unit" : "px"
+            }
+          },
+          "p3_icon_accent_color" : {
+            "color" : "#63DA7B",
+            "opacity" : 100
+          },
+          "p3_icon_bg" : {
+            "color" : "#114245",
+            "opacity" : 100
+          }
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+{{ standard_footer_includes }}

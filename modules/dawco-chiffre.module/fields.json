@@ -1,0 +1,234 @@
+[ {
+  "id" : "90d66b55-33ee-0dd5-c0d4-76ec79b5f885",
+  "name" : "num_bgcolor",
+  "display_width" : null,
+  "label" : "num_bgcolor",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "num_bgcolor_white", "num_bgcolor_white" ], [ "num_bgcolor_grey", "num_bgcolor_grey" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "num_bgcolor_grey"
+}, {
+  "id" : "a2db01d7-a05f-5e9b-e8d0-efea0a7c7f38",
+  "name" : "texte_h2",
+  "display_width" : null,
+  "label" : "Texte-h2",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Le projet en chiffre"
+}, {
+  "id" : "101e091e-d238-8369-63e2-8167635168ed",
+  "name" : "groupe_de_champs_num",
+  "display_width" : null,
+  "label" : "Groupe de champs-num",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : null,
+    "controlling_value_regex" : null,
+    "property" : null,
+    "operator" : "NOT_EMPTY",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "7c97f5d6-78e7-e84f-5420-d875c3f4beda",
+    "name" : "plus_text",
+    "display_width" : null,
+    "label" : "Plus text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "7af30f23-421a-fbc6-dea6-ab89ca2cfb34",
+    "name" : "plus_text_header",
+    "display_width" : null,
+    "label" : "Plus text header",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "8425e470-b786-66bf-4312-1b502621906d",
+    "name" : "percentage_text",
+    "display_width" : null,
+    "label" : "Percentage text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "04cc6a47-4457-9bdc-af58-504f1e825f10",
+    "name" : "texte_num",
+    "display_width" : null,
+    "label" : "Texte-num",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : " 73"
+  }, {
+    "id" : "3b9cd4b9-5197-e943-e360-1e60c13c2716",
+    "name" : "texte_title",
+    "display_width" : null,
+    "label" : "Texte-title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "  ans d’expérience"
+  }, {
+    "id" : "dbc74eeb-732d-ad7a-15ae-e99a1c503e9b",
+    "name" : "hide_and_show_title",
+    "display_width" : null,
+    "label" : "Hide and show title?",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "1074407e-f756-9923-5796-59ccdd41618a",
+    "name" : "hide_and_show_percentage",
+    "display_width" : null,
+    "label" : "Hide and show percentage",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "97c6250a-9eee-730c-1590-a8657cf400ba",
+    "name" : "text_direction",
+    "display_width" : null,
+    "label" : "Text Direction",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "text_row", "Row" ], [ "text_column", "Column" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "text_row"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "texte_num" : " 73",
+    "texte_title" : "  ans d’expérience",
+    "hide_and_show_title" : false,
+    "hide_and_show_percentage" : false,
+    "text_direction" : "text_row"
+  }, {
+    "texte_num" : " 73",
+    "texte_title" : "  ans d’expérience",
+    "hide_and_show_title" : false,
+    "hide_and_show_percentage" : false,
+    "text_direction" : "text_row"
+  }, {
+    "texte_num" : " 73",
+    "texte_title" : "  ans d’expérience",
+    "hide_and_show_title" : false,
+    "hide_and_show_percentage" : false,
+    "text_direction" : "text_row"
+  }, {
+    "texte_num" : " 73",
+    "texte_title" : "  ans d’expérience",
+    "hide_and_show_title" : false,
+    "hide_and_show_percentage" : false,
+    "text_direction" : "text_row"
+  } ]
+}, {
+  "id" : "baa207de-687e-090d-5278-c9558571719a",
+  "name" : "bottom_layer",
+  "display_width" : null,
+  "label" : "bottom layer",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "layer_enable", "bottom layer enable" ], [ "layer_disable", "bottom layer disable" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "760d7a4f-0b6b-693e-1a9e-da4ac501d35e",
+  "name" : "column_layout",
+  "display_width" : null,
+  "label" : "column layout",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "column 4" ], [ "2", "column 3" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "da3bbac3-1721-abf5-a525-024179eb5019",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "827dcca6-15e3-37cb-2f24-462d0dff2d51",
+    "name" : "plus_text",
+    "display_width" : null,
+    "label" : "PLus text",
+    "required" : false,
+    "locked" : false,
+    "load_external_fonts" : true,
+    "type" : "font",
+    "default" : {
+      "size" : 64,
+      "color" : "#fd560a"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "plus_text" : {
+      "size" : 64,
+      "color" : "#fd560a"
+    }
+  }
+}, {
+  "id" : "24b506c1-0c67-fce6-3b95-1b239daf892d",
+  "name" : "enabel_bottom_background",
+  "display_width" : null,
+  "label" : "Enabel bottom background",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

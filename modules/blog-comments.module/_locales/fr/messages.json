@@ -1,0 +1,37 @@
+{
+  "name" : {
+    "message" : "blog-comments",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.default" : {
+    "message" : "Commentaires",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.help_text" : {
+    "message" : "Titre au-dessus des commentaires et du formulaire",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_blog_comments_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

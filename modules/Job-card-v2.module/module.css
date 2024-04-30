@@ -1,0 +1,213 @@
+.p3_team__section .p3_team__content .p3_team__details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 22px;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: auto;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_job__cards {
+  width: 273px;
+  position: relative;
+  height:auto;
+}
+.p3_team__image {
+  position: relative;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_top__border {
+  box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+  height: 100%;
+}
+
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__image {
+  line-height: 0;
+}
+.card-im {
+  border-bottom: 4px solid #fdb700;
+  width: 100%;
+  height: 165px !important;
+  object-fit: cover;
+}
+.p3_team__image {
+    transition: 0.5s;
+}
+.p3_team__image:hover {
+  transform: scale(1.01);
+}
+.icon-im {
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  right: -5px;
+  top: 6px;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text {
+  /*   padding: 12px 10px 10px; */
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3-job__title h4 {
+  line-height: 1.25;
+  margin-bottom: 10px;
+  font-size:13px;
+  font-weight:300;
+  color:#114245;
+  margin-top: 5px;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text span {
+  font-size: 14px;
+  color: #505050;
+  display: inline-block;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text p {
+  margin-bottom: 4px;
+}
+
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text .p3_team__btn_link a {
+  display: inline-block;
+
+}
+.p3_team__section .p3_team__cta.ctay {
+  margin-top: 20px;
+  text-align: center;
+}
+.p3_team__section .p3_team__cta.ctan {
+  display: none;
+}
+.p3_team__section .p3_team__content .p3_team__details.center {
+  justify-content: center;
+}
+.p3_team__section .p3_team__content .p3_team__details.right {
+  justify-content: right;
+}
+.p3-job__bio{
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+
+}
+.p3_team__btn_link{
+  display: flex;
+  gap: 2px;
+}
+.p3-job__bio a{
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color:#1980eb;
+  text-decoration:underline;
+}
+.p3-job__details{
+  display:flex;
+  gap:12px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 14px;
+  color: #4d463f;
+  line-height: 1.25;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  padding-left:0px;
+  margin: 0 16px 0px 4px;
+}
+.p3-apply__btn {
+  width: max-content;
+  padding: 0px 4px;
+}
+
+.p3-apply__btn a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #fd560a;
+  text-decoration: underline;
+  transition: 0.5s;
+  display: block;
+}
+.p3-apply__btn a:hover {
+  transform: scale(1.05);
+}
+.p3-job__description{
+  background-color: #efefef;
+  padding-top: 10px;
+  padding-left: 10px ;
+  padding-bottom: 40px;
+}
+.p3-job__bottomlink {
+  position: absolute;
+  bottom: 10px;
+}
+.p3_team__text.p3-job__title {
+  background-color: #ffffff;
+}
+.p3-job__content{
+  padding: 10px 10px 20px;
+  min-height: 100px;
+  max-height: 200px;
+}
+.p3-job__content h2,p {
+  margin-bottom: 0;
+}
+.p3-job__time{
+  position: relative;
+  right: 6px;
+}
+.p3-timg__image{
+  position: relative;
+  right: 4px;
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+  .p3_team__section .p3_team__content .p3_team__details .p3_job__cards {
+    width: 100%;
+  }
+  .p3-job__bottomlink {
+    bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .p3_team__section .p3_team__content .p3_team__details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    row-gap: 20px !important;
+    padding:10px;
+  }
+  .p3_team__section .p3_team__content .p3_team__details .p3_job__cards {
+    /*     width: 100%; */
+    padding: 10px;
+  }
+  .p3-job__bottomlink {
+    bottom: 20px;
+  }
+  .p3_team__section .p3_team__content .p3_team__details {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 20px;
+  } 
+  .p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text p {
+    line-height: normal;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .p3-job__content h2 span{
+    font-size: 16px !important;
+  }
+  h4 {
+    padding: 0 20px;
+  }
+  .p3_team__section .p3_team__content .p3_team__details .p3_job__cards {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .p3-job__bottomlink {
+    bottom: 10px;
+  }
+  .p3_team__section .p3_team__content .p3_team__details {
+    grid-template-columns: 1fr !important;
+    margin:0;
+  }
+}

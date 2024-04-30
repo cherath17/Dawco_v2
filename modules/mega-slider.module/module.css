@@ -1,0 +1,62 @@
+.p3-slider__main {
+  position: relative;
+}
+
+.p3-slider__main h4 {
+  text-align: center;
+}
+
+
+/* Robotiq seulement */
+.p3-slider__main .slider-container img {
+  filter: grayscale(100%); 
+}
+
+.p3-slider__main .slider-container img:hover,
+.p3-slider__main .slider-container a:hover img {
+  filter: grayscale(0); 
+}
+@media only screen and (max-width: 640px)  {
+  .slider-nav {
+    visibility: visible;
+    filter: none;
+    left: 0px;
+    opacity: 1;
+  }
+  .slider-nav svg{
+    width:25px;
+    height:25px;
+  }
+  .slider-nav.slider-nav-next {
+    right: 0px !important;
+  }
+}
+@media only screen and (max-width: 768px)  {
+  .p3-slider__main {
+    position: relative;
+    padding: 0px !important;
+  }
+  .p3-slider__wrapper{
+    padding: 0px !important;
+  }
+  .slider-nav{
+    left:0px;
+  }
+  .slider-nav.slider-nav-next {
+    right: 66px;
+}
+}
+.dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}

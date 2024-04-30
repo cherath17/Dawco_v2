@@ -1,0 +1,142 @@
+[ {
+  "id" : "31a5038a-54f7-829b-13c6-4b3e0d93195c",
+  "name" : "texte_hr",
+  "display_width" : null,
+  "label" : "Texte-hr",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Activités"
+}, {
+  "id" : "d5561402-00be-3561-3926-a9994067883b",
+  "name" : "texte_hi",
+  "display_width" : null,
+  "label" : "Texte-hi",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Mission et valeurs"
+}, {
+  "id" : "3fa58ed0-653b-ab10-a038-2fa3d8da20b0",
+  "name" : "texte_enrichi_pa",
+  "display_width" : null,
+  "label" : "Texte enrichi-pa",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu nisl id sem sagittis fermentum. Vestibulum posuere porta condimentum. Curabitur tempor ligula fringilla erat suscipit, ut consequat quam facilisis. Donec ac libero in nisl consectetur auctor in at diam."
+}, {
+  "id" : "61f4b26a-d049-c215-fa21-ec3886c2a323",
+  "name" : "groupe_de_champs_tik",
+  "display_width" : null,
+  "label" : "Groupe de champs-tik",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "75d8f1f2-2c2f-7ff9-8825-c2ddc881f7b7",
+    "name" : "image_tik",
+    "display_width" : null,
+    "label" : "Image-tik",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/tik-im.svg",
+      "alt" : "tik-im",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 10,
+      "max_width" : 13,
+      "max_height" : 10
+    }
+  }, {
+    "id" : "26a3c6bd-1625-32b2-9302-67c7df8501bf",
+    "name" : "texte_ex",
+    "display_width" : null,
+    "label" : "Texte-ex",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Nom de la premières activité en exemple"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_tik" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/tik-im.svg",
+      "alt" : "tik-im",
+      "loading" : "lazy",
+      "width" : 13,
+      "height" : 10,
+      "max_width" : 13,
+      "max_height" : 10
+    },
+    "texte_ex" : "Nom de la premières activité en exemple"
+  } ]
+}, {
+  "id" : "d68457ce-49cd-87a4-8806-d0d293716fa8",
+  "name" : "image_ri",
+  "display_width" : null,
+  "label" : "Image-ri",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 536,
+    "max_width" : 1280,
+    "max_height" : 536
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 536,
+    "max_width" : 1280,
+    "max_height" : 536
+  }, {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/photo1710395838.jpeg",
+    "alt" : "photo1710395838",
+    "loading" : "lazy",
+    "width" : 1280,
+    "height" : 536,
+    "max_width" : 1280,
+    "max_height" : 536
+  } ]
+} ]

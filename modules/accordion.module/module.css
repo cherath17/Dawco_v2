@@ -1,0 +1,93 @@
+.p3_accordions__section .p3_accordions__content .p3_accordions__details .p3_accordions__panel {
+  transition: max-height 0.4s ease-out;
+  max-height: 0;
+  overflow: hidden;
+}
+.p3_accordions__section .p3_accordions__details button {
+    background: #f2f7f7;
+    cursor: pointer;
+    font-size: 24px;
+    line-height: 36px;
+    outline: none;
+    padding: 30px 40px;
+    position: relative;
+    text-align: initial;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+}
+.p3_accordions__section .p3_accordions__content .p3_accordions__details .p3_accordions__panel h3 {
+  line-height: 25px;
+  margin-bottom: 20px;
+  font-size:25px;
+}
+.p3_accordions__section .p3_accordions__content .p3_accordions__details .p3_accordions__panel p {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+.p3_accordions__section .p3_accordions__content .p3_accordions__details .p3_accordions__panel p:last-child {
+  margin: 0;
+}
+.p3_accordions__section .p3_accordions__content .p3_accordions__panel .p3_accordions__description {
+  padding: 30px 120px;
+}
+.p3_accordions__section .p3_accordions__content .p3_accordions__details {
+  margin-bottom: 6px;
+}
+.p3_accordions__section .p3_accordions__details button:after {
+  background-image: url("https://www.amwhiz.com/hubfs/accord_downicon.svg");
+  background-size: 100%;
+  content: "";
+  height: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  transform: rotate(180deg);
+  width: 40px;
+  background-repeat: no-repeat;
+  background-color:#fff;
+  border-radius: 100%;
+  padding: 11px;
+}
+
+.p3_accordions__section .p3_accordions__details button.active:after {
+  transform: none;
+}
+.p3_accordions__section .p3_accordions__sub_title {
+  margin: 0 0 30px;
+}
+.p3_accordions__section .p3_accordions__sub_title h3 {
+  line-height: 25px;
+  margin: 0;
+}
+@media only screen and (max-width: 767px) {
+  .p3_accordions__section .p3_accordions__details button {
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px;
+  }
+  .p3_accordions__section .p3_accordions__details button:after {
+    height: 22px;
+    right: 4px;
+    width: 22px;
+    top: 30%;
+  }
+  .p3_accordions__section .p3_accordions__content .p3_accordions__panel .p3_accordions__description {
+    padding: 30px 15px;
+  }
+  .p3_accordions__section .p3_accordions__content .p3_accordions__details .p3_accordions__panel p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+  .p3_accordions__section .p3_accordions__details button:after {
+    width: 35px;
+    height: 35px;
+  }
+  .p3_accordions__section .p3_accordions__content .p3_accordions__panel .p3_accordions__description {
+    padding: 30px 60px;
+  }
+}

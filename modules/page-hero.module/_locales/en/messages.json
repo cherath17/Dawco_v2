@@ -1,0 +1,432 @@
+{
+  "name" : {
+    "message" : "page-hero",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.choices.image" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.choices.video" : {
+    "message" : "Video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.help_text" : {
+    "message" : "Choose between image or video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.inline_help_text" : {
+    "message" : "Choose between image or video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.label" : {
+    "message" : "Background type",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_image.default.alt" : {
+    "message" : "Page hero background image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_image.help_text" : {
+    "message" : "Background image 1920 x 587",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_image.inline_help_text" : {
+    "message" : "Background image 1920 x 587",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_image.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_video.help_text" : {
+    "message" : "Short video in the background",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_video.inline_help_text" : {
+    "message" : "Short video in the background",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_video.label" : {
+    "message" : "Background video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_bg_video.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.label" : {
+    "message" : "Choice",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_btn_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.default" : {
+    "message" : "Theme Parkour HubSpot",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.help_text" : {
+    "message" : "Sous-titre au-dessus du titre de page",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.inline_help_text" : {
+    "message" : "Sous-titre au-dessus du titre de page",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.label" : {
+    "message" : "Sous-titre copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_supertitle.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.default" : {
+    "message" : "Parkour HubSpot Theme",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.help_text" : {
+    "message" : "Page title (H1)",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.inline_help_text" : {
+    "message" : "Page title (H1)",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_hero_title.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "page-hero",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_hero_text_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_hero_text_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_hero_text_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_hero_text_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_hero_text_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_link.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_link.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_link.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_link.label" : {
+    "message" : "Button link",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_link.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.default" : {
+    "message" : "Watch video",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.label" : {
+    "message" : "Button text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.button_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.label" : {
+    "message" : "Groupe de champs",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.select_an_icon.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.select_an_icon.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.select_an_icon.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.select_an_icon.label" : {
+    "message" : "Icône",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_button.select_an_icon.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.choices.valeur 1" : {
+    "message" : "Libellé 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.choices.valeur 2" : {
+    "message" : "Libellé 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.label" : {
+    "message" : "Choix",
+    "description" : null,
+    "placeholders" : null
+  },
+  "video_popup_button_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.choices.valeur 1" : {
+    "message" : "Libellé 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.choices.valeur 2" : {
+    "message" : "Libellé 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.label" : {
+    "message" : "Choix",
+    "description" : null,
+    "placeholders" : null
+  },
+  "want_video_popup.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

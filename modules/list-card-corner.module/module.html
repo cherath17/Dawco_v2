@@ -1,0 +1,139 @@
+<div class="card-block">
+  <div class="card-tpro">
+    <h2>
+      {{ module.texte_ti }}
+    </h2>
+    <div class="mof-chi">
+      {% for item in module.groupe_de_champs_test %}
+      <div class="test-hj">
+        {% if item.image_pro.src %}
+        {% set sizeAttrs = 'width="{{ item.image_pro.width }}" height="{{ item.image_pro.height }}"' %}
+        {% if item.image_pro.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.image_pro.width }}" height="{{ item.image_pro.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.image_pro.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.image_pro.max_width }}" height="{{ item.image_pro.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.image_pro.loading != 'disabled' ? 'loading="{{ item.image_pro.loading }}"' : '' %}
+        <img src="{{ item.image_pro.src }}" alt="{{ item.image_pro.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+        <div class="con-gt">
+          {{ item.texte_enrichi_sub }}
+          {% set href = item.linkedin_link.url.href %}
+          {% if item.linkedin_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href|escape_url }}"
+             {% if item.linkedin_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if item.linkedin_link.rel %}rel="{{ item.linkedin_link.rel|escape_attr }}"{% endif %}
+             >
+            {% icon
+		name="{{ item.ic_ne_soc.name }}"
+		style="{{ item.ic_ne_soc.type }}"
+		unicode="{{ item.ic_ne_soc.unicode }}"
+		icon_set="{{ item.ic_ne_soc.icon_set }}"
+	%}
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% require_css %}
+<style>
+  {% scope_css %}
+  .card-tpro{
+    max-width:1200px;
+    margin:auto;
+    padding:0px 20px;
+  }
+  .card-tpro h2 {
+    color: #4d463f;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom:30px;
+  }
+  .mof-chi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 38px;
+    /*     grid-template-columns: 1fr 1fr 1fr 1fr; */
+  }
+  .test-hj img {
+    width: 251px;
+    height: 251px !important;
+    border: 5px solid #fc560b;
+    border-radius: 100%;
+  }
+  .test-hj {
+    width: 251px;
+  }
+  .con-gt {
+    width: 222px;
+    margin: auto;
+    padding-top: 10px;
+  }
+  .test-hj svg {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    display: block;
+  }
+  .vec-shape {
+    position: relative;
+  }
+  .vec-shape img {
+    position: absolute;
+    bottom: 0;
+  }
+  @media (min-width:768px) and (max-width: 1024px) { 
+    .mof-chi {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      padding: 0 20px;
+    }
+    .card-tpro h2 {
+      padding-bottom: 40px;
+    }
+    .test-hj {
+      width: 100%;
+      max-width: 100%;
+    }
+    .test-hj img {
+      width: 100%;
+      height: auto !important;
+    }
+
+  }
+  @media only screen and (max-width: 480px) {
+    .con-gt {
+      max-width: calc(100% - 40px);
+      padding-top: 10px;
+    }
+    .card-tpro h2 {
+      font-size: 28px !important;
+      padding-bottom: 20px;
+      line-height: normal !important;
+    }
+    .con-gt h2 {
+      font-size: 18px !important;
+      line-height: normal !important;
+      margin: 0 !important;
+      padding-bottom: 10px;
+    }
+    .con-gt p,.con-gt p span {
+      font-size: 16px !important; 
+      line-height: normal !important;
+    }
+    .test-hj {
+      width: 250px;
+      max-width: 250px;
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+

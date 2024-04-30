@@ -1,0 +1,588 @@
+[ {
+  "id" : "9b1a63d4-83f9-9b9d-e5fe-7bd0ce18bddc",
+  "name" : "header",
+  "display_width" : null,
+  "label" : "Header",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ed3eba28-3ff7-cfe2-0a02-d6ef0681de76",
+    "name" : "listing_title",
+    "display_width" : null,
+    "label" : "Listing Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Projets"
+  }, {
+    "id" : "d0a11721-9afe-eb66-b758-d84d4638f649",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Sub Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Découvrez nos projets"
+  }, {
+    "id" : "60a8056f-8f8a-5de1-7565-2125fd90fcdd",
+    "name" : "filter_text",
+    "display_width" : null,
+    "label" : "Filter",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Filters"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "listing_title" : "Projets",
+    "heading" : "Découvrez nos projets",
+    "filter_text" : "Filters"
+  }
+}, {
+  "id" : "fd0e4334-5512-2c51-4ad9-43269d1682a7",
+  "name" : "filter_lists_heading",
+  "display_width" : null,
+  "label" : "Filter Lists Heading",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e35b8b02-850c-2f2e-bc40-ef0692783643",
+    "name" : "filter_title",
+    "display_width" : null,
+    "label" : "Filter title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Champ d’expertise"
+  }, {
+    "id" : "6bd37b07-efcc-c4dd-c787-62c32cfb5209",
+    "name" : "travaux_title",
+    "display_width" : null,
+    "label" : "Travaux title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Travaux intégrés"
+  }, {
+    "id" : "15aa5709-05f2-5931-93aa-e09674eb4557",
+    "name" : "villes_title",
+    "display_width" : null,
+    "label" : "Villes title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Villes"
+  }, {
+    "id" : "d1c79651-8ff1-8f16-14f8-8334737a8512",
+    "name" : "domaine_dactivite_title",
+    "display_width" : null,
+    "label" : "Domaine Dactivite Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Domaine d’activité"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "filter_title" : "Champ d’expertise",
+    "travaux_title" : "Travaux intégrés",
+    "villes_title" : "Villes",
+    "domaine_dactivite_title" : "Domaine d’activité"
+  }
+}, {
+  "id" : "4c6e97f3-791b-5318-4da7-6aaa260780b6",
+  "name" : "subscribe_newsletter",
+  "display_width" : null,
+  "label" : "subscribe_newsletter",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6ed22de2-72a4-a46f-5198-3d5fe1dfc489",
+    "name" : "subscribe_newsletter",
+    "display_width" : null,
+    "label" : "Subscribe newsletter",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "886e4eb4-0269-4025-b05b-9126ca7b0dd2",
+      "response_type" : "inline",
+      "message" : "Merci d'avoir envoyé le formulaire.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }, {
+    "id" : "af6670df-7619-91d2-6bd5-4f837db7fab3",
+    "name" : "form_title",
+    "display_width" : null,
+    "label" : "form title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Inscrivez-vous à l’infolettre"
+  }, {
+    "id" : "e8f423da-6646-2319-e6c4-daa3bd1c8227",
+    "name" : "form_description",
+    "display_width" : null,
+    "label" : "form description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Découvrez les derniers projets et nouvelles de Dawco."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "subscribe_newsletter" : {
+      "form_id" : "886e4eb4-0269-4025-b05b-9126ca7b0dd2",
+      "response_type" : "inline",
+      "message" : "Merci d'avoir envoyé le formulaire.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    },
+    "form_title" : "Inscrivez-vous à l’infolettre",
+    "form_description" : "Découvrez les derniers projets et nouvelles de Dawco."
+  }
+}, {
+  "id" : "8b98c4f1-0866-26a7-39ec-15610fc1ae40",
+  "name" : "tag_list",
+  "display_width" : null,
+  "label" : "Tags",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5f7b5197-07e6-afdb-9434-f90899c12e60",
+    "name" : "tag_title",
+    "display_width" : null,
+    "label" : "Tags",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Électrique"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "tag_title" : "Électrique"
+  } ]
+}, {
+  "id" : "c28179b4-0b04-a66a-2645-e8c11925e9ba",
+  "name" : "domaine_dactivite_sec",
+  "display_width" : null,
+  "label" : "Domaine Dactivite Sec",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "4a83c4be-1663-72e1-e6ca-c0f9ad431ad2",
+    "name" : "domaine_dactivite",
+    "display_width" : null,
+    "label" : "domaine_dactivite",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Énergie"
+  }, {
+    "id" : "1977dabb-8b19-d563-6b1d-c9bf76442487",
+    "name" : "domaine_dactivite_img",
+    "display_width" : null,
+    "label" : "domaine_dactivite_img",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  }, {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  }, {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  }, {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  }, {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  }, {
+    "domaine_dactivite" : "Énergie",
+    "domaine_dactivite_img" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/blog_type/batiment_img.svg",
+      "alt" : "batiment_img",
+      "loading" : "lazy",
+      "width" : 27,
+      "height" : 24,
+      "max_width" : 27,
+      "max_height" : 24
+    }
+  } ]
+}, {
+  "id" : "91fc9e0e-79c0-d08a-e4b2-838866f89524",
+  "name" : "travaux_integres",
+  "display_width" : null,
+  "label" : "Travaux integres",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "beed669a-7fc8-1683-45ac-a4fd9d4b8637",
+    "name" : "travaux_integres_tag_title",
+    "display_width" : null,
+    "label" : "travaux_integres_tag_title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Électrique"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "tag_title" : "Électrique"
+  } ]
+}, {
+  "id" : "98de1530-0f24-0642-4220-c703a873f51b",
+  "name" : "location_sec",
+  "display_width" : null,
+  "label" : "Location",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 10,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "5755005d-90ae-b2a1-ad14-e7dfa5bbb5f9",
+    "name" : "domaine_dactivite",
+    "display_width" : null,
+    "label" : "loaction_text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Montréal (Québec, Canada)"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "domaine_dactivite" : "Montréal (Québec, Canada)"
+  } ]
+}, {
+  "id" : "232a205d-921e-ff0a-a0fb-f2edb42944a8",
+  "name" : "blog_post_card",
+  "display_width" : null,
+  "label" : "Blog Post Card",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "e9b07264-08b3-049f-b8f9-a21fce4c0eb5",
+    "name" : "tag_location_hide",
+    "display_width" : null,
+    "label" : "Tag Location Show",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "e4e64a9f-32f3-f900-3090-784934bdb1b9",
+    "name" : "summary",
+    "display_width" : null,
+    "label" : "Show Summary",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "d48e926f-49b8-a9e9-56b9-56f2ffe60248",
+    "name" : "border_enable",
+    "display_width" : null,
+    "label" : "Border enable",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "border_enable", "Border_enable" ], [ "border_disable", "Border_disable" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "border_enable"
+  }, {
+    "id" : "ab95cdbd-ca77-b7c8-7bdd-14aa7052ad22",
+    "name" : "selected_filter",
+    "display_width" : null,
+    "label" : "Active Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/selected_filter.svg",
+      "alt" : "selected_filter",
+      "loading" : "lazy",
+      "width" : 17,
+      "height" : 16,
+      "max_width" : 17,
+      "max_height" : 16
+    }
+  }, {
+    "id" : "b89f209a-f9e4-4a65-8389-0dc3ffc0eac9",
+    "name" : "tag_icon",
+    "display_width" : null,
+    "label" : "Tag icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+      "alt" : "tag_icon",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 18,
+      "max_width" : 19,
+      "max_height" : 18
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "tag_location_hide" : false,
+    "summary" : false,
+    "border_enable" : "border_enable",
+    "selected_filter" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/selected_filter.svg",
+      "alt" : "selected_filter",
+      "loading" : "lazy",
+      "width" : 17,
+      "height" : 16,
+      "max_width" : 17,
+      "max_height" : 16
+    },
+    "tag_icon" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/tag_icon.svg",
+      "alt" : "tag_icon",
+      "loading" : "lazy",
+      "width" : 19,
+      "height" : 18,
+      "max_width" : 19,
+      "max_height" : 18
+    }
+  }
+}, {
+  "id" : "d304d5c5-2544-87e6-ce9a-d6f08505e098",
+  "name" : "read_more_text",
+  "display_width" : null,
+  "label" : "Read more text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Lire la suite"
+}, {
+  "id" : "d713eed4-5fd7-c98e-3671-68d7c80fa8a1",
+  "name" : "location_icon",
+  "display_width" : null,
+  "label" : "Location Icon",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/location_info.svg",
+    "alt" : "location_info",
+    "loading" : "lazy",
+    "width" : 14,
+    "height" : 18,
+    "max_width" : 14,
+    "max_height" : 18
+  }
+}, {
+  "id" : "ccc384be-ea7c-4bcc-b5af-2589c06bf2da",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "de8cae4e-1293-1af3-1411-e11f66fa0166",
+    "name" : "card_background",
+    "display_width" : null,
+    "label" : "Card Background",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "2931b244-f03a-d913-bda6-71eeded3879f",
+    "name" : "featured_image",
+    "display_width" : null,
+    "label" : "Featured Image",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fd560a",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "card_background" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "featured_image" : {
+      "color" : "#fd560a",
+      "opacity" : 100
+    }
+  }
+} ]

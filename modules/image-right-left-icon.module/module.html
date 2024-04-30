@@ -1,0 +1,112 @@
+<div class="p3-text-image {{ module.p3_text_image_order }} {{ module.image_video }}">
+  <div class="container">
+    <div class="row p3-image_text">
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center p3-text_image">
+        {% if module.p3_text_image_subtitle %}
+        <div class="p3-text-image_supertitle">{{ module.p3_text_image_subtitle }}</div>
+        {% endif %}
+
+        {% if module.p3_text_image_title %}
+        <div class="p3-text-image_title">{{ module.p3_text_image_title }}</div>
+        {% endif %}
+
+        <div class="p3-icon__group">
+
+          {% for item in module.icon_group %}
+          <div class="p3-icon__line">
+
+          </div>
+          <div class="p3-icon__industext">
+            {% if item.industry_icon.src %}
+            {% set sizeAttrs = 'width="{{ item.industry_icon.width }}" height="{{ item.industry_icon.height }}"' %}
+            {% if item.industry_icon.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.industry_icon.width }}" height="{{ item.industry_icon.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.industry_icon.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.industry_icon.max_width }}" height="{{ item.industry_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.industry_icon.loading != 'disabled' ? 'loading="{{ item.industry_icon.loading }}"' : '' %}
+            <img src="{{ item.industry_icon.src }}" alt="{{ item.industry_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+
+            {% endif %}
+
+            <span> {% inline_text field="industry_text" value="{{ item.industry_text }}" %}</span>
+          </div> 
+          {% endfor %}
+
+        </div>
+      </div>
+      <div class="col-12 col-md-6 p3-image_sec">
+        <div class="daw_image">
+          {% if module.p3_text_image_img.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_text_image_img.width }}" height="{{ module.p3_text_image_img.height }}"' %}
+          {% if module.p3_text_image_img.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ module.p3_text_image_img.width }}" height="{{ module.p3_text_image_img.height }}" style="width:100%; height: auto;"' %}
+          {% elif module.p3_text_image_img.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ module.p3_text_image_img.max_width }}" height="{{ module.p3_text_image_img.max_height }}" style="width:100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = module.p3_text_image_img.loading != 'disabled' ? 'loading="{{ module.p3_text_image_img.loading }}"' : '' %}
+          <img src="{{ module.p3_text_image_img.src }}" alt="{{ module.p3_text_image_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+        </div>
+        <div class="daw_video">
+          {% if module.videoplayer_field.player_id %}
+          {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+          {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+          {% video_player "embed_player"
+    player_id={{ module.videoplayer_field.player_id }}
+    type={{ module.videoplayer_field.player_type || 'scriptV4' }}
+    full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+    conversion_asset={{ module.videoplayer_field.conversion_asset|tojson|safe }}
+    autoplay={{ module.videoplayer_field.autoplay }}
+    hidden_controls={{ module.videoplayer_field.hide_controls }}
+    loop={{ module.videoplayer_field.loop_video }}
+    muted={{ module.videoplayer_field.mute_by_default }}
+  %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-text-image {
+    background-color: rgba({{ module.style.p3_text_image_bg.color|convert_rgb }}, {{ module.style.p3_text_image_bg.opacity * 0.01 }});
+    {{ module.style.p3_text_image_spacing_desktop.css }}  
+  }
+
+  .p3-text-image_title {
+    color: {{ module.style.p3_text_image_title_color.color }};
+  }
+
+  .p3-text-image_supertitle {
+    color: {{ module.style.p3_text_image_supertitle_color.color }};
+  }
+  .p3-text_link{
+    color:{{ module.style.button_link_color.color }}
+
+  }
+  .p3-text_link svg{
+    color:{{ module.style.button_link_color.color }}
+  }
+  .p3-text-image_desc{
+    color:{{ module.style.content_description.color }}
+
+  }
+  @media (max-width: 991px) {
+    .p3-text-image {
+      {{ module.style.p3_text_image_spacing_tablet.css }}
+    }
+  }
+
+  @media (max-width: 575px) {
+    .p3-text-image {
+      {{ module.style.p3_text_image_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

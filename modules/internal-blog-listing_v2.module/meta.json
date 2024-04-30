@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "content_types" : [ "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 160261004121,
+  "label" : "internal-blog-listing_v2",
+  "is_available_for_new_content" : true
+}

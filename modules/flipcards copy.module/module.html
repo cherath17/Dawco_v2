@@ -1,0 +1,89 @@
+{% require_css %}
+<style>
+  .{{ name }}.p3_flip_cards__section {
+    {{ module.style.desktop_spacing.spacing.css }};
+    background-color: rgba( {{ module.style.background_color.color.color|convert_rgb }}, {{ module.style.background_color.color.opacity * 0.01 }} );
+  }
+
+  @media only screen and (max-width: 767px) {
+    .{{ name }}.p3_flip_cards__section {
+      {{ module.style.mobile_spacing.spacing.css }};
+    }
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    .{{ name }}.p3_flip_cards__section {
+      {{ module.style.tab_spacing.spacing.css }};
+    }
+  }
+</style>
+{% end_require_css %}
+
+<div class="{{ name }} p3_flip_cards__section" {% if module.want_to_add_an_anchor_id %} id="{{ module.anchor_id }}" {% endif %}>
+  <div class="container">
+    <div class="p3_flip_cards__title">
+      <h3>{{ module.heading }}</h3>
+    </div>
+    <div class="p3_flip_cards__content">
+      {% for item in module.flip_card.cards %}
+      <div class="p3_flip_cards__details">
+        {% if item.front_card.button.button_link.url.href %}
+        {% set href = item.front_card.button.button_link.url.href %}
+        {% if item.front_card.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}"
+           {% if item.front_card.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if item.front_card.button.button_link.rel %}rel="{{ item.front_card.button.button_link.rel }}"{% endif %}
+           >
+          {% endif %}
+          <div class="p3_flip_cards__detailed">
+            <div class="p3_flip_cards__description">
+              <div class="p3_flip_cards__front">
+                <div class="p3_flip_cards__image">
+                  {% if item.front_card.select_an_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.width }}" height="{{ item.front_card.select_an_image.height }}"' %}
+                  {% if item.front_card.select_an_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.width }}" height="{{ item.front_card.select_an_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.front_card.select_an_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.front_card.select_an_image.max_width }}" height="{{ item.front_card.select_an_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.front_card.select_an_image.loading != 'disabled' ? 'loading="{{ item.front_card.select_an_image.loading }}"' : '' %}
+                  <img src="{{ item.front_card.select_an_image.src }}" alt="{{ item.front_card.select_an_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                <div class="p3_flip_cards__text">
+                  {{ item.front_card.description }}
+                  <div class="p3_flip_cards__btn_link">
+                    {{ item.front_card.button.button_text }}
+                  </div>        
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="flip-card-back-image">
+                  {% if item.back_card.select_an_image.src %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}"' %}
+                  {% if item.back_card.select_an_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.width }}" height="{{ item.back_card.select_an_image.height }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item.back_card.select_an_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.back_card.select_an_image.max_width }}" height="{{ item.back_card.select_an_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item.back_card.select_an_image.loading != 'disabled' ? 'loading="{{ item.back_card.select_an_image.loading }}"' : '' %}
+                  <img src="{{ item.back_card.select_an_image.src }}" alt="{{ item.back_card.select_an_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>
+                {{ item.back_card.description }}
+                <div class="white_bg">
+                  {{ item.back_card.white_background_text }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% if item.front_card.button.button_link.url.href %}
+        </a>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,187 @@
+[ {
+  "id" : "3e40e484-7296-ef13-eedb-f37fb08c16fe",
+  "name" : "texte_he",
+  "display_width" : null,
+  "label" : "Texte-he",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Découvrez en plus sur Dawco"
+}, {
+  "id" : "10f9f762-e963-01bb-6d32-84e80d51a671",
+  "name" : "groupe_de_champs_content",
+  "display_width" : null,
+  "label" : "Groupe de champs-content",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "836582c3-4324-df76-470d-3a9c8624b0b3",
+    "name" : "image_selct",
+    "display_width" : null,
+    "label" : "Image-selct",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/quality_sec2.svg",
+      "alt" : "quality_sec2",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 447,
+      "max_width" : 532,
+      "max_height" : 447
+    }
+  }, {
+    "id" : "acbf2e88-2ffe-ff54-077f-473d8ed5738e",
+    "name" : "texte_enrichi_desc",
+    "display_width" : null,
+    "label" : "Texte enrichi-desc",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3 style=\"font-size: 32px;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Nacelles</span></span></h3>\n<p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">The customer is very important, the customer will be followed by the customer.</span></span></p>"
+  }, {
+    "id" : "1b4ddf0c-3fc5-670b-3944-0ed4b6058a4e",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "883e47fb-e9f4-079e-4139-8ce2dcb07e53",
+      "name" : "lien_btn",
+      "display_width" : null,
+      "label" : "Lien-btn",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "a821ff98-22ad-51d7-61fb-90f3f540393b",
+      "name" : "textebtn",
+      "display_width" : null,
+      "label" : "Textebtn",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Découvrir"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "lien_btn" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "textebtn" : "Découvrir"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_selct" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/quality_sec2.svg",
+      "alt" : "quality_sec2",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 447,
+      "max_width" : 532,
+      "max_height" : 447
+    },
+    "texte_enrichi_desc" : "<h3 style=\"font-size: 32px;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Nacelles</span></span></h3>\n<p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">The customer is very important, the customer will be followed by the customer.</span></span></p>",
+    "button" : {
+      "lien_btn" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "textebtn" : "Découvrir"
+    }
+  }, {
+    "image_selct" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/quality_sec2.svg",
+      "alt" : "quality_sec2",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 447,
+      "max_width" : 532,
+      "max_height" : 447
+    },
+    "texte_enrichi_desc" : "<h3 style=\"font-size: 32px;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Nacelles</span></span></h3>\n<p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">The customer is very important, the customer will be followed by the customer.</span></span></p>",
+    "button" : {
+      "lien_btn" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "textebtn" : "Découvrir"
+    }
+  }, {
+    "image_selct" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/quality_sec2.svg",
+      "alt" : "quality_sec2",
+      "loading" : "lazy",
+      "width" : 532,
+      "height" : 447,
+      "max_width" : 532,
+      "max_height" : 447
+    },
+    "texte_enrichi_desc" : "<h3 style=\"font-size: 32px;\"><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">Nacelles</span></span></h3>\n<p><span style=\"vertical-align: inherit;\"><span style=\"vertical-align: inherit;\">The customer is very important, the customer will be followed by the customer.</span></span></p>",
+    "button" : {
+      "lien_btn" : {
+        "url" : {
+          "content_id" : null,
+          "href" : "",
+          "type" : "EXTERNAL"
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      },
+      "textebtn" : "Découvrir"
+    }
+  } ]
+} ]

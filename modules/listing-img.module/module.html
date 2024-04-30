@@ -1,0 +1,477 @@
+{% require_js %}
+<script>
+  //current position
+  var pos = 0;
+  //number of slides
+  var totalSlides = $('#slider-wrap ul li').length;
+  //get the slide width
+  var sliderWidth = $('#slider-wrap').width();
+
+  $(document).ready(function(){
+    /*****************
+	 BUILD THE SLIDER
+	*****************/
+    //set width to be 'x' times the number of slides
+    $('#slider-wrap ul#slider').width(sliderWidth*totalSlides);
+
+    //next slide 	
+    $('#next').click(function(){
+      slideRight();
+    });
+
+    //previous slide
+    $('#previous').click(function(){
+      slideLeft();
+    });
+
+    /*************************
+	 //*> OPTIONAL SETTINGS
+	************************/
+    //automatic slider
+    var autoSlider = setInterval(slideRight, 3000);
+
+    //for each slide 
+    $.each($('#slider-wrap ul li'), function() { 
+      //set its color
+      var c = $(this).attr("data-color");
+      $(this).css("background",c);
+
+      //create a pagination
+      var li = document.createElement('li');
+      $('#pagination-wrap ul').append(li);	   
+    });
+    //counter
+    countSlides();
+    //pagination
+    pagination();
+
+    //hide/show controls/btns when hover
+    //pause automatic slide when hover
+    $('#slider-wrap').hover(
+      function(){ $(this).addClass('active'); clearInterval(autoSlider); }, 
+      function(){ $(this).removeClass('active'); autoSlider = setInterval(slideRight, 3000); }
+    );
+  });//DOCUMENT READY
+
+  /***********
+ SLIDE LEFT
+************/
+  function slideLeft(){
+    pos--;
+    if(pos==-1){ pos = totalSlides-1; }
+    $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 	
+    //*> optional
+    countSlides();
+    pagination();
+  }
+  /************
+ SLIDE RIGHT
+*************/
+  function slideRight(){
+    pos++;
+    if(pos==totalSlides){ pos = 0; }
+    $('#slider-wrap ul#slider').css('left', -(sliderWidth*pos)); 
+
+    //*> optional 
+    countSlides();
+    pagination();
+  }
+  /************************
+ //*> OPTIONAL SETTINGS
+************************/
+  function countSlides(){
+    $('#counter').html(pos+1 + ' / ' + totalSlides);
+  }
+  function pagination(){
+    $('#pagination-wrap ul li').removeClass('active');
+    $('#pagination-wrap ul li:eq('+pos+')').addClass('active');
+  }
+
+  //  Slider2...
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    console.log(n);
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+
+</script>
+{% end_require_js %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<div class="container">
+  <div class="cam-ine">
+    <div class="cam-tsf">
+      <span>{{ module.texte_hr }}</span>
+      <h2>
+        {{ module.texte_hi }}
+      </h2>
+      <p>
+        {{ module.texte_enrichi_pa }}
+      </p>
+      <div>
+        {% cta guid="{{ module.cta_hom }}" %}
+      </div>
+      <ul  class="listing_detail">
+        {% for item in module.groupe_de_champs_tik %}
+        <li class="useflex">
+          {% if item.image_tik.src %}
+          {% set sizeAttrs = 'width="{{ item.image_tik.width }}" height="{{ item.image_tik.height }}"' %}
+          {% if item.image_tik.size_type == 'auto' %}
+          {% set sizeAttrs = 'width="{{ item.image_tik.width }}" height="{{ item.image_tik.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif item.image_tik.size_type == 'auto_custom_max' %}
+          {% set sizeAttrs = 'width="{{ item.image_tik.max_width }}" height="{{ item.image_tik.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+          {% set loadingAttr = item.image_tik.loading != 'disabled' ? 'loading="{{ item.image_tik.loading }}"' : '' %}
+          <img src="{{ item.image_tik.src }}" alt="{{ item.image_tik.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <div class="text_content">
+            <h3>
+              {{ item.texte_ex }}
+            </h3>
+          </div> 
+          {% endfor %}
+        </li>
+      </ul>
+    </div>
+    <div id="wrapper">
+      <div id="slider-wrap">
+        <ul id="slider">
+          {% for item in module.image_ri %}
+          <li>
+            {% if item.src %}
+            {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}"' %}
+            {% if item.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ item.max_width|escape_attr }}" height="{{ item.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading|escape_attr }}"' : '' %}
+            <img src="{{ item.src|escape_url }}" alt="{{ item.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        <!--controls-->
+        <div class="btns" id="next">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.658545 5.65855H8.01449L4.80079 8.87224C4.54396 9.12908 4.54396 9.55054 4.80079 9.80738C5.05762 10.0642 5.47251 10.0642 5.72934 9.80738L10.0691 5.46757C10.326 5.21073 10.326 4.79585 10.0691 4.53902L5.73592 0.192624C5.47909 -0.0642081 5.06421 -0.0642081 4.80738 0.192624C4.55054 0.449457 4.55054 0.86434 4.80738 1.12117L8.01449 4.34146H0.658545C0.296345 4.34146 0 4.6378 0 5C0 5.3622 0.296345 5.65855 0.658545 5.65855Z" fill="#4D463F"/>
+          </svg>
+        </div>
+        <div class="btns" id="previous">
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.60317 5.65855H2.24723L5.46093 8.87224C5.71776 9.12908 5.71776 9.55054 5.46093 9.80738C5.2041 10.0642 4.78921 10.0642 4.53238 9.80738L0.192572 5.46757C-0.0642614 5.21073 -0.0642614 4.79585 0.192572 4.53902L4.5258 0.192624C4.78263 -0.0642081 5.19751 -0.0642081 5.45434 0.192624C5.71118 0.449457 5.71118 0.86434 5.45434 1.12117L2.24723 4.34146H9.60317C9.96537 4.34146 10.2617 4.6378 10.2617 5C10.2617 5.3622 9.96537 5.65855 9.60317 5.65855Z" fill="#4D463F"/>
+          </svg>
+        </div>
+        <div id="counter"></div>
+        <div id="pagination-wrap">
+          <ul>
+          </ul>
+        </div>
+        <!--controls-->  
+      </div>
+    </div>
+    <div class="slideshow_container">
+      {% for item in module.image_ri %}
+      <div class="mySlides fade">
+        {% if item.src %}
+        {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}"' %}
+        {% if item.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.width|escape_attr }}" height="{{ item.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.max_width|escape_attr }}" height="{{ item.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading|escape_attr }}"' : '' %}
+        <img src="{{ item.src|escape_url }}" alt="{{ item.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <!--       <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a> -->
+      <div class="next_btn" id="next" onclick="plusSlides(-1)">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.658545 5.65855H8.01449L4.80079 8.87224C4.54396 9.12908 4.54396 9.55054 4.80079 9.80738C5.05762 10.0642 5.47251 10.0642 5.72934 9.80738L10.0691 5.46757C10.326 5.21073 10.326 4.79585 10.0691 4.53902L5.73592 0.192624C5.47909 -0.0642081 5.06421 -0.0642081 4.80738 0.192624C4.55054 0.449457 4.55054 0.86434 4.80738 1.12117L8.01449 4.34146H0.658545C0.296345 4.34146 0 4.6378 0 5C0 5.3622 0.296345 5.65855 0.658545 5.65855Z" fill="#4D463F"/>
+        </svg>
+      </div>
+      <div class="prev_btn" id="previous" onclick="plusSlides(1)">
+        <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9.60317 5.65855H2.24723L5.46093 8.87224C5.71776 9.12908 5.71776 9.55054 5.46093 9.80738C5.2041 10.0642 4.78921 10.0642 4.53238 9.80738L0.192572 5.46757C-0.0642614 5.21073 -0.0642614 4.79585 0.192572 4.53902L4.5258 0.192624C4.78263 -0.0642081 5.19751 -0.0642081 5.45434 0.192624C5.71118 0.449457 5.71118 0.86434 5.45434 1.12117L2.24723 4.34146H9.60317C9.96537 4.34146 10.2617 4.6378 10.2617 5C10.2617 5.3622 9.96537 5.65855 9.60317 5.65855Z" fill="#4D463F"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+{% require_css %}
+<style>
+  {% scope_css %}
+  .cam-aff {
+    max-width: 1084px;
+    margin: auto;
+  }
+  .cam-ine {
+    display: flex;
+    gap: 110px 
+  }
+  .cam-tsf span {
+    font-size: 18px;
+    color: #4d463f;
+  }
+  .cam-tsf h2 {
+    color: #4d463f;
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 40px;
+    padding-top: 10px;
+  }
+  .cam-tsf p {
+    color: #4d463f;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .dec-btn {
+    border-radius: 4px;
+    box-shadow: 0 5px 15px 0 rgba(37, 44, 97, 0.15), 0 2px 4px 0 rgba(136, 144, 194, 0.2);
+  }
+  .cam-tsf{
+    padding-top:60px;
+  }
+  .listing_detail {
+    /*     max-width: calc(100% - 352px); */
+    margin: auto;
+  }
+  .listing_detail .useflex {
+    display: flex;
+    align-items: center;
+    gap: 27.4px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+  }
+  .listing_detail .useflex svg{
+    min-width: 12.52px;
+  }
+  .listing_detail ul li {
+    list-style-type: none;
+  }
+  .listing_detail .useflex .text_content h3{
+    font-size: 16px;
+    color: #4D463F;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 0;
+    padding: 15px 0 18px 0;
+  }
+  .slideshow_container {
+    display: none;
+  }
+  @media (min-width:768px) and (max-width: 1024px) {
+    .cam-ine {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      padding:14px;
+    }
+    .cam-ine .cam_img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  /*  image slides  */
+  #wrapper{
+    position:relative;
+    width:600px;
+    margin:0px auto;
+    height:400px;
+    color:#fff;
+    text-shadow:rgba(0,0,0,0.1) 2px 2px 0px;	
+    padding-top:60px;
+  }
+  #slider-wrap{
+    width:600px;
+    height:400px;
+    position:relative;
+    overflow:hidden;
+  }
+  #slider-wrap ul#slider{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;		
+  }
+  #slider-wrap ul#slider li{
+    float:left;
+    position:relative;
+    width:600px;
+    height:400px;	
+  }
+  #slider-wrap ul#slider li img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover;
+  }
+  /*btns*/
+  .btns{
+    position:absolute;
+    width:30px;
+    height:30px;
+    top:50%;
+    margin-top:-25px;
+    text-align:center;
+    cursor:pointer;	
+    z-index:100;
+    background-color:#FDB700;
+    -webkit-user-select: none;  
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -ms-user-select: none;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    -ms-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+  }
+  #next{right:10px;}
+  #previous{left:10px}
+  #counter{
+    display: none;
+    top: 30px; 
+    right:35px; 
+    width:auto;
+    position:absolute;
+    color:#FDB700;
+  }
+  /* #slider-wrap.active #next{right:0px;}
+  #slider-wrap.active #previous{left:0px;} */
+
+  /*bar*/
+  #pagination-wrap{
+    display: none;
+    min-width:20px;
+    margin-top:350px;
+    margin-left: auto; 
+    margin-right: auto;
+    height:15px;
+    position:relative;
+    text-align:center;
+  }
+  #pagination-wrap ul {
+    width:100%;
+  }
+  #pagination-wrap ul li{
+    margin: 0 4px;
+    display: inline-block;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:#fff;
+    opacity:0.5;
+    position:relative;
+    top:0;
+    background-color:#FDB700;
+  }
+  #pagination-wrap ul li.active{
+    width:12px;
+    height:12px;
+    top:3px;
+    opacity:1;
+    box-shadow:rgba(0,0,0,0.1) 1px 1px 0px;	
+  }
+
+  /*ANIMATION*/
+  #slider-wrap ul, #pagination-wrap ul li{
+    -webkit-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -moz-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -o-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    -ms-transition: all 0.3s cubic-bezier(1,.01,.32,1);
+    transition: all 0.3s cubic-bezier(1,.01,.32,1);	
+  }
+
+  @media only screen and (max-width: 480px) {
+    #wrapper {
+      display: none;
+    }
+    .cam-tsf  {
+      padding-top: 40px;
+    }
+    .cam-ine {
+      display: grid;
+      gap: 40px;
+    }
+    .slideshow_container {
+      display: block;
+    }
+    .mySlides {
+      display: none
+    }
+    .mySlides {
+      height: 320px;
+    }
+    .mySlides img{
+      width: 100%;
+      height: 100% !important;
+      object-fit: cover;
+    }
+    .slideshow_container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .prev_btn, .next_btn {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: 30px;
+      height: 30px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #FDB700;
+    }
+    .prev_btn {
+      left: 10px !important;
+    }
+    .next_btn {
+      right: 10px !important;
+    }
+    /*     .prev_btn:hover, .next_btn:hover {
+    background-color: rgba(0,0,0,0.8);
+  } */
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+  }
+  {% end_scope_css %}
+
+</style>
+{% end_require_css %}

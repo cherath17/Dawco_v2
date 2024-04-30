@@ -1,0 +1,103 @@
+<!--
+   templateType: section
+  label: two-column-section
+  isAvailableForNewContent: true
+  description: "two column text"
+  screenshotPath: ../images/section-previews/two-column-text.png  
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  background_color="rgba(13, 57, 59, 1)",
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  },
+  full_width=true
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/Two-column-text",
+        offset=0,
+        width=12,
+        style={
+          "background_color" : {
+            "color" : "#0d393b",
+            "opacity" : 100
+          },
+          "left_section" : {
+            "mobile_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            }
+          },
+          "right_section" : {
+            "mobile_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "tablet_spacing" : {
+              "margin" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 40
+                },
+                "top" : { }
+              }
+            }
+          }
+        }
+      %}
+        {% module_attribute "left_side_text" %}
+          <p style="line-height: 2; font-size: 18px;"><span style="color: #ffffff;">ÉNONCÉ DE POSITIONNEMENT</span></p>
+          <p style="line-height: 1.5; font-size: 24px;"><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</span></p>
+        {% end_module_attribute %}
+        {% module_attribute "right_side_text" %}
+          <p style="font-size: 24px; line-height: 1.5;">&nbsp;</p>
+          <p style="font-size: 24px; line-height: 1.5;"><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</span></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}

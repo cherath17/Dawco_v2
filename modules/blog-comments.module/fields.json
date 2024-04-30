@@ -1,0 +1,14 @@
+[ {
+  "id" : "6158bfd2-a04c-0d81-b10e-1bcb230f7ce4",
+  "name" : "p3_blog_comments_title",
+  "display_width" : null,
+  "label" : "Titre",
+  "help_text" : "Titre au-dessus des commentaires et du formulaire",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Commentaires"
+} ]

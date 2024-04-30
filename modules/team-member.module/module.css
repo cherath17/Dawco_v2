@@ -1,0 +1,148 @@
+.p3_team__section .p3_team__content .p3_team__details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__cards {
+  width: 25%;
+  padding: 0px 10px;
+  margin-bottom: 0px;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description {
+  position:relative;
+  box-shadow: 0 4px 14px 0 rgba(0,0,0,.2);
+  height: 100%;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__image {
+  line-height: 0;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__image img {
+  width: 100%;
+  max-height: 303px;
+  min-height: 303px;
+  height: 100% !important;
+  object-fit: cover;
+  border-bottom: 4px solid #63da7b;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text {
+ padding: 12px 10px 42px;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text h4 {
+  line-height: 23px;
+  margin-bottom: 10px;
+  font-size:20px;
+  color:#114245;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text span {
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #505050;
+  display: inline-block;
+}
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text p {
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #0B66A3;
+  margin: 13px 0;
+}
+
+.p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__text .p3_team__btn_link a {
+  display: inline-block;
+
+}
+.p3_team__section .p3_team__cta.ctay {
+  margin-top: 20px;
+  text-align: center;
+}
+.p3_team__section .p3_team__cta.ctan {
+  display: none;
+}
+.p3_team__section .p3_team__content .p3_team__details.center {
+  justify-content: center;
+}
+.p3_team__section .p3_team__content .p3_team__details.left {
+  justify-content: left;
+}
+.p3_team__section .p3_team__content .p3_team__details.right {
+  justify-content: right;
+}
+.p3-member__bio{
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px;
+}
+.p3_team__btn_link{
+  display: flex;
+  gap: 5px;
+}
+.p3-member__bio a{
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #63da7b;
+  text-decoration:underline;
+}
+@media only screen and (max-width: 640px) {
+  .p3_team__section .p3_team__content .p3_team__details .p3_team__cards{
+    padding-bottom:20px !important;
+  }
+  .p3-member__bio {
+    align-items: center;
+    display: flex;
+    gap: 10px !important;
+    justify-content: space-between;
+}
+  .p3_team__section .p3_team__content .p3_team__details .p3_team__description .p3_team__image img {
+    border-bottom: 4px solid #63da7b;
+    height: 100%!important;
+    max-height: 303px;
+    min-height: 303px;
+    object-fit: fill;
+    width: 100%;
+}
+}
+@media only screen and (max-width: 768px) {
+  .p3_team__section .p3_team__content .p3_team__details {
+    margin: 0;
+    display: block;
+  }
+  .p3_team__section .p3_team__content .p3_team__details .p3_team__cards {
+    width: 100%;
+    padding: 10px;
+  }
+  .p3_team__section .p3_team__content .p3_team__details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    row-gap: 20px;
+
+  }
+  .p3-member__bio {
+    align-items: center;
+    display: flex;
+    gap: 0px;
+    justify-content: space-between;
+  }
+  .p3-member__bio a {
+    color: #63da7b;
+    font-size: 12px;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1;
+    /* text-align: left; */
+  }
+}
+@media (min-width:768px) and (max-width: 1024px) {
+  .p3_team__section .p3_team__content .p3_team__details .p3_team__cards {
+    width: 33.33%;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "global" : false,
+  "content_types" : [ "BLOG_POST" ],
+  "master_language" : "fr",
+  "icon" : "fontawesome-5.14.0:comments:SOLID",
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 156628527187,
+  "label" : "Blog Comments",
+  "is_available_for_new_content" : true
+}

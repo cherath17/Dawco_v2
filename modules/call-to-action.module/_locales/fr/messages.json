@@ -1,0 +1,392 @@
+{
+  "btn.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.name" : {
+    "message" : "call-to-action",
+    "description" : "",
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.help_text" : {
+    "message" : "Texte à l'intérieur du bouton",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_label.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.help_text" : {
+    "message" : "Apparence du bouton",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "call_cta.default" : {
+    "message" : "4eb8cde4-6559-42db-85a5-8e1ee4cb52ee",
+    "description" : null,
+    "placeholders" : null
+  },
+  "call_cta.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "call_cta.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "call_cta.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "call_cta.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "call-to-action",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.choices.flex-column" : {
+    "message" : "Vertical",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.choices.flex-row" : {
+    "message" : "Horizontal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.default" : {
+    "message" : "img",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.default" : {
+    "message" : "col",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.choices.flex-column" : {
+    "message" : "Vertical",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.choices.flex-row" : {
+    "message" : "Horizontal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.default" : {
+    "message" : "full-width",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "call-to-action",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_color.default.color" : {
+    "message" : "#63DA7B",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.background_position" : {
+    "message" : "MIDDLE_CENTER",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.background_size" : {
+    "message" : "cover",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/cta-banner-placeholder.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.default.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.help_text" : {
+    "message" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.help_text" : {
+    "message" : "Espacement pour les tablettes Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.default.text_align" : {
+    "message" : "LEFT",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.text_alignment.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

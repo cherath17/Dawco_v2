@@ -1,0 +1,62 @@
+{
+  "name" : {
+    "message" : "search_results_copy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.label" : {
+    "message" : "Text",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "read_more_text.validation_regex" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.default.alt" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.label" : {
+    "message" : "Image",
+    "description" : null,
+    "placeholders" : null
+  },
+  "search_default_image.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

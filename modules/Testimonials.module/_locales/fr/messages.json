@@ -1,0 +1,512 @@
+{
+  "name" : {
+    "message" : "Testimonials",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.help_text" : {
+    "message" : "Afficher les flèches de navigation du carrousel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.label" : {
+    "message" : "Flèches de navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_arrows.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.help_text" : {
+    "message" : "Afficher les points de navigation du carrousel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.label" : {
+    "message" : "Points de navigation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_dots.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.default" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_testimonials_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_company" : {
+    "message" : "Titre de la personne, compagnie",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_image.alt" : {
+    "message" : "avatar",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_image.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_image.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_image.src" : {
+    "message" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_name" : {
+    "message" : "Nom de la personne",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.default.p3_testimonials_quote" : {
+    "message" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.default" : {
+    "message" : "Titre de la personne, compagnie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.help_text" : {
+    "message" : "Texte sous le nom de la personne source",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.label" : {
+    "message" : "Compagnie",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_company.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.default.alt" : {
+    "message" : "avatar",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.help_text" : {
+    "message" : "Image de la personne qui témoigne ou logo de compagnie: 75px x 75px",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_image.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.default" : {
+    "message" : "Nom de la personne",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.help_text" : {
+    "message" : "Nom de la personne sous la citation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.label" : {
+    "message" : "Nom de la source",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_name.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.default" : {
+    "message" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.help_text" : {
+    "message" : "Citation se trouvant dans le carrousel",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.label" : {
+    "message" : "Citation",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.p3_testimonials_quote.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "slides.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.address_content_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.label" : {
+    "message" : "Color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.address_content_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.label" : {
+    "message" : "Arrow color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.arrow_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "Testimonials",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_color.default.color" : {
+    "message" : "#00B0F0",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.default.color" : {
+    "message" : "#0B66A3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.label" : {
+    "message" : "Arrow background color",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_arrows_hover.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_bg.default.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_bg.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_bg.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_color.default.color" : {
+    "message" : "#0B66A3",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop.help_text" : {
+    "message" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.help_text" : {
+    "message" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.label" : {
+    "message" : "Espacement grand écran copy",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_desktop_copy.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_mobile.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_mobile.help_text" : {
+    "message" : "Espacement pour les téléphones cellulaire Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_mobile.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_tablet.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_tablet.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_tablet.label" : {
+    "message" : "Espacement tablette",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_testimonials_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "vector_hidden.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

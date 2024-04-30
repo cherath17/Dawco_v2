@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"> 
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+
+<div class="whole_cards">
+  <div class="swiper-control">
+    <button type="button" class="btn btn-default btn-sm prev-slide">
+      <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.74369 15L8.15729 13.3937L3.85727 8.61624L24 8.61624L24 6.38376L3.85727 6.38376L8.15629 1.60515L6.7437 2.57944e-07L-1.30765e-06 7.5L6.74369 15Z" fill="black"/>
+      </svg>
+    </button>
+    <button type="button" class="btn btn-default btn-sm next-slide">
+      <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.2563 3.29881e-06L15.8427 1.60627L20.1427 6.38376L-1.02088e-06 6.38376L-1.3779e-06 8.61623L20.1427 8.61624L15.8437 13.3948L17.2563 15L24 7.5L17.2563 3.29881e-06Z" fill="black"/>
+      </svg>
+    </button>
+  </div>
+  <div id="app" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="swiper-container">
+
+          <div class="swiper-wrapper timeline">
+            {% for item in module.cards_group %}
+            <div class="swiper-slide">
+              <div class="status">
+                <div class="cards_all">
+                  <div class="card_img">
+                    {% if item.card_image.src %}
+                    {% set sizeAttrs = 'width="{{ item.card_image.width }}" height="{{ item.card_image.height }}"' %}
+                    {% if item.card_image.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.card_image.width }}" height="{{ item.card_image.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.card_image.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.card_image.max_width }}" height="{{ item.card_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.card_image.loading != 'disabled' ? 'loading="{{ item.card_image.loading }}"' : '' %}
+                    <img src="{{ item.card_image.src }}" alt="{{ item.card_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </div>
+
+                  <div class="card_title">
+                    <h2> {% inline_text field="card_title" value="{{ item.card_title }}" %}</h2>
+                  </div>
+                  <div class="card_list">
+                    <ul>
+                      {% for item2 in item.card_lists %}
+                      <li> {% inline_text field="card_lists" value="{{ item2 }}" %} </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+            {% endfor %}
+
+          </div>
+          <!-- Add Pagination -->
+          <!--           <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  let slides_per_view = 4;
+
+  new Vue({
+    el: "#app",
+    mounted() {
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: slides_per_view,
+        paginationClickable: true,
+        grabCursor: true,
+        paginationClickable: true,
+        nextButton: ".next-slide",
+        prevButton: ".prev-slide",
+        loop: true,
+        breakpoints: {
+          480: {
+            slidesPerView: 1,
+            loop: true
+          },
+          992: {
+            slidesPerView: 3,
+          },
+        },
+      });
+      // Add an event listener to update the background color on slide change
+      swiper.on("slideChange", function () {
+        // Reset background colors to white
+        document.querySelectorAll('.status .cards_all:before').forEach(function (element) {
+          element.style.backgroundColor = 'white';
+        });
+        // Set red background color for the first slide
+        document.querySelector('.swiper-slide-active .status .cards_all:before').style.backgroundColor = '#FD560A';
+      });
+    }
+  });
+</script>

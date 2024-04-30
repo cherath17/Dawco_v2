@@ -1,0 +1,299 @@
+[ {
+  "id" : "55570251-4e65-ecb4-598f-07336c88c571",
+  "name" : "p3_text_image_img",
+  "display_width" : null,
+  "label" : "Image",
+  "inline_help_text" : "Image qui accompagne le texte 532 x 394",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/theme-p3/text-image-placeholder.png",
+    "alt" : "text-image-placeholder",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 394,
+    "max_width" : 532,
+    "max_height" : 394
+  }
+}, {
+  "id" : "44d698ca-4ec9-4b32-006b-979f7edd50a9",
+  "name" : "p3_text_image_subtitle",
+  "display_width" : null,
+  "label" : "Surtitre",
+  "inline_help_text" : "Surtitre qui ce retrouve en haut du titre principale",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "ecd9bca1-1356-0193-4e87-116368e3c5a7",
+  "name" : "p3_text_image_title",
+  "display_width" : null,
+  "label" : "Titre",
+  "inline_help_text" : "Titre principal",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Disposition personnalisable"
+}, {
+  "id" : "c0d8a544-7e94-50d6-db77-e9f1f652b44e",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6e00d42a-0591-ff77-9798-dd69ac9e7982",
+    "name" : "p3_text_image_bg",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "inline_help_text" : "Couleur d’arrière-plan. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    }
+  }, {
+    "id" : "ed258695-5a60-1f6d-df34-4a1bfa856d20",
+    "name" : "p3_text_image_title_color",
+    "display_width" : null,
+    "label" : "Couleur du titre",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "562e2486-a515-5342-ce24-4b0b6793c2a8",
+    "name" : "p3_text_image_supertitle_color",
+    "display_width" : null,
+    "label" : "Couleur du surtitre",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d7c7ac46-3eb9-bf2e-0ff5-90df73155829",
+    "name" : "p3_text_image_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "7abfe99c-7cba-3f41-6bb4-748f644a4a02",
+    "name" : "p3_text_image_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les tablettes. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "3492824a-a55c-5cab-4908-804e885826be",
+    "name" : "p3_text_image_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "2c028bee-2cb1-13dd-8de6-8bea29af55aa",
+    "name" : "button_link_color",
+    "display_width" : null,
+    "label" : "button link color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "86912444-8569-c03b-ea1f-8214c7d21e15",
+    "name" : "content_description",
+    "display_width" : null,
+    "label" : "content description",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_text_image_bg" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    },
+    "p3_text_image_title_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "p3_text_image_supertitle_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "p3_text_image_spacing_desktop" : { },
+    "p3_text_image_spacing_tablet" : { },
+    "p3_text_image_spacing_mobile" : { },
+    "button_link_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "content_description" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+}, {
+  "id" : "441ef6b0-bf28-d02a-403a-731a05c84d4f",
+  "name" : "link_hide_and_show",
+  "display_width" : null,
+  "label" : "Link Hide And Show?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "68b6233e-9bc7-f96c-f490-ab3c680bd209",
+  "name" : "icon_group",
+  "display_width" : null,
+  "label" : "Icon group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "a9b86acc-e007-4b03-949e-1ba1f5cf89fb",
+    "name" : "industry_icon",
+    "display_width" : null,
+    "label" : "industry icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "10fe416a-6c86-4683-f257-a33e764672d9",
+    "name" : "industry_text",
+    "display_width" : null,
+    "label" : "industry text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "industry_icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "industry_icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "industry_icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+}, {
+  "id" : "6c45afb5-39b7-1e56-36cb-2ff83057d574",
+  "name" : "video_images",
+  "display_width" : null,
+  "label" : "video-images",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image_enable", "image" ], [ "video_enbale", "video" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+}, {
+  "id" : "da8482f7-33d4-5be5-f906-7382620e32d1",
+  "name" : "videoplayer_field",
+  "display_width" : null,
+  "label" : "Vidéo",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : false,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 148632916867,
+    "height" : 2160,
+    "width" : 3840,
+    "player_type" : "hsvideo2"
+  }
+}, {
+  "id" : "3abe32f5-e387-b68b-dd74-4d9d2fb59c74",
+  "name" : "image_video",
+  "display_width" : null,
+  "label" : "image video",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "image_enable", "image_enable" ], [ "video_enbale", "video_enbale" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "image_enable"
+} ]

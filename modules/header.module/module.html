@@ -1,0 +1,271 @@
+{% set lateralDisplay = module.extras.p3_header_desktop_burger ? "active" : "inactive" %}
+
+<header class="header d-flex flex-column">
+  {# TOPBAR #}
+  {% if module.p3_header_topbar %}
+  <div class="p3-header__topbar justify-content-end align-items-center px-4">
+    <a href="#main-content" class="header__skip">
+      {% if content.language == 'fr' or content.language == 'fr-ca' %}Passez au contenu{% else %}Skip to content{% endif %}
+    </a>
+
+    {% if module.topbar.p3_header_topbar_menu %}
+    <div class="me-md-5">{% menu id="{{ module.topbar.p3_header_topbar_menu }}" %}</div>
+    {% endif %}
+
+    {% if module.extras.p3_header_search %}
+    <div class="p3-header__icon-search me-md-3"></div>
+    {% endif %}
+
+    {% if module.extras.p3_header_login %}
+    <div class="p3-header__menu-section-2">
+      <div class="p3-header__icon-login"></div>
+    </div>
+    {% endif%}
+
+    {% if content.translated_content.values()|selectattr('published')|length || is_listing_view && group.translations %}
+    <div class="p3-header__lang">
+      {% language_switcher "language_switcher" overrideable=false, display_mode='localized', label='Language Switcher' %}
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {# MAIN #}
+  <div class="p3-header__section">
+    <div class="p3-header__main px-3 px-md-4">
+      <img class="p3-header__logo" src="{{ module.main.p3_header_logo.src }}" alt="{{ module.main.p3_header_logo.alt }}">
+      <img class="p3-header__logo" src="{{ module.main.p3_header_scroll_logo.src }}" alt="{{ module.main.p3_header_scroll_logo.alt }}">
+
+      <nav class="p3-header__menu">
+        {% menu id="{{ module.main.p3_header_menu }}" %}
+
+        {% if module.p3_header_topbar == false %}
+        {% if module.extras.p3_header_search %}
+        <div class="p3-header__icon-search me-md-3"></div>
+        {% endif %}
+
+        {% if module.extras.p3_header_login %}
+        <div class="p3-header__menu-section-2">
+          <div class="p3-header__icon-login"></div>
+        </div>
+        {% endif%}
+
+        {% if content.translated_content.values()|selectattr('published')|length || is_listing_view && group.translations %}
+        <div class="p3-header__lang">
+          {% language_switcher "language_switcher" overrideable=false, display_mode='localized', label='Language Switcher' %}
+        </div>
+        {% endif %}
+        {% endif %}
+
+        {% if module.extras.p3_header_cta %}
+        {% set href = module.extras.p3_header_cta_link.url.href %}
+        {% if module.extras.p3_header_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <div class="p3-header__cta">
+          <a href="{{ href }}" {% if module.extras.p3_header_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if module.extras.p3_header_cta_link.rel %}rel="{{ module.extras.p3_header_cta_link.rel }}"{% endif %} >
+            {{ module.extras.p3_header_cta_label }}
+          </a>
+        </div>
+        {% endif %}
+
+        <div class="p3-header__burger_toggle">
+          <button id="p3-header__burger_burger_icon" class="js_toggle_main_nav" aria-label="{% if content.language == 'fr' %}Basculer le menu mobile{% else %}Toggle Side Menu{% endif %}">    
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+          </button>
+        </div>
+
+        {% if module.extras.p3_header_desktop_burger %}
+        <div class="p3-header__icon-burger"></div>
+        {% endif %}
+      </nav>
+    </div>
+  </div>
+
+  {# MOBILE #}
+  <nav class="p3-header__mobile_menu">
+<!--     {% menu id="{{ module.main.p3_header_menu }}" %} -->
+{% menu id="{{ module.mobile_menu }}" %}
+    {% if module.extras.p3_header_cta %}
+    {% set href = module.extras.p3_header_cta_link.url.href %}
+    {% if module.extras.p3_header_cta_link.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    <div class="p3-header__cta">
+      <a href="{{ href }}" {% if module.extras.p3_header_cta_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.extras.p3_header_cta_link.rel %}rel="{{ module.extras.p3_header_cta_link.rel }}"{% endif %} >
+        {{ module.extras.p3_header_cta_label }}
+      </a>
+    </div>
+    {% endif %}
+
+    {% if module.topbar.p3_header_topbar_menu %}
+    <div class="">{% menu id="{{ module.topbar.p3_header_topbar_menu }}" %}</div>
+    {% endif %}
+
+    {% if module.extras.p3_header_search %}
+    <div class="p3-header__icon-search me-md-3"></div>
+    {% endif %}
+
+    {% if module.extras.p3_header_login %}
+    <div class="p3-header__menu-section-2">
+      <div class="p3-header__icon-login"></div>
+    </div>
+    {% endif%}
+  </nav>
+
+  {#<div class="p3-header__menu-lateral {{ lateralDisplay }}">
+    <div class="close-menu">X</div>
+    {% menu id="{{ module.extras.p3_header_desktop_burger_menu }}" %}
+  </div>#}
+</header>
+
+{% if module.p3_header_mega %}
+{% if module.mega.p3_header_mega_sidebar %}
+{% else %}
+{% for menus in module.mega.menu %}
+<div id="p3-header_mega_{{ loop.index }}" class="p3-header_mega">
+  <div class="p3-header_mega_top">
+    <div class="{{ module.mega.p3_header_mega_width }}">
+      <div class="row">
+
+        {% for submenus in menus.submenu %}
+        <div class="col-4 mb-4 pb-2 d-flex flex-column">
+          {% if submenus.p3_header_mega_link %}
+          {% set href = submenus.p3_header_mega_link.url.href %}
+          {% if submenus.p3_header_mega_link.url.type is equalto "EMAIL_ADDRESS" %}
+          {% set href = "mailto:" + href %}
+          {% endif %}
+          <a href="{{ href }}" class="d-flex flex-column" 
+             {% if submenus.p3_header_mega_link.open_in_new_tab %}target="_blank"{% endif %}
+             {% if submenus.p3_header_mega_link.rel %}rel="{{ submenus.p3_header_mega_link.rel }}"{% endif %} >
+            {% endif %}
+
+            <div class="p3-header_mega_title">{{ submenus.p3_header_mega_title }}</div>
+            <div class="p3-header_mega_text">{{ submenus.p3_header_mega_text }}</div>
+
+            {% if submenus.p3_header_mega_link %}
+
+          </a>
+          {% endif %}
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+  </div>
+
+  {% if module.mega.p3_header_mega_banner %}
+  <div class="p3-header_mega_btm_banner">
+    <div class="{{ module.mega.p3_header_mega_width }} d-flex justify-content-between align-items-center">
+      {% if module.mega.banner.p3_header_mega_banner_text %}
+      <div class="p3-header_mega_btm_str">{{ module.mega.banner.p3_header_mega_banner_text }}</div>
+      {% endif %}
+
+      {% if module.mega.banner.p3_header_mega_banner_link %}
+      {% set bannerHref = module.mega.banner.p3_header_mega_banner_link.url.href %}
+      {% if module.mega.banner.p3_header_mega_banner_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set bannerHref = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ bannerHref }}" class="p3-header_mega_btm_btn" 
+         {% if module.mega.banner.p3_header_mega_banner_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if module.mega.banner.p3_header_mega_banner_link.rel %}rel="{{ module.mega.banner.p3_header_mega_banner_link.rel }}"{% endif %} >
+
+        {{ module.mega.banner.p3_header_mega_banner_label }}
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endif %}
+</div>
+{% endfor %}
+{% endif %}
+{% endif %}
+
+
+{% require_css %}
+<style>
+  .header .lang_list_class li {
+    background: rgba({{ theme.header.background.color.color|convert_rgb }}, {{ theme.header.background.color.opacity * 0.01 }} );
+  }
+
+  .p3-header__lang .globe_class:before {
+    content: "{{ content.language.languageTag|upper }}" !important;
+      {{ theme.header.menu.text.font.style }};
+    padding-right: 5px;
+  }
+
+  .p3-header__topbar .hs-menu-children-wrapper,
+  .header .lang_list_class li {
+    background: {{ theme.header.background.color.color }};
+  }
+
+  .p3-header__mobile_menu a {
+    color: {{ theme.global_colors.primary.color }} !important;
+  }
+
+  {% scope_css %}
+  {% if module.p3_header_mega %}
+  @media (min-width: 768px) {
+    .p3-header__main .hs-menu-children-wrapper {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    {% for menu in module.mega.menu %}
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):hover #p3-header_mega_{{ loop.index }}, 
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):active #p3-header_mega_{{ loop.index }},
+    .p3-header__main li.hs-menu-depth-1:nth-child({{ loop.index }}):focus-within #p3-header_mega_{{ loop.index }} {
+      display: block;
+      max-height: 5000px;
+    }
+    {% endfor %}
+  }
+
+  .p3-header_mega a {
+    color: {{ theme.text.body_font.font.color }};
+  }
+  {% endif %}
+
+  .p3-header_mega_btm_banner {
+    background: rgba( {{ module.styles.p3_header_mega_banner_bg.color|convert_rgb }}, {{ module.styles.p3_header_mega_banner_bg.opacity*0.01 }} );
+    color: {{ module.styles.p3_header_mega_banner_text.color }};
+  }
+
+  a.p3-header_mega_btm_btn {
+    background: rgba( {{ module.styles.p3_header_mega_banner_link_color.color|convert_rgb }}, {{ module.styles.p3_header_mega_banner_link_color.opacity*0.01 }} );
+    color: {{ module.styles.p3_header_mega_banner_label_color.color }} !important;
+  }
+
+  #p3-header__burger_burger_icon .stroke {
+    background: {{ module.styles.p3_header_burger.color }};
+  }
+
+  #p3-header__burger_burger_icon.active .stroke {
+    background: {{ module.styles.p3_header_burger_open.color }};
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+
+{% if module.p3_header_mega %}
+{% require_js %}
+<script src="jquery-3.6.4.min.js"></script>
+<script>
+  //       var allMegaMenus = document.querySelectorAll('.p3-header_mega');
+
+  //       allMegaMenus.forEach(function (toggle) {
+  //         toggle.classList.toggle('hide');
+  //       });
+
+  {% for menu in module.mega.menu %}
+  $('#p3-header_mega_'+{{ loop.index }}).appendTo('.p3-header__menu li.hs-menu-depth-1:nth-child('+{{ loop.index }}+')');
+  {% endfor %}
+</script>
+{% end_require_js %}
+{% endif %}
+

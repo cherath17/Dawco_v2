@@ -1,0 +1,299 @@
+[ {
+  "id" : "75ca9db9-da5c-18b6-7a58-91ba82839e4b",
+  "name" : "p3_hero_supertitle",
+  "display_width" : null,
+  "label" : "Surtitre",
+  "help_text" : "Surtitre au-dessus du titre de page",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "a6856419-b436-df79-4e0a-dc3a4e208576",
+  "name" : "p3_hero_title",
+  "display_width" : null,
+  "label" : "Titre",
+  "help_text" : "Titre de page (H1)",
+  "inline_help_text" : "Titre de page (H1)",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "ad4eb352-db86-208d-e3d7-38c30bd7d430",
+  "name" : "p3_hero_subtitle",
+  "display_width" : null,
+  "label" : "Sous-titre",
+  "help_text" : "Sous-titre en-dessous du titre de page",
+  "inline_help_text" : "",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "59af8da8-3d25-3cfc-19db-4c8d549b363a",
+  "name" : "p3_hero_btn",
+  "display_width" : null,
+  "label" : "Bouton",
+  "help_text" : "Bouton ce trouvant sous la description",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "880f8080-e434-4362-b13c-ef850a7da0c3",
+  "name" : "p3_hero_btn_label",
+  "display_width" : null,
+  "label" : "Libellé de bouton",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Par ici"
+}, {
+  "id" : "11ba87bc-5cfc-742e-9f21-2cd56f164674",
+  "name" : "p3_hero_btn_style",
+  "display_width" : null,
+  "label" : "Style de bouton",
+  "help_text" : "Style visuel du bouton",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "btn_primary", "Primaire" ], [ "btn_secondary", "Secondaire" ], [ "btn_tertiary", "Tertiaire" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "btn_secondary"
+}, {
+  "id" : "b3640d78-303c-f124-9426-7dc72dfa9d9d",
+  "name" : "p3_hero_bg",
+  "display_width" : null,
+  "label" : "Type d’arrière-plan",
+  "help_text" : "Choisir entre une image ou une vidéo",
+  "inline_help_text" : "Choisir entre une image ou une vidéo",
+  "required" : true,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "image", "Image" ], [ "video", "Vidéo" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "image"
+}, {
+  "id" : "e24f3525-4b81-aa06-a7c7-68de4882f68f",
+  "name" : "p3_hero_bg_image",
+  "display_width" : null,
+  "label" : "Image d’arrière plan",
+  "help_text" : "Image de bannière 1920 x 587",
+  "inline_help_text" : "Image de bannière 1920 x 587",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_hero_bg",
+    "controlling_value_regex" : "image",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/page-hero-banner-image.webp",
+    "alt" : "Image de bannière de la page",
+    "loading" : "lazy",
+    "width" : 1920,
+    "height" : 587,
+    "max_width" : 1920,
+    "max_height" : 587
+  }
+}, {
+  "id" : "702f0e43-9773-7ba9-5d68-ba33f9284e10",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2327a62b-63c3-3de2-ef1d-7a17365d03a9",
+    "name" : "p3_hero_text_color",
+    "display_width" : null,
+    "label" : "Couleur des textes",
+    "help_text" : "Couleur des titres et textes",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_hero_text_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "c6813dd6-093c-cd60-d3b1-a4595a25c9ad",
+  "name" : "p3_hero_bg_video",
+  "display_width" : null,
+  "label" : "Vidéo d’arrière plan",
+  "help_text" : "Courte vidéo mis en arrière-plan",
+  "inline_help_text" : "Courte vidéo mis en arrière-plan",
+  "required" : true,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "p3_hero_bg",
+    "controlling_value_regex" : "video",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : true,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 125623229313,
+    "height" : 0,
+    "width" : 0,
+    "player_type" : "hsvideo2",
+    "size_type" : "auto_custom_max",
+    "max_width" : 1920,
+    "max_height" : 587
+  }
+}, {
+  "id" : "452ffe65-c320-b6df-9b9e-a3910d218580",
+  "name" : "want_video_popup",
+  "display_width" : null,
+  "label" : "Want video popup",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "popup_videoy", "Yes" ], [ "popup_videon", "No" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "popup_videon"
+}, {
+  "id" : "e1017abe-643a-27be-e77b-afbb86f1e53e",
+  "name" : "video_popup_button_style",
+  "display_width" : null,
+  "label" : "Video popup button style",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "btn_primary", "Primary" ], [ "btn_secondary", "Secondary" ], [ "btn_tertiary", "Tertiary" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "btn_secondary"
+}, {
+  "id" : "2a17cdb4-cb19-7952-7450-135a7a318720",
+  "name" : "video_button",
+  "display_width" : null,
+  "label" : "Video button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0acd7503-fb1c-ca6b-821b-f7807f70eca7",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Watch video"
+  }, {
+    "id" : "cc4c2b3a-3e85-c5fa-cdf9-72fc11557092",
+    "name" : "select_an_icon",
+    "display_width" : null,
+    "label" : "Select an icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "Play Circle",
+      "unicode" : "f144",
+      "type" : "REGULAR"
+    }
+  }, {
+    "id" : "fce9d4bb-b324-a069-e344-b51e40b55f8c",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.youtube.com/watch?v=Q68HTocAUbk",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Watch video",
+    "select_an_icon" : {
+      "name" : "Play Circle",
+      "unicode" : "f144",
+      "type" : "REGULAR"
+    },
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "href" : "https://www.youtube.com/watch?v=Q68HTocAUbk",
+        "type" : "EXTERNAL"
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

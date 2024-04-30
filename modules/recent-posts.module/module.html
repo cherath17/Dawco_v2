@@ -1,0 +1,105 @@
+{% set blogPosts = blog_recent_posts(module.p3_recent_posts_blog, 4) %}
+
+<div class="p3_recent_posts">
+  {% if module.p3_recent_posts_supertitle %}
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p class="p3_title_text__supertitle">{{ module.p3_recent_posts_supertitle }}</p>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+    
+  {% if module.p3_recent_posts_title %}
+    <div class="p3_bannered_titles secondary mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h2 p3_bannered_title">{{ module.p3_recent_posts_title }}</div>
+          </div>
+        </div>
+          
+        {% if module.button.button_text %}
+          <div class="p3_tabs_btn">
+            {% set href = module.button.button_link.url.href %}
+            {% if module.button.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a class="{{ module.button.button_style }}" href="{{ href }}"
+               {% if module.button.button_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if module.button.button_link.rel %}rel="{{ module.button.button_link.rel }}"{% endif %}
+               >
+              {{ module.button.button_text }}
+            </a>
+          </div>
+        {% endif %}
+        
+      </div>
+    </div>
+  {% endif %}
+    
+  <div class="container">
+    <div class="row">
+      <div class="p3__projectcard_content">
+        <div class="p3_tabs_prowrapper">
+          <div class="p3_tabs_colrow">
+
+            {% for item in blogPosts %}
+              <div class="p3_tabs_project_col">
+                <div class="p3_tabs_project_sp">
+                  <a href="{{ item.absolute_url }}" >
+                    <img src="{{ item.featured_image }}" alt="{{ item.featured_image_alt_text }}" loading="lazy">
+                    <div class="p3_tab_content">
+                      <h4>{{ item.title }}</h4>
+                      {% if module.show_summary %}<p>{{ item.meta_description|truncatehtml(420, '..' , false) }}</p>{% endif %}
+
+                      {% if module.p3_recent_posts_label %}
+                        <span class="btn_tertiary">
+                          {{ module.p3_recent_posts_label }}
+  <!--                         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 11 11" fill="none">
+                            <path d="M1.27964 6.15855H8.63558L5.42188 9.37224C5.16505 9.62908 5.16505 10.0505 5.42188 10.3074C5.67872 10.5642 6.0936 10.5642 6.35043 10.3074L10.6902 5.96757C10.9471 5.71073 10.9471 5.29585 10.6902 5.03902L6.35702 0.692624C6.10018 0.435792 5.6853 0.435792 5.42847 0.692624C5.17164 0.949457 5.17164 1.36434 5.42847 1.62117L8.63558 4.84146H1.27964C0.917439 4.84146 0.621094 5.1378 0.621094 5.5C0.621094 5.8622 0.917439 6.15855 1.27964 6.15855Z" fill="#00B0F0"/>
+                          </svg> -->
+                        </span>
+                      {% endif %}
+                    </div>
+                  </a>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+  <style>
+    .p3_recent_posts {
+      background-color: rgba({{ module.style.background_color.color.color|convert_rgb }}, {{ module.style.background_color.color.opacity * 0.01 }});
+      {{ module.style.desktop_spacing.spacing.css }};
+    }
+    
+    .p3_tabs_project_sp a:hover .btn_tertiary {
+      color: {{ theme.global_colors.primary.color }};
+    }
+    
+    .p3_recent_posts .p3_title_text__supertitle {
+      color: {{ theme.global_colors.secondary.color }};
+    }
+
+    @media screen and (max-width: 767px) {
+      .p3_recent_posts {
+        {{ module.style.mobile_spacing.spacing.css }};
+      }
+    }
+
+    @media (min-width:768px) and (max-width:1024px) {
+      .p3_recent_posts {
+        {{ module.style.tab_spacing.spacing.css }};
+      }
+    }
+  </style>
+{% end_require_css %}

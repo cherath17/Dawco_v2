@@ -1,0 +1,95 @@
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-left__news{
+    background-color:{{ module.style.background_color.left_background_color.color }};
+    {{ module.style.background_color.left_background_color.opacity }}
+  }
+  .p3-right__news{
+    background-color:{{ module.style.background_color.right_background_color.color }};
+    {{ module.style.background_color.right_background_color.opacity }}
+  }
+  .p3-left__title{
+    font-size:{{ module.style.font.left_title.size }}{{module.style.font.left_title.size_unit }};
+    color:{{ module.style.font.left_title.color }};
+    font-family: {{ module.style.font.left_title.font }}; {{ module.style.font.left_title.style }};
+    {{ module.style.spacing.left_title.css }}
+  }
+  .p3-right__title{
+    font-size:{{ module.style.font.right_title.size }}{{module.style.font.right_title.size_unit }};
+    color:{{ module.style.font.right_title.color }};
+    font-family: {{ module.style.font.right_title.font }}; {{ module.style.font.right_title.style }};
+    {{ module.style.spacing.right_title.css }}
+  }
+  .p3-right__subtitle{
+    font-size:{{ module.style.font.right_sub_title.size }}{{module.style.font.right_sub_title.size_unit }};
+    color:{{ module.style.font.right_sub_title.color }};
+    font-family: {{ module.style.font.right_sub_title.font }}; {{ module.style.font.right_sub_title.style }};
+    {{ module.style.spacing.right_subtitle.css }}
+  }
+  .p3-right__content{
+    font-size:{{ module.style.font.right_content.size }}{{module.style.font.right_content.size_unit }};
+    color:{{ module.style.font.right_content.color }};
+    font-family: {{ module.style.font.right_content.font }}; {{ module.style.font.right_content.style }};
+    {{ module.style.spacing.right_content.css }}
+  }
+
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+<div class="p3-news__layout">
+
+  <div class="p3-left__news">
+    <p class="p3-left__title">
+      {{ module.social_title }}
+    </p>
+    <div class="p3-social__icon">
+
+      {% for item in module.social_group %}
+      {% set href = item.social_link.url.href %}
+      {% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      <a href="{{ href }}"
+         {% if item.social_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if item.social_link.rel %}rel="{{ item.social_link.rel }}"{% endif %}
+         >
+        {% if item.social_icon.src %}
+        {% set sizeAttrs = 'width="{{ item.social_icon.width }}" height="{{ item.social_icon.height }}"' %}
+        {% if item.social_icon.size_type == 'auto' %}
+        {% set sizeAttrs = 'width="{{ item.social_icon.width }}" height="{{ item.social_icon.height }}" style="max-width: 100%; height: auto;"' %}
+        {% elif item.social_icon.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.social_icon.max_width }}" height="{{ item.social_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.social_icon.loading != 'disabled' ? 'loading="{{ item.social_icon.loading }}"' : '' %}
+        <img src="{{ item.social_icon.src }}" alt="{{ item.social_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+
+      </a>
+      {% endfor %}     
+    </div>
+
+  </div>
+
+  <div class="p3-right__news">
+    <p class="p3-right__title">
+      {{ module.right_title }}
+    </p>
+    <p class="p3-right__subtitle">
+      {{ module.right_subtitle }}
+    </p>
+    <p class="p3-right__content">
+      {{ module.right_content }}
+    </p>
+    <div class="p3-news__form">
+      {% form
+	form_to_use="{{ module.news_form.form_id }}"
+	response_response_type="{{ module.news_form.response_type }}"
+	response_message="{{ module.news_form.message }}"
+	response_redirect_id="{{ module.news_form.redirect_id }}"
+	response_redirect_url="{{module.news_form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.news_form.gotowebinar_webinar_key }}"
+%}
+    </div>  
+  </div>
+</div>

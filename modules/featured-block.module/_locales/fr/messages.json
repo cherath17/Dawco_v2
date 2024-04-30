@@ -1,0 +1,517 @@
+{
+  "btn.name" : {
+    "message" : "call-to-action",
+    "description" : "",
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "btn.p3_cta_banner_btn_style.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "name" : {
+    "message" : "featured-block",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.choices.flex-column" : {
+    "message" : "Vertical",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_bg.choices.flex-row" : {
+    "message" : "Horizontal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_layout.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.choices.flex-column" : {
+    "message" : "Vertical",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_cta_banner_width.choices.flex-row" : {
+    "message" : "Horizontal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default.alt" : {
+    "message" : "Robotiq advanced robotic solution",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default.loading" : {
+    "message" : "lazy",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default.size_type" : {
+    "message" : "auto",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.default.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/featured-robotiq-intersect.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.help_text" : {
+    "message" : "Image placée dans le coin supérieur droit",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_img.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.help_text" : {
+    "message" : "Texte principal",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_featured_text.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.label" : {
+    "message" : "Field group",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.help_text" : {
+    "message" : "Couleur d'arrière-plan du bloc vedette",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.label" : {
+    "message" : "Couleur de fond",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_block_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.help_text" : {
+    "message" : "Coins arrondis au bloc vedette",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.p3_featured_radius.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.block.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.name" : {
+    "message" : "featured-block",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.default.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.bottom.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.default.padding.top.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.bottom.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.bottom.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.left.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.left.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.right.units" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.right.value" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.default.padding.top.units" : {
+    "message" : "px",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.module.p3_featured_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "featured-block",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_color.default.color" : {
+    "message" : "#00B0F0",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.background_position" : {
+    "message" : "MIDDLE_CENTER",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.background_size" : {
+    "message" : "cover",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_bg_img.default.src" : {
+    "message" : "https://blog.robotiq.com/hubfs/cta-banner-placeholder.png",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_color.default.color" : {
+    "message" : "#FFFFFF",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.help_text" : {
+    "message" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.help_text" : {
+    "message" : "Espacement pour les tablettes Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_cta_banner_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_featured_bg.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_featured_bg.help_text" : {
+    "message" : "Couleur d'arrière-plan du module",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_featured_bg.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_featured_bg.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_featured_bg.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  }
+}

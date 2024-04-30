@@ -1,0 +1,86 @@
+<div class="p3-text-image {{ module.p3_text_image_order }}">
+  <div class="container">
+    <div class="row">
+     <div class="col-12 col-md-6">
+        {% if module.p3_text_image_img.src %}
+          {% set sizeAttrs = 'width="{{ module.p3_text_image_img.width }}" height="{{ module.p3_text_image_img.height }}"' %}
+          {% if module.p3_text_image_img.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.p3_text_image_img.width }}" height="{{ module.p3_text_image_img.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.p3_text_image_img.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.p3_text_image_img.max_width }}" height="{{ module.p3_text_image_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.p3_text_image_img.loading != 'disabled' ? 'loading="{{ module.p3_text_image_img.loading }}"' : '' %}
+          <img src="{{ module.p3_text_image_img.src }}" alt="{{ module.p3_text_image_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+
+      <div class="col-12 col-md-6 p3-text-image_content d-flex flex-column justify-content-center">
+        {% if module.p3_text_image_subtitle %}
+          <div class="p3-text-image_supertitle">{{ module.p3_text_image_subtitle }}</div>
+        {% endif %}
+
+        {% if module.p3_text_image_title %}
+          <div class="p3-text-image_title">{{ module.p3_text_image_title }}</div>
+        {% endif %}
+
+        {% if module.p3_text_image_description %}
+          <div class="p3-text-image_desc">{{ module.p3_text_image_description }}</div>
+        {% endif %}
+
+        {% if module.p3_text_image_btn.url.href %}
+          <div class="p3-text-image_cta">
+            {% set href = module.p3_text_image_btn.url.href %}
+            {% if module.p3_text_image_btn.url.type is equalto "EMAIL_ADDRESS" %}
+              {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}" class="{{ module.p3_text_image_btn_style }}"
+              {% if module.p3_text_image_btn.open_in_new_tab %}target="_blank"{% endif %}
+              {% if module.p3_text_image_btn.rel %}rel="{{ module.p3_text_image_btn.rel }}"{% endif %}
+              >
+              {{ module.p3_text_image_btn_txt }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="none">
+                <path d="M.659 5.659h7.355L4.801 8.872a.664.664 0 0 0 0 .935.656.656 0 0 0 .928 0l4.34-4.34a.656.656 0 0 0 0-.928L5.736.193a.656.656 0 1 0-.929.928l3.207 3.22H.66A.66.66 0 0 0 0 5a.66.66 0 0 0 .659.659Z" fill="#63DA7B"/>
+              </svg>
+            </a>
+          </div>
+        {% endif %}
+      </div>
+     </div>
+  </div>
+</div>
+
+
+{% require_css %}
+  <style>
+    {% scope_css %}
+      .p3-text-image {
+        background-color: rgba({{ module.style.p3_text_image_bg.color|convert_rgb }}, {{ module.style.p3_text_image_bg.opacity * 0.01 }});
+        {{ module.style.p3_text_image_spacing_desktop.css }}  
+      }
+    
+      .p3-text-image_title {
+        color: {{ module.style.p3_text_image_title_color.color }};
+      }
+    
+      .p3-text-image_supertitle {
+        color: {{ module.style.p3_text_image_supertitle_color.color }};
+      }
+    .p3-text-image_desc {
+      color: {{ module.style.description_color.color }};
+    }
+    
+    
+      @media (max-width: 991px) {
+        .p3-text-image {
+          {{ module.style.p3_text_image_spacing_tablet.css }}
+        }
+      }
+    
+      @media (max-width: 575px) {
+        .p3-text-image {
+          {{ module.style.p3_text_image_spacing_mobile.css }}
+        }
+      }
+    {% end_scope_css %}
+  </style>
+{% end_require_css %}

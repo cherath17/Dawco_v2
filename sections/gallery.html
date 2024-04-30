@@ -1,0 +1,38 @@
+<!--
+  templateType: section
+  label: progress
+  isAvailableForNewContent: true
+  description: "progress data"
+  screenshotPath: ../images/section-previews/icon_section.png
+
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  background_image={
+    "background_position" : "MIDDLE_CENTER",
+    "background_size" : "cover",
+    "image_url" : "https://mktg.dawco.ca/hubfs/gallery_back.svg"
+  },
+  padding={
+    "default" : {
+      "left" : "152px",
+      "right" : "152px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="/Dawco-V2/modules/Gallery",
+        offset=0,
+        width=12
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{{ standard_footer_includes }}

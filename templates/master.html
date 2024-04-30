@@ -1,0 +1,1176 @@
+<!--
+    templateType: page
+    isAvailableForNewContent: true
+    label: Master
+    description: "master section image"
+    screenshotPath: ../images/template-previews/master-page-img.png   
+-->
+{% extends "./layouts/base-new.html" %}
+{% block body %}
+{% dnd_area "dnd_area"
+      label="Main section"
+    %}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  },
+  full_width=true
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/home-hero-new",
+        offset=0,
+        width=12,
+        Style={
+          "left_button_style" : {
+            "border" : {
+              "bottom" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 1
+                }
+              },
+              "left" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 1
+                }
+              },
+              "right" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 1
+                }
+              },
+              "top" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 1
+                }
+              }
+            },
+            "button_background_color" : {
+              "color" : "#1980eb",
+              "opacity" : 100
+            },
+            "button_color" : {
+              "color" : "#FF9902",
+              "opacity" : 100
+            },
+            "button_font" : {
+              "color" : "#FFFFFF",
+              "size" : 16,
+              "size_unit" : "px"
+            },
+            "button_spacing" : {
+              "margin" : {
+                "bottom" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 16
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 16
+                }
+              }
+            },
+            "hover_color" : {
+              "color" : "#1980eb",
+              "opacity" : 100
+            }
+          },
+          "p3_home_hero_gradients" : {
+            "colors" : [ {
+              "color" : {
+                "a" : 0,
+                "b" : 59,
+                "g" : 57,
+                "r" : 13
+              }
+            }, {
+              "color" : {
+                "a" : 1,
+                "b" : 0,
+                "g" : 0,
+                "r" : 0
+              }
+            } ],
+            "side_or_corner" : {
+              "verticalSide" : "BOTTOM"
+            }
+          },
+          "right_button_styles" : {
+            "border" : {
+              "bottom" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "left" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "right" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "top" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              }
+            },
+            "border_radius" : 4,
+            "button_background_color" : {
+              "color" : "#1980eb",
+              "opacity" : 100
+            },
+            "button_color" : {
+              "color" : "#FF0201",
+              "opacity" : 100
+            },
+            "button_font" : {
+              "color" : "#FFFFFF",
+              "font" : "helvetica",
+              "font_set" : "DEFAULT",
+              "size" : 12,
+              "size_unit" : "px"
+            },
+            "button_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 16
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 16
+                }
+              }
+            },
+            "hover_color" : {
+              "color" : "#63da7b",
+              "opacity" : 100
+            }
+          },
+          "surtitre" : {
+            "couleur_de_surtitre" : {
+              "color" : "#000000",
+              "opacity" : 100
+            }
+          }
+        },
+        bouton_1={
+          "p3_home_hero_btn_1_texte" : "Get started"
+        },
+        bouton_2={
+          "p3_home_hero_btn_2_texte" : "Get started"
+        },
+        cards=[ {
+          "p3_home_hero_cards_img" : {
+            "alt" : "Robot tool carrying a cardboard box",
+            "height" : 680,
+            "loading" : "lazy",
+            "max_height" : 680,
+            "max_width" : 1440,
+            "size_type" : "auto",
+            "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+            "width" : 1440
+          },
+          "p3_home_hero_cards_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "content_id" : 137068098427,
+              "type" : "CONTENT"
+            }
+          },
+          "p3_home_hero_cards_title" : "Électronique"
+        }, {
+          "p3_home_hero_cards_img" : {
+            "alt" : "Robot tool carrying a cardboard box",
+            "height" : 680,
+            "loading" : "lazy",
+            "max_height" : 680,
+            "max_width" : 1440,
+            "size_type" : "auto",
+            "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+            "width" : 1440
+          },
+          "p3_home_hero_cards_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "CONTENT"
+            }
+          },
+          "p3_home_hero_cards_title" : "Électronique"
+        } ],
+        degrade={
+          "p3_home_hero_gradient" : true
+        },
+        p3_home_hero_cards=false,
+        p3_home_hero_supertitle_arriere_plan={
+          "p3_home_hero_bg" : "image",
+          "p3_home_hero_bg_color" : {
+            "color" : "#63da7b",
+            "opacity" : 100
+          }
+        },
+        texte={
+          "p3_home_hero_subtitle" : "Lorem ipsum dolor sit amet in dubitus veritas consectetur adisciping elit.",
+          "p3_home_hero_supertitle" : "PARKOUR HUBSPOT THEME",
+          "p3_home_hero_title" : "<h1><span style=\"color: #ffffff;\"><strong><span style=\"font-weight: bold;\">CLEVER TITLE ABOUT THIS AWESOME CUSTOM THEME</span></strong></span></h1>"
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+{% dnd_section
+  background_color="rgba(13, 57, 59, 1)",
+  padding={
+    "default" : {
+      "bottom" : "40px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "17px"
+    }
+  },
+  full_width=true
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/Two-column-text",
+        offset=0,
+        width=12,
+        style={
+          "background_color" : {
+            "color" : "#0d393b",
+            "opacity" : 100
+          },
+          "left_section" : {
+            "mobile_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "tablet_spacing" : {
+              "margin" : {
+                "bottom" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "text_spacing" : {
+              "margin" : {
+                "bottom" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "padding" : {
+                "bottom" : { },
+                "left" : { },
+                "right" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            }
+          },
+          "right_section" : {
+            "mobile_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 0
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "tablet_spacing" : {
+              "margin" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 40
+                },
+                "top" : { }
+              }
+            },
+            "text_spacing" : {
+              "padding" : {
+                "bottom" : { },
+                "left" : { },
+                "right" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            }
+          }
+        }
+      %}
+        {% module_attribute "left_side_text" %}
+          <h6 style="line-height: 1.5; font-size: 18px;">ÉNONCÉ DE POSITIONNEMENT</h6>
+          <h6 style="line-height: 36px; font-size: 24px; margin-top: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</h6>
+        {% end_module_attribute %}
+        {% module_attribute "right_side_text" %}
+          <p style="font-size: 24px; line-height: 36px;">&nbsp;</p>
+          <h6 style="font-size: 24px; line-height: 36px; margin-top: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</h6>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(255, 255, 255, 1)",
+  padding={
+    "default" : {
+      "bottom" : "40px",
+      "top" : "110px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/One-column-text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "content" %}
+          <p style="text-align: center; font-size: 18px;">SURTITRE IPSUM</p>
+          <p style="text-align: center; font-size: 48px; line-height: 1; font-weight: 800;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp;</p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    },
+    "mobile" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/image-right-left-text",
+        offset=0,
+        width=12,
+        p3_text_image_subtitle="SURTITRE IPSUM",
+        p3_text_image_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        style={
+          "button_link_color" : {
+            "color" : "#63da7b",
+            "opacity" : 100
+          },
+          "p3_text_image_supertitle_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          },
+          "p3_text_image_title_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          }
+        }
+      %}
+        {% module_attribute "p3_text_image_description" %}
+          <p style="font-size: 18px;"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. </span></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(242, 247, 247, 1)",
+  padding={
+    "default" : {
+      "bottom" : "20px",
+      "top" : "40px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path='../modules/Two-row-image-text',
+        offset=0,
+        width=12,
+        p3_text_image_subtitle="SURTITRE IPSUM",
+        p3_text_image_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        style={
+          "button_link_color" : {
+            "color" : "#63da7b",
+            "opacity" : 100
+          },
+          "p3_text_image_supertitle_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          },
+          "p3_text_image_title_color" : {
+            "color" : "#114245",
+            "opacity" : 100
+          }
+        }
+      %}
+        {% module_attribute "p3_text_image_description" %}
+          <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "40px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_module
+    path="../modules/image-right-left-text",
+    offset=0,
+    width=12,
+    p3_text_image_subtitle="SURTITRE IPSUM",
+    p3_text_image_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    style={
+      "button_link_color" : {
+        "color" : "#63da7b",
+        "opacity" : 100
+      },
+      "p3_text_image_spacing_mobile" : {
+        "padding" : {
+          "bottom" : {
+            "units" : "px",
+            "value" : 30
+          },
+          "left" : {
+            "units" : "px",
+            "value" : 30
+          },
+          "right" : {
+            "units" : "px",
+            "value" : 30
+          },
+          "top" : {
+            "units" : "px",
+            "value" : 30
+          }
+        }
+      },
+      "p3_text_image_supertitle_color" : {
+        "color" : "#114245",
+        "opacity" : 100
+      },
+      "p3_text_image_title_color" : {
+        "color" : "#114245",
+        "opacity" : 100
+      }
+    }
+  %}
+    {% module_attribute "p3_text_image_description" %}
+      <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
+    {% end_module_attribute %}
+  {% end_dnd_module %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(17, 66, 69, 1)",
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "0px"
+    },
+    "mobile" : {
+      "bottom" : "10px",
+      "left" : "10px",
+      "right" : "10px",
+      "top" : "10px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/One-column-text",
+        offset=0,
+        width=12,
+        style={
+          "content_styles" : {
+            "text_font" : {
+              "size" : 48,
+              "size_unit" : "px"
+            }
+          }
+        }
+      %}
+        {% module_attribute "content" %}
+          <div style="text-align: center; font-size: 18px;"><span style="color: #ffffff;">SURTITRE IPSUM</span></div>
+          <p style="text-align: center; font-size: 48px; line-height: 1;"><strong><span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></strong></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(17, 66, 69, 1)",
+  padding={
+    "default" : {
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/Icon-Text-column",
+        offset=0,
+        width=12,
+        icon_one=[ {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : false,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : true,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "exact",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur "
+        }, {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : true,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : true,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur"
+        }, {
+          "p3_icon_align" : "1",
+          "p3_icon_border" : true,
+          "p3_icon_border_position" : "bottom",
+          "p3_icon_circle" : false,
+          "p3_icon_divider" : true,
+          "p3_icon_img" : {
+            "alt" : "Component 1",
+            "height" : 111,
+            "loading" : "lazy",
+            "max_height" : 111,
+            "max_width" : 111,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/Component%201.png",
+            "width" : 111
+          },
+          "p3_icon_label" : "Get started",
+          "p3_icon_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_icon_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "p3_icon_title" : "Lorem ipsum dolor sit amet consectetur"
+        } ],
+        styles={
+          "icon_content_style" : {
+            "icon_title" : {
+              "color" : "{{ primary_font }}",
+              "size_unit" : "px"
+            }
+          },
+          "icon_title_style" : {
+            "icon_title" : {
+              "color" : "{{ body_font.color }}",
+              "size_unit" : "px"
+            }
+          },
+          "p3_icon_accent_color" : {
+            "color" : "{{ anchor_font.color }}",
+            "opacity" : 100
+          },
+          "p3_icon_bg" : {
+            "color" : "#114245",
+            "opacity" : 100
+          }
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+
+
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_module
+    path="../modules/mega-slider",
+    offset=0,
+    width=12,
+    p3_slider_border=true,
+    p3_slider_navigation_type=[ "dots", "arrows" ],
+    p3_slider_title="",
+    p3_slider_width="content-wrapper",
+    slider=[ {
+      "p3_slider_img" : {
+        "alt" : "Sennheiser color logo",
+        "height" : 325,
+        "loading" : "lazy",
+        "max_height" : 325,
+        "max_width" : 900,
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+        "width" : 900
+      },
+      "p3_slider_img_link" : {
+        "no_follow" : false,
+        "open_in_new_tab" : false,
+        "url" : {
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "p3_slider_img" : {
+        "alt" : "Sennheiser color logo",
+        "height" : 325,
+        "loading" : "lazy",
+        "max_height" : 325,
+        "max_width" : 900,
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+        "width" : 900
+      },
+      "p3_slider_img_link" : {
+        "no_follow" : false,
+        "open_in_new_tab" : false,
+        "url" : {
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "p3_slider_img" : {
+        "alt" : "Sennheiser color logo",
+        "height" : 325,
+        "loading" : "lazy",
+        "max_height" : 325,
+        "max_width" : 900,
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+        "width" : 900
+      },
+      "p3_slider_img_link" : {
+        "no_follow" : false,
+        "open_in_new_tab" : false,
+        "url" : {
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "p3_slider_img" : {
+        "alt" : "Sennheiser color logo",
+        "height" : 325,
+        "loading" : "lazy",
+        "max_height" : 325,
+        "max_width" : 900,
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+        "width" : 900
+      },
+      "p3_slider_img_link" : {
+        "no_follow" : false,
+        "open_in_new_tab" : false,
+        "url" : {
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    }, {
+      "p3_slider_img" : {
+        "alt" : "Sennheiser color logo",
+        "height" : 325,
+        "loading" : "lazy",
+        "max_height" : 325,
+        "max_width" : 900,
+        "size_type" : "auto",
+        "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/client-logos/sennheiser-logo.png",
+        "width" : 900
+      },
+      "p3_slider_img_link" : {
+        "no_follow" : false,
+        "open_in_new_tab" : false,
+        "url" : {
+          "href" : "",
+          "type" : "EXTERNAL"
+        }
+      }
+    } ],
+    style={
+      "p3_slider_spacing_desktop" : {
+        "padding" : {
+          "bottom" : {
+            "units" : "px",
+            "value" : 40
+          },
+          "left" : {
+            "units" : "px",
+            "value" : 40
+          },
+          "right" : {
+            "units" : "px",
+            "value" : 40
+          },
+          "top" : {
+            "units" : "px",
+            "value" : 40
+          }
+        }
+      },
+      "p3_slider_spacing_tablet" : {
+        "padding" : {
+          "bottom" : {
+            "units" : "px",
+            "value" : 0
+          },
+          "left" : { },
+          "right" : { },
+          "top" : {
+            "units" : "px",
+            "value" : 0
+          }
+        }
+      }
+    }
+  %}
+  {% end_dnd_module %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(242, 247, 247, 1)",
+  padding={
+    "default" : {
+      "top" : "40px"
+    },
+    "mobile" : {
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/Testimonials",
+        offset=0,
+        width=12,
+        p3_testimonials_title="Testimonials",
+        slides=[ {
+          "p3_testimonials_company" : "Titre de la personne, compagnie",
+          "p3_testimonials_image" : {
+            "alt" : "avatar",
+            "height" : 72,
+            "loading" : "lazy",
+            "max_height" : 72,
+            "max_width" : 73,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+            "width" : 73
+          },
+          "p3_testimonials_name" : "Nom de la personne",
+          "p3_testimonials_quote" : "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.”"
+        }, {
+          "p3_testimonials_company" : "Titre de la personne, compagnie",
+          "p3_testimonials_image" : {
+            "alt" : "avatar",
+            "height" : 72,
+            "loading" : "lazy",
+            "max_height" : 72,
+            "max_width" : 73,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+            "width" : 73
+          },
+          "p3_testimonials_name" : "Nom de la personne",
+          "p3_testimonials_quote" : "“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.”"
+        }, {
+          "p3_testimonials_company" : "Titre de la personne, compagnie",
+          "p3_testimonials_image" : {
+            "alt" : "avatar",
+            "height" : 72,
+            "loading" : "lazy",
+            "max_height" : 72,
+            "max_width" : 73,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+            "width" : 73
+          },
+          "p3_testimonials_name" : "Nom de la personne",
+          "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »"
+        }, {
+          "p3_testimonials_company" : "Titre de la personne, compagnie",
+          "p3_testimonials_image" : {
+            "alt" : "avatar",
+            "height" : 72,
+            "loading" : "lazy",
+            "max_height" : 72,
+            "max_width" : 73,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+            "width" : 73
+          },
+          "p3_testimonials_name" : "Nom de la personne",
+          "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »"
+        }, {
+          "p3_testimonials_company" : "Titre de la personne, compagnie",
+          "p3_testimonials_image" : {
+            "alt" : "avatar",
+            "height" : 72,
+            "loading" : "lazy",
+            "max_height" : 72,
+            "max_width" : 73,
+            "size_type" : "auto",
+            "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/avatar.webp",
+            "width" : 73
+          },
+          "p3_testimonials_name" : "Nom de la personne",
+          "p3_testimonials_quote" : "« Les témoignages sont un puissant outil de marketing qui peut aider à établir la confiance avec votre public. Ils sont la preuve sociale que vos produits ou services ont fourni des résultats pour d'autres clients. En présentant des témoignages sur votre site Web, vous pouvez démontrer la valeur de votre marque, renforcer la crédibilité et finalement générer plus de conversions. »"
+        } ],
+        style={
+          "p3_testimonials_arrows_color" : {
+            "color" : "#000000",
+            "opacity" : 100
+          },
+          "p3_testimonials_arrows_hover" : {
+            "color" : "#FF0201",
+            "opacity" : 100
+          },
+          "p3_testimonials_bg" : {
+            "color" : "#f2f7f7",
+            "opacity" : 100
+          },
+          "p3_testimonials_color" : {
+            "color" : "#000000",
+            "opacity" : 100
+          },
+          "p3_testimonials_spacing_desktop" : {
+            "margin" : {
+              "bottom" : { },
+              "top" : { }
+            }
+          },
+          "p3_testimonials_spacing_mobile" : {
+            "padding" : {
+              "bottom" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "left" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "right" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "top" : {
+                "units" : "px",
+                "value" : 0
+              }
+            }
+          },
+          "p3_testimonials_spacing_tablet" : {
+            "padding" : {
+              "bottom" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "left" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "right" : {
+                "units" : "px",
+                "value" : 0
+              },
+              "top" : {
+                "units" : "px",
+                "value" : 0
+              }
+            }
+          }
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section %}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/rss_listings",
+        offset=0,
+        width=12,
+        content_group_id=7361586138,
+        include_featured_image=true,
+        number_of_items=4,
+        rss_feed_type="blog",
+        show_author=false,
+        show_date=false,
+        show_detail=true,
+        title="You’ll be interested by the following",
+        topic_id={
+          "id" : 47411556993,
+          "name" : "hubspot",
+          "slug" : "hubspot"
+        }
+      %}
+        {% module_attribute "blog_title" %}
+          <p style="font-size: 18px; text-align: center; margin-top: 80px;"><span style="color: #114245;">BLOG POST CARDS</span></p>
+          <p style="font-size: 36px; text-align: center;"><strong><span style="color: #114245;">You’ll be interested by the following</span></strong></p>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "100px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "110px"
+    },
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/contact",
+        offset=0,
+        width=12,
+        p3_contact_title="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+{% dnd_section
+  background_color="rgba(99, 218, 123, 1)",
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "top" : "40px"
+    },
+    "mobile" : {
+      "bottom" : "0px",
+      "top" : "20px"
+    }
+  }
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/One-column-text",
+        offset=0,
+        width=12
+      %}
+        {% module_attribute "content" %}
+          <div style="font-size: 18px; text-align: center;"><span style="color: #114245;">CALL TO CATION MODULE</span></div>
+          <div style="font-size: 48px; line-height: 1; text-align: center;"><span style="color: #114245;"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></span></div>
+          <div style="font-size: 48px; line-height: 1; text-align: center; margin-top: 30px;"><span style="color: #ffffff;"><strong>{{cta('4eb8cde4-6559-42db-85a5-8e1ee4cb52ee')}}</strong></span></div>
+        {% end_module_attribute %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+ {% end_dnd_area %}
+{% endblock body %}
+
+

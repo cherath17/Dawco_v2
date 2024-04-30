@@ -1,0 +1,37 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: Parkour- 404 error
+  screenshotPath: ../../images/template-previews/404.png  
+-->
+
+{% extends "../layouts/base-new.html" %}
+{# pageTitle is used on system templates for setting a value for the title tag #}
+{% set pageTitle = "Error 404 | Page not found" %}
+{% block body %}
+<section class="content-wrapper">
+  <div class="error-page" data-error="404">
+    {% module "content"
+      path="@hubspot/rich_text",
+      html="<h1>Page not found.</h1>",
+         %}
+    {% module "content"
+      path="@hubspot/rich_text",
+      html="<p>We couldn’t find the page you’re looking for.</p>",
+       %}
+    {% module "button"
+      path="../../modules/button",
+      button_text="Back to Home page"
+      link={
+        "url":
+          {
+            "type": "EXTERNAL", 
+            "href": "/"
+          },
+          "open_in_new_tab": false,
+          "no_follow": false
+      }
+    %}
+  </div>
+</section>
+{% endblock body %}

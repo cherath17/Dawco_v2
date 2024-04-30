@@ -1,0 +1,91 @@
+/*camptopn font */
+
+
+
+
+@font-face {
+    font-family: 'Campton-medium';
+    src: 
+         url({{ get_asset_url("./../fonts/Campton-MediumItalic.woff") }}) format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Campton-bold';
+    src: 
+         url({{ get_asset_url("./../fonts/Campton-Bold.woff") }}) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton-bolditalic';
+    src:
+         url({{ get_asset_url("./../fonts/Campton-BoldItalic.woff") }}) format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Campton-medium';
+    src:url({{ get_asset_url('/Dawco-V2/css/fonts/Campton-Medium.woff') }}) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton-extrabold';
+    src: url( {{ get_asset_url("./../fonts/Campton-ExtraBold.woff2") }} ) format('woff2'),
+         url({{ get_asset_url("./../fonts/Campton-ExtraBold.woff") }}) format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Campton-extrabolditalic';
+    src: url( {{ get_asset_url("./../fonts/Campton-ExtraBoldItalic.woff2") }} ) format('woff2'),
+         url({{ get_asset_url("./../fonts/Campton-ExtraBoldItalic.woff") }}) format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton-black';
+    src: url( {{ get_asset_url("./../fonts/Campton-Black.woff2") }} ) format('woff2'),
+         url({{ get_asset_url("./../fonts/Campton-Black.woff") }}) format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Campton-blackitalic';
+    src: url( {{ get_asset_url("./../fonts/Campton-BlackItalic.woff2") }} ) format('woff2'),
+         url({{ get_asset_url("./../fonts/Campton-BlackItalic.woff") }}) format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Campton-light';
+    src: url( {{ get_asset_url("./../fonts/Campton-Light.woff2") }} ) format('woff2'),
+         url({{ get_asset_url("./../fonts/Campton-Light.woff") }}) format('woff');
+    font-weight: 900;
+    font-style: 300;
+    font-display: swap;
+}
+

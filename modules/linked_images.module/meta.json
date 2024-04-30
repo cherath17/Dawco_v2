@@ -1,0 +1,19 @@
+{
+  "content_tags" : [ {
+    "name" : "NONPROFIT",
+    "source" : "MARKETPLACE"
+  }, {
+    "name" : "COMPATIBLE_ANY",
+    "source" : "MARKETPLACE"
+  } ],
+  "extra_classes" : "widget-type-linked_image",
+  "global" : false,
+  "content_types" : [ "ANY" ],
+  "master_language" : "en",
+  "categories" : [ "media" ],
+  "icon" : "../../../mV0_d-web-default-modules_hubspot/img/icon/high-insertImage.svg",
+  "host_template_types" : [ "ANY" ],
+  "module_id" : 156629031603,
+  "label" : "Image",
+  "is_available_for_new_content" : true
+}

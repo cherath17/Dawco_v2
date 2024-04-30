@@ -1,0 +1,338 @@
+[ {
+  "id" : "3a9ee1df-661e-db1f-06ac-eed72f1f5180",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "197a3dad-4e1b-0fd5-20a2-c4aa06573536",
+    "name" : "module",
+    "display_width" : null,
+    "label" : "Module",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7aa60bec-7c40-25e5-f5b2-33a0baadb677",
+      "name" : "p3_featured_bg",
+      "display_width" : null,
+      "label" : "Couleur d'arrière-plan",
+      "help_text" : "Couleur d'arrière-plan du module",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "fbc7d75f-b570-8ef4-d022-e46a44dc92bc",
+      "name" : "p3_featured_spacing_desktop",
+      "display_width" : null,
+      "label" : "Espacement grand écran",
+      "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 220,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }, {
+      "id" : "72065d73-34d6-e76f-7aa3-7fef20ac48c6",
+      "name" : "p3_featured_spacing_tablet",
+      "display_width" : null,
+      "label" : "Espacement tablette",
+      "help_text" : "Espacement pour les tablettes Privilégier le padding",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 110,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 50,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }, {
+      "id" : "202ff96f-cfe6-bd5e-d3be-b9967d2f0e47",
+      "name" : "p3_featured_spacing_mobile",
+      "display_width" : null,
+      "label" : "Espacement mobile",
+      "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "p3_featured_bg" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "p3_featured_spacing_desktop" : {
+        "padding" : {
+          "top" : {
+            "value" : 220,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      },
+      "p3_featured_spacing_tablet" : {
+        "padding" : {
+          "top" : {
+            "value" : 110,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 50,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      },
+      "p3_featured_spacing_mobile" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "c8e21f79-0059-dd88-6198-1ac223b48b99",
+    "name" : "block",
+    "display_width" : null,
+    "label" : "Bloc",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "8a1e5cd0-0ddb-6316-73a4-0c00512f8e5b",
+      "name" : "p3_featured_block_bg",
+      "display_width" : null,
+      "label" : "Couleur de fond",
+      "help_text" : "Couleur d'arrière-plan du bloc vedette",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#00B0F0",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "fc859aba-a8c8-0a4d-fcb6-ce82737bd817",
+      "name" : "p3_featured_radius",
+      "display_width" : null,
+      "label" : "Arrondi de coins",
+      "help_text" : "Coins arrondis au bloc vedette",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "max" : 100,
+      "step" : 1,
+      "suffix" : "px",
+      "type" : "number"
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "p3_featured_block_bg" : {
+        "color" : "#00B0F0",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "module" : {
+      "p3_featured_bg" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "p3_featured_spacing_desktop" : {
+        "padding" : {
+          "top" : {
+            "value" : 220,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      },
+      "p3_featured_spacing_tablet" : {
+        "padding" : {
+          "top" : {
+            "value" : 110,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 50,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      },
+      "p3_featured_spacing_mobile" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 40,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "block" : {
+      "p3_featured_block_bg" : {
+        "color" : "#00B0F0",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "0a71d176-618a-06b7-5c66-4e200d24488e",
+  "name" : "p3_featured_text",
+  "display_width" : null,
+  "label" : "Texte",
+  "help_text" : "Texte principal",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<h2 class=\"h1\"><strong>Robotiq</strong> paves the way for harmonious collaboration between man and machine, propelling your business into an automated, high-performance future.</h2>\n<p>Discover our advanced robotic solutions, from adaptive robotic grippers to force sensors and vision systems. Simplify industrial automation, optimize productivity and transform your operations with precision and flexibility. Trust our expertise, superior quality and commitment to your success.</p>"
+}, {
+  "id" : "d8853ae3-9870-d1aa-b34f-e5364b4cb3dc",
+  "name" : "p3_featured_img",
+  "display_width" : null,
+  "label" : "Image",
+  "help_text" : "Image placée dans le coin supérieur droit",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/featured-robotiq-intersect.png",
+    "alt" : "Robotiq advanced robotic solution",
+    "loading" : "lazy",
+    "width" : 337,
+    "height" : 416,
+    "max_width" : 337,
+    "max_height" : 416
+  }
+} ]

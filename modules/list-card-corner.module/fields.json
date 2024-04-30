@@ -1,0 +1,120 @@
+[ {
+  "id" : "cab349cf-7f37-db87-f1cd-697a8ee2d40f",
+  "name" : "texte_ti",
+  "display_width" : null,
+  "label" : "Texte-ti",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Nos dirigeants"
+}, {
+  "id" : "9aefd8b5-2efb-adb9-f5d3-21290ffe8d13",
+  "name" : "groupe_de_champs_test",
+  "display_width" : null,
+  "label" : "Groupe de champs-test",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "1eabcd31-beef-a959-913e-1f8c74f92d1c",
+    "name" : "image_pro",
+    "display_width" : null,
+    "label" : "Image-pro",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/memeber.png",
+      "alt" : "memeber",
+      "loading" : "lazy",
+      "width" : 487,
+      "height" : 492,
+      "max_width" : 487,
+      "max_height" : 492
+    }
+  }, {
+    "id" : "c2d925bd-e770-6792-c082-c65b06000b39",
+    "name" : "texte_enrichi_sub",
+    "display_width" : null,
+    "label" : "Texte enrichi-sub",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Président du conseil d’administration"
+  }, {
+    "id" : "e7230cef-dcb8-f07e-70d2-e1772d865776",
+    "name" : "ic_ne_soc",
+    "display_width" : null,
+    "label" : "Icône-soc",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : {
+      "name" : "LinkedIn",
+      "unicode" : "f08c",
+      "type" : "REGULAR"
+    }
+  }, {
+    "id" : "06c0c11e-5af5-3571-9eaf-96195e66f607",
+    "name" : "linkedin_link",
+    "display_width" : null,
+    "label" : "Linkedin Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "image_pro" : {
+      "size_type" : "auto",
+      "src" : "https://mktg.dawco.ca/hubfs/memeber.png",
+      "alt" : "memeber",
+      "loading" : "lazy",
+      "width" : 487,
+      "height" : 492,
+      "max_width" : 487,
+      "max_height" : 492
+    },
+    "texte_enrichi_sub" : "Président du conseil d’administration",
+    "ic_ne_soc" : {
+      "name" : "LinkedIn",
+      "unicode" : "f08c",
+      "type" : "REGULAR"
+    },
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+} ]

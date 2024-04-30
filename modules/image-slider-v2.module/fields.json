@@ -1,0 +1,28 @@
+[ {
+  "id" : "b2d81295-2c51-f693-8cfa-6d103ef18eed",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://mktg.dawco.ca/hubfs/img_banner.svg",
+    "alt" : "img_banner",
+    "loading" : "lazy",
+    "width" : 1440,
+    "height" : 604,
+    "max_width" : 1440,
+    "max_height" : 604
+  } ]
+} ]

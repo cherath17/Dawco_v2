@@ -1,0 +1,417 @@
+{
+  "name" : {
+    "message" : "image-content",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_btn.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_btn.inline_help_text" : {
+    "message" : "Bouton ce trouvant sous la description",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_btn.label" : {
+    "message" : "Bouton",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_btn.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.choices.value 1" : {
+    "message" : "Label 1",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.choices.value 2" : {
+    "message" : "Label 2",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.inline_help_text" : {
+    "message" : "Style visuel du bouton",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_style.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "p3_text_image_btn_txt.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_description.default" : {
+    "message" : "<p>Une mise en page personnalisable vous permet de créer un site Web qui reflète votre marque et votre messagerie, ce qui est crucial pour établir la crédibilité et la confiance avec votre public cible. En créant un site Web visuellement attrayant, vous pouvez attirer et retenir les visiteurs, ce qui peut entraîner une augmentation de l'engagement et des conversions.</p>",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_description.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_description.inline_help_text" : {
+    "message" : "Texte de description en dessous du titre principal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_description.label" : {
+    "message" : "Description",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_description.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_img.default.alt" : {
+    "message" : "text-image-placeholder",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_img.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_img.inline_help_text" : {
+    "message" : "Image qui accompagne le texte 532 x 394",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_img.label" : {
+    "message" : "Image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_img.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.choices.image_left" : {
+    "message" : "Gauche",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.choices.image_right" : {
+    "message" : "Droite",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.inline_help_text" : {
+    "message" : "Positionnement de l’image dans le module, le contenu textuel étant dans l’autre colonne",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.label" : {
+    "message" : "Positionnement de l’image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_order.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.default" : {
+    "message" : "Theme Parkour HubSpot",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.inline_help_text" : {
+    "message" : "Surtitre qui ce retrouve en haut du titre principale",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.label" : {
+    "message" : "Surtitre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_subtitle.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.default" : {
+    "message" : "Disposition personnalisable",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.inline_help_text" : {
+    "message" : "Titre principal",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.label" : {
+    "message" : "Titre",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "p3_text_image_title.validation_regex" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.description_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.description_color.default.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.description_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.description_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.description_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.description_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.inline_help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.label" : {
+    "message" : "Style",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.name" : {
+    "message" : "text-image",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_text_image_bg.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_bg.help_text" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_text_image_bg.inline_help_text" : {
+    "message" : "Couleur d’arrière-plan. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_text_image_bg.label" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_text_image_bg.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_desktop.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_desktop.help_text" : {
+    "message" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_desktop.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_desktop.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_desktop.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_mobile.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_mobile.help_text" : {
+    "message" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_mobile.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_mobile.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_mobile.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_tablet.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_tablet.help_text" : {
+    "message" : "Espacement pour les tablettes. Privilégier le padding",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_tablet.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_tablet.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_spacing_tablet.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.default" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.default.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_supertitle_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_title_color.default.color" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_title_color.help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_title_color.inline_help_text" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_title_color.label" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.p3_text_image_title_color.placeholder" : {
+    "message" : "",
+    "description" : null,
+    "placeholders" : null
+  },
+  "style.placeholder" : {
+    "message" : "",
+    "description" : "",
+    "placeholders" : null
+  }
+}

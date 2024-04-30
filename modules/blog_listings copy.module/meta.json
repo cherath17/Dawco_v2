@@ -1,0 +1,11 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "master_language" : "en",
+  "categories" : [ "blog" ],
+  "icon" : "../../../mV0_d-web-default-modules_hubspot/img/icon/edited-blog-1.svg",
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 156628538472,
+  "label" : "Blog Listing",
+  "is_available_for_new_content" : true
+}

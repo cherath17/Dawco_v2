@@ -1,0 +1,154 @@
+<section class="p3-hero-banner__wrapper">
+  <div class="p3-hero-banner__inner">
+    <div class="p3-hero-banner__bg">
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg == "image" %}
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.src %}
+      {% set sizeAttrs = 'width="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.width }}" height="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.height }}"' %}
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.size_type == 'auto' %}
+      {% set sizeAttrs = 'width="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.width }}" height="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.height }}" style="max-width: 100%; height: auto;"' %}
+      {% elif module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.max_width }}" height="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.loading != 'disabled' ? 'loading="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.loading }}"' : '' %}
+      <img src="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.src }}" alt="{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}
+      {% endif%}
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg == "video" %}
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.player_id %}
+      {% set max_width = module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.size_type == 'auto_custom_max' ? module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.max_width : module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.width %}
+      {% set max_height = module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.size_type == 'auto_custom_max' ? module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.max_height : module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.height %}
+      {% video_player "embed_player"
+            player_id={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.player_id }}
+            type={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.player_type || 'scriptV4' }}
+            full_width={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.size_type == 'auto_full_width' }},
+            conversion_asset={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.conversion_asset|tojson|safe }}
+            autoplay={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.autoplay }}
+            hidden_controls={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.hide_controls }}
+            loop={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.loop_video }}
+            muted={{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_video.mute_by_default }}
+          %}
+      {% endif %}
+      {% endif%}
+
+      {% if module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg == "couleur" %}
+      <div class="p3-hero-banner__bg__color" style="background-color:{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.color }}; opacity:{{ module.p3_home_hero_supertitle_arriere_plan.p3_home_hero_bg_color.opacity }};"></div>
+      {% endif%}
+
+    </div>
+    {% if module.degrade.p3_home_hero_gradient %}
+    <div class="p3-hero-banner__gradient"></div>
+    {% endif%}
+    <div class="p3-hero-banner__content">
+      {% if module.texte.p3_home_hero_supertitle %}
+      <p class="p3-hero-banner__surtitle">{{ module.texte.p3_home_hero_supertitle }}</p>
+      {% endif %}
+      {% if module.texte.p3_home_hero_title %}
+      <div class="p3-hero-banner__title mb-4">{{ module.texte.p3_home_hero_title }}</div>
+      {% endif %}
+      {% if module.texte.p3_home_hero_subtitle %}
+      <p class="p3-hero-banner__undertitle">{{ module.texte.p3_home_hero_subtitle }}</p>
+      {% endif %}
+      {% if module.button_hide_and_show_ %}
+      <div class="p3-hero-banner__buttons">
+        {% if module.bouton_1.p3_home_hero_btn_1_texte and module.bouton_1.p3_home_hero_btn_1.url.href %}
+        {% set href1 = module.bouton_1.p3_home_hero_btn_1.url.href %}
+        {% if module.bouton_1.p3_home_hero_btn_1.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href1 = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href1 }}" class="{{ module.bouton_1.p3_home_hero_btn_1_style }}"
+           {% if module.bouton_1.p3_home_hero_btn_1.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.bouton_1.p3_home_hero_btn_1.rel %}rel="{{ module.bouton_1.p3_home_hero_btn_1.rel }}"{% endif %}
+           >
+          {{ module.bouton_1.p3_home_hero_btn_1_texte }}
+        </a>
+        {% endif %}
+
+        {% if module.bouton_2.p3_home_hero_btn_2_texte and module.bouton_2.p3_home_hero_btn_2.url.href %}
+        {% set href2 = module.bouton_2.p3_home_hero_btn_2.url.href %}
+        {% if module.bouton_2.p3_home_hero_btn_2.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href2 = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href2 }}" class="{{ module.bouton_2.p3_home_hero_btn_2_style }}"
+           {% if module.bouton_2.p3_home_hero_btn_2.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.bouton_2.p3_home_hero_btn_2.rel %}rel="{{ module.bouton_2.p3_home_hero_btn_2.rel }}"{% endif %}
+           >
+          {{ module.bouton_2.p3_home_hero_btn_2_texte }}
+        </a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {# CARDS #}
+  {% if module.p3_home_hero_cards %}
+  <div class="p3-hero-banner__cards">
+    <div class="p3-hero-banner__cards_section">
+      {% for item in module.cards %}
+      {% set card_href = item.p3_home_hero_cards_link.url.href %}
+      {% if item.p3_home_hero_cards_link.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set card_href = "mailto:" + href %}
+      {% endif %}
+
+      <a href="{{ card_href }}" class="p3-hero-banner__cards_card d-flex flex-column justify-content-between align-items-start"
+         {% if item.p3_home_hero_cards_link.open_in_new_tab %}target="_blank"{% endif %}
+         {% if item.p3_home_hero_cards_link.rel %}rel="{{ item.p3_home_hero_cards_link.rel }}"{% endif %}
+         >
+
+        {% if item.p3_home_hero_cards_img.src %}
+        <img src="{{ item.p3_home_hero_cards_img.src }}" class="p3-hero-banner__cards_card_image" alt="{{ item.p3_home_hero_cards_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }} lazy>
+        {% endif %}
+        <div class="p3-hero-banner__cards_card_title">{{ item.p3_home_hero_cards_title }}</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+</section>
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-hero-banner__content {
+    max-width: {{ theme.spacing.maximum_content_width ~ 'px' }};
+  }
+
+  .p3-hero-banner__inner {
+    {% if module.p3_home_hero_cards %}
+    height: calc(100% - 256px);
+    {% else %}
+    height: 100%;
+    {% endif %}
+  }
+
+  .p3-hero-banner__cards_card_image {
+    border-bottom: 4px solid {{ theme.global_colors.secondary.color }};
+  }
+
+  .p3-hero-banner__cards_card_title {
+    color: {{ theme.global_colors.primary.color }};
+  }
+
+  .p3-hero-banner__cards_card:hover {
+    background-color: {{ theme.global_colors.secondary.color }};
+  }
+
+  @media (max-width: 1024px) {
+    .p3-hero-banner__cards_card {
+      {% if module.cards|length == 4 %}
+      flex: 1 0 25%;
+      {% elif module.cards|length == 2 %}
+      flex: 1 0 50%;
+      {% elif module.cards|length == 1 %}
+      flex: 1;
+      {% else %}
+      flex: 1 0 33%;
+      {% endif %}
+    }
+  }
+
+
+  .p3-hero-banner__gradient {
+    background: {{ module.Style.p3_home_hero_gradients.css }};
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

@@ -1,0 +1,212 @@
+<div class="daw-chi {{ module.num_bgcolor }}" id="topReached">
+  <h2>
+    {{ module.texte_h2 }}
+  </h2>
+  <div class="cont-che-{{ module.column_layout }}">
+    {% for item in module.groupe_de_champs_num %}
+    <div class="chif-da">
+      <span class="plus_text_header">
+        {{ item.plus_text_header }}
+      </span>
+      <div class="texte_num {{ item.text_direction }}">
+        <span class="plus_text" style="{{ module.style.plus_text.css }}">
+          {{ item.plus_text }}
+        </span>
+        <h3 class="value" count_num="{{ item.texte_num }}">
+        </h3>
+        <span>
+          {{ item.percentage_text }}
+        </span>
+      </div>
+      <p>
+        {{ item.texte_title }}
+      </p>
+    </div>
+    {% endfor %}
+  </div>
+  {% if module.enabel_bottom_background %}
+  <div class="gray-vec {{ module.bottom_layer }}">
+    <img src="{{ get_asset_url('/Dawco-V2/images/vec-yelo.svg') }}">
+    <img src="{{ get_asset_url('/Dawco-V2/images/vec-gray.svg') }}">
+  </div>
+  {% endif %}
+</div>
+{% require_css %}
+<style>
+  .daw-chi {
+    padding: 40px 0 0;
+  }
+  .cont-che-{
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+    padding-bottom: 60px 
+  }
+  .daw-chi h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #4d463f;
+  }
+  .cont-che-1 {
+    max-width: 1091px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+    padding-bottom: 60px;
+  }
+  .cont-che-2 {
+    max-width: 1091px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    row-gap: 40px;
+    padding-bottom: 60px;
+  }
+  .chif-da {
+    text-align: center;
+  }
+  .chif-da h3 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fd560a;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .chif-da p {
+    margin-bottom: 0;
+    color: #4d463f;
+    font-weight: 475;
+    font-size: 18px;
+  }
+  .plus_text_header {
+    font-size: 18px;
+    color: #4D463F;
+    font-weight: 400;
+  }
+  .texte_num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fd560a;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+  }
+  .text_row {
+    flex-direction: row;
+  }
+  .text_column {
+    flex-direction: column;
+  }
+  .texte_num .plus_text{
+    color: #4d463f;
+    font-weight: 475;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .gray-vec {
+    position: relative;
+  }
+  .gray-vec img {
+    width: 100%;
+    position: absolute;
+  }
+  @media only screen and (max-width: 480px) { 
+    .cont-che-{
+      flex-direction: column;
+    }
+    .cont-che-1,
+    .cont-che-2{
+      grid-template-columns: 1fr;
+      padding: 0 16px;
+    }
+    .chif-da h3 {
+      font-size: 48px;
+      padding:0;
+    }
+    .daw-chi h2 {
+      font-size: 28px;
+      padding: 0 20px;
+    }
+  }
+  @media only screen and (min-width: 480px) and (max-width: 768px){
+    .cont-che-1 {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .cont-che-2 {
+      column-gap:10px;
+    }
+  }
+  @media only screen and (max-width: 768px){
+    .chif-da h3 {
+      font-size: 50px;
+      padding-top: 0px;
+      padding-bottom: 0px 
+    }
+  }
+</style>
+{% end_require_css %}
+<script>
+  var element = document.getElementById("topReached");
+  let countIncreaseTriggered=false;
+  window.addEventListener("scroll", function () {
+    var rect = element.getBoundingClientRect();
+    if (rect.top < 400 && !countIncreaseTriggered && !window.matchMedia("(min-width: 1688px)").matches) {
+      startcount();
+      countIncreaseTriggered=true;
+    }
+  });
+
+  function containsOnlyDigits(str) {
+    return /^\d+$/.test(str);
+  }
+
+  function startcount(){
+    const counters = document.querySelectorAll('.value');
+    const duration = 3000;
+
+    counters.forEach(counter => {
+      counter.innerText = ""
+      const targetValue = counter.getAttribute('count_num').trim();
+      if(targetValue == 0) { 
+        counter.style.display = "none";
+      }
+      else if (!containsOnlyDigits(targetValue)) {
+        counter.innerText = targetValue;
+        return
+      } 
+      else {
+        const startValue = 0;
+        const startTime = performance.now();
+
+        const animate = () => {
+          const currentTime = performance.now();
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const animatedValue = Math.ceil(startValue + progress * (targetValue - startValue));
+          counter.innerText = animatedValue;
+          if (progress < 1) {
+            requestAnimationFrame(animate);
+          } else {
+            counter.innerText = targetValue;
+          }
+        };
+        animate();
+      }
+    });
+    window.removeEventListener("scroll", startcount);
+  }
+  // Call startcount() when window is loaded and screen width is 1688px
+  window.onload = function() {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+      startcount();
+    }
+  };
+</script>

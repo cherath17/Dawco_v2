@@ -1,0 +1,73 @@
+[ {
+  "id" : "410130a3-0e81-bf42-4992-d05385e9d113",
+  "name" : "icon_image",
+  "display_width" : null,
+  "label" : "icon image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/favicon-128x128.png",
+    "alt" : "favicon-128x128",
+    "loading" : "lazy",
+    "width" : 128,
+    "height" : 128,
+    "max_width" : 128,
+    "max_height" : 128
+  }
+}, {
+  "id" : "171b6059-b7b4-25be-581f-e1924f0cf577",
+  "name" : "icon_description",
+  "display_width" : null,
+  "label" : "icon description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "bc3dc11f-6c1d-a291-2c00-799bba17bbf1",
+  "name" : "icon_link",
+  "display_width" : null,
+  "label" : "icon link",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "4a7cec9b-c2cd-e0c2-6548-b8ba1a57de68",
+  "name" : "link_text",
+  "display_width" : null,
+  "label" : "link text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "67ab73b6-4123-5a23-c257-9ba98de19ae4",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "value 1", "one column" ], [ "value 2", "two column" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+} ]

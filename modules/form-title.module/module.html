@@ -1,0 +1,64 @@
+<div class="p3_form__wrapper {{ module.form_bgcolor }}">
+  <div class="container-ih p3-form_full">
+    <div class="p3-form_text">
+      <div class="col-12 {{ module.p3_form_column == 2 ? '' : '' }} p-0">
+        {% if module.p3_form_title %}
+        <h2 class="p3_form__title">{{ module.p3_form_title }}</h2>
+        {% endif %}
+        <div class="p3_form__subtitle_wrapper d-flex align-items-end">
+          {% if module.p3_form_subtitle %}
+          <h3 class="p3-form__sub">{{ module.p3_form_subtitle }}</h3>
+          {% endif %}
+          {# ROBOTIQ ONLY CONTENT #}
+          <p>{% if content.language == 'fr' %}Tous les champs sont requis.{% else %}{% endif %}</p>
+        </div>
+        {% if module.p3_form_column == 2 %}
+      </div>
+      <div class="form_layout">
+        {% endif %}
+        <div class="label_bg">      
+          {% form
+          form_to_use="{{ module.p3_form_form.form_id }}"
+          response_response_type="{{ module.p3_form_form.response_type }}"
+          response_message="{{ module.p3_form_form.message }}"
+          response_redirect_id="{{ module.p3_form_form.redirect_id }}"
+          response_redirect_url="{{module.p3_form_form.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.p3_form_form.gotowebinar_webinar_key }}"
+        %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  .p3_form__wrapper {
+    margin: 0;
+  }
+  {% scope_css %}
+  .p3_form__wrapper {
+    background-color: rgba({{ module.style.p3_form_bg.color }};{{ module.style.p3_form_bg.opacity * 0.01 }});
+    {{ module.style.p3_form_spacing_desktop.css }}  
+  }
+  .p3_form__title, .p3_form__subtitle_wrapper *, .hs-richtext * {
+    color: {{ module.style.p3_form_title_color.color }};
+  }
+  .form label span{
+    background-color:{{ module.style.label_background_color.color }};
+    {{ module.style.label_background_color.opacity }} !important;
+  }
+  @media (max-width: 991px) {
+    .p3_form__wrapper {
+      {{ module.style.p3_form_spacing_tablet.css }}
+    }
+  }
+
+  @media (max-width: 575px) {
+    .p3_form__wrapper {
+      {{ module.style.p3_form_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

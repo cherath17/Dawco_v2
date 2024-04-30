@@ -1,0 +1,18 @@
+[ {
+  "id" : "476bb20b-9a00-cf5b-2377-c88d7ad102b2",
+  "name" : "career_video",
+  "display_width" : null,
+  "label" : "career video",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "show_advanced_options" : true,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 148632916867,
+    "height" : 2160,
+    "width" : 3840,
+    "player_type" : "hsvideo2"
+  }
+} ]

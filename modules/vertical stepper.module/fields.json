@@ -1,0 +1,550 @@
+[ {
+  "id" : "b42c1a40-819a-e774-0e3e-f9c0fad10861",
+  "name" : "top_text",
+  "display_width" : null,
+  "label" : "Top Text",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7f0afd51-4443-89f5-2078-f5e8f6003cbd",
+    "name" : "main_title",
+    "display_width" : null,
+    "label" : "Main Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Do you have a timeline you want to show?"
+  }, {
+    "id" : "cb98ac17-db51-87c6-a1d4-8596cdc0d572",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>You're in luck! Use this module to show content in chronological order using a neat scrolling effect that displays your events one by one.</span>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "main_title" : "Do you have a timeline you want to show?",
+    "content" : "<span>You're in luck! Use this module to show content in chronological order using a neat scrolling effect that displays your events one by one.</span>"
+  }
+}, {
+  "id" : "09a0590f-57a8-2385-7968-f46913440989",
+  "name" : "timeline",
+  "display_width" : null,
+  "label" : "Timeline",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 0,
+    "max" : 20,
+    "sorting_label_field" : "e9757615-fbc7-2784-fb49-d37f15618cfd",
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "e9757615-fbc7-2784-fb49-d37f15618cfd",
+    "name" : "timeline_title",
+    "display_width" : null,
+    "label" : "Timeline Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Event One - 9AM EST"
+  }, {
+    "id" : "fc83a2f5-0d6b-e429-5c40-9933d9d5eece",
+    "name" : "timeline_content",
+    "display_width" : null,
+    "label" : "Timeline Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<span>Come join us for our start to the day, where we show you how you can use this timeline module in your theme.</span>"
+  }, {
+    "id" : "d1a42b5e-3f27-c86f-91cf-240e07b5890d",
+    "name" : "add_button",
+    "display_width" : null,
+    "label" : "Add Button",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "da42844e-f4ef-4505-6961-d329114d2bc4",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Let's Talk"
+  }, {
+    "id" : "4ee7baab-950c-152c-1372-a6b83f010686",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "25ff7719-10a8-3d3b-a0c8-44d17c735c9b",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "2053cfba-20d7-01b4-a509-68af29336fc8",
+    "name" : "image_alignment",
+    "display_width" : null,
+    "label" : "Image Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "1", "Left" ], [ "2", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "timeline_title" : "Event One - 9AM EST",
+    "timeline_content" : "<span>Come join us for our start to the day, where we show you how you can use this timeline module in your theme.</span>",
+    "add_button" : false,
+    "button_text" : "Let's Talk",
+    "link_field" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ]
+}, {
+  "id" : "bec6fcec-17e1-4fdc-8173-62e596d1147c",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "b0766e50-3164-6fc8-e6bf-20fdbad19588",
+    "name" : "text_style",
+    "display_width" : null,
+    "label" : "Text Style",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "38f7a6cf-3a4a-2d91-208f-dc3543d4fafc",
+      "name" : "top_title_color",
+      "display_width" : null,
+      "label" : "Top Title Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "5347f035-1100-3c1d-17fe-18cca979e896",
+      "name" : "top_content_color",
+      "display_width" : null,
+      "label" : "Top Content Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "a7ed1988-244e-021a-cbaa-bef29ce8e2e6",
+      "name" : "timeline_title_color",
+      "display_width" : null,
+      "label" : "Timeline Title Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "c3d391a4-aff8-860d-74d1-ba7d3a31e233",
+      "name" : "timeline_content_color",
+      "display_width" : null,
+      "label" : "Timeline Content Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "top_title_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "top_content_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "timeline_title_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "timeline_content_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    }
+  }, {
+    "id" : "ae353c88-5585-765f-a87e-068235fcd3ba",
+    "name" : "background",
+    "display_width" : null,
+    "label" : "Background",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b55e3aec-e6cd-78c2-a882-55f22311d10e",
+      "name" : "background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "e9b36e9b-cb0b-4879-eea8-2b79a40f66f9",
+      "name" : "top_divider",
+      "display_width" : null,
+      "label" : "Top Divider",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "flat", "Flat" ], [ "angle", "Angle" ], [ "wave", "Wave" ], [ "curve", "Curve" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "flat"
+    }, {
+      "id" : "afc62b25-c388-efa1-f893-e3ba0bf73191",
+      "name" : "top_shape_color",
+      "display_width" : null,
+      "label" : "Top Shape Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "style.background.top_divider",
+        "controlling_value_regex" : "Value",
+        "property" : null,
+        "operator" : "NOT_EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "background_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "top_divider" : "flat",
+      "top_shape_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }, {
+    "id" : "ea7d738e-27f4-8a8e-f875-7160fe464794",
+    "name" : "layout",
+    "display_width" : null,
+    "label" : "Layout",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "333de17c-4d55-ec2b-88b3-5f91bd35b468",
+      "name" : "timeline_layout",
+      "display_width" : null,
+      "label" : "Timeline Layout",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "default", "Default" ], [ "image", "Default with Image" ], [ "overload_left", "Overload left" ], [ "overload_right", "Overload Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "default"
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "timeline_layout" : "default"
+    }
+  }, {
+    "id" : "3f36bd99-c6bc-d978-a5c9-c0613cba7384",
+    "name" : "timeline",
+    "display_width" : null,
+    "label" : "Timeline",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bff2a55c-9dc4-3c59-e175-85badaf5835f",
+      "name" : "timeline_dot_color",
+      "display_width" : null,
+      "label" : "Timeline Dot Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "18741d3d-a5ab-7e22-ec92-4a7469821ae9",
+      "name" : "timeline_dot_border_color",
+      "display_width" : null,
+      "label" : "Timeline Dot Border Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#F4CCCC",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "319102c7-fd3a-69ad-581f-587d801f05a7",
+      "name" : "timeline_vertical_line_color",
+      "display_width" : null,
+      "label" : "Timeline Vertical Line Color",
+      "required" : false,
+      "locked" : false,
+      "show_opacity" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "ddf288fb-fc49-2408-d0ab-62683df8f255",
+      "name" : "add_card",
+      "display_width" : null,
+      "label" : "Add Card?",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "4a79e82b-27cf-e9ac-d346-d58433925832",
+      "name" : "card_border_radius",
+      "display_width" : null,
+      "label" : "Card Border Radius",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "style.timeline.add_card",
+        "controlling_value_regex" : "Value",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 15
+    }, {
+      "id" : "2b245189-f8b9-82d2-6499-806935c80c8b",
+      "name" : "add_content_shadow",
+      "display_width" : null,
+      "label" : "Add Content Shadow",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "bf9b0857-4d47-0d07-a582-e69ce997115f",
+      "name" : "content_shadow_color",
+      "display_width" : null,
+      "label" : "Content Shadow Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "style.timeline.add_content_shadow",
+        "controlling_value_regex" : "Value",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "timeline_dot_color" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      },
+      "timeline_dot_border_color" : {
+        "color" : "#F4CCCC",
+        "opacity" : 100
+      },
+      "timeline_vertical_line_color" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      },
+      "add_card" : false,
+      "card_border_radius" : 15,
+      "add_content_shadow" : false,
+      "content_shadow_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "text_style" : {
+      "top_title_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "top_content_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "timeline_title_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      },
+      "timeline_content_color" : {
+        "color" : "#000000",
+        "opacity" : 100
+      }
+    },
+    "background" : {
+      "background_color" : {
+        "color" : "#FFFFFF",
+        "opacity" : 100
+      },
+      "top_divider" : "flat",
+      "top_shape_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    },
+    "layout" : {
+      "timeline_layout" : "default"
+    },
+    "timeline" : {
+      "timeline_dot_color" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      },
+      "timeline_dot_border_color" : {
+        "color" : "#F4CCCC",
+        "opacity" : 100
+      },
+      "timeline_vertical_line_color" : {
+        "color" : "#FF0201",
+        "opacity" : 100
+      },
+      "add_card" : false,
+      "card_border_radius" : 15,
+      "add_content_shadow" : false,
+      "content_shadow_color" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }
+  }
+}, {
+  "id" : "282647d3-c7e5-ec17-3df5-8406be67aaa4",
+  "name" : "include_jquery",
+  "display_width" : null,
+  "label" : "Include jQuery?",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

@@ -1,0 +1,68 @@
+.p3_blog_comments {
+  padding-bottom: 140px;
+}
+
+.p3_blog_comments h2 {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.p3_blog_comments .comment.depth-0 {
+  border-top: none;
+  padding-top: 0;
+}
+
+.p3_blog_comments #comments-listing .comment:not(:first-child) {
+  padding: 20px 0;
+}
+
+.p3_blog_comments .comment-from h4, .p3_blog_comments .comment-from h4 a {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.p3_blog_comments .comment-from h4 {
+  margin-bottom: 0;
+}
+
+.p3_blog_comments .comment-from h4 a:hover {
+  text-decoration: underline;
+}
+
+.p3_blog_comments .comment-date {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.p3_blog_comments .comment-body, .p3_blog_comments .comment-body p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.p3_blog_comments .comment-body {
+  margin-top: 10px;
+}
+
+.p3_blog_comments .comment-body p {
+  margin-bottom: 10px;
+}
+
+
+/* form */
+.p3_blog_comments form .grecaptcha-badge {
+  margin: 0;
+}
+
+.p3_blog_comments form fieldset.form-columns-1 .hs-input {
+  width: 100%;
+}
+
+
+@media and (max-width: 767px) {
+  .p3_blog_comments {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,787 @@
+[ {
+  "id" : "56674258-a409-de7c-03f9-c94b4d7699ef",
+  "name" : "want_to_add_an_anchor_id",
+  "display_width" : null,
+  "label" : "Want to add an anchor id",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "970b2ac7-084d-e611-7a86-b81e838d56ba",
+  "name" : "anchor_id",
+  "display_width" : null,
+  "label" : "Anchor id",
+  "help_text" : "There should be no special characters or spaces",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "visibility" : {
+    "controlling_field" : null,
+    "controlling_field_path" : "want_to_add_an_anchor_id",
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "customid"
+}, {
+  "id" : "88c690fb-3a24-4d11-d40a-e7f9d05c5e83",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "AX Series"
+}, {
+  "id" : "bc9cbfb1-6525-a1bb-c27c-bc6fe426a4f8",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5345879f-872d-2b07-65eb-7ed173c3a444",
+    "name" : "desktop_spacing",
+    "display_width" : null,
+    "label" : "Desktop spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "aec6ed50-7010-2c8b-2374-e4d99753eb61",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "91a3526e-7592-df46-f16d-9fd22ce96c44",
+    "name" : "mobile_spacing",
+    "display_width" : null,
+    "label" : "Mobile Spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "7f555de3-cdcf-703f-0665-f7651ad1770f",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "6bb51bee-5680-0141-23ef-ef4d051495f9",
+    "name" : "tab_spacing",
+    "display_width" : null,
+    "label" : "Tab spacing",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "23753508-08cc-222d-9c7b-9d24974dde3e",
+      "name" : "spacing",
+      "display_width" : null,
+      "label" : "Spacing",
+      "required" : false,
+      "locked" : false,
+      "type" : "spacing",
+      "default" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    }
+  }, {
+    "id" : "0c78117c-f2cd-34bb-3be0-771d1f133d54",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background color",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "89faf78d-a29d-80f1-4c9e-f2a9234e9134",
+      "name" : "color",
+      "display_width" : null,
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    } ],
+    "tab" : "STYLE",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "desktop_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 90,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : 0,
+            "units" : "px"
+          },
+          "right" : {
+            "value" : 0,
+            "units" : "px"
+          }
+        }
+      }
+    },
+    "mobile_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "tab_spacing" : {
+      "spacing" : {
+        "padding" : {
+          "top" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "bottom" : {
+            "value" : 60,
+            "units" : "px"
+          },
+          "left" : {
+            "value" : null,
+            "units" : null
+          },
+          "right" : {
+            "value" : null,
+            "units" : null
+          }
+        }
+      }
+    },
+    "background_color" : {
+      "color" : {
+        "color" : "#fff",
+        "opacity" : 100
+      }
+    }
+  }
+}, {
+  "id" : "773be2b7-5756-418a-2479-e81fbe931431",
+  "name" : "flip_card",
+  "display_width" : null,
+  "label" : "Flip card",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2a8a80fe-a629-74bc-acb1-633a185f273b",
+    "name" : "cards",
+    "display_width" : null,
+    "label" : "Cards",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : 1,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "7d322272-5a08-b492-24f1-996bfaa15758",
+      "name" : "front_card",
+      "display_width" : null,
+      "label" : "Front card",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "6df4b301-061c-fecf-34b3-ff6ad8ba383a",
+        "name" : "select_an_image",
+        "display_width" : null,
+        "label" : "Select an Image",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        }
+      }, {
+        "id" : "4acc4854-b56c-9763-9505-2d1ff2fb6252",
+        "name" : "description",
+        "display_width" : null,
+        "label" : "Description",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<span>pe series</span>\n<h3>PE10</h3>"
+      }, {
+        "id" : "3e2060f1-de3e-92ba-08f6-a7f147929739",
+        "name" : "button",
+        "display_width" : null,
+        "label" : "Button",
+        "required" : false,
+        "locked" : false,
+        "children" : [ {
+          "id" : "864e9520-dc1a-64f3-e427-82695369222f",
+          "name" : "button_text",
+          "display_width" : null,
+          "label" : "Button text",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text",
+          "default" : "Learn more"
+        }, {
+          "id" : "06ec26b1-7573-66a1-273b-8a66074f537a",
+          "name" : "button_link",
+          "display_width" : null,
+          "label" : "Button link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "type" : "group",
+        "default" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      }
+    }, {
+      "id" : "6f44e796-ee9e-b9f1-8b23-85a175d77340",
+      "name" : "back_card",
+      "display_width" : null,
+      "label" : "Back card",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "47d13994-d883-f508-e5ec-1584352be591",
+        "name" : "select_an_image",
+        "display_width" : null,
+        "label" : "Select an Icon",
+        "required" : false,
+        "locked" : false,
+        "responsive" : true,
+        "resizable" : true,
+        "show_loading" : false,
+        "type" : "image",
+        "default" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        }
+      }, {
+        "id" : "208b71c3-ea9e-b127-65f2-04f20975444d",
+        "name" : "description",
+        "display_width" : null,
+        "label" : "Description",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>"
+      }, {
+        "id" : "a8d6a468-2045-db13-f522-85b236f2bcf9",
+        "name" : "white_background_text",
+        "display_width" : null,
+        "label" : "White background text",
+        "required" : false,
+        "locked" : false,
+        "type" : "richtext",
+        "default" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : [ {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    }, {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    }, {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "cards" : [ {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    }, {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    }, {
+      "front_card" : {
+        "anchor_id" : "customid",
+        "select_an_image" : {
+          "src" : "https://blog.robotiq.com/hubfs/AdobeStock_378115575%202-1.png",
+          "alt" : "AdobeStock_378115575 2-1",
+          "width" : 349,
+          "height" : 216,
+          "max_width" : 349,
+          "max_height" : 216
+        },
+        "description" : "<span>pe series</span>\n<h3>PE10</h3>",
+        "button" : {
+          "button_text" : "Learn more",
+          "button_link" : {
+            "url" : {
+              "content_id" : null,
+              "type" : "EXTERNAL",
+              "href" : ""
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        }
+      },
+      "back_card" : {
+        "select_an_image" : {
+          "size_type" : "auto",
+          "src" : "https://blog.robotiq.com/hubfs/theme-hs-parkour3/images/content-images/Palletisation.svg",
+          "alt" : "Palletisation",
+          "loading" : "lazy",
+          "width" : 35,
+          "height" : 35,
+          "max_width" : 35,
+          "max_height" : 35
+        },
+        "description" : "<span>PE series</span>\n<h3>PE20</h3>\n<p><span>Max pallet height</span><br>2,150 mm (84 in)</p>\n<hr>\n<p>Reaching up to 2150 mm in a single setup.</p>",
+        "white_background_text" : "<p>Ideal for heavier loads and low to moderate pallet heights.</p>"
+      }
+    } ]
+  }
+} ]

@@ -1,0 +1,287 @@
+[ {
+  "id" : "55570251-4e65-ecb4-598f-07336c88c571",
+  "name" : "p3_text_image_img",
+  "display_width" : null,
+  "label" : "Image",
+  "inline_help_text" : "Image qui accompagne le texte 532 x 394",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://5418888.fs1.hubspotusercontent-na1.net/hubfs/5418888/theme-p3/text-image-placeholder.png",
+    "alt" : "text-image-placeholder",
+    "loading" : "lazy",
+    "width" : 532,
+    "height" : 394,
+    "max_width" : 532,
+    "max_height" : 394
+  }
+}, {
+  "id" : "44d698ca-4ec9-4b32-006b-979f7edd50a9",
+  "name" : "p3_text_image_subtitle",
+  "display_width" : null,
+  "label" : "Surtitre",
+  "inline_help_text" : "Surtitre qui ce retrouve en haut du titre principale",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour HubSpot"
+}, {
+  "id" : "669e3512-24c0-6c23-1d59-78f94c129e6d",
+  "name" : "p3_text_image_title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ace3938b-a2fd-b745-3e1f-0a47d2870dc1",
+  "name" : "p3_text_image_description",
+  "display_width" : null,
+  "label" : "Description",
+  "inline_help_text" : "Texte de description en dessous du titre principal",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Une mise en page personnalisable vous permet de créer un site Web qui reflète votre marque et votre messagerie, ce qui est crucial pour établir la crédibilité et la confiance avec votre public cible. En créant un site Web visuellement attrayant, vous pouvez attirer et retenir les visiteurs, ce qui peut entraîner une augmentation de l'engagement et des conversions.</p>"
+}, {
+  "id" : "55af0415-abad-3010-2eef-55d8f72cb98a",
+  "name" : "p3_text_image_btn",
+  "display_width" : null,
+  "label" : "Bouton",
+  "inline_help_text" : "Bouton ce trouvant sous la description",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "href" : "https://www.example.com",
+      "type" : "EXTERNAL"
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "96d7b34f-f33b-6975-e040-f0afab1d1908",
+  "name" : "p3_text_image_btn_txt",
+  "display_width" : null,
+  "label" : "Libellé du bouton",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Par ici"
+}, {
+  "id" : "963c12f5-efb0-86a0-df4c-25268d6ac485",
+  "name" : "p3_text_image_btn_style",
+  "display_width" : null,
+  "label" : "Style du bouton",
+  "inline_help_text" : "Style visuel du bouton",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "btn_primary", "Primaire" ], [ "btn_secondary", "Secondaire" ], [ "btn_tertiary", "Tertiaire" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "btn_primary"
+}, {
+  "id" : "c0d8a544-7e94-50d6-db77-e9f1f652b44e",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6e00d42a-0591-ff77-9798-dd69ac9e7982",
+    "name" : "p3_text_image_bg",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "inline_help_text" : "Couleur d’arrière-plan. Pour ne pas avoir de couleur, laisser opacité à 0%",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    }
+  }, {
+    "id" : "ed258695-5a60-1f6d-df34-4a1bfa856d20",
+    "name" : "p3_text_image_title_color",
+    "display_width" : null,
+    "label" : "Couleur du titre",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "562e2486-a515-5342-ce24-4b0b6793c2a8",
+    "name" : "p3_text_image_supertitle_color",
+    "display_width" : null,
+    "label" : "Couleur du surtitre",
+    "required" : false,
+    "locked" : false,
+    "show_opacity" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : 100
+    }
+  }, {
+    "id" : "d7c7ac46-3eb9-bf2e-0ff5-90df73155829",
+    "name" : "p3_text_image_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "7abfe99c-7cba-3f41-6bb4-748f644a4a02",
+    "name" : "p3_text_image_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les tablettes. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "3492824a-a55c-5cab-4908-804e885826be",
+    "name" : "p3_text_image_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "c7e67596-c7d1-b0ae-5a7f-ac5abed339c5",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "background color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "4367f7fb-6abe-1cf2-85e3-cf67be7803cf",
+    "name" : "button_link_color",
+    "display_width" : null,
+    "label" : "button link color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "41580532-fdc2-67ad-3b6c-daa4ce905e3c",
+    "name" : "content_description",
+    "display_width" : null,
+    "label" : "content description",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_text_image_bg" : {
+      "color" : "#FFFFFF",
+      "opacity" : 0
+    },
+    "p3_text_image_title_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "p3_text_image_supertitle_color" : {
+      "color" : null,
+      "opacity" : 100
+    },
+    "p3_text_image_spacing_desktop" : { },
+    "p3_text_image_spacing_tablet" : { },
+    "p3_text_image_spacing_mobile" : { },
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "button_link_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "content_description" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }
+}, {
+  "id" : "00b9db1e-a196-b542-7ecd-c52472a204a1",
+  "name" : "p3_text_image_order",
+  "display_width" : null,
+  "label" : "Positionnement de l’image",
+  "inline_help_text" : "Positionnement de l’image dans le module, le contenu textuel étant dans l’autre colonne",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "image_left", "Gauche" ], [ "image_right", "Droite" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "image_left"
+}, {
+  "id" : "f81653bd-2b8a-e2fe-3ab2-6d955736d6e7",
+  "name" : "hide_and_show_link_icon",
+  "display_width" : null,
+  "label" : "Hide and Show Link Icon",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "afab473e-a9de-a56e-9f0d-c5a2b8d86933",
+  "name" : "text_alignment",
+  "display_width" : null,
+  "label" : "Text Alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "1", "Alignment 1" ], [ "2", "Alignment 2" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice"
+} ]

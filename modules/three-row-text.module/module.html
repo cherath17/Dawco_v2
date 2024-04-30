@@ -1,0 +1,102 @@
+<section class="p3_three_row">
+  <div class="p3_title">
+    {{ module.p3_content_title }}
+  </div>
+  <div class="p3_content">
+    {{ module.p3_content }}
+  </div>
+  <div class="p3_sub_content">
+    {{ module.p3_sub_content }}
+  </div>
+</section>
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3_three_row{
+    {% if module.style.background_color.color  %}
+    background-color:{{  module.style.background_color.color }};
+    {% endif %}
+  }
+  .p3_title {
+    {% if module.style.title.title_font.color %}
+    color:{{ module.style.title.title_font.color }};
+    {% endif %}
+    {% if module.style.title.title_font.size %}
+    font-size: {{ module.style.title.title_font.size ~ module.style.title.title_font.size_unit }};
+    {% endif %}
+    {% if module.style.title.title_font.style %}
+    {{ module.style.title.title_font.style }};
+    {% endif %}
+    {{ module.style.title.title_spacing.css }};
+    {% if module.style.title.text_transform %}
+    text-transform: {{ module.style.title.text_transform }};
+    {% endif %}
+    {% if module.style.title.title_alignment %}
+    text-align:{{ module.style.title.title_alignment.css }};
+    {% endif %}
+  }
+
+  .p3_content{
+    {% if module.style.content.title_font.color %}
+    color:{{ module.style.content.title_font.color }};
+    {% endif %}
+    {% if module.style.content.title_font.size %}
+    font-size: {{ module.style.content.title_font.size ~ module.style.content.title_font.size_unit }};
+    {% endif %}
+    {% if module.style.content.title_font.style %}
+    {{ module.style.content.title_font.style }};
+    {% endif %}
+    {{ module.style.content.title_spacing.css }};
+    {% if module.style.content.text_transform %}
+    text-transform: {{ module.style.content.text_transform }};
+    {% endif %}
+    {% if module.style.content.title_alignment %}
+    text-align:{{ module.style.content.title_alignment.css }};
+    {% endif %}
+  }
+  .p3_sub_content{
+    {% if module.style.sub_content.title_font.color %}
+    color:{{ module.style.sub_content.title_font.color }};
+    {% endif %}
+    {% if module.style.sub_content.title_font.size %}
+    font-size: {{ module.style.sub_content.title_font.size ~ module.style.sub_content.title_font.size_unit }};
+    {% endif %}
+    {% if module.style.sub_content.title_font.style %}
+    {{ module.style.sub_content.title_font.style }};
+    {% endif %}
+    {{ module.style.sub_content.title_spacing.css }};
+    {% if module.style.sub_content.text_transform %}
+    text-transform: {{ module.style.sub_content.text_transform }};
+    {% endif %}
+    {% if module.style.sub_content.title_alignment %}
+    text-align:{{ module.style.sub_content.title_alignment.css }};
+    {% endif %}
+  }
+
+  @media only screen and (max-width: 575px)  {
+    .p3_title{
+      {{ module.style.title.mobile_spacing.css }}
+    }
+    .p3_content{
+      {{ module.style.content.mobile_spacing.css }}
+    }
+    .p3_sub_content{
+      {{ module.style.sub_content.mobile_spacing.css }}
+    }
+  }
+
+  @media only screen and (max-width: 768px)  {
+    .p3_title{
+      {{ module.style.title.tablet_spacing.css }}
+    }
+    .p3_content{
+      {{ module.style.content.tablet_spacing.css }}
+    }
+    .p3_sub_content{
+      {{ module.style.sub_content.tablet_spacing.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}

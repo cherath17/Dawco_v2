@@ -1,0 +1,147 @@
+<section class="p3-testimonials__wrapper swiffy-slider slider-item-helper" id="p3-testimonials__{{ name }}">
+  <div class="p3-testimonials__title">
+    <h3>
+      {{ module.p3_testimonials_title }}
+    </h3>
+  </div>
+  <div class="container">
+    <div class="p3-testimonials__inner">
+      {% if module.p3_testimonials_arrows and module.slides|length > 1 %}
+      <div class="slider-nav prev slider-nav-prev slider-test" id="p3-testimonials__prev-{{ name }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+          <path d="M10.812 23.2192L12.22 21.7802L7.937 17.5002L28 17.5002L28 15.5002L7.937 15.5002L12.219 11.2192L10.812 9.78124L4.095 16.5002L10.812 23.2192Z" />
+        </svg>
+        <!-- flèche original thème Parkour
+          <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.812 14.219L8.22 12.78L3.937 8.49999L24 8.49999L24 6.49999L3.937 6.49999L8.219 2.21899L6.812 0.780993L0.0949999 7.49999L6.812 14.219Z" fill="black"/>
+          </svg> -->
+      </div>
+      {% endif %}
+      <div class="swiffy-slider slider-item-show1 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause  slider-item-ratio-contain slider-item-ratio-32x9  slider-indicators-sm" data-slider-nav-autoplay-interval="5000">
+        <div class="p3-testimonials__slider slider-container" id="p3-testimonials__slider-{{ name }} slider-nav-autoplay">
+          {% for item in module.slides %}
+          <div class="p3-testimonials__slide {% if module.slides|length < 2 %}single{% endif %}">
+            <div class="p3-testimonials__content">   
+              <div class="p3-testimonials__text">
+                <!-- section title -->
+                {% if module.p3_testimonials_title %}
+
+                {% endif %}
+
+                <div class="p3-testimonials__quote">
+                  <!--                   <svg class="p3-testimonials__quote-icon" width="45" height="31" viewBox="0 0 45 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M41.2941 0H31.7647L25.4118 12.4V31H44.4706V12.4H34.9412L41.2941 0ZM15.8824 0H6.35294L0 12.4V31H19.0588V12.4H9.52941L15.8824 0Z" fill="#0B66A3" fill-opacity="0.1"/>
+                  </svg> -->
+
+                  <div class="p3-testimonials">
+                    {% inline_text field="p3_testimonials_quote" value="{{ item.p3_testimonials_quote }}" %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="p3-testimonials__info-container">
+                {% if item.p3_testimonials_image.src %}
+                <div class="p3-testimonials__avatar">
+                  {% set sizeAttrs = 'width="{{ item.p3_testimonials_image.width }}" height="{{ item.p3_testimonials_image.height }}"' %}
+                  {% if item.p3_testimonials_image.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item.p3_testimonials_image.width }}" height="{{ item.p3_testimonials_image.height }}"' %}
+                  {% elif item.p3_testimonials_image.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item.p3_testimonials_image.max_width }}" height="{{ item.p3_testimonials_image.max_height }}"' %}        
+                  {% endif %}
+                  {% set loadingAttr = item.p3_testimonials_image.loading != 'disabled' ? 'loading="{{ item.p3_testimonials_image.loading }}"' : '' %}
+                  <img class="p3-testimonials__avatar-img" src="{{ item.p3_testimonials_image.src }}" alt="{{ item.p3_testimonials_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                </div>
+                {% endif %}
+
+                <div class="p3-testimonials__info">
+                  {% if item.p3_testimonials_name %}
+                  <div class="p3-testimonials__name">
+                    <!-- Testimonial person's name -->
+                    {% inline_text field="p3_testimonials_name" value="{{ item.p3_testimonials_name }}" %}
+                  </div>
+                  {% endif %}
+
+                  {% if item.p3_testimonials_company %}
+                  <div class="p3-testimonials__company">
+                    <!-- Testimonial person's company and title -->
+                    {% inline_text field="p3_testimonials_company" value="{{ item.p3_testimonials_company }}" %}
+                  </div>
+                  {% endif %}
+                </div>
+
+              </div>   
+            </div>
+
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% if module.p3_testimonials_arrows and module.slides|length > 1 %}
+      <div class="slider-nav slider-nav-next slider-test" id="p3-testimonials__next-{{ name }}">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+          <path d="M21.188 9.78076L19.78 11.2198L24.063 15.4998L4 15.4998V17.4998L24.063 17.4998L19.781 21.7808L21.188 23.2188L27.905 16.4998L21.188 9.78076Z"/>
+        </svg>
+        <!-- flèche original thème Parkour
+          <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.188 0.781006L15.78 2.22001L20.063 6.50001L0 6.50001L0 8.50001L20.063 8.50001L15.781 12.781L17.188 14.219L23.905 7.50001L17.188 0.781006Z" fill="black"/>
+          </svg> -->
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% if module.vector_hidden %}
+<div class="bottom-vec">
+  <img src="{{ get_asset_url('/Dawco-V2/images/bottom-vec-2.svg') }}" alt="vector">
+</div>
+{% endif %}
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .p3-testimonials__inner {
+    background-color: rgba({{ module.style.p3_testimonials_bg.color|convert_rgb }}, {{ module.style.p3_testimonials_bg.opacity * 0.01 }});
+  }
+  .p3-testimonials__wrapper .slider-nav svg{
+    fill: {{ module.style.arrow_color.color }};
+  }
+  .p3-testimonials__wrapper .slider-nav::before{
+    background-color: rgba({{ module.style.p3_testimonials_arrows_hover.color|convert_rgb }}, {{ module.style.p3_testimonials_arrows_hover.opacity * 0.01 }});
+  }
+  .p3-testimonials__wrapper .prev-slide:hover, .p3-testimonials__wrapper .next-slide:hover {
+    background-color: rgba({{ module.style.p3_testimonials_arrows_hover.color|convert_rgb }}, {{ module.style.p3_testimonials_arrows_hover.opacity * 0.01 }});
+    border-radius: 50%;
+  }
+  .p3-testimonials__quote .h3, .p3-testimonials__name {
+    color: {{ module.style.p3_testimonials_color.color }};
+  }
+  .p3-testimonials__wrapper {
+    {{ module.style.p3_testimonials_spacing_desktop.css }}  
+  }
+  .p3-testimonials__title{
+    color:{{ theme.global_colors.primary.color }}
+  }
+  .p3-testimonials__company{
+    color:{{ module.style.address_content_color.color }}
+  }
+  .p3-testimonials__name{
+    color:{{ theme.global_colors.secondary.color }}
+  }
+  .h3.p3-testimonials{
+    color:#4d463f;
+  }
+  @media (max-width: 991px) {
+    .p3-testimonials__wrapper {
+      {{ module.style.p3_testimonials_spacing_tablet.css }}
+    }
+  }
+
+  @media (max-width: 575px) {
+    .p3-testimonials__wrapper {
+      {{ module.style.p3_testimonials_spacing_mobile.css }}
+    }
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
+

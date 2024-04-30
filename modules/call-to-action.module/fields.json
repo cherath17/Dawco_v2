@@ -1,0 +1,294 @@
+[ {
+  "id" : "a585fe38-9ead-cfb0-7c15-e3b23b49c2e3",
+  "name" : "p3_cta_banner_layout",
+  "display_width" : null,
+  "label" : "Disposition",
+  "help_text" : "Orientation des éléments dans le module",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "row", "Horizontal" ], [ "col", "Vertical" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "col"
+}, {
+  "id" : "3594b6e1-ead5-7585-34d1-e901d3e854ed",
+  "name" : "p3_cta_banner_width",
+  "display_width" : null,
+  "label" : "Largeur",
+  "help_text" : "Largeur global du module",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "full-width", "Pleine largeur" ], [ "container", "Centré" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "full-width"
+}, {
+  "id" : "e1820867-ae70-f59d-eb75-9e7b3bba1d29",
+  "name" : "p3_cta_banner_supertitle",
+  "display_width" : null,
+  "label" : "Surtitre",
+  "help_text" : "Surtitre qui ce retrouve en haut du titre principale",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour Hubspot"
+}, {
+  "id" : "5c9ee74c-94ea-9433-2ecd-680bc5159ec0",
+  "name" : "p3_cta_banner_title",
+  "display_width" : null,
+  "label" : "Titre",
+  "help_text" : "Titre principale du module",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour Hubspot"
+}, {
+  "id" : "41c5e8c5-3e41-59c8-a53e-d961f236a552",
+  "name" : "p3_cta_banner_subtitle",
+  "display_width" : null,
+  "label" : "Sous-titre",
+  "help_text" : "Sous-titre qui ce retrouve sous le titre principale",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Theme Parkour Hubspot"
+}, {
+  "id" : "3a9ee1df-661e-db1f-06ac-eed72f1f5180",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2ab481c0-8ebb-2999-1126-29746a8c42f0",
+    "name" : "p3_cta_banner_bg_img",
+    "display_width" : null,
+    "label" : "Image d'arrière-plan",
+    "help_text" : "Image en arrière-plan",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_cta_banner_bg",
+      "controlling_value_regex" : "img",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "backgroundimage",
+    "default" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://blog.robotiq.com/hubfs/cta-banner-placeholder.png"
+    }
+  }, {
+    "id" : "7aa60bec-7c40-25e5-f5b2-33a0baadb677",
+    "name" : "p3_cta_banner_bg_color",
+    "display_width" : null,
+    "label" : "Couleur d'arrière-plan",
+    "help_text" : "Couleur d'arrière-plan au lieu d'une image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "p3_cta_banner_bg",
+      "controlling_value_regex" : "color",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "color",
+    "default" : {
+      "color" : "#63DA7B",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "2caaf675-f090-2850-7dd5-4a2741d8635e",
+    "name" : "p3_cta_banner_color",
+    "display_width" : null,
+    "label" : "Couleur des textes",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fbc7d75f-b570-8ef4-d022-e46a44dc92bc",
+    "name" : "p3_cta_banner_spacing_desktop",
+    "display_width" : null,
+    "label" : "Espacement grand écran",
+    "help_text" : "Espacement pour les grands écrans d'ordintateur. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "72065d73-34d6-e76f-7aa3-7fef20ac48c6",
+    "name" : "p3_cta_banner_spacing_tablet",
+    "display_width" : null,
+    "label" : "Espacement tablette",
+    "help_text" : "Espacement pour les tablettes Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "202ff96f-cfe6-bd5e-d3be-b9967d2f0e47",
+    "name" : "p3_cta_banner_spacing_mobile",
+    "display_width" : null,
+    "label" : "Espacement mobile",
+    "help_text" : "Espacement pour les téléphones cellulaire. Privilégier le padding",
+    "required" : false,
+    "locked" : false,
+    "type" : "spacing",
+    "default" : { }
+  }, {
+    "id" : "ae6f80a9-3565-dd1d-2f96-60a7ad9806fc",
+    "name" : "text_alignment",
+    "display_width" : null,
+    "label" : "Text alignment",
+    "required" : false,
+    "locked" : false,
+    "type" : "textalignment",
+    "default" : {
+      "text_align" : "LEFT"
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_cta_banner_bg_img" : {
+      "background_position" : "MIDDLE_CENTER",
+      "background_size" : "cover",
+      "src" : "https://blog.robotiq.com/hubfs/cta-banner-placeholder.png"
+    },
+    "p3_cta_banner_bg_color" : {
+      "color" : "#63DA7B",
+      "opacity" : 100
+    },
+    "p3_cta_banner_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "p3_cta_banner_spacing_desktop" : { },
+    "p3_cta_banner_spacing_tablet" : { },
+    "p3_cta_banner_spacing_mobile" : { },
+    "text_alignment" : {
+      "text_align" : "LEFT"
+    }
+  }
+}, {
+  "id" : "fa8fd0f4-6f53-c70e-18e5-5e758972954b",
+  "name" : "btn",
+  "display_width" : null,
+  "label" : "Bouton",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d2c230d3-ffc4-6e18-3491-2f8115a3a1e7",
+    "name" : "p3_cta_banner_btn_link",
+    "display_width" : null,
+    "label" : "Lien de bouton",
+    "help_text" : "Lien de l'unique bouton de ce module",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "360d832a-e623-5008-aa37-4cbc9b4c03ca",
+    "name" : "p3_cta_banner_btn_label",
+    "display_width" : null,
+    "label" : "Libellé de bouton",
+    "help_text" : "Texte à l'intérieur du bouton",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Par ici"
+  }, {
+    "id" : "79ff13f9-44a5-1e72-a3d0-46b6ee00a1e2",
+    "name" : "p3_cta_banner_btn_style",
+    "display_width" : null,
+    "label" : "Style du bouton",
+    "help_text" : "Apparence du bouton",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "btn_primary", "Primaire" ], [ "btn_secondary", "Secondaire" ], [ "btn_tertiary", "Tertiaire" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "btn_primary"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "p3_cta_banner_btn_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "p3_cta_banner_btn_label" : "Par ici",
+    "p3_cta_banner_btn_style" : "btn_primary"
+  }
+}, {
+  "id" : "ba31c5e4-7acb-cd4c-bb57-65b3161e7ebb",
+  "name" : "p3_cta_banner_bg",
+  "display_width" : null,
+  "label" : "Arrière-plan",
+  "help_text" : "Choix du type d'arrière-plan. Les options sont dans l'onglet Style",
+  "required" : true,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "color", "Couleur" ], [ "img", "Image" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "img"
+}, {
+  "id" : "b16ae20a-fe65-f7c5-e753-42e822c2c63c",
+  "name" : "call_cta",
+  "display_width" : null,
+  "label" : "call cta",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "4eb8cde4-6559-42db-85a5-8e1ee4cb52ee"
+} ]

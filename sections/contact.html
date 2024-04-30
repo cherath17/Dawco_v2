@@ -1,0 +1,316 @@
+<!--
+
+  templateType: section
+  label: Hero
+  isAvailableForNewContent: true
+  description: "Hero image with text"
+  screenshotPath: ../images/section-previews/Hero_section.png
+
+-->
+
+{{ standard_header_includes }}
+{% dnd_section
+  padding={
+    "default" : {
+      "bottom" : "0px",
+      "left" : "0px",
+      "right" : "0px",
+      "top" : "0px"
+    }
+  },
+  full_width=true
+%}
+  {% dnd_column
+    offset=0,
+    width=12
+  %}
+    {% dnd_row %}
+      {% dnd_module
+        path="../modules/home-hero-new",
+        offset=0,
+        width=12,
+        Style={
+          "hero_heading_color" : {
+            "color" : "#FFFFFF",
+            "opacity" : 100
+          },
+          "left_button_style" : {
+            "border" : {
+              "bottom" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "left" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "right" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "top" : {
+                "color" : "#1980eb",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              }
+            },
+            "border_radius" : 4,
+            "button_background_color" : {
+              "color" : "#1980eb",
+              "opacity" : 100
+            },
+            "button_color" : {
+              "color" : "#FF9902",
+              "opacity" : 100
+            },
+            "button_font" : {
+              "color" : "#FFFFFF",
+              "size" : 14,
+              "size_unit" : "px"
+            },
+            "button_spacing" : {
+              "margin" : {
+                "bottom" : { },
+                "top" : {
+                  "units" : "px",
+                  "value" : 0
+                }
+              },
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 16
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 22
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 16
+                }
+              }
+            },
+            "hover_color" : {
+              "color" : "#63da7b",
+              "opacity" : 100
+            }
+          },
+          "p3_home_hero_gradients" : {
+            "colors" : [ {
+              "color" : {
+                "a" : 0,
+                "b" : 59,
+                "g" : 57,
+                "r" : 13
+              }
+            }, {
+              "color" : {
+                "a" : 1,
+                "b" : 59,
+                "g" : 57,
+                "r" : 13
+              }
+            } ],
+            "side_or_corner" : {
+              "verticalSide" : "BOTTOM"
+            }
+          },
+          "right_button_styles" : {
+            "border" : {
+              "bottom" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "left" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "right" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              },
+              "top" : {
+                "color" : "#fff",
+                "opacity" : 100,
+                "style" : "solid",
+                "width" : {
+                  "units" : "px",
+                  "value" : 3
+                }
+              }
+            },
+            "border_radius" : 4,
+            "button_background_color" : {
+              "color" : "#1980eb",
+              "opacity" : 100
+            },
+            "button_color" : {
+              "color" : "#FF0201",
+              "opacity" : 100
+            },
+            "button_font" : {
+              "color" : "#FFFFFF",
+              "font" : "helvetica",
+              "font_set" : "DEFAULT",
+              "size" : 14,
+              "size_unit" : "px"
+            },
+            "button_spacing" : {
+              "padding" : {
+                "bottom" : {
+                  "units" : "px",
+                  "value" : 16
+                },
+                "left" : {
+                  "units" : "px",
+                  "value" : 32
+                },
+                "right" : {
+                  "units" : "px",
+                  "value" : 25
+                },
+                "top" : {
+                  "units" : "px",
+                  "value" : 12
+                }
+              }
+            },
+            "hover_color" : {
+              "color" : "#63da7b",
+              "opacity" : 100
+            }
+          },
+          "surtitre" : {
+            "couleur_de_surtitre" : {
+              "color" : "#000000",
+              "opacity" : 100
+            },
+            "police_du_surtitre" : {
+              "color" : "#FFFFFF",
+              "fallback" : "sans-serif",
+              "font" : "Work Sans",
+              "font_set" : "GOOGLE",
+              "size" : 18,
+              "size_unit" : "px",
+              "styles" : { },
+              "variant" : "regular"
+            }
+          }
+        },
+        bouton_1={
+          "p3_home_hero_btn_1" : {
+            "no_follow" : true,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "EXTERNAL"
+            }
+          },
+          "p3_home_hero_btn_1_texte" : "Get started"
+        },
+        bouton_2={
+          "p3_home_hero_btn_2_texte" : "Get started "
+        },
+        cards=[ {
+          "p3_home_hero_cards_img" : {
+            "alt" : "Robot tool carrying a cardboard box",
+            "height" : 680,
+            "loading" : "lazy",
+            "max_height" : 680,
+            "max_width" : 1440,
+            "size_type" : "auto",
+            "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+            "width" : 1440
+          },
+          "p3_home_hero_cards_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "content_id" : 137068098427,
+              "type" : "CONTENT"
+            }
+          },
+          "p3_home_hero_cards_title" : "Électronique"
+        }, {
+          "p3_home_hero_cards_img" : {
+            "alt" : "Robot tool carrying a cardboard box",
+            "height" : 680,
+            "loading" : "lazy",
+            "max_height" : 680,
+            "max_width" : 1440,
+            "size_type" : "auto",
+            "src" : "https://blog.robotiq.com/hubfs/Website/Home-hero-banner.png",
+            "width" : 1440
+          },
+          "p3_home_hero_cards_link" : {
+            "no_follow" : false,
+            "open_in_new_tab" : false,
+            "url" : {
+              "href" : "",
+              "type" : "CONTENT"
+            }
+          },
+          "p3_home_hero_cards_title" : "Électronique"
+        } ],
+        degrade={
+          "p3_home_hero_gradient" : true
+        },
+        p3_home_hero_cards=false,
+        p3_home_hero_supertitle_arriere_plan={
+          "p3_home_hero_bg" : "image",
+          "p3_home_hero_bg_color" : {
+            "color" : "#63da7b",
+            "opacity" : 100
+          }
+        },
+        texte={
+          "p3_home_hero_subtitle" : "Lorem ipsum dolor sit amet in dubitus veritas consectetur adisciping elit. ",
+          "p3_home_hero_supertitle" : "PARKOUR HUBSPOT THEME ",
+          "p3_home_hero_title" : "<h1 style=\"font-size: 48px; font-weight: 800; line-height: 100%;\">CLEVER TITLE ABOUT THIS AWESOME CUSTOM THEME&nbsp;&nbsp;</h1>"
+        }
+      %}
+      {% end_dnd_module %}
+    {% end_dnd_row %}
+  {% end_dnd_column %}
+{% end_dnd_section %}
+
+{{ standard_footer_includes }}

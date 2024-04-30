@@ -1,0 +1,52 @@
+{% require_css %}
+<style>
+
+  .{{ name }}.p3_accordions__section {
+    background-color: rgba( {{ module.style.background_color.color.color|convert_rgb }}, {{ module.style.background_color.color.opacity * 0.01 }} );
+    {{ module.style.desktop_spacing.spacing.css }};
+  }
+  .p3_accordions__sub_title h3{
+    font-size: {{ module.style.font.title.size }}{{module.style.font.title.size_unit }};
+    font-family: {{ module.style.font.title.font }}; {{ module.style.font.title.style }};
+    color: {{ module.style.font.title.color }};
+  }
+  .p3_accordions__details button{
+    font-family: {{ module.style.font.accordion_title.font }}; {{ module.style.font.accordion_title.style }}; 
+    color: {{ module.style.font.accordion_title.color }}; 
+    font-size: {{ module.style.font.accordion_title.size }}{{module.style.font.accordion_title.size_unit }};
+  }
+  @media only screen and (max-width: 767px) {
+    .{{ name }}.p3_accordions__section {
+      {{ module.style.mobile_spacing.spacing.css }};
+    }
+  }
+
+  @media (min-width:768px) and (max-width: 1024px) {
+    .{{ name }}.p3_accordions__section {
+      {{ module.style.tab_spacing.spacing.css }};
+    }
+  }
+</style>
+{% end_require_css %}
+
+<div class="{{ name }} p3_accordions__section" {% if module.want_to_add_an_anchor_id %} id="{{ module.anchor_id }}" {% endif %}>
+  <div class="container">
+    {% if module.sub_title %}
+    <div class="p3_accordions__sub_title">
+      <h3 {% if module.want_to_add_an_anchor_id_on_sub_title %} id="{{ module.sub_title_anchor_id }}" {% endif %}>{{ module.sub_title }}</h3>
+    </div>
+    {% endif %}
+    <div class="p3_accordions__content">
+      {% for item in module.content.accordion %}
+      <div class="p3_accordions__details">
+        <button class="p3_accordions__heading">{{ item.accordion_heading }}</button>
+        <div class="p3_accordions__panel">
+          <div class="p3_accordions__description">
+            {{ item.accordion_content }}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div> 
+  </div>
+</div>

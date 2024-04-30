@@ -1,0 +1,914 @@
+{% set pagenumber = request.query_dict.page   %}
+{% set author_filter = request.query_dict.author %}
+{% set total_pages = contents.total_page_count %}
+{% set tag_filter = request.query_dict.tags %}
+{% set hasit =  { nopost : tag_filter | length==0 ? false : true } %}
+{% set allposts=[] %}
+{% set perpage=10 %}
+{% set unique_content_ids = [] %}
+
+{% if (tag_filter | length == 0)  and (pagenumber is not defined) %}
+{% for content in contents %}
+{% do allposts.append(content) %}
+{% if ((loop.index/perpage)|round(0, 'ceil') == 1 ) %}
+{% do posts.append(content) %}
+{% endif %}
+{% endfor %}
+{% elif (tag_filter | length == 0) %}
+{% for content in contents %}
+{% do allposts.append(content) %}
+{% if ((loop.index/perpage)|round(0, 'ceil') == pagenumber ) %}
+{% do posts.append(content) %}
+{% endif %}
+{% endfor %}
+{% else %}
+{% for content in contents %}
+{% for topic in content.topic_list %}
+{% if topic in tag_filter %}
+{% if content.id not in unique_content_ids %}
+{% do allposts.append(content) %}
+{% do unique_content_ids.append(content.id) %}
+{% endif %}
+{% do hasit.update({ nopost: false }) %}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endif %}
+{#
+{{allposts|length}}
+#}
+{% set totalposts=allposts | length %}
+{% set maxpages=totalposts|divide(perpage)|round(0, "ceil") %}
+<div class="blog_page_layout">
+  <div class="blog_page_heading">
+    <h4>
+      {% inline_text field="listing_title" value="{{ module.header.listing_title }}" %}
+    </h4>
+    <h1>
+      {% inline_text field="heading" value="{{ module.header.heading }}" %}
+    </h1>
+    <div class="filters_text">
+      {% inline_text field="filter_text" value="{{ module.header.filter_text }}" %}
+    </div>
+  </div>
+  <div class="blog-listing">
+    <div class="filters">
+      <div class="tag-filtering">
+        {#
+          {% set my_tags = blog_topics('default', 20) %}
+          #}
+        {% set base_url = 'https://mktg.dawco.ca/hubfs/blog_post_marker/' %}
+        {% set base_urlv2 = 'https://mktg.dawco.ca/hubfs/blog_type/' %}
+        {% set tags_list = ['Électrique','Instrumentation et contrôle','Mécanique de procédé','Tuyauterie','Service électrique et maintenance 24/7'] %}
+        {% set domaine_dactivite = [
+    {'title': 'Énergie', 'image': base_urlv2 + 'energie_img.svg'},
+    {'title': 'Électrification des transports', 'image': base_urlv2 + 'electrification_img.svg'},
+    {'title': 'Infrastructure', 'image': base_urlv2 + 'infrastructure_img.svg'},
+    {'title': 'Mine et métaux', 'image': base_urlv2 + 'mine_et_metaux_img.svg'},
+    {'title': 'Bâtiment', 'image': base_urlv2 + 'batiment_img.svg'},
+    {'title': 'Naval & défense', 'image': base_urlv2 + 'naval&defense_img.svg'},
+    {'title': 'Centres de donées', 'image': base_urlv2 + 'centres_de_donees_img.svg'},
+    {'title': 'Environnement', 'image': base_urlv2 + 'environnement_img.svg'},
+    {'title': 'Chimie et pétrochimie', 'image': base_urlv2 + 'chimie_et_petrochimie_img.svg'},
+    {'title': 'Manufacturier', 'image': base_urlv2 + 'manufacturier_img.svg'},
+    {'title': 'Oil & Gas', 'image': base_urlv2 + 'oil_and_gas_img.svg'}
+] %}
+        {% set my_tags = blog_tags('default', 20) %}
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.filter_lists_heading.filter_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {% for item in module.tag_list %}
+                <li>
+                  {% inline_text field="tag_title" value="{{ item.tag_title }}" %}
+                  <span class="selected_icon">
+                    {% if module.blog_post_card.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}"' %}
+                    {% if module.blog_post_card.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.blog_post_card.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.max_width }}" height="{{ module.blog_post_card.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.blog_post_card.selected_filter.loading != 'disabled' ? 'loading="{{ module.blog_post_card.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.blog_post_card.selected_filter.src }}" alt="{{ module.blog_post_card.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.filter_lists_heading.domaine_dactivite_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {% for item in module.domaine_dactivite_sec %}
+                <li>
+                  {% if item.domaine_dactivite_img.src %}
+                  <span class="domaine_dactivite_sec_img">
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.width }}" height="{{ item.domaine_dactivite_img.height }}"' %}
+                    {% if item.domaine_dactivite_img.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.width }}" height="{{ item.domaine_dactivite_img.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.domaine_dactivite_img.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ item.domaine_dactivite_img.max_width }}" height="{{ item.domaine_dactivite_img.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = item.domaine_dactivite_img.loading != 'disabled' ? 'loading="{{ item.domaine_dactivite_img.loading }}"' : '' %}
+                    <img src="{{ item.domaine_dactivite_img.src }}" alt="{{ item.domaine_dactivite_img.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  </span>
+                  {% endif %}
+                  {% inline_text field="domaine_dactivite" value="{{ item.domaine_dactivite }}" %}
+                  <span class="selected_icon">
+                    {% if module.blog_post_card.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}"' %}
+                    {% if module.blog_post_card.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.blog_post_card.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.max_width }}" height="{{ module.blog_post_card.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.blog_post_card.selected_filter.loading != 'disabled' ? 'loading="{{ module.blog_post_card.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.blog_post_card.selected_filter.src }}" alt="{{ module.blog_post_card.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.filter_lists_heading.travaux_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {% for item in module.travaux_integres %}
+                <li>
+                  {% inline_text field="travaux_integres_tag_title" value="{{ item.travaux_integres_tag_title }}" %}
+                  <span class="selected_icon">
+                    {% if module.blog_post_card.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}"' %}
+                    {% if module.blog_post_card.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.blog_post_card.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.max_width }}" height="{{ module.blog_post_card.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.blog_post_card.selected_filter.loading != 'disabled' ? 'loading="{{ module.blog_post_card.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.blog_post_card.selected_filter.src }}" alt="{{ module.blog_post_card.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-container">
+          <div class="content">
+            <h4 class="accordion-title js-accordion-title">{{ module.filter_lists_heading.villes_title }} <span class="filter_count"></span></h4>
+            <div class="accordion-content">
+              <ul class="tag_list">
+                {% for item in module.location_sec %}
+                <li>
+                  {% inline_text field="domaine_dactivite" value="{{ item.domaine_dactivite }}" %}
+                  <span class="selected_icon">
+                    {% if module.blog_post_card.selected_filter.src %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}"' %}
+                    {% if module.blog_post_card.selected_filter.size_type == 'auto' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.width }}" height="{{ module.blog_post_card.selected_filter.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif module.blog_post_card.selected_filter.size_type == 'auto_custom_max' %}
+                    {% set sizeAttrs = 'width="{{ module.blog_post_card.selected_filter.max_width }}" height="{{ module.blog_post_card.selected_filter.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                    {% set loadingAttr = module.blog_post_card.selected_filter.loading != 'disabled' ? 'loading="{{ module.blog_post_card.selected_filter.loading }}"' : '' %}
+                    <img src="{{ module.blog_post_card.selected_filter.src }}" alt="{{ module.blog_post_card.selected_filter.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}</span>
+                </li>
+                {% endfor %}
+              </ul> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="result('tags')" class="filterBtn">
+        {% inline_text field="filter_text" value="{{ module.header.filter_text }}" %}
+      </button>
+      <div class="footer_form">
+        <h5>{% inline_text field="subscribe_newsletter.form_title" value="{{ module.subscribe_newsletter.form_title }}" %}</h5>
+        <span class="description">
+          {% inline_text field="subscribe_newsletter.form_description" value="{{ module.subscribe_newsletter.form_description }}" %}
+        </span>
+        <div class="subscribe_newsletter">
+          {% form
+	form_to_use="{{ module.subscribe_newsletter.subscribe_newsletter.form_id }}"
+	response_response_type="{{ module.subscribe_newsletter.subscribe_newsletter.response_type }}"
+	response_message="{{ module.subscribe_newsletter.subscribe_newsletter.message }}"
+	response_redirect_id="{{ module.subscribe_newsletter.subscribe_newsletter.redirect_id }}"
+	response_redirect_url="{{module.subscribe_newsletter.subscribe_newsletter.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.subscribe_newsletter.subscribe_newsletter.gotowebinar_webinar_key }}"
+%}
+        </div>
+      </div>
+    </div>
+    <div class="internal-blog">
+      {% set posts = [] %}
+      {% set has_list = [] %}
+
+      {% for post in allposts %}
+      {% if ((loop.index/perpage)|round(0, 'ceil') == pagenumber) or (pagenumber is not defined and ((loop.index/perpage)|round(0, 'ceil') == 1)) %}
+      {% do posts.append(post) %}
+      {% endif %}
+      {% endfor %}
+
+      {% if posts | length == 0 %}
+      <div class="no_data">
+        No Post
+      </div>
+      {% endif %}
+      {#
+      {% endif %}
+      #}
+      <!--   Author     -->
+      {#
+      {% elif author_filter && author_filter != 'none' %}
+      {% for content in contents %}
+      {% if content.blog_post_author == author_filter %}
+      {% do posts.append(content) %}
+      {% endif %}
+      {% endfor %}
+      {% else %}
+      {% for content in contents %}
+      {% do posts.append(content) %}
+      {% endfor %}
+      #}
+
+      <!--  Card   -->
+      {% for content in posts %}
+      <div class="card" >
+        <div class="featured_image {{ module.blog_post_card.border_enable }}">
+          <a href="{{ content.absolute_url }}">
+            <div class="marked_pin">
+              {% for list_items in domaine_dactivite %}
+              {% if content.widgets.blog_domaine_d_activite.body.value == list_items.title %}
+              <img src="{{list_items.image}}" alt="{{list_items.image}}">
+              {% endif %}
+              {% endfor %}
+            </div>
+            <img
+                 class="hs-blog-post-listing__post-image hs-blog-post-listing__post-image p3-blog_image"
+                 src="{{ content.featured_image }}"
+                 loading="lazy"
+                 >
+          </a>
+        </div>
+        <div>
+        </div>
+        <div class="content">
+          <div class="article_info">
+            <h4 class="title">
+              {#
+            <span class="content_id">
+              {{content.id}}
+            </span>
+            #}
+              {#
+              {% for tag in content.topic_list %}
+              <span class="tag_list_details">
+                {{ tag }}
+                {% if not loop.last %}<span>,</span>{% endif %}
+              </span>
+              {% endfor %}
+              #}
+              <span class="tag_list_details">
+                {{ content.widgets.blog_domaine_d_activite.body.value }}
+                {#
+                {% if not loop.last %}<span>,</span>{% endif %}
+                #}
+              </span>
+              {% if content.widgets.blog_domaine_d_activite.body.value && content.widgets.blog_domaine_d_activite_sub.body.value %}<span>,</span>{% endif %}
+              <span class="tag_list_details">
+                {{ content.widgets.blog_domaine_d_activite_sub.body.value }}
+                {#
+                {% if not loop.last %}<span>,</span>{% endif %}
+                #}
+              </span>
+              {#
+            <span class="tag_list_details">
+              {{ content.widgets.blog_tags.body.value }}
+            </span>
+            #}
+            </h4>
+            <span class="blog_title_heading">
+              {{content.title|truncatehtml(90)}}
+            </span>
+            {% if module.blog_post_card.summary %}
+            <div class="summary">
+              {{content.post_summary|truncatehtml(90)}}
+            </div>
+            {% endif %}
+          </div>
+          {% if module.blog_post_card.tag_location_hide %}
+          {% if module.blog_post_card.tag_icon.src && content.widgets.champ_d_expertise.body.value %}
+          <div class="excerpt">
+            <div class="tag_icon">
+              {% set sizeAttrs = 'width="{{ module.blog_post_card.tag_icon.width }}" height="{{ module.blog_post_card.tag_icon.height }}"' %}
+              {% if module.blog_post_card.tag_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.blog_post_card.tag_icon.width }}" height="{{ module.blog_post_card.tag_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.blog_post_card.tag_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.blog_post_card.tag_icon.max_width }}" height="{{ module.blog_post_card.tag_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.blog_post_card.tag_icon.loading != 'disabled' ? 'loading="{{ module.blog_post_card.tag_icon.loading }}"' : '' %}
+              <img src="{{ module.blog_post_card.tag_icon.src }}" alt="{{ module.blog_post_card.tag_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div>
+              {#
+              <span class="tag_list_details">
+                {{ content.widgets.blog_tags.body.value }}
+              </span>
+              #}
+              {% if content.widgets.champ_d_expertise.body.value %}
+              <span class="tag_list_details">
+                {{ content.widgets.champ_d_expertise.body.value }}
+              </span>
+              {% endif %}
+            </div>
+          </div> 
+          {% endif %}
+          {% if module.location_icon.src && content.widgets.villes.body.value  %}
+          <div class="excerpt excerpt-row">
+            <div class="tag_icon">
+              {% set sizeAttrs = 'width="{{ module.location_icon.width }}" height="{{ module.location_icon.height }}"' %}
+              {% if module.location_icon.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.location_icon.width }}" height="{{ module.location_icon.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.location_icon.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.location_icon.max_width }}" height="{{ module.location_icon.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = module.location_icon.loading != 'disabled' ? 'loading="{{ module.location_icon.loading }}"' : '' %}
+              <img src="{{ module.location_icon.src }}" alt="{{ module.location_icon.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            </div>
+            <div>
+              {#
+              <span class="tag_list_details">{{ content.widgets.blog_city.body.value }}</span>
+              #}
+              {% if content.widgets.villes.body.value %}
+              <span class="tag_list_details">
+                {{ content.widgets.villes.body.value }}
+                {% if not loop.last %}<span></span>{% endif %}
+              </span>
+              {% endif %}
+            </div>
+          </div>
+          {% endif %}
+          {% endif %}
+          <div class="read-more">
+            <a href="{{ content.absolute_url }}">{{ module.read_more_text }}</a>
+          </div>
+        </div>
+      </div>   
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+</script>
+
+{% if posts|length != 0 %}
+<ul class="paginator" id="paginator"></ul>
+{% endif %}
+<script>
+  const ele = document.getElementById('paginator');
+
+  function getJsonFromUrl() {
+    const url = location.search;
+    var query = url.substr(1);
+    var result = {};
+    query.split("&").forEach(function(part) {
+      var item = part.split("=");
+      result[item[0]] = decodeURIComponent(item[1]);
+    });
+    return result;
+  }
+
+  function setCurrent(index) {
+    const curr_index = parseInt(getJsonFromUrl()['page'] ?? 1);
+    const isButtonOne = index === 1;
+    const pretext = isButtonOne ? '' : `<li><button onclick="changePage(${curr_index - 1})" ${index - 1 <= 0 ? 'disabled' : ''}>
+    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8624 9.99984H4.19571M4.19571 9.99984L10.029 15.8332M4.19571 9.99984L10.029 4.1665" stroke="#4D463F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+Previous</button></li>`;
+    const shown = Array.from({ length: index +  5 - (index - 2) }, (_, i) => index - 2 + i).filter(n => n > 0 && n <= {{maxpages}});
+                                                                                                   const contents = shown.map((ind) => {
+      const disabledClass = ind <= 0 ? 'disabled' : '';
+      const selectedClass = curr_index == ind ? 'selected' : '';
+      return `<li class='${selectedClass}'><button onclick="changePage(${ind})" ${disabledClass}>${ind}</button></li>`;
+    }).join('\n');
+    const posttext = isButtonOne ? '' : `<li><button onclick="changePage(${curr_index + 1})" ${index + 1 > `{{maxpages}}` ? 'disabled' : ''}>
+    Next
+    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.19572 9.99984H15.8624M15.8624 9.99984L10.0291 4.1665M15.8624 9.99984L10.0291 15.8332" stroke="#4D463F" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+
+  </button></li>`;
+    ele.innerHTML = pretext + contents + posttext;
+  }
+
+  setCurrent(parseInt(getJsonFromUrl()['page'] ?? 1));
+
+  function changePage(pageNumber) {
+    const currentParams = new URLSearchParams(window.location.search);
+    currentParams.set('page', pageNumber);
+    const newUrl = `${location.origin}${location.pathname}?${currentParams.toString()}`;
+    window.location.href = newUrl;
+  }
+</script>
+
+{#
+{{contents.total_page_count }}
+{% if contents.total_page_count > 1 %}
+<div class="blog-pagination">
+  {% set page_list = [-2, -1, 0, 1, 2] %}
+  {% if contents.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+  {% elif contents.total_page_count - current_page.border_enable_num == 0 %}{% set offset = -2 %}
+  {% elif current_page_num == 2 %}{% set offset = 1 %}
+  {% elif current_page_num == 1 %}{% set offset = 2 %}
+  {% else %}{% set offset = 0 %}{% endif %}
+  {% if current_page_num != 1 %}
+  <a class="blog-pagination__link blog-pagination__prev-link {{ "blog-pagination__prev-link--disabled" if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+    {% icon name="chevron-left" style="SOLID", width="13", no_wrapper=True %}
+  </a>
+  {% endif %}
+  {% for page in page_list %}
+  {% set this_page = current_page_num + page + offset %}
+  {% if this_page > 0 and this_page <= contents.total_page_count %}
+  <a class="blog-pagination__link blog-pagination__number-link {{ "blog-pagination__link--active" if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">{{ this_page }}</a>
+  {% endif %}
+  {% endfor %}
+  {% if current_page_num < contents.total_page_count %}
+  <a class="blog-pagination__link blog-pagination__next-link {{ "blog-pagination__next-link--disabled" if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+    {% icon name="chevron-right" style="SOLID", width="13", no_wrapper=True %}
+  </a>
+  {% endif %}
+</div>
+{% endif %}
+#}
+
+{% require_css %}
+<style>
+  .card {
+    background: {{ module.style.card_background.css }};
+  }
+  .card .featured_image,
+  .border_enable {
+    border-bottom-color: {{ module.style.featured_image.css }};
+  }
+  .disabled {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+    pointer-events: none;
+  }
+  .paginator {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  .paginator li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #EFEFEF;
+  }
+  .paginator a,
+  .paginator button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: normal;
+    color:  #4D463F;
+    font-size: 16px;
+    padding: 10px 15.5px;
+    border-radius: 0px;
+  }
+  ::marker {
+    color: transparent;
+  }
+  .paginator a:hover,
+  .paginator a:active,
+  .paginator button:hover,
+  .paginator button:active{
+    border: 0;
+    background: #FD560A;
+    color: #fff;
+  }
+  .paginator a, 
+  .paginator button {
+    background: transparent;
+    border: 0;
+  }
+  .selected a,
+  .selected button{
+    background: #FD560A;
+    color: #fff;
+  }
+  .disabled button:hover{
+    opacity: 0.5;
+    background: none !important;
+    cursor: not-allowed;
+    color: #000 !important;
+  }
+  button:disabled {
+    border: 0 !important;
+    opacity: 0.5;
+    background: none !important;
+    cursor: not-allowed;
+    color: #000 !important;
+  }
+  .blog_page_heading {
+    margin: auto;
+    padding-top: 20px;
+    max-width: 1220px;
+  }
+  .blog_page_heading h4{
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 7px;
+    margin: 0;
+  }
+  .blog_page_heading h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-bottom: 47px;
+    color: #4D463F;
+  }
+  .filters_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4D463F;
+    text-transform: uppercase;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 13px;
+    box-shadow: 0px 5px 15px 0px #252C6126, 0px 2px 4px 0px #8890C233;
+  }
+  .card .featured_image {
+    width: 100%;
+    max-height: 170px;
+    min-height: 170px;
+  }
+  .marked_pin {
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    right: -5.67px;
+    top: 5px;
+  }
+  .border_enable {
+    border-bottom: 5px solid #FD560A;
+  }
+  .border_disable {
+    border-bottom: 0;
+  }
+  .card .featured_image img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  .card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*     padding: 5%; */
+    height: 100%;
+  }
+  .card .content .article_info{
+    padding: 10px 10px 20px;
+    min-height: 130px;
+    background: #fff;
+  }
+  .card .content .excerpt p{
+    font-size: 13px;
+    line-height: 17.5px;
+    font-weight: 400;
+    color: #4D463F;
+    padding: 5px 0px;
+    border-bottom: 1px solid #fff;
+  }
+  .card .content .excerpt {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    gap: 11px;
+    width: calc(100% - 20px);
+    margin: auto;
+    padding: 10px 0;
+    padding-right: 16px;
+    border-bottom: 1px solid #fff;
+  }
+  .card .content .excerpt-row {
+    align-items: center;
+  }
+  .card .content .excerpt .tag_icon {
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .tag_list_details {
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #4D463F;
+  }
+  .article_info span,
+  .article_info .title {
+    color: #4D463F;
+  }
+  .card .content .article_info h6{
+    display: none;
+  }
+  .card .content .article_info .topic {
+    font-size: 13px;
+    line-height: 16.25px;
+    font-weight: 400;
+  }
+  .card h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .card .title {
+    font-size: 13px;
+    line-height: 16.25px;
+    padding-bottom: 4px;
+  }
+  .card .blog_title_heading {
+    font-size: 16px !important;
+    font-weight: 700;
+    line-height: 18.4px;
+    margin:0px;
+    margin-top:4px;
+  }
+  .card .blog_title_heading p {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 18.4px !important;
+    min-height: 60px;
+    max-height: 60px;
+  }
+  .card .blog_title_heading p span{
+    font-size: 16px !important;
+    font-weight: 700;
+    line-height: 18.4px;
+    margin:0px;
+    margin-top:4px;
+  }
+  .card .summary {
+    font-size: 14px;
+    color: #4D463F;
+    padding-top: 10px;
+    line-height: 18px;
+  }
+  .card .summary .blog_layout_sec p {
+    font-size: 14px;
+    color: #4D463F;
+    line-height: 18px;
+  }
+  .card h2 {
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+  }
+  .excerpt {
+    padding: 10px;
+  }
+  .card img {
+    width: 100%;
+    height: 100% !important;
+    max-height: auto;
+  }
+  .read-more {
+    padding: 16px 10px 10px;
+  }
+  .read-more a {
+    display: block;
+    text-decoration: underline;
+    color: #fd4e00;
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.5s;
+  }  
+  .read-more a:hover{
+    transform: scale(1.05);
+  }
+  /*  Accordion  */
+  .accordion-container .accordion-title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 18px 63px 18px 13px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4D463F;
+    cursor: pointer;
+  }
+  .accordion-container .accordion-title:hover,
+  .accordion-container .accordion-title:active,
+  .accordion-title.open { 
+    background-color: #EFEFEF;
+    color: #4D463F;
+    font-weight: 800;
+  }
+  .accordion-container .accordion-title::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 41%;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(226deg);
+    transition: 0.5s;
+  }
+  .accordion-container .accordion-title.open::after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    top: 41%;
+    z-index: 1;
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-left: 2px solid #000;
+    transform: rotate(45deg);
+  }
+  /*CSS for CodePen*/
+  .accordion-content p{
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #DEDDDC;
+  }
+  .accordion-container {
+    min-width: 347px;
+    max-width: 347px;
+    margin: 0 auto;
+  }
+  .tag_list {
+    padding: 0;
+    margin: 0;
+  }
+  .tag_list li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #4D463F;
+    border-bottom: 1px solid #DEDDDC;
+    cursor: pointer;
+  }
+  .domaine_dactivite_sec_img {
+    min-width: 26px;
+    max-width: 26px;
+    margin-right: 12px;
+  }
+  .selected_icon {
+    margin-left: auto;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .selected_filter .selected_icon {
+    min-width: 16px;
+    min-height: 16px;
+    line-height: normal;
+    opacity: 1;
+  }
+  .selected_icon img{
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover;
+  }
+  .paginator li:first-child{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  .paginator li:hover button svg path{
+    stroke: #fff;
+  }
+  .paginator li:hover button:disabled svg path{
+    stroke: #4D463F;
+  }
+  .paginator li:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: hidden;
+  }
+</style>
+{% end_require_css %}
+
+<script>
+  var filterApply = [];
+  var count_value = document.getElementsByClassName("filter_count");
+  var tag_filter = '{{ tag_filter }}';
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (!urlParams.has('tags')) {
+    localStorage.removeItem('filterApply');
+    localStorage.removeItem('count_value');
+  }
+
+  if (localStorage.getItem('filterApply')) {
+    filterApply = JSON.parse(localStorage.getItem('filterApply'));
+    applyFilters();
+    updateCount();
+  }
+
+  var tagLists = document.getElementsByClassName("tag_list");
+  for (var j = 0; j < tagLists.length; j++) {
+    (function(j) {
+      if (localStorage.getItem('count_value')) {
+        var storedCount = JSON.parse(localStorage.getItem('count_value'))[j];
+        count_value[j].innerHTML = storedCount ? storedCount : '';
+      }
+      var tagList = tagLists[j];
+      var listItems = tagList.getElementsByTagName("li");
+      for (var i = 0; i < listItems.length; i++) {
+        listItems[i].addEventListener("click", function(e) {
+          var value = this.textContent.trim(); // Get the text content of the clicked li element
+          this.classList.toggle('selected_filter');
+          if (!filterApply.includes(value)) {
+            filterApply.push(value);
+          } else {
+            filterApply.splice(filterApply.indexOf(value), 1);
+          }
+          localStorage.setItem('filterApply', JSON.stringify(filterApply));
+          applyFilters();
+          var count = Array.from(listItems).filter(item => item.classList.contains('selected_filter')).length;
+          count_value[j].innerHTML = count > 0 ? `[${count} item${count !== 1 ? 's' : ''}]` : '';
+          var cc = JSON.parse(localStorage.getItem('count_value') || '[0,0,0]');
+          cc[j] = count > 0 ? `[${count} item${count !== 1 ? 's' : ''}]` : '';
+          localStorage.setItem('count_value', JSON.stringify(cc));
+        });
+      }
+    })(j);
+  }
+
+  // Function to apply filters
+  function applyFilters() {
+    var allListItems = document.querySelectorAll('.tag_list li');
+    allListItems.forEach(li => {
+      var value = li.textContent.trim();
+      if (filterApply.includes(value)) {
+        li.classList.add('selected_filter');
+      } else {
+        li.classList.remove('selected_filter');
+      }
+    });
+  }
+
+  function extractTags(url) {
+    var params = new URLSearchParams(url.split('?')[1]);
+    var tags = params.get('tags');
+    if (tags) {
+      console.log(tags);
+      return tags.split(',').map(tag => decodeURIComponent(tag));
+    }
+    return [];
+  }
+
+  function setTagFilterValue() {
+    var currentUrl = window.location.href;
+    var tagsArray = extractTags(currentUrl);
+    // Convert the tagsArray to a string
+    var tagFilterValue = JSON.stringify(tagsArray);
+    {% set tag_filter = tagFilterValue %}
+    // Set the tag_filter value in localStorage
+    localStorage.setItem('tag_filter', tagFilterValue);
+  }
+
+  setTagFilterValue();
+
+  function updateCount(i, listItems) {
+    // Reset the count, not needed to define this function as it's empty.
+  }
+
+  const result = (origin) => {
+    const searchParam = new URLSearchParams(window.location.search);
+    searchParam.set(origin, filterApply.toString());
+    searchParam.delete('page');
+    console.log(decodeURIComponent(searchParam.toString()),"Hi");
+    window.location.search = decodeURIComponent(searchParam.toString());
+  }
+</script>

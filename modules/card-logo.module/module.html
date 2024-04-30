@@ -1,0 +1,20 @@
+<h3 class="log_title">
+    {{ module.logo_title }}
+  </h3>
+<div class="card-sys {{ module.choice_field }} ">
+  
+  {% for item in module.groupe_de_champs_logos %}
+  <div class="logo-systems">
+    {% if item.image_logo.src %}
+    {% set sizeAttrs = 'width="{{ item.image_logo.width }}" height="{{ item.image_logo.height }}"' %}
+    {% if item.image_logo.size_type == 'auto' %}
+    {% set sizeAttrs = 'width="{{ item.image_logo.width }}" height="{{ item.image_logo.height }}" style="max-width: 100%; height: auto;"' %}
+    {% elif item.image_logo.size_type == 'auto_custom_max' %}
+    {% set sizeAttrs = 'width="{{ item.image_logo.max_width }}" height="{{ item.image_logo.max_height }}" style="max-width: 100%; height: auto;"' %}
+    {% endif %}
+    {% set loadingAttr = item.image_logo.loading != 'disabled' ? 'loading="{{ item.image_logo.loading }}"' : '' %}
+    <img src="{{ item.image_logo.src }}" alt="{{ item.image_logo.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,64 @@
+<div class="container-po">
+  <div class="cam-ine-{{ module.column_layout }} {{ module.text_align }}">
+    {% if module.image_left.src %}
+	{% set sizeAttrs = 'width="{{ module.image_left.width|escape_attr }}" height="{{ module.image_left.height|escape_attr }}"' %}
+	{% if module.image_left.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.image_left.width|escape_attr }}" height="{{ module.image_left.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.image_left.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.image_left.max_width|escape_attr }}" height="{{ module.image_left.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.image_left.loading != 'disabled' ? 'loading="{{ module.image_left.loading|escape_attr }}"' : '' %}
+	<img src="{{ module.image_left.src|escape_url }}" alt="{{ module.image_left.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+    <div class="cam-tsf">
+      <span>{{ module.texte_service }}</span>
+      <h2>
+        {{ module.texte_nous }}
+      </h2> 
+      <p>
+        {{ module.texte_enrichi_pos }}
+      </p>
+      {% if module.button_hide_and_show %}
+      <div class="p3-learn__cta">
+        {% set href = module.learn_more_cta.learn_more_link.url.href %}
+        {% if module.learn_more_cta.learn_more_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="hs-button primary p3-learn__cta-btn-{{ module.learn_more_cta.cta_style }}"
+           {% if module.learn_more_cta.learn_more_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.learn_more_cta.learn_more_link.rel %}rel="{{ module.learn_more_cta.learn_more_link.rel }}"{% endif %}
+           >
+          {{ module.learn_more_cta.learn_more_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#fd560a">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill=""/>
+          </svg>
+        </a>
+      </div>
+      <div class="p3-learn__cta">
+        {% set href = module.post_learn_more_cta.learn_more_link.url.href %}
+        {% if module.post_learn_more_cta.learn_more_link.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        <a href="{{ href }}" class="hs-button primary p3-learn__cta-btn-{{ module.post_learn_more_cta.cta_style }}"
+           {% if module.post_learn_more_cta.learn_more_link.open_in_new_tab %}target="_blank"{% endif %}
+           {% if module.post_learn_more_cta.learn_more_link.rel %}rel="{{ module.post_learn_more_cta.learn_more_link.rel }}"{% endif %}
+           >
+          {{ module.post_learn_more_cta.learn_more_text }}<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10" fill="#fd560a">
+          <path d="M0.902685 5.65855H8.25863L5.04493 8.87224C4.7881 9.12908 4.7881 9.55054 5.04493 9.80738C5.30176 10.0642 5.71665 10.0642 5.97348 9.80738L10.3133 5.46757C10.5701 5.21073 10.5701 4.79585 10.3133 4.53902L5.98006 0.192624C5.72323 -0.0642081 5.30835 -0.0642081 5.05152 0.192624C4.79468 0.449457 4.79468 0.86434 5.05152 1.12117L8.25863 4.34146H0.902685C0.540486 4.34146 0.244141 4.6378 0.244141 5C0.244141 5.3622 0.540486 5.65855 0.902685 5.65855Z" fill=""/>
+          </svg>
+        </a>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% require_css %}
+<style>
+  {% scope_css %}
+  .cam-tsf h2{
+    color: {{ module.title_color.color }};
+    {{ module.title_color.opacity }}
+  }
+  {% end_scope_css %}
+</style>
+{% end_require_css %}
